@@ -1,0 +1,72 @@
+ACCOUNT	账号
+AUTO	自动
+CANCEL	取消
+DISABLE	禁用
+ENABLE	启用
+FILTERS	筛选
+HOST	主机
+LOCKED	已锁定
+MODS	模组
+OFFLINE	离线
+ONLINE	在线
+RETRY	重试
+SCENARIO	情景
+TAGS	标签
+WARNING	警告
+OBSCURED	已隐藏
+New Text	新文本
+Hide	隐藏
+HIDE	隐藏
+START	开始
+CONTINUE	继续
+Exit VR (ESC)	退出 VR（ESC）
+Chat	聊天
+Paint Name	涂装名称
+Enter text...	输入文字……
+Wrap Mode	换行模式
+Search	搜索
+No filters selected	未选择筛选条件
+Interpolated	插值
+New Property Value	新属性值
+HP/Weight Ratio	马力/重量比
+Power/Weight Ratio	功率/重量比
+Off	关闭
+Reaction Control Nozzle	反作用控制喷口
+Wheel Suspension	机轮悬挂
+Resizable Shape	可缩放形状
+Posed Grip	姿态握把
+Control Base	控制底座
+Refuel Drouge	加油锥套
+Seat IK	座椅 IK
+IK Target	IK 目标
+Missile Configuration	导弹配置
+Propellers	螺旋桨
+Cockpit Sound	驾驶舱音效
+Procedural Bay	程序化弹舱
+Procedural Window	程序化窗户
+Part Targeting	部件瞄准
+Legacy	旧版
+Surfaces	操纵面
+Tip: Left click on a part in the part list to show detailed information about it.	提示：左键单击部件列表中的部件，可查看其详细信息。
+Tip: Several parts have properties that can be set by clicking the button with the wrench icon.	提示：有几种部件的属性，可点击带扳手图标的按钮进行设置。
+Tip: You can clone parts by clicking and dragging them with the right mouse button.	提示：按住鼠标右键点击并拖动部件，即可克隆部件。
+Tooltip Text	提示文本
+Tooltip Text Goes Here	此处显示提示文本
+Craft instructions	机体说明
+Tutorial Name	教程名称
+Tutorial Message	教程内容
+Show on Start	启动时显示
+Disabled During \n\n\nChallenge	挑战期间禁用\n\n\n
+Few Clouds	少云
+Dynamic\nWeather	动态\n天气
+Dist	距离
+Programmer	程序设计
+Community Manager	社区管理
+Lead 3D Artist	3D 美术主管
+Tech Artist	技术美术
+Stock Craft Liaison	自带机体顾问
+Character Artist	角色美术
+Environment Artist	场景美术
+Soundtrack	音乐
+Texture Artist	贴图美术
+Trailers	预告片

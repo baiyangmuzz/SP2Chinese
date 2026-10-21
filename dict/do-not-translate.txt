@@ -1,0 +1,179 @@
+# 禁止翻译清单 —— 官方载具名 / 挑战名 / 品牌
+# 这些是社区通用标识，翻译后玩家对不上号。verify_dict.py 会检查。
+Adder
+Aeon
+Aeroventure TR-83
+Apis
+Arbitrator
+Athena
+BANNOCK
+BLADE INDUSTRIES
+Babushka
+Backdraft
+Banshee RC
+Barracuda
+Blade 360
+Blitzvogel
+Bomber Intercept
+Bridged Touge
+Bronte GT
+Bugger
+Bumblebee
+Bush Plane
+Capybara
+Chaddaray
+Chungus
+Cobia
+Competitor
+Cork II
+Dandy
+Deathmatch (Bannock)
+Deathmatch (Cochran)
+Deathmatch (Driftwood)
+Dragon
+Driftwood 8
+Driftwood Air Race
+Driftwood Air Slalom
+Driftwood Karting
+Driftwood Le Fish
+Driftwood Stadium
+Driftwood Touge
+Duster
+Eaglet
+Empress
+Fennec
+Foodie
+Formula
+Gator 3
+Gebie
+Gecko
+Goke
+Gotta Go Fast
+Grand Camel
+Hob It Kart
+Hoister
+Hop It Kart
+Jerboa
+Juggernaut
+Jundroo
+Jundroo Icon
+Jundroo Logo
+Junebug
+Juno Icon
+Juno Logo
+KT Veleten
+Kicking Fish
+Kunimitsu Drag Race
+Longtail
+Maxi
+Mech Invasion
+Mink
+Nomad
+On Rails
+Orb Snatcher (Bannock)
+Orb Snatcher (Cochran)
+Orb Snatcher (Driftwood)
+Orb Snatcher (Kunimitsu)
+Oxlift
+P-51B
+P-51D
+Peregrine
+Pigpen
+Pinball
+Plane Spotting Hike
+Playing with Fire
+Poseidon
+Prowler
+Quetzal
+Raccoon
+Race Like A Phoenix
+Ragchad
+Rattlesnake
+Runway Crew Kart
+SP Icon
+SP Logo
+SP2 Logo
+Sailer
+Sand Frog
+Scaley
+Sedona
+Shepard Karting
+Shepard Parkour
+Simpleze
+Skylark
+Skywhale
+Skywobbler Technologies
+Sledgehammer
+Snoot
+Snowfinch
+Sparrow
+Stinker
+Stormvark
+Super Camel
+Super Mustang
+Super Wasp
+THE NAVY
+Tadpole
+Taxi Driver
+Team Deathmatch
+The Bannock Run
+The Big L
+The Chief
+The Driftwood Cup
+The Forest Run (Long)
+The Forest Run (Short)
+The Gaming Chair
+The Touge Run
+Trisaurus
+USS Tiny
+VETUSTA
+Vertigo IV
+Vetusta P2P
+Vetusta Streets
+Warden
+Whistler Mk.2
+Wicked Wraith
+Window Breaker
+Windrider 2000
+WobbleEye
+Wurger
+__P-51 WW2__
+__TutorialCar__
+__TutorialProp__
+__actBomberIntercept_Bomber__
+__actBomberIntercept_Escort__
+__aiEscortBomber__
+__aiEscortEnemy__
+__aiOpponentFast__
+__aiOpponentGlider__
+__aiOpponentMedium__
+__aiOpponentOffRoad__
+__aiOpponentRace__
+__aiOpponentRacecar__
+__aiOpponentSlow__
+__aiOpponentWw2__
+__aiOpponent__
+__aiRefuelTanker__
+__civilian__
+__designerTutorial1__
+__designerTutorial2__
+__drone__
+__fighter_modern__
+__new__
+__trainer__
+
+# XML 编辑器里的属性值与枚举，必须保持原文（玩家会照抄进 XML）
+Bool
+Color
+Default
+False
+Float
+FuelTank
+Int
+None
+Part
+Slice
+String
+Transparency
+True
+Vector3

@@ -1,0 +1,155 @@
+Move Sideways	左右平移
+Move Right	右移
+Move Left	左移
+Move Forward	前进
+Move Backward	后退
+Toggle Mouse Look	切换鼠标视角
+Camera Look	视角控制
+Look Left/Right	左右看
+Look Right	向右看
+Look Left	向左看
+Look Back	向后看
+Look Back (Right)	向后看（右）
+Look Back (Left)	向后看（左）
+Look Up/Down	上下看
+Look Up	向上看
+Look Down	向下看
+Zoom In	放大
+Zoom Out	缩小
+Camera Recenter	视角回中
+Toggle Slow Motion	切换慢动作
+Toggle Fast Forward	切换快进
+Toggle Environment Settings	切换环境设置
+Toggle Menu	切换菜单
+Teleport Up	向上传送
+Teleport Down	向下传送
+Enter/Exit Craft	进入/离开载具
+Screenshot Mode	截图模式
+Delete Selected Part	删除选中部件
+Toggle CoM/CoL/CoT	切换重心/升力中心/推力中心
+Quicksave Craft	快速保存载具
+Single / Connected Part Modifier Key\n  (Select / Clone / Transform / Symmetry)	单个/相连部件修饰键\n  （选择/克隆/变换/对称）
+Reattach Selected Part	重新连接选中部件
+Toggle Transform Part Panel	切换部件变换面板
+Toggle Part Properties Panel	切换部件属性面板
+Toggle Paint Panel	切换喷漆面板
+Toggle Ghost View	切换幽灵视图
+Toggle Orthographic View	切换正交视图
+Toggle Blueprints Panel	切换蓝图面板
+Toggle Decal Visibility	切换贴花可见性
+Toggle Cutting Visibility	切换剖切可见性
+Conceal Part	隐藏部件
+Invert Concealed Parts	反转隐藏部件
+Cycle Concealment Type	循环隐藏类型
+Manipulate Part Positive	正向操作部件
+Manipulate Part Negative	反向操作部件
+Select Move Tool	选择移动工具
+Select Rotate Tool	选择旋转工具
+Select Translate Tool	选择平移工具
+Select View Tool	选择查看工具
+Rotate Left/Right	左右旋转
+Rotate Right	右旋
+Rotate Left	左旋
+Rotate Up/Down	上下旋转
+Rotate Up	上旋
+Rotate Down	下旋
+Translate Left/Right	左右平移移位
+Translate Right	向右移位
+Translate Left	向左移位
+Translate Up/Down	上下移位
+Translate Up	向上移位
+Translate Down	向下移位
+Translate In/Out	内外移位
+Translate In	向内移位
+Translate Out	向外移位
+Move/Rotate Right	右移/右旋
+Move/Rotate Left	左移/左旋
+Move/Rotate Up	上移/上旋
+Move/Rotate Down	下移/下旋
+Switch Mode	切换模式
+Part Rotation	部件旋转
+Rotate Part X+	部件绕 X 轴正向旋转
+Rotate Part X-	部件绕 X 轴负向旋转
+Rotate Part Y+	部件绕 Y 轴正向旋转
+Rotate Part Y-	部件绕 Y 轴负向旋转
+Rotate Part Z+	部件绕 Z 轴正向旋转
+Rotate Part Z-	部件绕 Z 轴负向旋转
+Part Positioning	部件定位
+Nudge Part X+	部件 X+ 微移
+Nudge Part X-	部件 X- 微移
+Nudge Part Y+	部件 Y+ 微移
+Nudge Part Y-	部件 Y- 微移
+Nudge Part Z+	部件 Z+ 微移
+Nudge Part Z-	部件 Z- 微移
+Part Symmetry	部件对称
+Toggle Symmetry Panel	切换对称面板
+Test Pitch	测试俯仰
+Test Pitch Forward	测试俯仰前
+Test Pitch Back	测试俯仰后
+Test Roll	测试滚转
+Test Roll Right	测试右滚
+Test Roll Left	测试左滚
+Test Yaw	测试偏航
+Test Yaw Right	测试右偏航
+Test Yaw Left	测试左偏航
+Pitch Forward	俯仰前
+Pitch Back	俯仰后
+Roll Right	右滚
+Roll Left	左滚
+Yaw Right	右偏航
+Yaw Left	左偏航
+Throttle Up	加大油门
+Throttle Down	减小油门
+VTOL Up	VTOL 上
+VTOL Down	VTOL 下
+Trim Up	向上配平
+Trim Down	向下配平
+Brake Increase	增加刹车
+Brake Decrease	减小刹车
+Toggle Autopilot	切换自动驾驶
+Toggle Parking Brake	切换驻车刹车
+Toggle Mouse Joystick	切换鼠标摇杆
+Zero Throttle	油门归零
+Max Throttle	最大油门
+Flaps Up	收起襟翼
+Flaps Down	放下襟翼
+Flaps Reset	重置襟翼
+Previous View	上一个视角
+Flyby View	掠过视角
+Custom Camera 1	自定义视角 1
+Custom Camera 2	自定义视角 2
+Custom Camera 3	自定义视角 3
+Custom Camera 4	自定义视角 4
+Activate Camera Look	启用视角控制
+Launch Countermeasures	投放干扰弹
+Slew Right	瞄准右转
+Slew Left	瞄准左转
+Slew Up	瞄准上转
+Slew Down	瞄准下转
+Zoom Targeting Pod	缩放瞄准吊舱
+Activation Groups	激活组
+Toggle Panel	切换面板
+Activate 1	激活 1
+Activate 2	激活 2
+Activate 3	激活 3
+Activate 4	激活 4
+Activate 5	激活 5
+Activate 6	激活 6
+Activate 7	激活 7
+Activate 8	激活 8
+Self Destruct	自毁
+Search Actions	搜索动作
+Multiple Parts	多个部件
+Toggle Gunner's HMD	切换炮手头盔显示器
+Mirroring disabled for part {*}	已为部件 {*} 关闭镜像
+Look at your hands to see the controls for flying. If you ever want to see them again, you can find the controls button in the pop-up menu under settings.	看你的双手可以看到飞行操作。如果你想再看一次，可以在设置里的弹出菜单中找到操作按钮。
+You can rotate the view around by clicking and dragging. Go ahead and try, just try not to click on any parts.	按住鼠标拖动可以旋转视角。来试试吧，只是尽量别点到部件上。
+{0}d ago	{0} 天前
+{0}m ago	{0} 分钟前
+{0}h ago	{0} 小时前
+Wind Speed: {0}mph	风速：{0}mph
+Wind Speed: {0}km/h	风速：{0}km/h
+Wind Speed: {0}m/s	风速：{0} 米/秒
+Wind Speed: {0}mph	风速：{0}mph
+Wind Speed: {0}km/h	风速：{0}km/h
+Wind Speed: {0}m/s	风速：{0} 米/秒

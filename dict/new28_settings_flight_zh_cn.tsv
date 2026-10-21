@@ -1,0 +1,24 @@
+\nHigh: All trees will be rendered.	\n高：渲染所有树木。
+\nVery High: Shadows are at their highest quality and the shadow view distance is dynamic, allowing for far greater shadow view distances when flying.	\n极高：阴影质量最高，阴影可视距离改为动态，飞行时可视距离远得多。
+\nHigh: Water will be rendered with all its various visual and physical effects fully enabled with increased detail at further distances.	\n高：水体渲染启用全部视觉与物理效果，并增加远处的细节。
+\nHigh: High quality volumetric clouds will be used.	\n高：使用高质量体积云。
+\nHigh: The visual quality of the terrain surface will be at its highest quality.	\n高：地表的视觉质量达到最高。
+\nSMAA: SMAA (Subpixel Morphological Anti-Aliasing) reduces jagged edges with minimal performance impact, providing a good balance between quality and performance.	\nSMAA：SMAA（子像素形态抗锯齿）以极小的性能代价减少锯齿，在画质与性能之间取得不错的平衡。
+\nHigh: Water will simulate foam at a higher frequency.	\n高：水体以更高的频率模拟泡沫。
+\nStatic: Reflective craft parts will use a vague static image to give the illusion of the parts reflecting their surroundings without actually doing so.	\n静态：反光部件会使用模糊的静态图像，制造出在反射周围环境的错觉，但并不真的反射。
+\nAt values higher than 1, the game will be rendered at a higher resolution than the game screen and then downscaled. This is a trade-off of increased graphical quality (particularly a reduction in aliasing) at the cost of performance.	\n大于 1 时，游戏会以高于屏幕的分辨率渲染再降采样。这是以性能换取更高画质（尤其是减少锯齿）的取舍。
+Toggles the waves along the shorelines. This has minimal impact on performance but some players may prefer less turbulent shorelines, either for physics-related or perhaps just visual reasons.	切换岸线处的波浪。对性能影响极小，但有些玩家可能更喜欢平静的岸线，无论是出于物理考虑还是纯粹为了好看。
+Miscellaneous	杂项
+Slew RIght	瞄准右转
+Date	日期
+Path	路径
+Countermeasures\nShortcut: <b>V</b>	投放干扰弹\n快捷键：V
+Reloads your craft at your current position.\nShortcut: <b>Ctrl + R</b>	在当前位置重新载入你的载具。\n快捷键：Ctrl + R
+Reloads your craft at your starting position.\nShortcut: <b>Ctrl + Shift + R</b>	在起飞位置重新载入你的载具。\n快捷键：Ctrl + Shift + R
+Enter / Exit Aircraft\nShortcut: <b>N</b>	进入 / 离开载具\n快捷键：N
+Repositions and uprights your craft at your current position.\nShortcut: <b>Ctrl + F</b>	在当前位置重置并扶正你的载具。\n快捷键：Ctrl + F
+Change view\nShortcut: <b>C</b>	切换视角\n快捷键：C
+Select Next Target\nShortcut: <b>Tab, ]</b>	选择下一个目标\n快捷键：Tab、]
+Show Activation Panel\nShortcut: <b>T, Right Shift</b>	显示激活面板\n快捷键：T、右 Shift
+Show Instrument Panel\nShortcut: <b>T, Right Shift</b>	显示仪表面板\n快捷键：T、右 Shift
+Current throttle\nShortcut: <b>Left Shift, Left Control</b>	当前油门\n快捷键：左 Shift、左 Control

@@ -1,0 +1,57 @@
+\n<color=#6AAFE6><b><size=115%>New Parts</size></b></color>	\n<color=#6AAFE6><b><size=115%>新部件</size></b></color>
+\n**Turboshafts**	\n**涡轮轴发动机**
+\nA new family of turbine engines built for driving propellers and shafts. Turboshafts come in small, medium, and large sizes and hook into the existing powertrain through a new set of gearbox parts.	\n专为驱动螺旋桨和传动轴设计的全新涡轮发动机系列。涡轮轴发动机提供小、中、大三种尺寸，通过一套全新的齿轮箱部件接入现有动力系统。
+\n**Curved Fuselages**	\n**弯曲机身**
+\nA new three-slice fuselage style with a middle section that lets you shape smooth, curved bodies and fairings without stacking parts. Bay doors and cutting tools work on it just like a standard fuselage.	\n全新的三段式机身样式，中段可塑造平滑弯曲的机体与整流罩，无需堆叠部件。舱门与切割工具在它上面的用法和标准机身完全相同。
+\n**Exhaust Part**	\n**排气管部件**
+\nA new exhaust pipe part with many tip styles and configurable plume effects.	\n全新的排气管部件，提供多种管口样式和可配置的喷焰效果。
+\n<color=#6AAFE6><b><size=115%>Multiplayer</size></b></color>	\n<color=#6AAFE6><b><size=115%>多人游戏</size></b></color>
+\n•<indent=5%>Updated the player list in multiplayer to show steam avatar images. Clicking on an image opens the steam overlay browser to that player's Steam profile</indent>	\n•<indent=5%>更新了多人游戏玩家列表，现可显示 Steam 头像；点击头像会打开 Steam 悬浮浏览器并跳转到该玩家的 Steam 个人资料</indent>
+\n•<indent=5%>Added a ban list flyout accessible from the server's multiplayer settings flyout where the server can view the list of banned and temp-banned steam players and unban them if desired.</indent>	\n•<indent=5%>在服务器的多人游戏设置浮出面板中新增封禁列表页，服主可查看被永久封禁和临时封禁的 Steam 玩家并按需解封。</indent>
+\n•<indent=5%>Chat blocks now persist across game sessions.</indent>	\n•<indent=5%>聊天记录块现在会跨游戏会话保留。</indent>
+\n•<indent=5%>Fixed players getting permanently stuck in a multiplayer level, unable to exit.</indent>	\n•<indent=5%>修复了玩家永久卡在多人游戏关卡中无法退出的问题。</indent>
+\n•<indent=5%>Fixed newlines not displaying correctly on labels when downloading another player's craft.</indent>	\n•<indent=5%>修复了下载其他玩家的载具时标签上换行符无法正确显示的问题。</indent>
+\n•<indent=5%>Fixed the dev console opening when pressing the backtick key in chat.</indent>	\n•<indent=5%>修复了在聊天时按反引号键会打开开发者控制台的问题。</indent>
+\n•<indent=5%>Teleport Up/Down now defaults to ON when starting a server.</indent>	\n•<indent=5%>启动服务器时，向上/向下传送现在默认为开启。</indent>
+\n•<indent=5%>Added a server setting for changing the max bullets per second each craft can produce.</indent>	\n•<indent=5%>新增服务器设置，可更改每架载具每秒可产生的最大子弹数。</indent>
+\n•<indent=5%>Capped the number of active bullets from remote craft to prevent lag.</indent>	\n•<indent=5%>限制了远程载具的有效子弹数量，以防卡顿。</indent>
+\n•<indent=5%>Capped the maximum size of bullets.</indent>	\n•<indent=5%>限制了子弹的最大尺寸。</indent>
+\n<color=#6AAFE6><b><size=115%>Flight</size></b></color>	\n<color=#6AAFE6><b><size=115%>飞行</size></b></color>
+\n•<indent=5%>Fixed countermeasure spam permanently blocking future missile locks.</indent>	\n•<indent=5%>修复了连续投放干扰弹会永久阻止后续导弹锁定的问题。</indent>
+\n•<indent=5%>Fixed craft joints being looser than intended after the Unity 6.3 upgrade</indent>	\n•<indent=5%>修复了升级至 Unity 6.3 后载具连接比预期更松散的问题</indent>
+\n•<indent=5%>Fixed a second gun crosshair appearing behind the camera.</indent>	\n•<indent=5%>修复了摄像机后方出现第二个机炮准星的问题。</indent>
+\n•<indent=5%>Fixed the catapult over-seating craft with large wheel assemblies.</indent>	\n•<indent=5%>修复了弹射器对带大型机轮总成的载具弹射就位过度的问题。</indent>
+\n•<indent=5%>Fixed Chad not hiding when his seat was hidden.</indent>	\n•<indent=5%>修复了隐藏查德的座椅时他本人不会随之隐藏的问题。</indent>
+\n•<indent=5%>Fixed a duplicate T-posing Chad when a suit config referenced an unknown item.</indent>	\n•<indent=5%>修复了套装配置引用未知物品时会出现一个呈 T 字姿势的重复查德的问题。</indent>
+\n•<indent=5%>Fixed craft decals rendering on other craft.</indent>	\n•<indent=5%>修复了某架载具的贴花会渲染到其他载具上的问题。</indent>
+\n•<indent=5%>Fixed rendering issues when using the last few materials of a theme with a maxed-out material set.</indent>	\n•<indent=5%>修复了材质集已满时使用某主题最后几种材质会出现的渲染问题。</indent>
+\n•<indent=5%>Fixed craft tag duplication and stray leading or trailing whitespace.</indent>	\n•<indent=5%>修复了载具标签重复以及首尾出现多余空白字符的问题。</indent>
+\n•<indent=5%>Gave New Yoke's tunnels colliders.</indent>	\n•<indent=5%>为新约克（New Yoke）的隧道添加了碰撞体。</indent>
+\n•<indent=5%>Fixed procedural missiles not being able to be fired via a detacher.</indent>	\n•<indent=5%>修复了程序化导弹无法通过分离器发射的问题。</indent>
+\n•<indent=5%>Added auto feather option to propeller assembly</indent>	\n•<indent=5%>为螺旋桨总成添加了自动顺桨选项</indent>
+\n•<indent=5%>Fixed bug where wheels would lose their magic engine reference when used in a subassembly</indent>	\n•<indent=5%>修复了机轮在子组件中使用时会丢失其魔法发动机引用的问题</indent>
+\n<color=#6AAFE6><b><size=115%>Designer</size></b></color>	\n<color=#6AAFE6><b><size=115%>设计器</size></b></color>
+\n•<indent=5%>Added a designer setting and keybinding for toggling the selected part outline.</indent>	\n•<indent=5%>添加了用于切换选中部件轮廓显示的设计器设置和按键绑定。</indent>
+\n•<indent=5%>Fixed upright wings randomly inverting their airfoil on connection.</indent>	\n•<indent=5%>修复了直立机翼连接时会随机反转翼型的问题。</indent>
+\n•<indent=5%>Fixed some parts randomly disconnecting from the craft after saving.</indent>	\n•<indent=5%>修复了保存后某些部件会随机从载具上断开的问题。</indent>
+\n•<indent=5%>Fixed changing a part's angle via Transform Part breaking the Translate tool.</indent>	\n•<indent=5%>修复了通过“变换部件”更改部件角度会导致平移工具失效的问题。</indent>
+\n•<indent=5%>Fixed Overload on a mirrored part moving the mirror to the wrong position.</indent>	\n•<indent=5%>修复了对镜像部件使用 Overload 会使镜像移到错误位置的问题。</indent>
+\n•<indent=5%>Fixed Overload filling in fuselage windows and holes.</indent>	\n•<indent=5%>修复了 Overload 会填死机身窗户和孔洞的问题。</indent>
+\n•<indent=5%>Fixed mirrored animators inheriting the original's parent animator instead of its mirror.</indent>	\n•<indent=5%>修复了镜像动画器会继承原件的父动画器而非其镜像对应物的问题。</indent>
+\n•<indent=5%>Fixed fuselage tools not checking both parts of a selection for the sync adjacent flag.</indent>	\n•<indent=5%>修复了机身工具不会检查选区中两个部件的“同步相邻”标志的问题。</indent>
+\n•<indent=5%>Fixed errors and lingering meshes when mesh modifiers are sized to zero.</indent>	\n•<indent=5%>修复了网格修改器尺寸被调整为零时出现报错和残留网格的问题。</indent>
+\n•<indent=5%>Fixed microscopic mesh slivers throwing off bay door generation.</indent>	\n•<indent=5%>修复了微小网格碎片会干扰舱门生成的问题。</indent>
+\n•<indent=5%>Fixed decimals that start with a non-zero digit not being enterable in window dimensions.</indent>	\n•<indent=5%>修复了窗户尺寸中无法输入以非零数字开头的小数的问题。</indent>
+\n•<indent=5%>Fixed the control surface counter in the properties menu.</indent>	\n•<indent=5%>修复了属性菜单中操纵面计数器的问题。</indent>
+\n•<indent=5%>Fixed Label offset not working for labels on buttons.</indent>	\n•<indent=5%>修复了按钮上标签的偏移不生效的问题。</indent>
+\n•<indent=5%>Visibility of decals and cutting volumes can now be toggled while manually adding a part connection.</indent>	\n•<indent=5%>手动添加部件连接时，现在可以切换贴花和切割体积的可见性。</indent>
+\n•<indent=5%>Non-wheel parts can no longer connect to gear legs.</indent>	\n•<indent=5%>非机轮部件现在无法再连接到起落架支柱上。</indent>
+\n•<indent=5%>Posed Grip text spinners are now dropdowns so they are readable.</indent>	\n•<indent=5%>姿态握把的文本微调框现在改为下拉菜单，以便于阅读。</indent>
+\n•<indent=5%>Removed liftScale from the delta wing designer part.</indent>	\n•<indent=5%>从三角翼设计器部件中移除了 liftScale（升力缩放）。</indent>
+\n•<indent=5%>Prevented wing lift and drag scales from being negative, non-finite, or over 1000.</indent>	\n•<indent=5%>防止机翼升力和阻力缩放值为负数、非有限值或超过 1000。</indent>
+\n<color=#6AAFE6><b><size=115%>Misc</size></b></color>	\n<color=#6AAFE6><b><size=115%>其他</size></b></color>
+\n•<indent=5%>Fix screen turning black after a resolution change on macOS</indent>	\n•<indent=5%>修复了 macOS 上更改分辨率后屏幕变黑的问题</indent>
+\n•<indent=5%>Added an auto feather option to the propeller assembly.</indent>	\n•<indent=5%>为螺旋桨总成添加了自动顺桨选项。</indent>
+\n•<indent=5%>Added PitchAngle (degrees), Thrust (N), Torque (Nm), and RPM output variables to the propeller assembly.</indent>	\n•<indent=5%>为螺旋桨总成添加了俯仰角（度）、推力（牛）、扭矩（牛·米）和 RPM 输出变量。</indent>
+\n•<indent=5%>Added a `minExtensionForWheelPhysics` to Gear Legs so you can choose when wheel physics turns off during retraction. Default value is 0.4</indent>	\n•<indent=5%>为起落架支柱添加了 `minExtensionForWheelPhysics`，可选择收轮过程中机轮物理在何时关闭，默认值为 0.4</indent>
+\nYou can view these release notes in your browser <color=#306BBE><link="https://www.simpleplanes.com/Releases/View/2268777">here</link></color>.	\n您可以在浏览器中<color=#306BBE><link="https://www.simpleplanes.com/Releases/View/2268777">此处</link></color>查看这些更新说明。

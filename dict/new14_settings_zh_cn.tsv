@@ -1,0 +1,13 @@
+Caliber:	口径：
+Projectile Velocity:	弹丸速度：
+Weather Particles	天气粒子
+Environment Particles	环境粒子
+Selected Part Outlines	选中部件描边
+Selected Part Highlights	选中部件高亮
+Disable Profile Pictures	禁用自定义头像
+Auto Hide Disconnected Symmetric Parts	自动隐藏未连接的对称部件
+Highlights selected parts in the designer.	在设计器中高亮选中的部件。
+Toggles ambient smoke and fire effects placed in the world.	开关世界中放置的环境烟雾与火焰特效。
+Automatically hides symmetric parts while they are disconnected and after they are placed without a connection.	当对称部件未连接时自动隐藏，无连接放置之后也会隐藏。
+Disables the display of custom profile pictures in multiplayer. This will prevent you from seeing other players' custom profile pictures.	在多人模式中禁用自定义头像显示，这样你就看不到其他玩家的自定义头像。
+Adjusts the amount of weather particles. More particles mean reduced GPU performance.At High, an additional occlusion map gets rendered, which is CPU heavy.	调整天气粒子的数量。粒子越多，GPU 性能越低。设为“高”时会额外渲染一张遮蔽贴图，CPU 开销较大。

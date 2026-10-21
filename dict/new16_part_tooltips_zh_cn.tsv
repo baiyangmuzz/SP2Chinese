@@ -1,0 +1,186 @@
+Sandbox\nBuild anything you want in sandbox mode. The sky is the limit. Literally.	沙盒\n在沙盒模式里想造什么就造什么。天空才是极限——字面意思。
+Fuselage\nA versatile, procedural fuselage section. Customize its shape, size, and corner style to build sleek, modern aircraft bodies.	机身\n多功能程序化机身段，可自定义形状、尺寸和转角样式，打造流畅现代的机身。
+Nose Cone\nA procedural nose cone. Adjust its length, shape, and roundness for optimal aerodynamics and style.	鼻锥\n程序化鼻锥，可调整其长度、形状和圆度，获得最佳气动与外观。
+Hollow Fuselage\nA procedural hollow fuselage section. Customize its shape, size, and thickness.	中空机身\n程序化中空机身段，可自定义形状、尺寸和壁厚。
+Glass Fuselage\nA procedural hollow fuselage section made of glass. Customize its shape, size, and thickness.	玻璃机身\n玻璃材质的程序化中空机身段，可自定义形状、尺寸和壁厚。
+Curved Fuselage\nA procedural curvy fuselage section. Customize its shape, size, and thickness.	弯曲机身\n程序化曲面机身段，可自定义形状、尺寸和壁厚。
+Hole\nCarve a customizable opening into fuselage parts to create cargo bays, bomb bays, wheel wells, and more. Only works with fuselage parts.	开孔\n在机身部件上开出可自定义的开口，用于制作货舱、弹舱、轮舱等，仅适用于机身部件。
+Window\nInstall customizable window into any fuselage part. Only works with fuselage parts.	舷窗\n在任意机身部件上安装可自定义的舷窗，仅适用于机身部件。
+Straight Block\nSometimes people don't want smooth blocks. If you are that kind of person, then this block is for you.	直角方块\n有时人们不想要光滑的方块，如果您是这种人，这个方块正适合您。
+Angled Block\nIf used in the right place, this can improve the aerodynamics of your airplane.	斜角方块\n用在恰当的位置，可改善飞机的气动性能。
+Block\nThe basic building block. Snap these together to build the body of your airplane.	方块\n最基础的建造方块，将它们拼接起来即可搭建飞机机身。
+Sphere\nA ball is the most wonderful toy of all.	球体\n球是最奇妙的玩具。
+Hemisphere\nSometimes you don't need a whole sphere. Sometimes you just need half of a sphere.	半球\n有时不需要一整个球，只需要半个就够了。
+Legacy Curved Reducer Block\nSame as a reducer block, except it's curvy.	旧版弯曲变径块\n与渐缩方块相同，只是它是曲面的。
+Legacy Angled Corner\nIt's a corner piece. Always find the corner pieces first when doing a puzzle. That advice really doesn't apply when building airplanes, but it's still good advice.	旧版斜角转角\n这是一个转角件。玩拼图时要先找转角件，这条建议在造飞机时并不适用，但仍是好建议。
+Legacy Curved Block\nBasically the same thing as the Angled Block, only it's curved. The difference is purely cosmetic, which is important because you build the most beautiful airplanes.	旧版弯曲块\n基本与斜角方块相同，只是它是弧形的，差异纯在外观，但这很重要，因为您要造最美的飞机。
+Legacy Long Angled Block\nIt's just a long, angled block.	旧版加长斜角块\n就是一个长长的斜角方块。
+Legacy Nose Cone\nNose cones not only look fabulous, but they are designed to be very low drag. Its size can be changed via the menu.	旧版鼻锥\n鼻锥不仅美观，还专为极低阻力而设计，尺寸可通过菜单更改。
+Legacy Reducer Block\nJust a block that goes from 2 to 1. Or if you are a glass-is-half-full kind of person, you could say it goes from 1 to 2. An expander.	旧版变径块\n一个从2变到1的方块；如果您是乐观主义者，也可说它从1变到2，即一个扩径块。
+Legacy Curved Corner\nJust a curvy variation of the angled corner piece.	旧版弯曲转角\n斜角转角件的曲面变体。
+Legacy Fuselage Block\nOne block to rule them all. With the Part Properties window, this block can be resized in many ways. Its edges can change shape, it can hold fuel, and it's buoyant. It takes a little getting used to, but it's worth the trouble.	旧版机身块\n一统众块的方块。通过部件属性窗口可对其进行多种缩放，边缘可改变形状，能装载燃油，还具备浮力；需要一点时间适应，但值得。
+Legacy Fuselage Cone\nSpecial nose cone that works with the fuselage block.	旧版机身锥\n与机身方块配套的专用鼻锥。
+Legacy Hollow Fuselage\nSpecial fuselage block that appears to be hollow, but is actually quite solid.	旧版中空机身\n看似中空、实则相当坚固的专用机身方块。
+Structural Panel\nIt may look like a wing, but it has no wing physics simulation. These are good for designs which may have previously used many wings for aesthetic purposes. Those designs will run a little faster with these, since they don't take as much processing power as wings.	结构面板\n看起来像机翼，但没有机翼物理模拟，适合以往为美观而使用大量机翼的设计；用它运行会更快，因为它不像机翼那样占用大量算力。
+Legacy Riser Block\nSometimes you want a block to be a little higher than other blocks.	旧版增高块\n有时您希望某个方块比其他方块略高一点。
+Legacy Hollow Glass Fuselage\nIt's like the Hollow Fuselage, but it's glass! For the best glass effect, assign a material with smoothness at 90% to 100%, then set opacity to 0%. The dividing sections will also automatically hide, and smoothing is on by default for the sleekest canopy you can make!	旧版中空玻璃机身\n类似中空机身，但它是玻璃的！要获得最佳玻璃效果，请将光滑度90%至100%的材质赋给它，再把不透明度设为0%；分隔段也会自动隐藏，默认开启平滑，让您做出最流畅的座舱盖！
+Legacy Glass Fuselage\nIt's like the Fuselage, but it's glass! For the best glass effect, assign a material with smoothness at 90% to 100%, then set opacity to 0%. The dividing sections will also automatically hide, and smoothing is on by default for the sleekest canopy you can make!	旧版玻璃机身\n类似机身，但它是玻璃的！要获得最佳玻璃效果，请将光滑度90%至100%的材质赋给它，再把不透明度设为0%；分隔段也会自动隐藏，默认开启平滑，让您做出最流畅的座舱盖！
+Primary Wing\nA procedural main wing with a control surface to coast the skies in style.	主机翼\n带操纵面的程序化主机翼，让您潇洒地翱翔天际。
+Horizontal Stabilizer\nA smaller version of the procedural wing to help you control your pitch.	水平安定面\n程序化机翼的缩小版，帮助您控制俯仰。
+Vertical Stabilizer\nA smaller version of the procedural wing meant to go vertical to help you fly straight like an arrow.	垂直安定面\n程序化机翼的缩小版，垂直放置以帮助您像箭一样笔直飞行。
+Delta Wing\nA procedural delta wing with an efficient airfoil, ready for speed!	三角翼\n配备高效翼型的程序化三角翼，为速度而生！
+Base Wing\nOne-size-fits-all wing part that can mould to any wing shape size!	基础机翼\n通用机翼部件，可塑造成任意机翼形状与尺寸！
+Standard Flap\nThe simplest control surface. Can deflect up and down 	标准襟翼\n最简单的操纵面，可上下偏转。
+Fowler Flap\nA flap that slides backwards as well as deflecting, increasing the wing's surface area when it is deployed.	富勒襟翼\n一种在偏转同时向后滑动的襟翼，放下时可增大机翼面积。
+Brake Flap\nA flap that can act as a normal control surface, until the brake input is activated and it splits in two to become an airbrake.	制动襟翼\n可作为普通操纵面使用的襟翼，当刹车输入激活时会一分为二，变成减速板。
+Slat\nA surface on the leading (front) edge of the wing, that slides forward and down, increasing lift for takeoff and landing.	缝翼\n位于机翼前缘的翼面，向前下方滑出，在起飞和着陆时增大升力。
+Legacy Horizontal Stabilizer\nWing section with elevators. These can provide control for your airplane to pitch up and down.	旧版水平安定面\n带升降舵的机翼段，可为飞机提供俯仰控制。
+Legacy Vertical Stabilizer\nWing section with a rudder. Vertical stabilizers help to keep the airplane from unwanted drifting to the left or right.	旧版垂直安定面\n带方向舵的机翼段，垂直安定面有助于防止飞机意外向左或向右偏航。
+Legacy Primary Wing\nWing section already set up with ailerons and some fuel. Primary wings are intended to provide the main lift for your airplane and provide control to roll left and right.	旧版主机翼\n已配置副翼和部分燃油的机翼段。主机翼旨在为飞机提供主要升力，并提供滚转控制。
+Legacy Structural Wing\nStronger than a normal wing and it does provide lift, but it cannot have control surfaces. Also, it's heavier.	旧版结构机翼\n比普通机翼更坚固且能提供升力，但不能安装操纵面，也更重。
+Ultra Turbofan\nEssentially a giant ducted fan that happens to have a jet engine hidden inside. It sips fuel and can push an obscene amount of mass, but good luck finding enough ground clearance under your wings to mount it.	超大型涡扇发动机\n本质上是一个内置喷气发动机的巨型涵道风扇，极省燃油，能推动惊人的质量；但要在机翼下找到足够离地间隙来安装它，可得费点劲。
+Large Turbofan\nA fuel-efficient high-bypass engine made for standard-sized airliners and big transports.	大型涡扇发动机\n为标准尺寸民航客机和大型运输机打造的省油高涵道比发动机。
+Medium Turbofan\nA compact high-bypass turbofan engine for smaller, regional jets.	中型涡扇发动机\n为小型支线喷气机设计的紧凑型高涵道比涡扇发动机。
+Military Jet\nA high-performance low-bypass engine built for speed. Features a variable nozzle and an optional afterburner for supersonic dashes. Perfect for fighters and interceptors where raw thrust matters more than fuel economy.	军用喷气发动机\n为速度打造的高性能低涵道比发动机，配备可变喷管和可选加力燃烧室，可进行超音速冲刺；适合把推力看得比燃油经济性更重的战斗机和截击机。
+Radial Prop\nIt's big, it's torque-y, and it's great for those classic, WW2 style birds. Has the aerodynamics of a barn door.	星形螺旋桨发动机\n体积庞大、扭矩强劲，非常适合经典的二战风格飞机，气动性能堪比谷仓门。
+Large Prop\nHigh-performance, liquid cooled V-engine built for speed and it even supports a supercharger if you need an extra boost.	大型螺旋桨发动机\n为速度打造的高性能液冷V型发动机，如需额外动力还可配备增压器。
+Small Prop\nCompact and lightweight engine, well suited for small aircraft.	小型螺旋桨发动机\n紧凑轻便的发动机，非常适合小型飞机。
+Prop Assembly\nGive it a fast spin and it will pull ya where you want to go.	螺旋桨总成\n让它高速旋转，就会把您带到想去的地方。
+Small Turboprop\nA compact gas turbine that drives the powertrain through a reduction gearbox.	小型涡轮螺旋桨发动机\n通过减速齿轮箱驱动动力总成的紧凑型燃气涡轮。
+Medium Turboprop\nA workhorse gas turbine that holds constant RPM while the propeller does the talking. Bolt four onto a big wing and go haul something.	中型涡轮螺旋桨发动机\n任劳任怨的燃气涡轮，在螺旋桨出力时保持恒定转速；在大机翼上装四台，去拉点重物吧。
+Large Turboprop\nThe biggest turbine we make that still turns a propeller. Enough shaft power to demand contra-rotating props and your full attention.	大型涡轮螺旋桨发动机\n我们制造的仍能驱动螺旋桨的最大涡轮，轴功率足以需要对转螺旋桨，也值得您全神贯注。
+Large Heli Rotor\nA main rotor assembly for a helicopter.  It produces a lot of torque when it generates lift, so make sure to slap a tail rotor on as well.	大型直升机旋翼\n直升机主旋翼总成，产生升力时会带来很大扭矩，务必再装一个尾桨。
+Small Heli Rotor\nA small main rotor assembly for a helicopter.  It produces torque when it generates lift, so make sure to slap a tail rotor on as well.	小型直升机旋翼\n小型直升机主旋翼总成，产生升力时会产生扭矩，务必再装一个尾桨。
+Tail Rotor\nAttempts to counteract torque from a helicopter rotor assembly, and provides yaw control	尾桨\n用于抵消直升机旋翼总成的扭矩，并提供偏航控制。
+VTOL Engine\nThis engine produces thrust which is channelled to VTOL Nozzles for vertical take-off and landing maneuvers.	垂直起降发动机\n该发动机产生的推力被输送至垂直起降喷管，用于垂直起降机动。
+VTOL Nozzle\nPowered by VTOL Engines. Power is evenly spread across all VTOL Nozzles. Carefully place these so that the Center of Thrust is near your airplane's Center of Mass, or you will have a lot of trouble hovering and transitioning to forward flight.	垂直起降喷管\n由垂直起降发动机驱动，动力均匀分配到所有垂直起降喷管；请谨慎布置，使推力中心靠近飞机重心，否则悬停和向平飞转换时会非常麻烦。
+VTOL RCN\nReaction Control Nozzles (RCN) are used to control the aircraft in a hover. The larger VTOL Nozzles provide the main thrust to get off the ground, and these little nozzles help to make sure you don't crash n' burn.	垂直起降反作用喷嘴\n反作用控制喷嘴用于在悬停时控制飞机；较大的垂直起降喷管提供离地的主要推力，这些小喷嘴则帮助您避免坠毁。
+VTOL Inlet\nLarge inlet that can suck in enough air for any jet engine. It works better when placed near the front where the air is less turbulent.	垂直起降进气口\n大型进气口，能为任何喷气发动机吸入足够空气，放在气流较平稳的前部效果更好。
+VTOL Slim Inlet\nInlets help suck air in so jet engines can breathe. Most engines will need at least two of these slim inlets.	垂直起降窄进气口\n进气口帮助吸入空气，让喷气发动机呼吸，多数发动机至少需要两个这种纤细进气口。
+Fuel Tank\nGimme fuel, gimme fire, gimme that which I desire.	油箱\n给我燃油，给我火焰，给我所求之物。
+Exhaust\nA single exhaust pipe. Attach it to any engine and it emits whatever that engine is burning. Place several to build a set of headers or a collector ring — the engine splits its gas between all of them, so eight pipes each puff an eighth rather than eight times the smoke.	排气管\n单根排气管，接到任意发动机上即可排出其燃烧的废气；放置多根可组成排气管组或集气环，发动机会把废气分配到所有排气管，因此八根管子各排八分之一，而非八倍烟雾。
+Tiny Engine\nA small I2 engine, perfect for motorbikes or other small vehicles.	微型发动机\n小型双缸发动机，非常适合摩托车或其他小型载具。
+Economy Engine\nA Swiss Army knife, a daily driver with the perfect balance between efficiency and performance.	经济型发动机\n一把瑞士军刀，效率与性能完美平衡的日常之选。
+Sports Engine\nA roaring V8 sports engine.	运动型发动机\n轰鸣的V8运动发动机。
+Racing Engine\nA high performance racing engine, ready to push you to the craziest top speeds.	竞速型发动机\n高性能赛车发动机，助您冲向最疯狂的极速。
+Semi Truck Engine\nA massive heavy duty V8 engine so you can carry the weight of the biggest cannon you can fit.	半挂卡车发动机\n庞大的重载V8发动机，让您承载所能装下的最大机炮。
+Drive Shaft\nThe backbone of a powertrain. Use these to connect powertrain components like engines, transmissions, and differentials together.	传动轴\n动力总成的支柱，用它连接发动机、变速箱、差速器等动力总成部件。
+Transmission\nManages the engine's power with multiple gears. Adjust its gearing to create a trade-off between quick acceleration and high top speed. Has a built-in clutch.	变速箱\n以多个挡位管理发动机动力，调整齿轮设定可在快速加速与高极速间权衡，内置离合器。
+Gearbox\nTransfers rotational power through the powertrain. Use the gear ratio to trade torque for RPM and tune performance.	齿轮箱\n在动力总成中传递旋转动力，利用齿轮比在扭矩与转速间权衡，调校性能。
+Gearbox Offset\nTransfers rotational power through the powertrain. Use the gear ratio to trade torque for RPM and tune performance.	齿轮箱（偏置）\n在动力总成中传递旋转动力，利用齿轮比在扭矩与转速间权衡，调校性能。
+Gearbox Long\nTransfers rotational power through the powertrain. Use the gear ratio to trade torque for RPM and tune performance.	齿轮箱（加长）\n在动力总成中传递旋转动力，利用齿轮比在扭矩与转速间权衡，调校性能。
+Gearbox Large\nTransfers rotational power through the powertrain. Use the gear ratio to trade torque for RPM and tune performance.	齿轮箱（大型）\n在动力总成中传递旋转动力，利用齿轮比在扭矩与转速间权衡，调校性能。
+Right Angle Gearbox\nNever argue with a gearbox with a 90-degree angle. It's always right.	直角齿轮箱\n永远别和90度转角的齿轮箱争论，它总是对的。
+Transfer Case\nA specialized differential that splits power between the front and rear axles, allowing for dynamic FWD, RWD, and AWD configurations using the VTOL slider.	分动箱\n专用差速器，在前、后车桥间分配动力，可通过垂直起降滑杆实现前驱、后驱和四驱的动态切换。
+Differential\nOne drive shaft as an input and two drive shafts as output. It's like a fork in the road for a drive shaft.	差速器\n一根传动轴作输入、两根作输出，就像传动轴路上的岔口。
+Legacy Car Engine\nResizable Wheels can be linked to this engine for power. You can link a wheel to an engine by opening the Part Properties when a wheel is selected. The wheel must be somewhat close to the engine.	旧版汽车发动机\n可缩放机轮可连接到此发动机获取动力；选中机轮时打开部件属性即可将机轮连到发动机，机轮必须与发动机足够接近。
+Racing Wheel\nHigh performance on asphalt, but try not to touch grass with these.	竞速机轮\n在沥青路面性能卓越，但尽量别让它碰到草地。
+Street Wheel\nOffers a good balance between performance and style.	街用机轮\n在性能与外观间取得良好平衡。
+Offroad Wheel\nAggressive treads designed to chew through mud and climb mountains.	越野机轮\n粗犷胎纹专为碾过泥泞、攀越山岭而设计。
+Double Wishbone\nMakes the wheel bounce up and down, improves traction and handling. Only works with wheels.	双叉臂悬挂\n让机轮上下弹跳，提升抓地力与操控，仅适用于机轮。
+Coilover\nShocks are useful when you want to soften impact with terra firma.	螺旋弹簧减震\n当您想缓冲与地面的撞击时，减震器很有用。
+Wheel Assembly\nMulti-wheel assembly. Pick a style for the wheel layout (single, dual, quad, …), then a tire and rim that gets applied to every wheel in the assembly. Attaches directly to the body for a fixed mount, or to a gear leg to retract.	机轮总成\n多轮总成，先选择机轮布局样式（单轮、双轮、四轮……），再选适用于总成中每个机轮的轮胎和轮辋；可直接固定在机身上，或装在起落架支柱上以便收放。
+Gear Bay\nCuts a wheel well into your fuselage and fits doors that open and close with the landing gear. Gives retractable gear a place to tuck away.	起落架舱\n在机身上切出轮舱，并装上随机轮开合的舱门，为可收放起落架提供收纳空间。
+GA Bent\nA small, springy cantilever strut.	通用弯臂式\n小巧而富有弹性的悬臂式支柱。
+Aero\nA streamlined light-aircraft leg with a faired wheel pant. Low drag for slow, sporty flyers.	航空式\n流线型轻型飞机支柱，带整流轮罩，低阻力，适合慢速运动飞机。
+A-Frame\nA rugged A-frame bush leg on a fat balloon tire. Built for rough fields and backcountry strips.	A 字架\n坚固的A形框架丛林飞机支柱，配宽大的气球胎，为粗糙场地和野外跑道而生。
+A-Frame Bare\nThe A-frame bush leg stripped to a bare frame. Same rough-field grit, a little lighter.	A 字架（裸）\n去掉外壳的A形框架丛林支柱，同样适应粗糙场地，重量略轻。
+Ivan\nA rugged V-frame nose leg with a long piston strut, styled after heavy Eastern-bloc jets.	伊凡式\n坚固的V形框架前支柱，带长活塞减震，风格仿自重型东方阵营喷气机。
+Hollow\nA slightly lighter nose leg with a hollowed strut.	中空式\n略轻的前支柱，减震杆为中空。
+Braced\nA braced V-frame nose gear fitted with a launch bar.	支撑式\n带牵引杆的支撑式V形框架前起落架。
+Forged\nA nose leg with a solid strut.	锻造式\n实心支柱式前支柱。
+Airliner Front\nA tall twin-wheel nose gear for airliners and large jets.	民航前起落架\n为民航客机和大型喷气机设计的高大双轮前起落架。
+Airliner Rear\nA heavy airliner main gear riding a triple-wheel bogie. For the big birds.	民航后主起落架\n配三轮转向架的重型客机主起落架，为大鸟而生。
+Stout\nA short, stout main leg on a four-wheel bogie. Squat and strong for heavy loads.	粗短式\n配四轮转向架的短粗主支柱，低矮坚固，适合重载。
+Heavy\nA heavy-duty main leg on a four-wheel bogie. Built to haul serious weight.	重型\n配四轮转向架的重载主支柱，专为承载重物打造。
+Tripod\nA tripod-braced main leg with a scissor strut. A stable, fighter-style mount.	三脚式\n三脚架支撑、带剪刀臂的主支柱，稳定的战斗机式安装。
+Beefcake\nA beefy main leg with long suspension travel and a fat tire. All muscle on rough landings.	厚重式\n粗壮主支柱，悬挂行程长、轮胎宽大，在粗糙着陆时尽显力量。
+Lever\nA lever-action main leg with long suspension travel for soft, springy touchdowns.	杠杆式\n杠杆式主支柱，悬挂行程长，带来柔软有弹性的接地。
+Trailing Link\nA trailing-link main leg whose linkage soaks up bumps for smooth landings.	拖臂连杆式\n摇臂式主支柱，连杆结构吸收颠簸，着陆平顺。
+Wing\nA compact wing-mounted main leg that folds up thin, perfect for tucking under slim wings.	机翼式\n紧凑的翼装主支柱，收起时纤薄，非常适合收纳在纤细机翼下。
+Arresting Hook\nCatches on arresting cables. Maybe if you use this you can finally manage to land on that carrier, despite your piloting skills?	拦阻钩\n可钩住拦阻索；也许用了它，凭您的飞行技术也终于能降上航母？
+Catapult Connector\nTells an aircraft catapult where to connect to your plane, defines catapult acceleration and target launch speed. Not strictly required for catapult connection.	弹射器连接器\n告诉飞机弹射器应连接飞机的哪个位置，并定义弹射加速度和目标离舰速度，并非连接弹射器所必需。
+Legacy Resizable Wheel\nWheels that can be reshaped and resized to whatever suits your fancy. They can also be powered by linking them to a Car Engine via the Part Properties panel.	旧版可调尺寸机轮\n可按喜好重塑、缩放的机轮，也可通过部件属性面板连接到汽车发动机来驱动。
+Hawk Eye\nYour eyes in the sky when precision matters. This targeting pod not only directs your laser-guided love letters with pinpoint accuracy but also comes equipped with a high-zoom camera, allowing you to watch your handiwork unfold from a safe distance. Essential for those who like to keep an eye on the prize.	鹰眼\n精确打击时的天眼。此瞄准吊舱不仅能以毫厘不差的精度引导您的激光制导“情书”，还配备高倍变焦相机，让您在安全距离外欣赏战果；对喜欢紧盯目标的人来说不可或缺。
+Hawk Eye Lite\nJust like the Hawk Eye, but a smaller, lighter variant with a little less range.	轻型鹰眼\n与鹰眼类似，但更小、更轻，射程略短。
+IR Missile\nA simple yet effective Infrared seeking missile with a wide FoV for short range fights.	红外导弹\n简单有效的红外寻的导弹，视场宽广，适合近距格斗。
+SAR Missile\nA fast mid-range Semi-Active Radar missile, don't let anyone run away from you.	半主动雷达导弹\n快速的中程半主动雷达导弹，别让任何人从您手中逃脱。
+AR Missile\nA very agile mid-range Active Radar missile, perfect to make your enemies panic while all their alarms go off.	主动雷达导弹\n非常敏捷的中程主动雷达导弹，在敌人警报大作时让他们陷入恐慌。
+Laser Missile\nA fat laser guided missile to bring the annoyance of trolling with a laser pointer to a whole new level, remember to bring a targeting pod.	激光导弹\n粗壮的激光制导导弹，把激光笔骚扰的烦恼提升到全新境界，记得带上瞄准吊舱。
+ARD Missile\nA mid-range Air to Ground Anti-Radiation missile with mounted wings, to smack targets in style.	反辐射导弹\n中程空对地反辐射导弹，带有机翼，潇洒地打击目标。
+Jet Missile\nA massive air breathing missile with extremely long range. Why? You may ask. Why not.	喷气导弹\n超大的吸气式导弹，射程极远。您或许会问为什么？为什么不呢。
+Unguided Missile\nA dumb missile that flies as straight as it can, kinda like a rocket.	无制导导弹\n无制导导弹，尽量笔直飞行，有点像火箭。
+Procedural Missile\nThe ultimate in customizable ordnance. This modular missile body is the foundation for your own unique creation. Build anything from a nimble dogfighting missile to a long-range cruise missile.	程序化导弹\n可定制弹药的极致之选。这个模块化弹体是打造独特作品的基础，从敏捷的格斗导弹到远程巡航导弹皆可建造。
+Missile Fins\nFins that can go on missiles for function, for fun, or for both.	导弹尾翼\n可装在导弹上的尾翼，为实用、为好玩，或两者兼顾。
+Missile Details\nCosmetic details that don't affect the physics of the missile, but can make it look more neato.	导弹细节件\n不影响导弹物理的装饰细节，但能让它看起来更带劲。
+Fin Details\nCosmetic details that don't affect the physics of fins, but can make it look more neato.	尾翼细节件\n不影响尾翼物理的装饰细节，但能让它看起来更带劲。
+Missile Wings\nWings specially designed for missiles to give them a little extra lift. Goes together with missile jet engines like lamb and tunafish.	导弹弹翼\n专为导弹设计的机翼，可提供一点额外升力，与导弹喷气发动机搭配堪称天作之合。
+Missile Jet Inlet\nInlets specially designed for missiles with jet engines.	导弹进气口\n专为喷气式导弹设计的进气口。
+Torpedo\nSelf-propelled weapon with an explosive warhead. Drop it into the water and it will go boom if it touches anything.	鱼雷\n带爆炸性弹头的自推进武器，投入水中后碰到任何东西都会爆炸。
+Tank Cannon\nA customisable tank cannon with mighty shells.	坦克炮\n可定制的坦克炮，配威力强大的炮弹。
+Auto Cannon\nAn explosive round autocannon to tear apart anything that decides to step in front of you.	自动机炮\n发射爆破弹的自动炮，撕碎任何胆敢挡在您面前的东西。
+Pirate Cannon\nYARR! Behold this mighty boom‑barrel! It can't hit a lazy kraken, but by the Brown Pearl, if it clips ye, ye'll be floppin' like a drunken gull!	海盗炮\n呀哈！瞧瞧这门威力十足的 boom 炮！它打不中懒散的海怪，但以棕珍珠之名，要是被它蹭到，您会像醉海鸥一样扑腾！
+Minigun\nThe minigun has a higher rate of fire, but it must shut off briefly every three seconds so the barrels don't overheat.	加特林机炮\n加特林机枪射速更高，但每三秒必须短暂停转，以免枪管过热。
+Wing Gun\nA respectable cannon with a slim design that fits nicely inside of wings.	机翼机炮\n外形纤细、能巧妙装入机翼的可靠机炮。
+Legacy Rocket\nA single 2.75-inch rocket, can be very effective against ground targets, as long as the pilot has the skills.	旧版火箭\n单枚2.75英寸火箭，只要飞行员技术过硬，对地目标非常有效。
+Rocket Pod\nHolds seven 2.75-inch rockets and can be very effective against ground targets, as long as the pilot has the skills.	火箭巢\n可容纳七枚2.75英寸火箭，只要飞行员技术过硬，对地目标非常有效。
+Pylon\nStandard hardpoint for attaching weapons and fuel tanks under wings. Includes a built-in detacher for when it's time to release the payload.	挂架\n用于在机翼下挂载武器和油箱的标准挂点，内置分离器，到了投放载荷时即可分离。
+Long Pylon\nLonger version of a pylon. Nothing special about it.	加长挂架\n加长版挂架，没什么特别的。
+Flares\nDispenses chaff or flares when triggered, for helping evade missiles and break locks.	红外干扰弹\n触发时布撒箔条或红外干扰弹，帮助规避导弹、摆脱锁定。
+Chaffs\nDispenses chaff or flares when triggered, for helping evade missiles and break locks.	箔条\n触发时布撒箔条或红外干扰弹，帮助规避导弹、摆脱锁定。
+Basic Seat\nA simple seat for a cockpit or interior.	基础座椅\n用于驾驶舱或内饰的简易座椅。
+Modern Seat\nA chunkier seat destined for something sportier.	现代座椅\n更厚实的座椅，适合更运动的载具。
+Car Seat\nA sporty seat designed for cars. Features adjustable reclination for those moments when you just need to kick back.	汽车座椅\n为汽车设计的运动座椅，靠背倾角可调，需要放松时可向后放倒。
+MFD\nMultifunction display unit for easy system control from the cockpit and adding that extra high-tech look.	多功能显示器\n多功能显示单元，便于从驾驶舱控制系统，并增添高科技观感。
+Gauge\nAn instrument panel gauge used to display a piece of information (such as altitude or airspeed).	仪表\n用于显示某项信息（如高度或空速）的仪表盘仪表。
+Attitude Indicator\nAn instrument panel indicator that shows your pitch and roll on a ball-shaped device. Is bigger on the inside than the outside, warranty void if opened.	姿态指示器\n在球形装置上显示俯仰和滚转的仪表盘指示器，内部比外部更大，拆开即失去保修。
+Label\nLabel part, to add text or numbers. Supports inputs.	标签\n标签部件，用于添加文字或数字，支持输入。
+Joystick Base\nA part that forms the base of a joystick, or any other control. Any parts that are on the physics body that is connected to the top of this become part of the control and can be grabbed in VR.	摇杆底座\n构成摇杆或其他操纵装置底座的部件；连接到其顶部物理体上的任何部件都会成为操纵装置的一部分，并可在VR中抓握。
+Basic Joystick\nA simpler-looking grip object with a hand pose, and a trigger that you can rebind.	基础摇杆\n外观更简洁的握把，带手部姿势和可重新绑定的扳机。
+Modern Joystick\nA modern-looking grip object with a hand pose, and a trigger that you can rebind.	现代摇杆\n外观现代的握把，带手部姿势和可重新绑定的扳机。
+Yoke\nA two-handed control for pitch and roll, common in light/medium aircraft.	驾驶盘\n用于俯仰和滚转的双手操纵装置，常见于轻型、中型飞机。
+Steering Wheel GT\nA modern, GT-style steering wheel for high-performance cars. Functionally identical to the standard steering wheel, but with a sportier look.	方向盘 GT\n现代GT风格方向盘，用于高性能汽车，功能与标准方向盘相同，外观更运动。
+Steering Wheel\nA classic steering wheel for ground vehicles. Connect its input to 'Roll' for conventional steering.	方向盘\n用于地面载具的经典方向盘，将其输入连接到“滚转”即可实现常规转向。
+Cylinder Grip\nA simple grippable cylinder object with symmetric hand poses.	圆柱握把\n可抓握的简易圆柱，手部姿势对称。
+Gas Pedal\nCar throttle pedal with a wall-mount base.	油门踏板\n带壁挂底座的汽车油门踏板。
+Brake Pedal\nCar brake pedal with a wall-mount base.	刹车踏板\n带壁挂底座的汽车刹车踏板。
+Clutch Pedal\nCar clutch pedal with a wall-mount base.	离合器踏板\n带壁挂底座的汽车离合踏板。
+Floor Mounted Pedal\nCar pedal with a floor-mount base.	落地式踏板\n带地板底座的汽车踏板。
+Fighter Throttle\nAn ergonomic fighter-jet-style throttle control.	战斗机油门\n符合人体工学的战斗机风格油门操纵装置。
+Push Throttle\nA simple general aviation-style throttle that can be mounted directly to the instrument panel.	推拉油门\n可直接装在仪表盘上的简易通用航空风格油门。
+Basic Lever\nA simple lever that can be bound to any control.	基础操纵杆\n可绑定到任意操纵装置的简易手柄。
+Vintage Lever\nA simple lever that can be bound to any control.	复古操纵杆\n可绑定到任意操纵装置的简易手柄。
+Handy Lever\nA simple lever that can be bound to any control.	便操纵杆\n可绑定到任意操纵装置的简易手柄。
+Ergonomic Lever\nA simple lever that can be bound to any control.	人体工学操纵杆\n可绑定到任意操纵装置的简易手柄。
+Switch\nAn interactable switch that performs some action when toggled.	开关\n可交互的开关，拨动时执行某项操作。
+Button\nAn interactable button that performs some action when used.	按钮\n可交互的按钮，使用时执行某项操作。
+Flight Computer\nA part that can act as the main cockpit of a craft without taking up a lot of space or having a cockpit camera view.	飞行计算机\n可作为载具主驾驶舱而不占太多空间、也没有驾驶舱相机视角的部件。
+Canopy\nIt's a canopy for your own cockpit.	座舱盖\n这是您自建驾驶舱的座舱盖。
+Blocked Canopy\nIt's a canopy for your own cockpit.	封闭座舱盖\n这是您自建驾驶舱的座舱盖。
+Modern Frame\nIt's a clean slate to create your own cockpit.  This version has side rails to attach parts, and comfortable foot-holes to rest your feet.	现代框架\n打造专属驾驶舱的干净底板，此版本带可安装部件的侧栏，以及舒适的脚窝。
+Basic Frame\nIt's a clean slate to create your own cockpit.	基础框架\n打造专属驾驶舱的干净底板。
+Legacy Sleek Cockpit\nJust a cockpit that is a bit sleeker.	旧版流线驾驶舱\n就是更流线型的驾驶舱。
+Legacy Cockpit Angled Corner\nAn angled corner piece for cockpit blocks.	旧版驾驶舱斜角\n驾驶舱方块用的斜角转角件。
+Legacy Cockpit Corner\nCorner piece for the cockpit blocks.	旧版驾驶舱转角\n驾驶舱方块用的转角件。
+Legacy Cockpit Block\nModular cockpit piece for when the other cockpits just don't fit the bill.	旧版驾驶舱块\n当其他驾驶舱都不合用时的模块化驾驶舱部件。
+Legacy Cockpit\nEvery plane needs at least one of these. Don't worry, it is indestructible, so your pilot will always be safe.	旧版驾驶舱\n每架飞机至少需要一个。别担心，它坚不可摧，飞行员永远安全。
+Legacy Historic Cockpit\nCockpit for those designers going for the historic look.	旧版古典驾驶舱\n为追求复古外观的设计者准备的驾驶舱。
+Decal\nA part for projecting a decal/sticker onto your aircraft.	贴花\n用于将贴花或贴纸投射到飞机上的部件。
+Text Decal\nA part for projecting a text-based decal onto your aircraft.	文字贴花\n用于将文字贴花投射到飞机上的部件。
+Beacon Light\nSimple light that you can color however you like and they can also flash.	信标灯\n可随意上色、还能闪烁的简易灯。
+Formation Light\nSimple light that you can color however you like and they can also flash.	编队灯\n可随意上色、还能闪烁的简易灯。
+Hinge Rotator\nRotate parts around a hinge.	铰链旋转器\n让部件绕铰链旋转。
+Small Rotator\nSlimmer version of the rotator.	小型旋转器\n旋转器的更纤细版本。
+Rotator\nSpecial little block that can rotate stuff that's attached to it. It's really neat.	旋转器\n能旋转所连部件的专用小方块，非常精巧。
+Piston\nPush parts away from each other with a customizable hydraulic piston.	活塞\n用可定制液压活塞将部件相互推开。
+Winch\nRotating drum that extends and retracts a durable cable. Works great with a magnet attached to the end of its cable.	绞盘\n可旋转的卷筒，收放耐用钢索，在钢索末端装上磁铁效果极佳。
+Magnet\nTurn it on with an activation group and this powerful electromagnet will stick to anything that has even the slightest hint of metal inside of it.	磁铁\n用激活组开启后，这个强力电磁铁会吸住任何含一丁点金属的东西。
+Refuel Drogue\nA part that can be towed by a large aircraft on a winch in order to give fuel to other aircraft.	加油锥套\n可由大型飞机用绞盘拖曳、为其他飞机加油的部件。
+Refuel Probe\nA part for taking fuel from a fuel tanker. Any part can take fuel from a refuel drogue, but this part will tell the drogue where the probe is, so the assist mode will work.	受油管\n用于从加油机获取燃油的部件；任何部件都能从加油锥套取油，但此部件会告诉锥套受油探杆的位置，从而启用辅助模式。
+Detacher\nUse these to drop missiles, a mini aircraft, or create an ejection seat for last-second bailouts. Select a detacher and click the part options icon to change which group it is assigned to.	分离器\n用它投放导弹、小型飞机，或制作弹射座椅以在最后关头逃生；选中分离器并点击部件选项图标，可更改其所属激活组。
+Gyroscope\nA control moment gyro that is capable of providing powerful torques to keep your design upright.	陀螺仪\n控制力矩陀螺，能提供强大扭矩，让您的设计保持直立。
+Parachute\nThese are great when you want to rapidly slow things down.	降落伞\n当您想快速减速时，它们非常好用。
+Air Brake\nSometimes slowing down can be tough, but these can really help with that.	减速板\n有时减速并不容易，但它们确实能帮上忙。
+Camera\nSpecial camera that can give you a different view from your plane. Check the Part Properties for several features.	相机\n可为您提供飞机不同视角的专用相机，在部件属性中可查看多项功能。
+Orbit Camera\nThis is a magical 'camera' that gives you the ability to orbit the camera around different parts of your plane. Don't worry about its ugly appearance, it will disappear when you start flying.	环绕相机\n一个神奇的“相机”，让您能围绕飞机的不同部件环绕观察；别在意它丑陋的外表，开始飞行后它就会消失。
+Legacy Floating Block\nThese blocks float! Place them strategically around your aircraft to build floats, or in certain places of the hull to make a full-on boat plane.  They take some number-crunching to make work, so don't use more than you need or will slow the game down.	旧版悬浮块\n这些方块能浮起来！将它们布置在飞机周围制作浮筒，或放在船体特定位置打造完整的水上飞机；它们需要一定算力才能工作，因此别用得过多，否则会拖慢游戏。

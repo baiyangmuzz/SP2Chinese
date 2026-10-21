@@ -1,0 +1,26 @@
+  *If you have a dedicated graphics card, Windows may be running this game on integrated graphics by mistake. You can force 'High Performance' in Windows Display Graphics Settings.\n	  *如果你有独立显卡，Windows 可能误将本游戏设为使用核芯显卡运行。你可以在 Windows 显示图形设置中强制选择“高性能”。\n
+\nUpdating your drivers may help resolve this issue. \n\n	\n更新显卡驱动可能有助于解决该问题。\n\n
+- Memory: {0}MB RAM detected. 8GB RAM is required.\n	- 内存：检测到 {0}MB 内存，需要 8GB 内存。\n
+It looks like the game crashed during your last session, and outdated graphics drivers might be the cause.\nYour detected graphics card:\n	看起来游戏在上次运行时崩溃了，过期的显卡驱动可能是原因。\n检测到的显卡：\n
+Your computer appears to be below the minimum system requirements for this game:\n	你的电脑似乎未达到本游戏的最低系统需求：\n
+Your craft file has been backed up here:\n	你的机体文件已备份到此处：\n
+Error obtaining or loading plane file from Steam:{0}\n{1}	从 Steam 获取或载入机体文件时出错：{0}\n{1}
+Error reading/validating downloaded plane file: {0}\n{1}	读取/校验已下载的机体文件时出错：{0}\n{1}
+Server returned invalid response:\n{0}\n\nException:\n{1}	服务器返回了无效响应：\n{0}\n\n异常：\n{1}
+Request failed for craft details: \n	获取机体详情失败：\n
+Could not initialize Steam Lobby Manager.\n\nEnsure you are logged into Steam and try restarting the game.	无法初始化 Steam 大厅管理器。\n\n请确认已登录 Steam，然后尝试重启游戏。
+Could not initialize Steam Multiplayer.\nEnsure you are logged into Steam and try restarting the game.	无法初始化 Steam 多人功能。\n请确认已登录 Steam，然后尝试重启游戏。
+ from XML. \nIf unexpected input issues occur, the loaded XML data may be outdated or invalid. Delete the ControlInputData.xml file in your game's app data folder.	来自 XML。\n如果出现异常的输入问题，已加载的 XML 数据可能已过期或无效。请删除游戏应用数据文件夹中的 ControlInputData.xml 文件。
+ user data from XML. \nIf unexpected input issues occur, the loaded XML data may be outdated or invalid. Delete the ControlInputData.xml file in your game's app data folder.	的用户数据来自 XML。\n如果出现异常的输入问题，已加载的 XML 数据可能已过期或无效。请删除游戏应用数据文件夹中的 ControlInputData.xml 文件。
+) data from XML. \nIf unexpected input issues occur, the loaded XML data may be outdated or invalid. Delete the ControlInputData.xml file in your game's app data folder.	）的数据来自 XML。\n如果出现异常的输入问题，已加载的 XML 数据可能已过期或无效。请删除游戏应用数据文件夹中的 ControlInputData.xml 文件。
+ InputBehavior data from XML. \nIf unexpected input issues occur, the loaded XML data may be outdated or invalid. Delete the ControlInputData.xml file in your game's app data folder.	InputBehavior 数据来自 XML。\n如果出现异常的输入问题，已加载的 XML 数据可能已过期或无效。请删除游戏应用数据文件夹中的 ControlInputData.xml 文件。
+Game Version: {0}\n	游戏版本：{0}\n
+Version: {0} \n	版本：{0}\n
+Version: {0}\n\n	版本：{0}\n\n
+Last Updated: {0} \n	最后更新：{0}\n
+{0}\nTags: {1}{2}\nLast Modified: {3:G}	{0}\n标签：{1}{2}\n最后修改：{3:G}
+\nFile: 	\n文件：
+Variables Error:\n	变量错误：\n
+Total Road Length: {0:n1}km. Average Length: {1:n2}km. Median Length: {2:n2}km\n	道路总长：{0:n1}km。平均长度：{1:n2}km。中位长度：{2:n2}km
+'{0}' Road Length: {1:n1}km\n	“{0}”的道路长度：{1:n1}km\n
+Total Drag Comparison\n	总阻力对比

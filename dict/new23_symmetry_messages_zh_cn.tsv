@@ -1,0 +1,13 @@
+Mirroring enabled for part {*}	已为部件 {*} 开启镜像
+Symmetry enabled for part {*}	已为部件 {*} 开启对称
+Symmetry enabled for part {*} and automatically linked to {*} other parts	已为部件 {*} 开启对称，并自动链接到另外 {*} 个部件
+Symmetry enabled for part {*} and {*} other sets of parts	已为部件 {*} 开启对称，涉及另外 {*} 组部件
+Symmetry enabled for part {*} and automatically created {*} symmetric parts	已为部件 {*} 开启对称，并自动创建了 {*} 个对称部件
+Symmetry enabled for part {*} and {*} sets of symmetric parts were created	已为部件 {*} 开启对称，创建了 {*} 组对称部件
+Mirroring enabled for part {*} and {*} other parts.	已为部件 {*} 及另外 {*} 个部件开启镜像。
+Symmetry enabled for part {*} and {*} other parts.	已为部件 {*} 及另外 {*} 个部件开启对称。
+Mirroring enabled for part {*} and {*} other parts.\nAutomatically linked {*} existing sets of mirrored parts.	已为部件 {*} 及另外 {*} 个部件开启镜像。\n自动链接了 {*} 组已有的镜像部件。
+Symmetry enabled for part {*} and {*} other parts.\nAutomatically linked {*} existing sets of symmetric parts.	已为部件 {*} 及另外 {*} 个部件开启对称。\n自动链接了 {*} 组已有的对称部件。
+Mirroring enabled for part {*} and {*} other parts.\nAutomatically created {*} mirrored parts.	已为部件 {*} 及另外 {*} 个部件开启镜像。\n自动创建了 {*} 个镜像部件。
+Symmetry enabled for part {*} and {*} other parts.\nAutomatically created {*} symmetric parts.	已为部件 {*} 及另外 {*} 个部件开启对称。\n自动创建了 {*} 个对称部件。
+Symmetry disabled for part {*} and {*} other parts	已为部件 {*} 及另外 {*} 个部件关闭对称

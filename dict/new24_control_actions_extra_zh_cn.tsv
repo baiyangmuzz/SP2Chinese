@@ -1,0 +1,37 @@
+Toggle Part Outline Visibility	切换部件轮廓可见性
+Clear Concealed Parts List	清空隐藏部件列表
+Manipulate Part Next Mode	下一个部件操作模式
+Manipulate Part Previous Mode	上一个部件操作模式
+Select and Focus Part	选中并聚焦部件
+Toggle Search Parts Panel	切换搜索部件面板
+WeldParts	焊接部件
+Slew Targeting Pod Left / Right	瞄准吊舱左/右转
+Slew Targeting Pod Up / Down	瞄准吊舱上/下转
+Zoom In / Out	放大 / 缩小
+Move Forward / Backward	前进 / 后退
+Look Left/Right	左右看
+Look Up/Down	上下看
+Toggle New Part Initial Symmetry	切换新部件初始对称
+Toggle Part Symmetry (Single Part)	切换部件对称（单个部件）
+Toggle Part Symmetry (Mutiple Parts)	切换部件对称（多个部件）
+Rotate Left/Right	左右旋转
+Rotate Up/Down	上下旋转
+Translate Left/Right	左右移位
+Translate Up/Down	上下移位
+Translate In/Out	内外移位
+Developer Console	开发者控制台
+Load Aircraft From ClipBoard URL	从剪贴板 URL 载入载具
+Control Settings	控制设置
+Invert Pitch:	反转俯仰：
+Pitch Axis	俯仰轴
+Reposition / Upright Craft	扶正/正位载具
+Unlinked Symmetry (Single Part)	未链接对称（单个部件）
+Unlinked Symmetry (Mutiple Parts)	未链接对称（多个部件）
+Standard Gamepad Support	标准手柄支持
+Use Direct Input  (Windows Only)	使用 Direct Input（仅 Windows）
+Undo	撤销
+Redo	重做
+Single / Connected Part Modifier Key\n(Select / Clone / Transform / Symmetry)	单个/相连部件修饰键\n（选择/克隆/变换/对称）
+Jump	跳跃
+Crouch	蹲下
+Single / Connected Part Modifier Key (Select / Clone / Transform / Symmetry)	单个/相连部件修饰键（选择/克隆/变换/对称）

@@ -1,0 +1,211 @@
+Environment Settings	环境设置
+Show/hide the environment settings	显示/隐藏环境设置
+Random Weather	随机天气
+Wave Height	浪高
+Cloud Range	云层高度
+Thermals	热气流
+Turbulence	湍流
+Ridge Lift	山脊升力
+Wind	风
+Altitude of the cloud base and top	云底与云顶高度
+Gusts and bumps that scale with wind speed	随风速增强的阵风与颠簸
+Let the weather set the wind speed again	改由天气控制风速
+Let the weather set the wind heading again	改由天气控制风向
+Let the weather set the wave height again	改由天气控制浪高
+Let the weather drift on its own over time	让天气随时间自行演变
+These settings are controlled by the host.	这些设置由主机控制。
+Overall conditions, from clear skies to storms	整体天气状况，从晴空到暴风雨
+Wind speed. Follows the weather unless set here.	风速。除非在此指定，否则跟随天气。
+Direction the wind blows from. Follows the weather unless set here.	风的来向。除非在此指定，否则跟随天气。
+Height of the waves. Follows the weather unless set here.	浪高。除非在此指定，否则跟随天气。
+Real minutes per full day. Forever freezes the time of day.	每个完整昼夜对应的现实分钟数。-1 表示永远冻结当前时刻。
+Current time of day	当前时刻
+Air rises where wind blows up a slope and sinks on the far side	风吹上坡处空气上升，背风侧则下沉
+Columns of rising air, strongest in clear weather and light wind	上升空气柱，晴天微风时最强
+Maximum number of cars on the roads	道路上的最大车辆数
+Set the angle increment (in degrees) for rotation snapping.	设置旋转吸附的角度增量（单位为度）。
+Open the game settings	打开游戏设置
+Depth of Field	景深
+Focal Size	焦距尺寸
+Aperture	光圈
+Add Screenshot	添加截图
+Delete Screenshot	删除截图
+Move Screenshot Up	上移截图
+Move Screenshot Down	下移截图
+Select tags used to filter the list of craft	选择用于筛选载具列表的标签
+Select the tags which best define this craft	选择最能描述该载具的标签
+No tags selected	未选择标签
+Load Here	在此载入
+Load at Spawn	在出生点载入
+Load the craft selected above at the spawn location	在出生点载入上方选中的载具
+Load the craft selected above at your current location	在当前位置载入上方选中的载具
+Reposition at Spawn	在出生点重新定位
+Repositions your craft at your starting position without reloading it.	把载具重新放回起点，无需重新载入。
+Spawn AI Craft	生成 AI 载具
+Landing Difficulty: Hard	着陆难度：困难
+Wishlist SimplePlanes 2 on Steam!	在 Steam 上把 SimplePlanes 2 加入愿望单！
+Check out our Discord server!	来看看我们的 Discord 服务器！
+When toggled, apply changes to the mirrored part as well (if there is one)	开启后，改动会同时应用到镜像部件（若存在）。
+Choose the coordinate space for movement: local (part's orientation) or world.	选择移动所用的坐标系：局部（部件朝向）或世界。
+Choose the coordinate space for rotation: local (part's orientation) or world.	选择旋转所用的坐标系：局部（部件朝向）或世界。
+Disabled while under AI control.	AI 控制时禁用。
+This craft file was hand edited by its author to make use of features that are not directly supported in the game. Many advanced players use XML-modding to work around limitations in the game to enable really cool functionality that would otherwise not be possible. It is perfectly safe to pilot, but modifying this craft yourself may reset their special properties or cause unexpected behavior.	这架载具被作者手工编辑过，使用了游戏本身并不直接支持的功能。许多进阶玩家会用 XML 改造来绕过游戏的限制，实现原本做不到的有趣功能。驾驶它完全安全，但你自己改动这架载具可能会重置它的特殊属性，或导致意外行为。\n\n
+2D Thrust Vectoring	二维推力矢量
+AoA Limiter	迎角限制器
+Alt Hold	高度保持
+Attitude Hold	姿态保持
+Attitude hold	姿态保持
+Anti-Lock Brakes	防抱死刹车
+Anti lock brakes	防抱死刹车
+Bank angle	倾斜角
+Controls Limiter	操纵限制器
+Changes Limiter Profile	切换限制器配置
+Disables Control Limits	禁用操纵限制
+Disables Limits	禁用量限制
+Cruise mode	巡航模式
+Cutting Type	切割方式
+DRS Manual Open	DRS 手动开启
+Fine/reduced Control	精细/减量操纵
+Flap Controls	襟翼操纵
+Flap Lever	襟翼手柄
+Flap lever	襟翼手柄
+Flap Handle	襟翼手柄
+Gear Lever	起落架手柄
+Gear lever	起落架手柄
+Landing Gear Lever	起落架手柄
+Gear position indicator	起落架位置指示器
+Hook control	尾钩控制
+Lock Slats	锁定缝翼
+Lower Hook	放下尾钩
+Lower/Raise Hook	放下/收起尾钩
+Main Power (INOP)	主电源（失效）
+Manual Mode	手动模式
+Master Arm	总军械开关
+Master Power	总电源
+Nitro Boost	氮气加速
+Pit Limiter	维修区限速
+Prop Rpm	螺旋桨转速
+Propeller Pitch	螺旋桨桨距
+Reverse Blade Pitch	反转桨距
+Rotor Brake	旋翼刹车
+Rotor brake	旋翼刹车
+Stabilizing Gyro	增稳陀螺
+Start/Stop Engine	启动/停止发动机
+Steer assist	转向辅助
+Steering Assist	转向辅助
+Storage Switch	收纳开关
+Switch Targeting Mode	切换瞄准模式
+Tail hook	尾钩
+Tail hook lever	尾钩手柄
+Tail Wheel	尾轮
+Target Tracker	目标跟踪器
+Taxi Mode Toggle	滑行模式开关
+Throttle #1	油门 #1
+Throttle #2	油门 #2
+Thrust Control Lever	推力控制杆
+Tilt Forward/Back	前倾/后仰
+Toggle Gunner's HMD	切换炮手头盔显示器
+Traction Control	牵引力控制
+Traction control	牵引力控制
+Trim Reset	重置配平
+Reset Trim	重置配平
+Turn Signal	转向灯
+Turns off engines	关闭发动机
+Turns on lights	开启灯光
+Water Spawn	水上出生点
+Winch Magnet	绞盘磁铁
+Window Roll Down	摇下车窗
+Wing Lights	机翼灯
+Wing Position Lever	机翼位置手柄
+Wing fold	机翼折叠
+Yaw-To-Target Mode	偏航指向目标模式
+More elevator authority	增大升降舵权限
+More clearance!	提高离地间隙！
+Emergency Stop	紧急停止
+Emergency Jettison	紧急抛弃
+Emergency Jettison Button	紧急抛弃按钮
+Emergency Escape Hatch	紧急逃生舱门
+Deploy Air Brakes	展开减速板
+Deploys The Engines	展开发动机
+Disarm	解除武装
+Engine On/Off	发动机开/关
+Engine Switch	发动机开关
+Engine on	发动机开启
+Engine on/off (condition)	发动机开/关（条件）
+Engine on/off button	发动机开/关按钮
+Ignition	点火
+Jettison	抛弃
+Airbrakes	减速板
+Speedbrake	减速板
+Speedbrakes	减速板
+AutoHover	自动悬停
+Autohover	自动悬停
+Brakes	刹车
+Handbrake	手刹
+Gearshift	换挡
+Shifter	换挡杆
+Collective	总距
+Cyclic	周期变距杆
+PitchDamper	俯仰阻尼器
+Lights	灯光
+Headlight	前灯
+Headlights	前灯
+Main headlights	主前灯
+Beacon	信标灯
+Foglights	雾灯
+Caution light	警告灯
+Collision Light	防撞灯
+Formation lights	编队灯
+Formation/Ident Lights	编队/识别灯
+Green Ident Light	绿色识别灯
+Red Ident Light	红色识别灯
+Yellow Ident Light	黄色识别灯
+Hazard Lights	危险警示灯
+Landing Lights	着陆灯
+Nav Light	航行灯
+Nav Lights	航行灯
+Navigation Lights	航行灯
+Nose Light	机鼻灯
+Exterior Lights	外部灯光
+External Lights	外部灯光
+Morse-Code/Nav Light	摩尔斯码/航行灯
+Canopy Open	座舱盖开启
+Canopy Open/Close	座舱盖开/关
+Canopy Switch	座舱盖开关
+Canopy Slide	座舱盖滑轨
+Canopy opener	座舱盖开启器
+Open Canopy	打开座舱盖
+Open/Close Canopy	开/关座舱盖
+Open/Close Cockpit	开/关驾驶舱
+Open/Close WIndow	开/关车窗
+Open door	打开舱门
+Open/close door	开/关舱门
+Opens Canopy	开启座舱盖
+Opens canopy	开启座舱盖
+Close and Lock Canopy	关闭并锁定座舱盖
+Cockpit Door	驾驶舱门
+Cockpit Doors	驾驶舱门
+Crew Door	乘员舱门
+Cabin Main Door	客舱主舱门
+Cargo Ramp	货舱坡道
+Door Handle	舱门把手
+Door Gun	舱门机枪
+Arm Door Turret	武装舱门炮塔
+Arm Rear Gun	武装尾炮
+Front Doors	前门
+Rear Doors	后门
+Left Side Doors	左侧车门
+Right Side Doors	右侧车门
+Driver Side Door	驾驶侧车门
+Passenger Side Door	副驾侧车门
+Hood Latch	引擎盖锁扣
+Fuel Probe	受油探管
+Refueling Probe	受油探管
+Drag Chute	减速伞
+Drogue Chute	阻力伞
+Drop Tanks	副油箱
+Next Weapons	下一组武器
+Prev Weapons	上一组武器
+Prev Target	上一个目标
+Previous Target	上一个目标
+Previous Weapon	上一件武器

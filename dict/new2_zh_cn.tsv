@@ -1,0 +1,56 @@
+Blueprint failed to load:\n	蓝图加载失败：\n
+Error saving blueprints:\n	保存蓝图时出错：\n
+Could not generate part XML. Do you have duplicate part properties?\nCheck log for error details.	无法生成部件 XML。是否存在重复的部件属性？\n查看日志了解详细错误信息。
+\nAutomatically created {0} {1} parts.	\n已自动创建 {0} 个{1}部件。
+\nAutomatically linked {0} existing sets of {1} parts.	\n已自动关联 {0} 组现有的{1}部件。
+.\nDeleted {0} symmetric parts.	。\n已删除 {0} 个对称部件。
+.\nDeleted symmetric part 	。\n已删除对称部件
+A symmetric target part could not be found.\nSymmetry has been disabled for part '{0} (ID: {1})'	未找到对称的目标部件。\n已为部件“{0}（ID：{1}）”关闭对称功能
+The root part of the craft has been moved.\nThe mirror plane for all symmetric parts has been updated.	机体根部件已移动。\n所有对称部件的镜像平面已更新。
+You are moving the root part of the craft.\nThis will change the position of the mirror plane for all symmetric parts.	你正在移动机体的根部件。\n这会改变所有对称部件的镜像平面位置。
+The target part does not have a mirrored symmetric part.\nUnable to mirror and attach the selected parts.	目标部件没有对应的镜像对称部件。\n无法镜像并连接所选部件。
+The target part does not lie on the mirror plane. Unable to mirror the selected parts.\nThe target fuselage has a non-zero amount of 'Run', shifting its position off the mirror plane\nand making it asymmetrical.	目标部件不在镜像平面上，无法镜像所选部件。\n目标机身的“Run”值不为零，使其位置偏离镜像平面\n并导致不对称。
+The target fuselage lies on the mirror plane but,\nthe fuselage has a non-zero amount of 'Run', making it asymmetrical.	目标机身位于镜像平面上，但\n该机身的“Run”值不为零，导致其不对称。
+The airplane uses one or more 'mods'.\nContact the airplane designer to find out more.	该机体使用了一个或多个“模组”。\n请联系机体设计者了解详情。
+There are two possible reasons for this:\n1) You need to update to the newest version of SimplePlanes (check your app store)\n2) The airplane uses a 'mod' and you'll need to contact the airplane designer to find out more.	可能有两个原因：\n1）你需要把 SimplePlanes 更新到最新版本（请查看你的应用商店）\n2）该机体使用了“模组”，需要联系机体设计者了解详情。
+This airplane requires missing part(s):\n	该机体缺少以下部件：\n
+This is the airplane designer and this is where you will build your masterpiece.\n\nClick 'Start' and let's build an airplane together!	这就是机体设计器，你将在此打造自己的杰作。\n\n点击“开始”，让我们一起造一架飞机吧！
+This will convert the selected fuselage to the new fuselage part.\n\nThe conversion is experimental! Please inspect the result and use Undo if needed.\n\nDo you want to continue?	这会把所选机身转换为新的机身部件。\n\n该转换仍处于实验阶段！请检查结果，如有需要请使用“撤销”。\n\n是否继续？
+The fuselage could not be upgraded:\n\n	机身无法升级：\n\n
+Upgrade complete with warnings:\n\n	升级完成，但有警告：\n\n
+Invalid expression on part {0}: Click for details\n{1}\nExpressions: {2}	部件 {0} 上的表达式无效：点击查看详情\n{1}\n表达式：{2}
+Invalid syntax in expression on part {0}: Click for details\n{1}\nExpressions: {2}	部件 {0} 上的表达式语法无效：点击查看详情\n{1}\n表达式：{2}
+Error calculating bounds for part '{0}' (ID: {1}). \n{2}	计算部件“{0}”（ID：{1}）的边界时出错。\n{2}
+FYI: Your engines aren't getting enough air.\nTry putting some inlets on your plane.	提示：你的发动机进气不足。\n试试在飞机上加装进气道。
+Click\nFlip Switch\nPush Button	点击\n翻转开关\n按下按钮
+Switch Throttle/VTOL	切换 油门/VTOL
+ and 	 和 
+\n\nDo you want to replace it? You may also choose to add the assignment to this action as well.	\n\n要替换它吗？你也可以把该绑定同时添加到此操作上。
+\n\nModifier keys may also be used. To assign a modifier key alone, hold it down for 1 second.	\n\n也可以使用修饰键。若要单独绑定某个修饰键，请长按它 1 秒。
+\n\nWould you like to remove or replace this binding?	\n\n你要移除还是替换此绑定？
+ is already in use by:\n	 已被以下内容占用：\n
+Now press a button or move an axis to assign it to\n	现在按下按钮或移动摇杆轴，将其绑定到\n
+Press a key to assign it to\n	请按一个键，将其绑定到\n
+Press any button or move an axis on the controller you would like to use. \n \n	请按下想使用的控制器上的任意按钮，或移动其摇杆轴。\n \n
+This will reset all inputs to the default input configuration, removing any custom input mappings. \n\n Are you certain you want to do this?	这会把所有输入重置为默认输入配置，并移除所有自定义输入映射。\n\n你确定要这样做吗？
+The mobile version of SimplePlanes 2 does not require any additional keyboards or controllers to be fully enjoyed. \n\n For players who do wish to use these devices however, this dialog can be used to configure those controls.	SimplePlanes 2 的移动版无需额外键盘或手柄也能完整游玩。\n\n如果你想使用这些设备，可通过此对话框进行相关设置。
+The mobile version of SimplePlanes does not require any additional keyboards or controllers to be fully enjoyed.\n\nFor players who do wish to use these devices however, this dialog can be used to configure those controls.	SimplePlanes 的移动版无需额外键盘或手柄也能完整游玩。\n\n如果你想使用这些设备，可通过此对话框进行相关设置。
+[mobile:You can also zoom in and out by pinching with two fingers. Go ahead and try it out.|steamdeck:You can also zoom in and out with the mouse wheel. Go ahead and try it out.|keyboard:You can also zoom in and out with the mouse wheel. Go ahead and try it out.]	[mobile:你也可以用双指捏合来缩放。快来试试吧。|steamdeck:你也可以用鼠标滚轮缩放。快来试试吧。|keyboard:你也可以用鼠标滚轮缩放。快来试试吧。]
+[mobile:You can also pan the view around with a two-finger drag. Go ahead and give it a try.|steamdeck:You can also pan the view around by right [clicking:] and dragging. Go ahead and give it a try.|keyboard:You can also pan the view around by right [clicking:] and dragging. Go ahead and give it a try.]	[mobile:你也可以用双指拖动来平移视角。快来试试吧。|steamdeck:你也可以按住鼠标右键拖动来平移视角。快来试试吧。|keyboard:你也可以按住鼠标右键拖动来平移视角。快来试试吧。]
+\n How does this look?\nReverting resolution change in [t] seconds, just in case something went wrong.	\n这样看起来如何？\n若一切正常，将在 [t] 秒后撤销分辨率更改，以防万一。
+Screen Size: {0}x{1}, Requested: {2}x{3}@{4}hz\nResolution: {5}x{6}@{7}hz, Full Screen: {8}	屏幕尺寸：{0}x{1}，请求：{2}x{3}@{4}hz\n分辨率：{5}x{6}@{7}hz，全屏：{8}
+Screen Size: {0}x{1}, Requested: {2}x{3}\nNative Resolution: {4}x{5}@{6}Hz\nMobile Resolution Scale: {7}	屏幕尺寸：{0}x{1}，请求：{2}x{3}\n原生分辨率：{4}x{5}@{6}Hz\n移动端分辨率缩放：{7}
+Screen Size: {0}x{1}, Requested: {2}x{3}\nResolution: {4}x{5}@{6}hz, Full Screen: {7}	屏幕尺寸：{0}x{1}，请求：{2}x{3}\n分辨率：{4}x{5}@{6}hz，全屏：{7}
+Default HDR Format: {0}\n	默认 HDR 格式：{0}\n
+Default LDR Format: {0}\n	默认 LDR 格式：{0}\n
+There are warnings for some settings you changed:\n\n	你更改的部分设置存在警告：\n\n
+There is a warning for a setting you changed:\n\n	你更改的部分设置存在警告：\n\n
+You have unsaved character settings.\n\n Save changes?	角色设置尚未保存。\n\n要保存更改吗？
+You have modified properties that have a high risk of breaking something.\nPlease read the warnings below and confirm whether you want to make these changes.\n\n<color=#ffae00>	你修改了某些风险很高的属性，可能导致出现问题。\n请阅读以下警告，并确认是否要应用这些更改。\n\n<color=#ffae00>
+Move your hands while holding down the \ngrip buttons to adjust your camera offset.	按住 \n扳机按钮并移动双手，以调整视角偏移。
+Press the grip button on both controllers \nwhile keeping your hands close together.	双手靠拢，\n同时按下两个手柄上的扳机按钮。
+Well done. \nNow let go of the grip buttons to complete the adjustment.	做得好。\n现在松开扳机按钮以完成调整。
+Your hands were not close enough together when gripped. \nRelease your grips, move your hands closer together and try again.	按下扳机时，你的双手靠得不够近。\n松开扳机，把双手移得更近一些再试。
+The full game will let you build planes, cars, and just about anything you can imagine, all from the ground up.\n\nIn this Open Playtest, the designer is locked down, but you can still load and paint crafts to make them your own.	完整版中，你可以从零开始打造飞机、汽车，以及几乎任何你能想象的东西。\n\n在本次公开测试中，设计器功能受限，但你仍然可以载入并涂装机体，使其成为你的专属机体。
+New Personal Best!\n	新的个人最佳纪录！\n
+You unlocked the {0}!\n{1}/{2} Hidden Crafts	你解锁了{0}！\n隐藏机体 {1}/{2}
