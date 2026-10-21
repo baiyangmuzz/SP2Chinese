@@ -20,17 +20,17 @@ ROOT = r"D:\SP2Chinese"
 GROUPS = [
     ("词库：10416 条简体中文译文，按批次管理，含禁用清单",
      ["dict/", "dictionary_zh_cn.tsv"]),
-    ("插件源码：运行时文本替换引擎，Harmony 拦截 TMP 全部文本入口",
+    ("插件源码：运行时文本替换引擎，Harmony 拦截 TMP 全部文本入口，词库自动更新",
      ["src/"]),
     ("词库校验与合并工具：verify_dict 校验批次能否完整重建运行时字典",
      ["tools/"]),
     ("离线测试器：逐行命中测试、性能基准、内部索引诊断",
      ["test/"]),
-    ("一键安装器与打包脚本：自动定位游戏目录，安装后逐文件 SHA256 校验",
+    ("安装器：菜单式操作，14 源自动更新，SHA256 校验，回滚管理",
      ["dist/"]),
     ("项目文档、许可证与版本哈希清单",
      ["README.md", "LICENSE", "CONTRIBUTING.md", ".gitignore",
-      "manifest.json", "SP2Chinese.csproj", ".github"]),
+      "manifest.json", "SP2Chinese.csproj"]),
 ]
 
 

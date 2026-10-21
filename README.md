@@ -13,7 +13,7 @@
 | 项 | 值 |
 |---|---|
 | 词库条目 | 10416 |
-| 插件版本 | 1.5.1 |
+| 插件版本 | 1.6.0 |
 | 作者 | 白杨木（[baiyangmuzz](https://github.com/baiyangmuzz)） |
 | 交流群 | QQ 1128992783 |
 | 下载 | [Releases 最新版](https://github.com/baiyangmuzz/SP2Chinese/releases/latest) |
@@ -27,7 +27,7 @@
    下载 `SP2汉化_v<版本>_<日期>.zip`。不要下载页面里的 Source code，
    那是源码，不是安装包
 2. 退出游戏，解压
-3. 运行 ` 一键安装中文.bat` ，管理员授权选「是」
+3. 运行 ` SP2汉化.bat` ，管理员授权选「是」
 4. 启动游戏
 
 安装器会定位游戏目录：先读 Steam 注册表路径，再解析 `steamapps/libraryfolders.vdf` 里的所有库，
@@ -38,7 +38,7 @@
 
 ## 卸载
 
-运行 ` 卸载中文.bat` 。插件目录会被移动到 `BepInEx\_mod_backups` ，不删除文件，
+运行 ` SP2汉化.bat`（选择卸载） 。插件目录会被移动到 `BepInEx\_mod_backups` ，不删除文件，
 BepInEx 本体与其它模组不受影响。
 
 ## 更新机制

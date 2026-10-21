@@ -3,8 +3,7 @@
 
 Layout produced:
     SP2汉化_vX.Y.Z_YYYYMMDD/
-        一键安装中文.bat
-        卸载中文.bat
+        SP2汉化.bat
         install.ps1
         安装说明.txt
         payload/ ...        <- what actually gets copied into the game folder
@@ -83,7 +82,7 @@ def readme_text(version, rows, dict_chars):
 【怎么装】三步
 ----------------------------------------------------------------
 1. 先完全退出游戏（任务栏里也不能留）
-2. 双击「一键安装中文.bat」
+2. 双击「SP2汉化.bat」
 3. 如果弹出管理员授权，点是（游戏一般在 Program Files 下，
    没有管理员权限写不进去）
 
@@ -110,13 +109,13 @@ Steam 库里右键游戏 → 管理 → 浏览本地文件 → 复制地址栏�
 
 【怎么更新到新版本】
 ----------------------------------------------------------------
-直接双击新版本里的「一键安装中文.bat」，不用先卸载。
+直接双击新版本里的「SP2汉化.bat」，不用先卸载。
 旧版会自动挪到 BepInEx\\_mod_backups\\ 备份，不会弄丢。
 
 
 【怎么卸载】
 ----------------------------------------------------------------
-双击「卸载中文.bat」。
+双击「SP2汉化.bat」选 2 卸载。
 它只会把汉化插件目录移走（改成 .uninstalled-时间 的形式，
 不删除），BepInEx 本体和其他模组不受影响。
 
@@ -135,7 +134,7 @@ Q: 游戏更新后还能用吗？
 A: 能，但新版本新增的界面文字可能要等汉化更新。装上仍可用。
 
 Q: 游戏打不开了 / 卡在启动画面？
-A: 先跑「卸载中文.bat」看是否恢复，再把 BepInEx\\LogOutput.log
+A: 先跑「SP2汉化.bat」选 2 卸载看是否恢复，再把 BepInEx\\LogOutput.log
    发给群主。多半是 BepInEx 版本和游戏不匹配。
 
 Q: 为什么有些英文没翻？
@@ -221,7 +220,7 @@ def main():
     os.makedirs(stage)
 
     # scripts + readme (forced to UTF-8 with BOM so PowerShell 5.1 / Notepad read them right)
-    for f in ("一键安装中文.bat", "卸载中文.bat"):
+    for f in ("SP2汉化.bat",):
         shutil.copy2(os.path.join(SRC, f), stage)
     for f in ("install.ps1",):
         dst = os.path.join(stage, f)
