@@ -1,0 +1,66 @@
+Bomb	炸弹
+CameraVantage	摄像视角
+CarEngine	汽车发动机
+Cockpit	驾驶舱
+CounterMeasureDispenser	干扰弹发射器
+Engine	发动机
+HeliMainRotor	直升机主旋翼
+JEngine	发动机
+JointRotator	关节转盘
+Missile	导弹
+PropellerAssembly	螺旋桨总成
+ResizableWheel	可调轮组
+Suspension	悬挂
+Turboshaft	涡轮轴发动机
+Wing	机翼式
+Altitude	高度
+Ammo	弹药量
+Current Angle	当前角度
+Drag Force	阻力
+Fired	已发射
+Forward Slip	纵向滑移
+Gear	挡位
+GearRatio	传动比
+Heading Angle	航向角
+InputTorque	输入扭矩
+Is Active	已激活
+Latitude	纬度
+Lift Force	升力
+Longitude	经度
+Look Pitch	视角俯仰
+Look Roll	视角滚转
+Look Yaw	视角偏航
+N1	N1 转速
+N2	N2 转速
+Offroad	越野中
+OutputTorque	输出扭矩
+Pitch Angle	俯仰角
+Pitch Rate	俯仰角速度
+PitchAngle	俯仰角
+RPM	转速
+Roll Angle	滚转角
+Roll Rate	滚转角速度
+Sideways Slip	横向滑移
+Torque	扭矩
+TorqueRatio	扭矩比
+View Offset X	视角偏移 X
+View Offset Y	视角偏移 Y
+View Offset Z	视角偏移 Z
+Yaw Rate	偏航角速度
+Variable Name	变量名
+JWing	机翼
+JetEngine	喷气发动机
+JEngine	发动机
+Airbrake	减速板
+Floating Part	漂浮部件
+FloatingPart	漂浮部件
+Joint Motor	关节马达
+JointMotor	关节马达
+Thrust Port	推力喷口
+ThrustPort	推力喷口
+Advanced Performance Scalars	高级性能参数
+Activator	激活组
+Overload	过载编辑器
+Overload XML Editor	Overload XML 编辑器
+Overload XML Modification	Overload XML 修改
+Enables Overload, an advanced part property XML Editor, in the designer.	在设计器中启用 Overload（高级部件属性 XML 编辑器）。

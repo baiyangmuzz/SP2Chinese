@@ -1,0 +1,118 @@
+A ballpark estimate for the maximum speed of the missile	导弹最大速度的粗略估计
+Adds a launch bar that swings down to connect to an aircraft carrier catapult.	加装一根可向下摆出、用于连接航母弹射器的发射杆。
+Adds a second set of blades spinning the opposite way.	增加一组反向旋转的桨叶。
+Adjusts the maximum output RPM. Power stays constant, so lower RPM means more torque.	调整最大输出转速。功率不变，因此转速越低扭矩越大。
+Adjusts the responsiveness of the differential under acceleration. Higher values make the lock react more quickly to slip, while lower values feel smoother and less snappy.	调整加速时差速器的响应速度。数值越大，锁止对打滑的反应越快；数值越小，越平顺、越不突兀。
+Adjusts the responsiveness of the differential under braking. Higher values make the lock react more quickly to slip, while lower values feel smoother and less snappy.	调整制动时差速器的响应速度。数值越大，锁止对打滑的反应越快；数值越小，越平顺、越不突兀。
+Allows the engine to push air forward to slow down the craft.	允许发动机向前推气以使载具减速。
+Beams torque wirelessly from an engine, transmission, or gearbox for when you don't have the patience for drive shafts. A physical powertrain connection overrides it.	从发动机、变速箱或分动箱无线传输扭矩，省去连接传动轴的耐心。若已有实体动力连接，则优先使用实体连接。
+Beams torque wirelessly from an engine/transmission/gearbox directly to this part. Ideal for when you need power but don't have the patience to connect drive shafts. Note: if a powertrain is physically connected to this part then it will not use magical torque beams.	从发动机/变速箱/分动箱无线传输扭矩直供本部件。适合需要动力却懒得接传动轴的场合。注意：若本部件已实体连接动力总成，则不会使用这种“魔法扭矩”。
+Blade pitch can be fixed, hold a constant RPM automatically, or follow an input controller.	桨距可固定、自动保持恒定转速，或跟随输入控制器。
+Changes how long the engine burns.	改变发动机燃烧时长。
+Changes how long the nose is, but longer doesn't necessarily mean it's lying.	改变弹头长度，长一点也不一定是在吹牛。
+Changes how many are duplicated around the missile.	改变绕导弹均布的数量。
+Changes the amount the missile lofts after launch.	改变导弹发射后的抬升量。
+Changes the angle used to offset around the missile.	改变绕导弹分布所用的角度。
+Changes the attach position along the length of the missile.	改变沿导弹长度的安装位置。
+Changes the diameter of the propeller assembly	改变螺旋桨组件直径
+Changes the length of the nozzle. Does not affect performance.	改变喷管长度。不影响性能。
+Changes the length of the shroud.	改变护罩长度。
+Changes the overall diameter of the missile.	改变导弹总直径。
+Changes the overall size of the engine.	改变发动机整体尺寸。
+Changes the overall size of the missile.	改变导弹整体尺寸。
+Changes the radius of the FOV circle (in degrees).	改变视场圆半径（度）。
+Changes the style.	改变样式。
+Controls how much power is transferred to the wheel with more grip. Higher values provide more traction when accelerating but can make turning more difficult.	控制有多少动力被分配到抓地更好的车轮。数值越大，加速时牵引力越好，但转向会更困难。
+Controls the order in which decals are rendered when they are overlapping	控制贴花重叠时的渲染顺序
+Cutoff Angle	截止角度
+Determines which parts are affected.	决定受影响的部件。
+Engine vents whatever the selected engine is burning. Input drives the plume from any input or expression.	排放所选发动机正在燃烧的物质。输入可由任意输入端或表达式驱动羽流。
+Fade Start Angle	淡出起始角度
+Flips the assembly's layout. The exact behavior depends on the selected wheel-assembly style.	翻转组件布局。具体效果取决于所选轮组样式。
+Flips the gear leg to the other side.	把起落架支柱翻到另一侧。
+Gear ratio of 2 would double the output torque and halve the RPM.	传动比为 2 时，输出扭矩加倍、转速减半。
+Gets the gear ratio for reverse	获取倒挡传动比
+How big each particle is.	每个粒子的大小。
+How explosive the missile is.	导弹的爆炸威力。
+How far past flat the blades turn at full reverse input. Zero disables reverse thrust.	满反推输入时桨叶越过平桨位置的角度。为 0 则禁用反推。
+How hard the gas shoots out of the pipe.	气体从管中喷出的力度。
+How long particles last before fading.	粒子在淡出前的存活时长。
+How long to wait after firing until the engine is ignited.	点火后等待多久才点燃发动机。
+How long to wait after launch before the missile starts guiding. A short delay helps to ensure the missile safely clears your aircraft before turning.	发射后等待多久导弹才开始制导。短暂延迟可确保导弹转向之前安全脱离载具。
+How many particles the plume emits. Turn it up for thick smoke, down for a thin haze.	羽流发射的粒子数量。调高为浓烟，调低为薄雾。
+How much extra length the torque link has, which sets how much it bends. 0 keeps it straight at full extension; higher values give it a deeper, permanent bend.	扭矩连杆多出的长度，决定其弯曲程度。为 0 时完全伸展仍保持笔直；数值越大，弯曲越深且永久。
+How much the plume billows out as it trails away.	羽流拖尾时的翻卷扩散程度。
+How quickly the air slows the plume down.	空气使羽流减速的快慢。
+How quickly the missile can change its heading.	导弹改变航向的快慢。
+How quickly the missile reaches its top speed. Higher acceleration results in a higher achievable top speed.	导弹达到极速的快慢。加速度越高，可达极速也越高。
+How strongly the effect shows.	效果的显现强度。
+How wide the plume opens up.	羽流的张开宽度。
+I think I'm seeing double.	我大概是看到重影了。
+Increasing compression can increase fuel efficiency (and thrust up to a point), but also increases the length and weight of the core.	提高压缩比可提升燃油效率（在一定范围内也能提升推力），但会增加核心的长度与重量。
+It greatly increases the power of the engine but it decreases efficiency.	大幅提升发动机功率，但会降低效率。
+Links this MFD to a specific Targeting Pod. If None, the system auto-assigns the first one it can find.	将此多功能显示器绑定到指定瞄准吊舱。若选“无”，系统会自动分配找到的第一个。
+Links this animator under another so they share one timeline.	将此动画器挂到另一个之下，共用同一条时间轴。
+Make it bigger / smaller.	放大 / 缩小。
+Make it longer / shorter	加长 / 缩短
+Make it taller / shorter.	加高 / 降低。
+Make it thinner / thicker.	变细 / 变粗。
+More blades give more thrust at the same RPM, but more drag and mass to spin.	相同转速下桨叶越多推力越大，但阻力与转动惯量也更大。
+More stages improve fuel efficiency and power, but add length and mass.	级数越多，燃油效率与功率越高，但长度与重量也增加。
+Move it away / closer to the surface of the missile.	远离 / 靠近导弹表面。
+Multiplier for all gears. Higher values = More Acceleration. Lower values = Higher Top Speed.	所有挡位的倍率。数值越大＝加速越快；数值越小＝极速越高。
+Positive floats the plume upwards like hot smoke, negative lets it fall.	正值使羽流如热烟般上浮，负值使其下沉。
+Purely cosmetic. It doesn't affect traction but it does affect how you feel about your tires.	纯外观。不影响抓地力，但会影响你对轮胎的心理感受。
+Pushes the plume out of the pipe or pulls it back in.	把羽流推出管外，或吸回管内。
+Racing has the best traction on roads, Offroad has the best traction off the roads, and Street is somewhere in between.	竞速胎在公路上抓地最好，越野胎在路外抓地最好，街道胎介于两者之间。
+Reduces the turning angle as speed increases.	随速度提高而减小转向角。
+Reverse the direction the wheel should spin when powered.	反转驱动时车轮的旋转方向。
+Reverses the direction of the output shaft.	反转输出轴方向。
+Reverses the direction of the spin.	反转旋转方向。
+Reverses the spin direction and flips the blades to match.	反转旋转方向，并同步翻转桨叶。
+Running hotter produces more power from the same engine, at the cost of heavier alloys and cooling.	工作温度更高可从同一台发动机榨出更多功率，代价是更重的合金与冷却系统。
+Select the engine inside of this shroud.	选择此护罩内的发动机。
+Selects the tire friction model for paved surfaces. 'Arcade' provides stable, forgiving grip, while 'Racing' offers more realistic handling. Note: This setting does not affect off-road handling.	选择铺装路面的轮胎摩擦模型。“街机”抓地稳定宽容，“竞速”操控更拟真。注意：此设置不影响越野操控。
+Selects which support strut is mounted here, or None.	选择此处安装的支撑支柱，或“无”。
+Selects which torque link is mounted, or None.	选择安装的扭矩连杆，或“无”。
+Sets the maximum temperature of the combustion chamber. Higher temperatures generate significantly more thrust, but will burn through fuel much faster and increase mass for the extra nickel plating.	设置燃烧室最高温度。温度越高推力越大，但耗油快得多，且会因额外的镍镀层而增重。
+Show the CV boot	显示万向节防尘套
+Stretches the shroud horizontally.	水平拉伸护罩。
+Stretches the shroud vertically.	垂直拉伸护罩。
+The amount of air that bypasses the core. This can greatly increase fuel efficiency. All the cool engineers are doing it these days.	绕过核心机的空气比例。可大幅提升燃油效率。现在时髦的工程师都这么干。
+The amount of fuel used by this engine at full throttle.	该发动机全油门时的燃油消耗量。
+The amount of twist in the blade at the root.	桨叶根部的扭转量。
+The angle at which the decal will start fading out before reaching the cutoff angle.	贴花在到达截止角度之前开始淡出的角度。
+The angle at which the decal will stop rendering.	贴花停止渲染的角度。
+The blade angle in Fixed mode, or the governor's coarse pitch limit in Auto mode.	固定模式下的桨叶角，或自动模式下调节器的粗桨距上限。
+The color of the base of the afterburner, for fun.	加力燃烧室底部的颜色，纯属好玩。
+The color of the tip of the afterburner, also for fun.	加力燃烧室尖端的颜色，同样纯属好玩。
+The distance beyond which the limb will snap back to the rest position and forget what it was trying to grab.	超过此距离时肢体将弹回原位，并放弃原先的抓取目标。
+The engine whose exhaust this pipe vents. Set automatically when attached to an engine, and kept if moved.	此排气管所排放的发动机。吸附到发动机时自动设定，移动后保留。
+The engine's rated power at sea level. Power falls off with altitude as the air thins.	发动机在海平面的额定功率。随高度上升、空气变稀薄而下降。
+The estimated static thrust of this engine at sea level. If an afterburner is present, then both dry and wet thrust are displayed.	该发动机在海平面的估算静推力。若装有加力燃烧室，会同时显示干推与湿推。
+The horse power of the engine.	发动机马力。
+The intensity of the filter when active.	滤镜启用时的强度。
+The maximum RPM of the engine.	发动机最高转速。
+The maximum range the nozzle can gimbal.	喷管可偏转的最大范围。
+The missile's agility and maximum G-load capacity during maneuvers.	导弹的机动性与机动时的最大过载能力。
+The mode the weapon is used with	该武器的使用模式
+The other colour particles are picked between. Pull the two apart to give smoke more variation.	另一个用于取色的粒子颜色。把两者拉开可让烟雾变化更丰富。
+The overall compression of the intake air and the resulting fuel efficiency.	进气总压缩比及其带来的燃油效率。
+The overall size of the pipe.	管道的整体尺寸。
+The particles this pipe emits.	此管道喷射的粒子。
+The peak torque of the engine.	发动机峰值扭矩。
+The position of the shock. Purely cosmetic.	激波的位置。纯外观。
+The rate at which the nozzle gimbals	喷管偏转速率
+The scale of the propeller hub/cone	螺旋桨桨毂/整流锥的缩放
+The selected nozzle does not support afterburner.	所选喷管不支持加力燃烧室。
+The style of the pipe.	管道样式。
+The torque delivered at governed RPM. A free turbine delivers up to double this from a standstill.	调节转速下输出的扭矩。自由涡轮在静止时可输出最多两倍于此的扭矩。
+The type of engine the missile uses	导弹使用的发动机类型
+The type of seeker the missile uses.	导弹使用的导引头类型。
+The width (chord-length) of the propeller blades	螺旋桨桨叶宽度（弦长）
+This is the throttle at which the afterburner will kick in.	加力燃烧室介入的油门位置。
+Tints the particles. White is default, and the alpha thins the plume out.	为粒子着色。默认白色，降低不透明度可使羽流更稀薄。
+Turns the blades edge-on to the airflow when the engine stops.	发动机停车时使桨叶转为迎风立起（顺桨）。
+Used when automatically assigning IK targets, lower numbers are higher priority.	用于自动分配 IK 目标时，数值越小优先级越高。
+When enabled, the rocket will attempt to guide itself to the current laser target.	启用后，火箭会尝试自主导向当前激光目标。
+Whether the seated Character First Person View camera will follow the head position as modified by the seat IK.	坐姿角色的第一人称视角相机是否跟随经座椅 IK 修改后的头部位置。

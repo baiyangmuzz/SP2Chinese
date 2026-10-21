@@ -1,0 +1,87 @@
+Auto - Yaw Mode	自动 - 偏航模式
+KMH / MPH dispay switch	KMH/MPH 显示切换
+MPH / KMH display change	MPH/KMH 显示切换
+Arrestor hook - Pirate Mode	着舰钩——海盗模式
+Spin Protection (on by default)	防尾旋（默认开启）
+Cruise mode bank angle indicator	巡航模式倾斜角指示器
+A Button For Serious Dogfighting.	一个用于严肃格斗的按钮。
+A Switch For Not Very Serious Dogfighting.	一个用于不太严肃格斗的开关。
+Lights you up like a Christmas tree.	让你亮得像棵圣诞树。
+Navigation and anti-collision lights	航行灯与防撞灯
+WVR mode - when it's squeaky bum time	近距格斗模式——紧张到屁股发紧的时候用
+Formation lights for formation things.	编队灯，专办编队的事。
+Navigation lights for naving everywhere.	航行灯，到处航行都用得上。
+Refuelling probe - Flip If Aircraft Is Thirsty	受油探管——飞机渴了就翻转
+Navy Plane Mode (Tail Hook)... Why is this here?	舰载机模式（尾钩）……这玩意儿怎么在这儿？
+Canopy open / engines stop; OFF for flight	座舱盖开启／发动机停车；飞行时置 OFF
+Automatic wing sweep ON; manual VTOL-slider control OFF	自动变后掠开启；手动 VTOL 滑块控制关闭
+The simplest control surface. Can deflect up and down	最简单的操纵面，可上下偏转
+Dump fuel; afterburner ignites it. Fire stays lit until dump is off or fuel is empty.	放油；加力会点燃燃油。火焰会一直燃烧，直到关闭放油或燃油耗尽。
+The raw input from the controller	控制器的原始输入
+The input after settings are applied	应用设置后的输入
+Heading\nClick to toggle autopilot	航向\n点击切换自动驾驶
+Vertical speed\nClick to show fuel	垂直速度\n点击显示燃油
+Fuel remaining\nClick to show vertical speed	剩余燃油\n点击显示垂直速度
+Altitude\nClick to switch between ground and sea level	高度\n点击在地面高度与海平面高度之间切换
+Landing gear	起落架
+Landing gear\nShortcut: [LandingGear]	起落架\n快捷键：[LandingGear]
+Air-to-air targeting\nShortcut: [CycleTargetingMode]	对空瞄准\n快捷键：[CycleTargetingMode]
+Air-to-ground targeting\nShortcut: [CycleTargetingMode]	对地瞄准\n快捷键：[CycleTargetingMode]
+Toggle Orthographic/Perspective View\nSwitch between orthographic (no perspective) and perspective projection.	切换正交/透视视图\n在正交（无透视）与透视投影之间切换。
+Speed\nIAS: Indicated airspeed, what the wings feel.\nTAS: True airspeed through the air.\nGS: Ground speed, your speed over the terrain.	速度\nIAS：指示空速，机翼实际感受到的速度。\nTAS：真空速，相对空气的真实速度。\nGS：地速，相对地面的移动速度。
+Engines & Lights	发动机与灯光
+Engines &amp; Lights	发动机与灯光
+Drive through the forest in Bannock and zoom between its hangars.	驾车穿过 Bannock 的森林，在机库之间飞驰。
+Make wings small... And if you're brave enough: Flying Brick Mode.	把机翼做小……如果你够胆：还有飞天砖头模式。
+Rose Buffalo's entry air race, left-right, left-right, loop and back!	Rose Buffalo 的入门空中竞速，左-右-左-右，绕一圈再回来！
+Drive along the service roads in Bannock and zoom between its hangars.	沿着 Bannock 的维修道行驶，在机库之间飞驰。
+An extremely challenging race with loops, tight turns and narrow gaps.	一项极具挑战的赛事，包含回环、急弯与狭窄通道。
+Drive through the forest in Bannock jumping between and over its hangars.	驾车穿过 Bannock 的森林，在机库之间与机库上方跳跃。
+Build anything you want in sandbox mode. The sky is the limit. Literally.	在沙盒模式里想造什么就造什么。天空才是极限——字面意思。
+A fast race with smooth turns chasing the rails at Bannock, with an exciting end.	在 Bannock 沿着轨道飞驰的高速赛事，过弯平顺，结尾刺激。
+Roleplay a low paying job carrying luggage around the airport at blistering speeds.	角色扮演一份低薪工作：以惊人的速度在机场各处运送行李。
+A challenging parkour track, with a succession of precise jumps all over the terminal.	一条颇具挑战的跑酷赛道，需要在航站楼各处连续精准跳跃。
+Just like deathmatch, but team up and blow up other players on the other team for points.	和死斗一样，但要组队，把对面队伍炸掉来得分。
+Drive as fast as you can through Bannock's taxis, but be careful not to fall off the bridge.	以最快速度穿过 Bannock 的出租车群，但小心别从桥上掉下去。
+Zoom through the streets of Vetusta in a high speed figure 8 track while avoiding the traffic.	在 Vetusta 的街道上高速跑 8 字，同时避开往来车流。
+A simple straight line quarter mile drag race with an eight mile checkpoint to test your creations.	一场简单的四分之一英里直线加速赛，另设八英里检查点来检验你的作品。
+Dirt trails, tight turns, changes in elevation... All surrounding the touges through a dense forest.	土路、急弯、起伏落差……环绕着穿越密林的山道。
+Short, simple, nimble. Rush around a short section of the Driftwood racetrack, couple jumps included.	短、简、灵。绕着 Driftwood 赛道的一小段冲刺，途中带几个跳跃。
+Race from one end of Vetusta to the opposite, going from motorways, to secondary roads, to a dirt trail.	从 Vetusta 一端跑到另一端：先是高速，再到次级道路，最后是土路。
+Go from Vetusta to one of the coolest plane spotting locations on the island through winding dirt trails.	沿着蜿蜒土路从 Vetusta 前往岛上最棒的飞机拍摄点之一。
+A stadium truck race bringing the Driftwood circuit to its full extent, look up when crossing the intersection!	把 Driftwood 赛道跑到极限的体育场卡车赛，过交叉路口时记得抬头看！
+An alternative mountain road, this time with less tight corners but with an added loop-around, bridge included.	另一条山路，这次急弯少一些，但多了一个绕行回环，还带桥。
+A japanese mountain road inspired racetrack to honour the Driftwood island painting the asphalt with your tires.	一条以日本山路为灵感的赛道，向 Driftwood 岛致敬，用你的轮胎为沥青上色。
+Start high, look down, thread the needle and prepare to pull up. If you time it right, you win. If you don't, big L.	从高处开始，向下看，穿过针眼后准备拉起。时机对了你就赢，错了就是惨败。
+Blow up other players for points. If you get shot down, don't worry, you can respawn so it's not the end of the world.	炸掉其他玩家来得分。被击落了也别慌，可以重生，天塌不下来。
+Better grab something agile, this race will have you scratching the cliffs of the complex terrain around the Bannock peninsula.	最好挑一架灵活的飞机，这场比赛会让你贴着 Bannock 半岛周围复杂地形的崖壁飞。
+A track spanning both touge tracks and the forest road connecting them, putting to test your skills on a wide range of scenarios.	一条串联两段山道及其间林道的赛道，在多种场景下考验你的技术。
+A short track around the tip of the Driftwood circuit, requiring nimble cars with great acceleration to manoeuvre around its many turns.	一段绕着 Driftwood 赛道尖端的短道，需要灵活且加速强劲的车才能在众多弯角中穿行。
+This time you choose your own path on your way to the top of the volcano. Will you follow the roads and trails or cut straight to the goal?	这次上火山之巅的路由你自选。是沿着道路小径走，还是直奔终点？
+Dirt trails, tight turns, changes in elevation... All surrounding the touges through a dense forest, culminating in a fully off-road puzzle.	土路、急弯、起伏落差……环绕穿越密林的山道，最后是一道纯越野的谜题。
+Chad got some stocks on a window manufacturing company, let's aid the market cracking some windows around Vetusta by zooming between its buildings.	Chad 买了一家窗户制造公司的股票，那就帮帮行情吧——在 Vetusta 的楼宇之间飞驰，顺便撞碎些窗户。
+A counterclockwise race along the whole length of the Driftwood circuit, the perfect balance between top speed and acceleration will win you this race.	沿 Driftwood 赛道全程逆时针竞速，极速与加速的完美平衡才是取胜关键。
+The latest event brought to you by Rose Buffalo, the Driftwood Air Race! Agility and accuracy will get you a long way, but when speed is mixed in the equation not getting your feet wet becomes a challenge.	Rose Buffalo 带来的最新赛事——Driftwood 空中竞速！灵活与精准能带你走很远，但当速度加入算式后，想不湿鞋就成了挑战。
+For those who think joysticks are for nerds and the real deal is in the throttle. Go around the Driftwood island at blistering speeds while swinging by the lighthouse and firewatch tower to entertain the locals.	献给那些觉得摇杆是书呆子玩意、真本事全在油门上的人。以惊人速度环绕 Driftwood 岛，顺路掠过灯塔与防火瞭望塔，给当地人一点表演。
+Let the chaos begin! A long figure 8 race around Driftwood with a crazy intersection separating two areas, one with prevalence for the nimble and another for the fast, but with consistency and perseverance being key.	让混乱开始吧！一场环绕 Driftwood 的长距离 8 字赛，疯狂的交叉口把路线分成两段：一段偏爱灵活，一段偏爱速度，但稳定与坚持才是关键。
+Grab as many orbs as you can and fly them through the portal to score points before the time runs out! You can grab more than one orb at a time, but they do add weight and drag. You can also steal orbs from other players.	在时间耗尽前尽可能多抓光球，飞过传送门得分！你可以一次带多个光球，但它们会增加重量与阻力。你也可以从其他玩家手里抢球。
+Grab as many orbs as you can and fly them through the portal to score points before the time runs out! You can grab more than one orb at a time, but they do add weight and drag so be careful not to stall out. You can also steal orbs from other players.	在时间耗尽前尽可能多抓光球，飞过传送门得分！你可以一次带多个光球，但它们会增加重量与阻力，小心失速。你也可以从其他玩家手里抢球。
+Grab as many orbs as you can and drive them through the portal to score points before the time runs out! You can grab more than one orb at a time, but they do add weight and drag, and won't fit through tight gaps. You can also steal orbs from other players.	在时间耗尽前尽可能多抓光球，开车运过传送门得分！你可以一次带多个光球，但它们会增加重量与阻力，而且挤不过狭窄缝隙。你也可以从其他玩家手里抢球。
+At least one bomber is en route with multiple fighter escorts. Scramble from Bannock Station, intercept the formation, and destroy the bombers before they reach the power plant. Stay sharp! The escorts will fight to protect the bombers and failure means devastation at Bannock!	至少一架轰炸机正在多种战斗机护航下逼近。从 Bannock 站紧急起飞，拦截编队，在轰炸机抵达电厂之前将其击落。保持警觉！护航机将拼死保护轰炸机，一旦失手，Bannock 将遭重创！
+A wave of hostile mechs is advancing on Driftwood! Each unit is armed, heavily shielded, and relentless. Scramble your aircraft, coordinate with any available allies, and unleash everything you've got to bring them down before they devastate the area. Be careful, these machines won't go down without a fight!	一波敌方机甲正向 Driftwood 推进！每个单位都装备精良、护盾厚重，且毫不停歇。紧急起飞，与可用的友军协同，倾尽所有火力在它们摧毁这片区域之前将其击倒。小心，这些机器不会轻易倒下！
+Lights you up like a Christmas tree.	让你亮得像棵圣诞树。
+Navigation and anti-collision lights	航行灯与防撞灯
+Lights for when you don't want to be stealthy.	不想隐身时用的灯。
+Changes the limiter profile (pull more/less Gs)	切换限制器配置（可拉出更大/更小的过载）
+The symmetric part (if any) of the selected part and its part ID	所选部件的对称部件及其部件 ID（若有）
+Flight Stick	驾驶杆
+Collective / Throttle	总距/油门
+Flaps/Wing Angle	襟翼/机翼角
+Fold Mirrors	折叠后视镜
+Fold Tail	折叠尾翼
+Fold wings	折叠机翼
+RCS  Switch	RCS 开关
+Window Shade Adjuster	遮阳板调节
+Smoke Color	烟雾颜色
+Orb Size	光球大小
+Impact Point	命中点
