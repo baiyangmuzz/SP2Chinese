@@ -1,0 +1,108 @@
+{
+  "modVersion": "1.5.1",
+  "dictVersion": "e8a0c95dfa74",
+  "dictRows": 10416,
+  "dictSha256": "e8a0c95dfa74f8825f401122104d970ad4870ae3762305df4ff9daa494f2abb6",
+  "generatedAt": "2026-10-22T02:33:26+08:00",
+  "author": "白杨木",
+  "qqGroup": "1128992783",
+  "repository": "https://github.com/baiyangmuzz/SP2Chinese",
+  "files": {
+    ".doorstop_version": {
+      "sha256": "2744735fee2ee237e29f592f88ab669dc8d478fca31e6da4caf9a4a1b3abb7f1",
+      "size": 5
+    },
+    "doorstop_config.ini": {
+      "sha256": "4d5c6dfa0f771c6a5b1b0c559aca0bd0ece7d08b08fff894708dc3b73ce73cfc",
+      "size": 1460
+    },
+    "winhttp.dll": {
+      "sha256": "d3b62f4c9c3e2196ef82603c52d6b98c043a0d6c125c081fd33d7ca3798b41b8",
+      "size": 26112
+    },
+    "BepInEx/core/0Harmony.dll": {
+      "sha256": "1a21cc03424fc82c3dd1346905d16494536b9595ae4162228d99fb7c285c1031",
+      "size": 204800
+    },
+    "BepInEx/core/0Harmony.xml": {
+      "sha256": "d1f02fc3ada3a13da307de421225bfe56ebe24064370980979391c4be021672f",
+      "size": 267107
+    },
+    "BepInEx/core/0Harmony20.dll": {
+      "sha256": "d256c5373692a184018f171144712460ced1a6f01562fde26e742b077b36cbd6",
+      "size": 111616
+    },
+    "BepInEx/core/BepInEx.dll": {
+      "sha256": "c65b42034bc8ffb9f0b336e416dc3884e3f99fc5a5a89eb1f2ff7868412322cd",
+      "size": 127488
+    },
+    "BepInEx/core/BepInEx.Harmony.dll": {
+      "sha256": "d0739c4a13f369094cb164c205ee4cca5392bdd7241b9f242ee13f0d4c0b1856",
+      "size": 5632
+    },
+    "BepInEx/core/BepInEx.Harmony.xml": {
+      "sha256": "a04fedf08f7c81f5d01aba6f2840a7ffce50b79bbd24587d8dbe69ab73971d29",
+      "size": 4056
+    },
+    "BepInEx/core/BepInEx.Preloader.dll": {
+      "sha256": "116f8b879b1b87566f5ce30106fc5d5718da69d3870315d184a4460379a765c7",
+      "size": 42496
+    },
+    "BepInEx/core/BepInEx.Preloader.xml": {
+      "sha256": "5ccaffcef1c41292d94931b24f140ca82b47a879e3439e89293285054490eb0a",
+      "size": 7964
+    },
+    "BepInEx/core/BepInEx.xml": {
+      "sha256": "c0c7799bbaf1e37398f85f0ba8e02d8136c55a3165db87063942e3fedda0a68c",
+      "size": 89835
+    },
+    "BepInEx/core/HarmonyXInterop.dll": {
+      "sha256": "4d6175fa6dfee743423380f62fb5cc7f1811b469748538bd1b974ded34f3f907",
+      "size": 23552
+    },
+    "BepInEx/core/Mono.Cecil.dll": {
+      "sha256": "7ae470288fff4a402899c254d0a76cefef55877f5c54f96e83c797cc5bb6e2f6",
+      "size": 339456
+    },
+    "BepInEx/core/Mono.Cecil.Mdb.dll": {
+      "sha256": "5896d1898f616701fff18f3b2c71e6b844d2390ef9f41e1c5fccce8cb27c698e",
+      "size": 43008
+    },
+    "BepInEx/core/Mono.Cecil.Pdb.dll": {
+      "sha256": "174db44a067f58561510af746f3caeb032037762c57a31c8d9ee32db25174984",
+      "size": 86528
+    },
+    "BepInEx/core/Mono.Cecil.Rocks.dll": {
+      "sha256": "54ac539fb5ddc8b44c0e9acd0fcb7324f89d1a072edf8ebc1b06dd691e3d3927",
+      "size": 27648
+    },
+    "BepInEx/core/MonoMod.RuntimeDetour.dll": {
+      "sha256": "40e49bb314391cd7bddc2644f8553eeba92c194b940836b103df16955c464e0c",
+      "size": 105984
+    },
+    "BepInEx/core/MonoMod.RuntimeDetour.xml": {
+      "sha256": "54887808960d156550b37d602d08847607aa9e908d039f2765fb0b5e79394aa4",
+      "size": 9414
+    },
+    "BepInEx/core/MonoMod.Utils.dll": {
+      "sha256": "9d1495f147ac93c4f81f84538c1a326e8f8a6aefc78d6289d798f3ce1162c5e9",
+      "size": 187904
+    },
+    "BepInEx/core/MonoMod.Utils.xml": {
+      "sha256": "0577b362023a3432d6e8d7934c5eddc3e08fdbb19e191af083e341562c5ede38",
+      "size": 78973
+    },
+    "BepInEx/plugins/SP2Chinese/dictionary_zh_cn.tsv": {
+      "sha256": "e8a0c95dfa74f8825f401122104d970ad4870ae3762305df4ff9daa494f2abb6",
+      "size": 795383
+    },
+    "BepInEx/plugins/SP2Chinese/SP2Chinese.dll": {
+      "sha256": "e680fbe57f0643d86e4124922297d7602a7ddcd474e4aae0dff5f94bb8ce2847",
+      "size": 99840
+    }
+  },
+  "update": {
+    "dictionary": "https://github.com/baiyangmuzz/SP2Chinese/raw/main/dictionary_zh_cn.tsv",
+    "release": "https://github.com/baiyangmuzz/SP2Chinese/releases/latest"
+  }
+}

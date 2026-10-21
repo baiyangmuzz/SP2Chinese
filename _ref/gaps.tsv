@@ -1,0 +1,395 @@
+Friends Only	10-main-menu.json	
+OG PLAYTESTERS	10-main-menu.json	
+Huge thank you to our original playtesters!	10-main-menu.json	
+Date	20-designer-browser-and-selection.json	
+Path	20-designer-browser-and-selection.json	
+Propeller, Fighter, World War II	20-designer-browser-and-selection.json	
+Selected Part Cost	20-designer-browser-and-selection.json	
+Attack	20-designer-browser-and-selection.json	ctx:/craft-tags/
+Bush Plane	20-designer-browser-and-selection.json	ctx:/craft-tags/
+Hidden	20-designer-browser-and-selection.json	ctx:/craft-tags/
+STOL	20-designer-browser-and-selection.json	ctx:/craft-tags/
+Per Corner	21-designer-shape-and-wing-editors.json	
+Per Edge	21-designer-shape-and-wing-editors.json	
+Stretched	21-designer-shape-and-wing-editors.json	
+Transparency	22-designer-part-properties.json	
+Engine Performance	22-designer-part-properties.json	
+None	22-designer-part-properties.json	
+Automatic	22-designer-part-properties.json	
+Friction Force Point	22-designer-part-properties.json	
+Gears	22-designer-part-properties.json	
+Manual Shift	22-designer-part-properties.json	
+On	22-designer-part-properties.json	
+Left Foot Target	22-designer-part-properties.json	
+Right Foot Target	22-designer-part-properties.json	
+PointyLarge	22-designer-part-properties.json	
+PointySpiral	22-designer-part-properties.json	
+RoundLarge	22-designer-part-properties.json	
+RoundSpiral	22-designer-part-properties.json	
+Warbird	22-designer-part-properties.json	
+Guidance	22-designer-part-properties.json	
+Is Primary	22-designer-part-properties.json	
+Yaw Input	22-designer-part-properties.json	
+AlwaysOn	22-designer-part-properties.json	
+Left Elbow Target	22-designer-part-properties.json	
+Right Elbow Target	22-designer-part-properties.json	
+Pitch Input	22-designer-part-properties.json	
+Roll Input	22-designer-part-properties.json	
+Left Shoulder Target	22-designer-part-properties.json	
+Right Shoulder Target	22-designer-part-properties.json	
+Body Target	22-designer-part-properties.json	
+Fixed	22-designer-part-properties.json	ctx:/PartProperties_PropellerAssemblyData/
+Pointy	22-designer-part-properties.json	ctx:/PartProperties_PropellerAssemblyData/
+Scimitar	22-designer-part-properties.json	ctx:/PartProperties_PropellerAssemblyData/
+Active Radar	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileData/
+Air-to-Air	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileData/
+Air-to-Ground	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileData/
+Anti-Radiation	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileData/
+Semi-Active Radar	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileData/
+Solid	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileData/
+Thrust Vector	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileData/
+Chaff	22-designer-part-properties.json	ctx:/PartProperties_CounterMeasureDispenserData/
+Explosive	22-designer-part-properties.json	ctx:/PartProperties_CannonData/
+Slug	22-designer-part-properties.json	ctx:/PartProperties_CannonData/
+Chase	22-designer-part-properties.json	ctx:/PartProperties_CameraVantageData/
+FlyBy	22-designer-part-properties.json	ctx:/PartProperties_CameraVantageData/
+Orbit	22-designer-part-properties.json	ctx:/PartProperties_CameraVantageData/
+Push	22-designer-part-properties.json	ctx:/PartProperties_PistonData/
+Small	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Collar	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Cropped	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Cropped Bevel	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Cylinder	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Deployable Curved	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Deployable Slanted	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Fin Hinge	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Fin Hinge Square	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Hard Point	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Knife Edge	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Large	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Pointed	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Pointed Advanced	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Pointed Chamfer	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Reverse Trapezoid	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Rolleron	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Screws	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Swept	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Thin	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Trapezoid	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Triangle	22-designer-part-properties.json	ctx:/PartProperties_ProceduralMissileSubPartData/
+Altimeter	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+Attitude	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+Compass	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+Generic	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+Knots	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+KPH	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+MPH	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+m/s	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+Option 1	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+Option 2	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+Option 3	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+Option 4	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+Option 6	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+Option 7	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+Rotor RPM	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+Speed 200	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+Speed 400	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+Speed 600	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+TC	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+Vert. Speed	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+Vertical-S	22-designer-part-properties.json	ctx:/PartProperties_GaugeData/
+Diagonal	22-designer-part-properties.json	ctx:/PartProperties_LabelData/
+Horizontal	22-designer-part-properties.json	ctx:/PartProperties_LabelData/
+Vertical	22-designer-part-properties.json	ctx:/PartProperties_LabelData/
+Middle	22-designer-part-properties.json	ctx:/PartProperties_LabelData/
+Upper Left	22-designer-part-properties.json	ctx:/PartProperties_LabelData/
+Upper Right	22-designer-part-properties.json	ctx:/PartProperties_LabelData/
+Lower Left	22-designer-part-properties.json	ctx:/PartProperties_LabelData/
+Floor Mount	22-designer-part-properties.json	ctx:/PartProperties_PedalData/
+Gas	22-designer-part-properties.json	ctx:/PartProperties_PedalData/
+_aircraftControl	22-designer-part-properties.json	ctx:/PartProperties_PosedGripData/
+Button Sizes	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/
+Rectangular	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/
+Custom​	22-designer-part-properties.json	ctx:/PartProperties_ControlBaseData/Preset/
+Default​	22-designer-part-properties.json	ctx:/PartProperties_ControlBaseData/Preset/
+Lever​	22-designer-part-properties.json	ctx:/PartProperties_ControlBaseData/Preset/
+Wheel​	22-designer-part-properties.json	ctx:/PartProperties_ControlBaseData/Preset/
+Yaw​	22-designer-part-properties.json	ctx:/PartProperties_ControlBaseData/Input/
+Roll​	22-designer-part-properties.json	ctx:/PartProperties_ControlBaseData/Input/
+Pitch​	22-designer-part-properties.json	ctx:/PartProperties_ControlBaseData/Input/
+Throttle​	22-designer-part-properties.json	ctx:/PartProperties_ControlBaseData/Input/
+Flaps​	22-designer-part-properties.json	ctx:/PartProperties_ControlBaseData/Input/
+Trim​	22-designer-part-properties.json	ctx:/PartProperties_ControlBaseData/Input/
+VTOL​	22-designer-part-properties.json	ctx:/PartProperties_ControlBaseData/Input/
+Primary Grip​	22-designer-part-properties.json	ctx:/PartProperties_PosedGripData/Control
+Scheme/
+Secondary Grip​	22-designer-part-properties.json	ctx:/PartProperties_PosedGripData/Control
+Scheme/
+Ungripped​	22-designer-part-properties.json	ctx:/PartProperties_PosedGripData/Control
+Scheme/
+Activate 1​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Activate 2​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Activate 3​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Activate 4​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Activate 5​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Activate 6​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Activate 7​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Activate 8​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Brake​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Cycle Targeting Mode​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Fire Guns​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Fire Weapons​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Interact​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Landing Gear​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Launch Countermeasures​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Max Throttle​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Next Target​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Next Weapon​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Previous Target​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Previous Weapon​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Trim Reset​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Zero Throttle​	22-designer-part-properties.json	ctx:/PartProperties_CockpitButtonData/Input/
+Front Canopy	22-designer-part-properties.json	ctx:/PartProperties_CanopyData/
+Back Canopy	22-designer-part-properties.json	ctx:/PartProperties_CanopyData/
+Visible	22-designer-part-properties.json	ctx:/PartProperties_CanopyData/
+Chevron	22-designer-part-properties.json	ctx:/PartProperties_JetEngineData/
+Clappered	22-designer-part-properties.json	ctx:/PartProperties_JetEngineData/
+Military1	22-designer-part-properties.json	ctx:/PartProperties_JetEngineData/
+Nozzle 2	22-designer-part-properties.json	ctx:/PartProperties_JetEngineData/
+Nozzle 3	22-designer-part-properties.json	ctx:/PartProperties_JetEngineData/
+Nozzle 4	22-designer-part-properties.json	ctx:/PartProperties_JetEngineData/
+Pointy Large	22-designer-part-properties.json	ctx:/PartProperties_JetEngineData/
+Pointy Spiral	22-designer-part-properties.json	ctx:/PartProperties_JetEngineData/
+Round Large	22-designer-part-properties.json	ctx:/PartProperties_JetEngineData/
+Round Spiral	22-designer-part-properties.json	ctx:/PartProperties_JetEngineData/
+S Curve	22-designer-part-properties.json	ctx:/PartProperties_JetEngineData/
+Spike	22-designer-part-properties.json	ctx:/PartProperties_JetEngineData/
+Flat Chevron	22-designer-part-properties.json	ctx:/PartProperties_JetEngineShroudData/
+False	22-designer-part-properties.json	ctx:/PartProperties_HeliMainRotorData/
+Rate	22-designer-part-properties.json	ctx:/PartProperties_HeliMainRotorData/
+Tapered	22-designer-part-properties.json	ctx:/PartProperties_HeliMainRotorData/
+True	22-designer-part-properties.json	ctx:/PartProperties_HeliMainRotorData/
+Head Hold	22-designer-part-properties.json	ctx:/PartProperties_HeliTailRotorData/
+Collective Pitch	22-designer-part-properties.json	ctx:/PartProperties_InputControllerData/
+Collective Pitch (alt)	22-designer-part-properties.json	ctx:/PartProperties_InputControllerData/
+Cyclic Pitch	22-designer-part-properties.json	ctx:/PartProperties_InputControllerData/
+Cyclic Pitch (alt)	22-designer-part-properties.json	ctx:/PartProperties_InputControllerData/
+Throttle Input	22-designer-part-properties.json	ctx:/PartProperties_InputControllerData/
+Cyclic Roll	22-designer-part-properties.json	ctx:/PartProperties_InputControllerData/
+Cyclic Roll (alt)	22-designer-part-properties.json	ctx:/PartProperties_InputControllerData/
+Tail Input	22-designer-part-properties.json	ctx:/PartProperties_InputControllerData/
+Tail Trim	22-designer-part-properties.json	ctx:/PartProperties_InputControllerData/
+Performance Cost	23-designer-environment-and-analysis.json	
+Click the indicated button to open the tool list.	24-designer-menu-and-tutorials.json	
+Click the indicated button to activate the view tool.	24-designer-menu-and-tutorials.json	
+Click the indicated button to activate the move part tool.	24-designer-menu-and-tutorials.json	
+Click the indicated button to activate the rotate tool.	24-designer-menu-and-tutorials.json	
+Click the indicated button to activate the translate tool.	24-designer-menu-and-tutorials.json	
+Click here to\nde-select part	24-designer-menu-and-tutorials.json	
+Click the 'Add Parts' button to open the parts list.	24-designer-menu-and-tutorials.json	
+Select the 'Structure' category in the part list flyout on the left.	24-designer-menu-and-tutorials.json	
+Click and drag the 'Fuselage' part from the part list and add it to your craft at the indicated position.	24-designer-menu-and-tutorials.json	
+Click the 'Part Properties' button to open the part property options for this part.	24-designer-menu-and-tutorials.json	
+Change the value of the 'Height' property to '1.1'.	24-designer-menu-and-tutorials.json	
+Click the 'Add Section' button to add a new section to the end of this fuselage	24-designer-menu-and-tutorials.json	
+Adjust the length of the fuselage to match the indicated shape by clicking and dragging the blue arrow at the front of the fuselage.	24-designer-menu-and-tutorials.json	
+Adjust the front width to match the indicated shape by clicking and dragging the red arrow at the front of the fuselage.	24-designer-menu-and-tutorials.json	
+Adjust the length of the fuselage to match the indicated shape by clicking and dragging the blue arrow at the back of the fuselage.	24-designer-menu-and-tutorials.json	
+Adjust the back width to match the indicated shape by clicking and dragging the red arrow at the back of the fuselage.	24-designer-menu-and-tutorials.json	
+Slope the top down.	24-designer-menu-and-tutorials.json	
+Adjust the back height to match the indicated shape by clicking and dragging the green arrow at the back of the fuselage.	24-designer-menu-and-tutorials.json	
+Click the back button in the part list header to go back to the part categories, then select the 'Interiors' category.	24-designer-menu-and-tutorials.json	
+Select the 'Interiors' category in the part list flyout on the left.	24-designer-menu-and-tutorials.json	
+Click and drag the 'Basic Seat' part from the part list and add it to your craft at the indicated position.	24-designer-menu-and-tutorials.json	
+Click the back button in the part list header to go back to the part categories, then select the 'Structure' category.	24-designer-menu-and-tutorials.json	
+Click and drag the 'Bay' part from the part list and add it to your craft at the indicated position.	24-designer-menu-and-tutorials.json	
+Change the Bottom cutting parameter to 50% using the indicated slider.	24-designer-menu-and-tutorials.json	
+Change the value of the 'Hollow' property to 'Yes'.	24-designer-menu-and-tutorials.json	
+Change the value of the 'Width' property to '0.7'.	24-designer-menu-and-tutorials.json	
+Click the back button in the part list header to go back to the part categories, then select the 'Wings' category.	24-designer-menu-and-tutorials.json	
+Select the 'Wings' category in the part list flyout on the left.	24-designer-menu-and-tutorials.json	
+Click and drag the 'Primary Wing' part from the part list and add it to your craft at the indicated position.	24-designer-menu-and-tutorials.json	
+Open the wing shape tool. This can be done by double clicking the part or it can be accessed via its part properties.	24-designer-menu-and-tutorials.json	
+Change the value of the 'Fuel' property to '15%'.	24-designer-menu-and-tutorials.json	
+Click and drag the 'Horizontal Stabilizer' part from the part list and add it to your craft at the indicated position.	24-designer-menu-and-tutorials.json	
+Click and drag the 'Vertical Stabilizer' part from the part list and add it to your craft at the indicated position.	24-designer-menu-and-tutorials.json	
+We don't want this part mirrored. Click the symmetry button to turn it off. Shortcut: 'Ctrl + X'	24-designer-menu-and-tutorials.json	
+We want this part mirrored. Click the symmetry button to turn it on. Shortcut: 'Ctrl + X'	24-designer-menu-and-tutorials.json	
+Click empty space to deselect your part so we can toggle symmetry.	24-designer-menu-and-tutorials.json	
+Click the back button in the part list header to go back to the part categories, then select the 'Aircraft Propulsion' category.	24-designer-menu-and-tutorials.json	
+Select the 'Aircraft Propulsion' category in the part list flyout on the left.	24-designer-menu-and-tutorials.json	
+Click and drag the 'Small Prop' part from the part list and add it to your craft at the indicated position.	24-designer-menu-and-tutorials.json	
+Change the value of the 'Cylinders' property to '6'.	24-designer-menu-and-tutorials.json	
+Add the landing gear here.	24-designer-menu-and-tutorials.json	
+Click the back button in the part list header to go back to the part categories, then select the 'Wheels' category.	24-designer-menu-and-tutorials.json	
+Select the 'Wheels' category in the part list flyout on the left.	24-designer-menu-and-tutorials.json	
+Click and drag the 'Wing Gear' part from the part list and add it to your craft at the indicated position.	24-designer-menu-and-tutorials.json	
+Add a tiny wheel in the back to keep the tail out of the dirt.	24-designer-menu-and-tutorials.json	
+Click and drag the 'Fixed Gear' part from the part list and add it to your craft at the indicated position.	24-designer-menu-and-tutorials.json	
+Change the value of the 'Turnable' property to 'Yes'.	24-designer-menu-and-tutorials.json	
+Our hole cutting parts may be in our way for this step. Let's disable their outlines for now. First, click the indicated button to open the view panel.	24-designer-menu-and-tutorials.json	
+Disable the hole cutting outlines by clicking the indicated button. You can also use the '/' key.	24-designer-menu-and-tutorials.json	
+Select the main section of the fuselage by clicking the 'Backwards' button. Alternatively, you can click on the middle of the part directly.	24-designer-menu-and-tutorials.json	
+Select the main section of the fuselage by clicking the 'Forwards' button. Alternatively, you can click on the middle of the part directly.	24-designer-menu-and-tutorials.json	
+Select the front of the fuselage by clicking the 'Forwards' button. Alternatively, you can click on the front of the part directly.	24-designer-menu-and-tutorials.json	
+Open the fuselage shape tool. This can be done by double clicking the part or it can be accessed via its part properties.	24-designer-menu-and-tutorials.json	
+Select the back of the fuselage by clicking the 'Backwards' button. Alternatively, you can click on the back of the part directly.	24-designer-menu-and-tutorials.json	
+We need to enable powertrain view for this step. First, click the indicated button to open the view panel.	24-designer-menu-and-tutorials.json	
+Enable powertrain view by clicking the indicated button.	24-designer-menu-and-tutorials.json	
+Click the back button in the part list header to go back to the part categories, then select the 'Engines' category.	24-designer-menu-and-tutorials.json	
+Select the 'Engines' category in the part list flyout on the left.	24-designer-menu-and-tutorials.json	
+Click and drag the 'Drive Shaft' part from the part list and add it to your craft at the indicated position.	24-designer-menu-and-tutorials.json	
+Click and drag the 'Transmission' part from the part list and add it to your craft at the indicated position.	24-designer-menu-and-tutorials.json	
+Change the value of the 'Number of Gears' property to '3'.	24-designer-menu-and-tutorials.json	
+Click and drag the 'Differential' part from the part list and add it to your craft at the indicated position.	24-designer-menu-and-tutorials.json	
+Click and drag the 'Street Wheel' part from the part list and add it to your craft at the indicated position.	24-designer-menu-and-tutorials.json	
+Click and drag the 'Double Wishbone' part from the part list and add it to your craft at the indicated position.	24-designer-menu-and-tutorials.json	
+Change the value of the 'Turning Angle' property to '20'.	24-designer-menu-and-tutorials.json	
+Color	25-designer-paint-and-appearance.json	
+Snap Points To Road	26-designer-transform-and-connections.json	
+Mirroring enabled for part 'Fuselage (Id: 9)' and 12 other parts.\nAutomatically linked 2 existing sets of mirrored parts.	26-designer-transform-and-connections.json	
+Choose the coordinate space for rotation: local\n(part's orientation) or world.	26-designer-transform-and-connections.json	
+Choose whether to rotate the selected part\nindividually or along with all connected parts.	26-designer-transform-and-connections.json	
+Individual	26-designer-transform-and-connections.json	
+Choose the coordinate space for movement: local\n(part's orientation) or world.	26-designer-transform-and-connections.json	
+Choose whether to move the selected part\nindividually or along with all connected parts.	26-designer-transform-and-connections.json	
+Rear Gear\nBeefy landing gear that sport a wider stance and are intended to be used in the rear for jet airplanes.	28-designer-tooltips-and-search.json	
+Wing Gear\nLanding gear specially made to attach to a wing. They are capable of retracting and snuggling up right under the wing.	28-designer-tooltips-and-search.json	
+Bare Wing Gear\nLanding gear specially made to attach to a wing with a custom cover. They are capable of retracting and snuggling up right under the wing.	28-designer-tooltips-and-search.json	
+Fixed Gear\nUseful for taking off, and landing without destroying your airplane.	28-designer-tooltips-and-search.json	
+Short Gear\nFancy landing gear that can hide on command. This is great because it's one of the few animations in the game, and it reduces drag.	28-designer-tooltips-and-search.json	
+Large Gear\nLarger version of the retractable landing gear.	28-designer-tooltips-and-search.json	
+Boom 50\n500-pound dumb bomb. It makes a bigger boom.	28-designer-tooltips-and-search.json	
+Window\nIt's realer	28-designer-tooltips-and-search.json	
+Lazy 50\nThis is a laser-guided bomb with 500lbs of love.	28-designer-tooltips-and-search.json	
+Bay\nIt's real	28-designer-tooltips-and-search.json	
+Boom 25\nIt's a 250-pound dumb bomb. It goes boom when it hits something.	28-designer-tooltips-and-search.json	
+Saves the current craft.\nShortcut: <b>Ctrl + S</b>	28-designer-tooltips-and-search.json	
+Paint Tool\nCustomize the colors and textures of your craft.\nShortcut: <b>P</b>	28-designer-tooltips-and-search.json	
+ProceduralMissileSubPartData	28-designer-tooltips-and-search.json	
+Cycle hidden parts view mode\nShortcut: <b>Ctrl + H</b>	28-designer-tooltips-and-search.json	
+Invert hidden parts\nShortcut: <b>Shift + H</b>	28-designer-tooltips-and-search.json	
+Move Part Tool\nSelect, move, and attach parts to build your craft.\nShortcut: <b>1</b>	28-designer-tooltips-and-search.json	
+Part Properties\nOpens the Part Properties menu for the selected part. Many parts have settings that can be customized.\nShortcut: <b>Y</b>	28-designer-tooltips-and-search.json	
+Rotate Part 90° around X-axis\nShortcut: <b>W</b>	28-designer-tooltips-and-search.json	
+Rotate Part 90° around Y-axis\nShortcut: <b>D</b>	28-designer-tooltips-and-search.json	
+Rotate Part 90° around Z-axis\nShortcut: <b>E</b>	28-designer-tooltips-and-search.json	
+Rotate Tool\nPrecisely rotate parts using gizmos without altering part connections.\nShortcut: <b>2</b>	28-designer-tooltips-and-search.json	
+Search Parts\nFind parts by name or ID, and manage their visibility.\nShortcut: <b>Space</b>	28-designer-tooltips-and-search.json	
+Show all hidden parts\nShortcut: <b>Ctrl + Shift + H</b>	28-designer-tooltips-and-search.json	
+Toggle Cutting Outlines\nShow or hide outlines around cutting parts.\nShortcut: <b>/</b>	28-designer-tooltips-and-search.json	
+Toggle Decal Outlines\nShow or hide outlines around decal parts.\nShortcut: <b>\</b>	28-designer-tooltips-and-search.json	
+Toggle symmetry for the selected part and its connected parts.\nHold Shift to only affect the selected part and not its connected parts.\nShortcut: <b>X</b>	28-designer-tooltips-and-search.json	
+Translate Tool\nPrecisely move parts using gizmos without altering part connections.\nShortcut: <b>3</b>	28-designer-tooltips-and-search.json	
+View Tool\nView the craft without accidentally grabbing and moving parts.\nShortcut: <b>4</b>	28-designer-tooltips-and-search.json	
+Toggle the initial symmetry setting for new parts when they are added to the craft.\nShortcut: <b>Ctrl + X</b>	28-designer-tooltips-and-search.json	
+Toggle the initial symmetry setting for new parts when they are added to the craft.\nShortcut: Ctrl + X	28-designer-tooltips-and-search.json	
+Toggle the initial symmetry setting for new parts\nwhen they are added to the craft.\nShortcut: <b>Ctrl + X</b>	28-designer-tooltips-and-search.json	
+Toggle the initial symmetry setting for new parts\nwhen they are added to the craft.\nShortcut: Ctrl + X	28-designer-tooltips-and-search.json	
+In Fixed mode, this sets the constant blade angle. In Auto mode, this defines the maximum (coarse) pitch limit the governor can apply.	28-designer-tooltips-and-search.json	
+Reverses the direction the propellers are facing as well.	28-designer-tooltips-and-search.json	
+The number of propeller blades. More blades means more thrust given the same RPM, but also more drag and mass for the motor to spin.	28-designer-tooltips-and-search.json	
+The pitch of the blades can either be fixed, automatically maintain a constant RPM, or controlled via an input controller during flight.	28-designer-tooltips-and-search.json	
+Changes how many are duplicatd around the missile.	28-designer-tooltips-and-search.json	
+No targeting pods available.	28-designer-tooltips-and-search.json	
+Select a target for the Right Knee.	28-designer-tooltips-and-search.json	
+Add Parts	29-designer-part-names.json	
+Bare Wing Gear	29-designer-part-names.json	
+Boom 25	29-designer-part-names.json	
+Boom 50	29-designer-part-names.json	
+Fixed Gear	29-designer-part-names.json	
+Large Gear	29-designer-part-names.json	
+Lazy 50	29-designer-part-names.json	
+Paint Tool	29-designer-part-names.json	
+Rear Gear	29-designer-part-names.json	
+Saves the current craft.	29-designer-part-names.json	
+Short Gear	29-designer-part-names.json	
+Wing Gear	29-designer-part-names.json	
+Propeller Assembly​	29-designer-part-names.json	
+Missile​	29-designer-part-names.json	
+Fin Greeble​	29-designer-part-names.json	
+Missile Fins​	29-designer-part-names.json	
+Missile Greeble​	29-designer-part-names.json	
+Missile Jet Inlet​	29-designer-part-names.json	
+Missile Wings​	29-designer-part-names.json	
+Button​	29-designer-part-names.json	
+Car Pedal​	29-designer-part-names.json	
+Cylinder Grip​	29-designer-part-names.json	
+Fighter Throttle​	29-designer-part-names.json	
+Joystick Base​	29-designer-part-names.json	
+Joystick Top​	29-designer-part-names.json	
+Joystick Top 2​	29-designer-part-names.json	
+Simple Throttle​	29-designer-part-names.json	
+Yoke​	29-designer-part-names.json	
+Share	30-upload-and-sharing.json	
+Adjusts the density of the trees. Higher settings mean more trees being rendered on screen, which can reduce performance.\n\nNo Trees: No trees will be rendered.\n\nLow: Approximately 10% of the trees will be rendered.\n\nMedium: Approximately 50% of the trees will be rendered.\n\nHigh: All trees will be rendered.	32-settings-dialog.json	
+Adjusts the quality and view distance of shadows. Shadow quality can have a performance impact on both CPU and GPU performance.\n\nOff: Shadows are disabled entirely. This has an obvious impact on visual quality, but it can improve performance on devices that struggle to reach playable framerates.\n\nLow: Shadows are lower quality and have a short view distance.\n\nMedium: Shadow quality and view distance tries to strike a decent balance between high and low quality.\n\nHigh: Shadows are higher quality and have a larger view distance than the lower qualities.\n\nVery High: Shadows are at their highest quality and the shadow view distance is dynamic, allowing for far greater shadow view distances when flying.	32-settings-dialog.json	
+Adjusts the quality of the water. This can impact visual effects as well as some physics effects.\n\nLow: Similar to medium quality without a few effects such as river flows, dynamic waves, and caustics\n\nMedium: Water will be rendered with all its various visual and physical effects fully enabled.\n\nHigh: Water will be rendered with all its various visual and physical effects fully enabled with increased detail at further distances.	32-settings-dialog.json	
+Adjusts the visual quality of the clouds, sky, and fog. Higher settings are very GPU heavy. Lowering this setting can have big performance gains for GPU limited situations.\n\nLow: Flat 2D clouds will be used as part of the skybox instead of 3D volumetric clouds.\n\nMedium: Volumetric clouds will be used at a reduced quality level.\n\nHigh: High quality volumetric clouds will be used.	32-settings-dialog.json	
+Adjusts the visual quality of the terrain's surface. Higher settings are very GPU heavy. Lowering this setting can have big performance gains for GPU limited situations.\n\nLow: The visual quality of the terrain surface will be significantly reduced.\n\nMedium: The visual quality of the terrain surface will be somewhat reduced.\n\nHigh: The visual quality of the terrain surface will be at its highest quality.	32-settings-dialog.json	
+Anti-aliasing helps smooth pixelated edges.\n\nNone: No anti-aliasing will be used.\n\nMSAA x2: MSAA 2x (Multi-Sample Anti-Aliasing) samples 2 points per pixel for high-quality edges, but with a higher performance cost.\n\nMSAA 4x: MSAA 4x (Multi-Sample Anti-Aliasing) samples 4 points per pixel for high-quality edges, but with a higher performance cost.\n\nMSAA 8x: MSAA 8x (Multi-Sample Anti-Aliasing) samples 8 points per pixel for high-quality edges, but with a higher performance cost.\n\nFXAA: FXAA (Fast Approximate Anti-Aliasing) quickly smooths edges with a slight blur, offering high performance but lower visual quality.\n\nSMAA: SMAA (Subpixel Morphological Anti-Aliasing) reduces jagged edges with minimal performance impact, providing a good balance between quality and performance.	32-settings-dialog.json	
+Default	32-settings-dialog.json	
+Defines the frequency of the foam simulation on the water surface.\n\nOff: Water will not simulate foam.\n\nLow: Water will simulate foam at a lower frequency.\n\nMedium: Water will simulate foam at a moderate frequency.\n\nHigh: Water will simulate foam at a higher frequency.	32-settings-dialog.json	
+Foam Simulation Rate	32-settings-dialog.json	
+High	32-settings-dialog.json	
+Low	32-settings-dialog.json	
+Medium	32-settings-dialog.json	
+Realtime	32-settings-dialog.json	
+SMAA	32-settings-dialog.json	
+This setting changes the way reflections are handled on the craft surfaces.\n\nRealtime: Reflective craft parts will reflect the surrounding world in realtime. Enabling this option can result in extreme performance impacts.\n\nStatic: Reflective craft parts will use a vague static image to give the illusion of the parts reflecting their surroundings without actually doing so.	32-settings-dialog.json	
+This value scales the rendered resolution of the game while the user interface still renders at the specified resolution. \n\nAt values lower than 1, the game will be rendered at a lower resolution than the game screen and then upscaled. This is a trade-off of reduced graphical quality for performance gains. \n\nAt values higher than 1, the game will be rendered at a higher resolution than the game screen and then downscaled. This is a trade-off of increased graphical quality (particularly a reduction in aliasing) at the cost of performance.	32-settings-dialog.json	
+Toggles the waves along the shorelines. This has minimal impact on performance but some players may prefer less turbulent shorelines, either for physics-related or perhaps just visual reasons.	32-settings-dialog.json	
+Very High	32-settings-dialog.json	
+Very Low	32-settings-dialog.json	
+Mouse	32-settings-dialog.json	
+Mouse Wheel	32-settings-dialog.json	
+Right Mouse Button	32-settings-dialog.json	
+Back Quote	32-settings-dialog.json	
+Backspace	32-settings-dialog.json	
+Space	32-settings-dialog.json	
+Left Alt	32-settings-dialog.json	
+Left Control	32-settings-dialog.json	
+Left Shift	32-settings-dialog.json	
+Right Shift	32-settings-dialog.json	
+Zoom	32-settings-dialog.json	
+Slew RIght	32-settings-dialog.json	
+Toggle Wind Settings	32-settings-dialog.json	
+Save Aircraft	32-settings-dialog.json	
+Single / Connected Part Modifier Key\n  (Select / Clone / Transform / Symmetry)	32-settings-dialog.json	
+Miscellaneous	32-settings-dialog.json	
+Press a key to assign it to\n<color=#ffff00>Activate 2</color>\n\nModifier keys may also be used. To assign a modifier key alone, hold it down for 1 second.	32-settings-dialog.json	
+GS	40-flight-ui.json	
+IAS	40-flight-ui.json	
+TAS	40-flight-ui.json	
+Countermeasures\nShortcut: <b>V</b>	40-flight-ui.json	
+SERVER SETTINGS	40-flight-ui.json	
+Server Settings	40-flight-ui.json	
+Allow players to copy your craft	40-flight-ui.json	
+G\nE\nA\nR	40-flight-ui.json	
+"Thrill of a Lifetime"	40-flight-ui.json	
+AGL	40-flight-ui.json	
+ASL	40-flight-ui.json	
+Look at your hands to see the controls for flying. If you ever want to see them again, you can find the controls button in the pop-up menu under settings.\n\nYou can adjust your view by moving your hands close together and then holding the grab button on both controllers. Then move your hands to change your view.\n\nEnjoy your flight!\n	40-flight-ui.json	
+"Speed for Speed"	40-flight-ui.json	
+On Rails	40-flight-ui.json	
+The Bannock Run	40-flight-ui.json	
+Window Breaker	40-flight-ui.json	
+Autopilot disabled. 	40-flight-ui.json	
+Autopilot enabled. Wing Leveling Mode	40-flight-ui.json	
+Reloads your craft at your current position.\nShortcut: <b>Ctrl + R</b>	40-flight-ui.json	
+Enter / Exit Aircraft\nShortcut: <b>N</b>	40-flight-ui.json	
+Reloads your craft at your starting position.\nShortcut: <b>Ctrl + Shift + R</b>	40-flight-ui.json	
+Repositions and uprights your craft at your current position.\nShortcut: <b>Ctrl + F</b>	40-flight-ui.json	
+Change view\nShortcut: <b>C</b>	40-flight-ui.json	
+Select Next Target\nShortcut: <b>Tab, ]</b>	40-flight-ui.json	
+Show Activation Panel\nShortcut: <b>T, Right Shift</b>	40-flight-ui.json	
+Show Instrument Panel\nShortcut: <b>T, Right Shift</b>	40-flight-ui.json	
+Current throttle\nShortcut: <b>Left Shift, Left Control</b>	40-flight-ui.json	
+Scattered Clouds	40-flight-ui.json	
+Broken Clouds	40-flight-ui.json	
+Light Fog	40-flight-ui.json	
+Heavy Fog	40-flight-ui.json	
+This craft file was hand edited by its author to make use of features that are not directly supported in the game. Many advanced players use XML-modding to work around limitations in the game to enable really cool functionality that would otherwise not be possible. It is perfectly safe to pilot, but modifying this craft yourself may reset their special properties or cause unexpected behavior.\n\n	40-flight-ui.json	
+Part damaged: Flight Computer	40-flight-ui.json	
+Building Style	99-misc.json	
+Select Part By ID	99-misc.json	
