@@ -13,7 +13,7 @@
 | 项 | 值 |
 |---|---|
 | 词库条目 | 10416 |
-| 插件版本 | 1.6.0 |
+| 插件版本 | 1.6.1 |
 | 作者 | 白杨木（[baiyangmuzz](https://github.com/baiyangmuzz)） |
 | 交流群 | QQ 1128992783 |
 | 下载 | [Releases 最新版](https://github.com/baiyangmuzz/SP2Chinese/releases/latest) |
@@ -49,7 +49,7 @@ BepInEx 本体与其它模组不受影响。
 manifest 里的 `dictVersion` 。不一致时下载新字典、校验 SHA256、替换并热重载，
 不需要重装或重启。旧字典保留为 `.bak-auto` 。
 
-下载地址`raw.githubusercontent.com` 
+下载地址优先 `raw.githubusercontent.com` ，失败回落到 `www.baiyangmu.xyz` 。
 断网或校验失败时继续使用本地词库，不阻塞游戏。
 
 **插件更新**：manifest 的 `modVersion` 与本地版本不同时，只在日志里提示到 Releases

@@ -269,12 +269,13 @@ function Get-SourceUrls([string]$relPath) {
 
 # 文本下载：manifest 等小型 JSON
 function Get-TextViaCurl([string]$url) {
-    return ((& curl.exe -sk -m 20 $url 2>$null) -join "`n")
+    # --connect-timeout 3：连不上的源 3 秒内放弃，不让单个节点卡死流程
+    return ((& curl.exe -sk --connect-timeout 3 -m 20 $url 2>$null) -join "`n")
 }
 
 # 文件下载：字典等较大文件（写盘 + 存在且非空才认成功）
 function Save-FileViaCurl([string]$url, [string]$outFile) {
-    & curl.exe -sk -m 180 -o $outFile $url 2>$null
+    & curl.exe -sk --connect-timeout 3 -m 120 -o $outFile $url 2>$null
     return ($LASTEXITCODE -eq 0 -and (Test-Path $outFile) -and (Get-Item $outFile).Length -gt 0)
 }
 
@@ -285,7 +286,7 @@ function Invoke-UpdateCheck {
     $i = 0
     foreach ($u in $urls) {
         $i++
-        Show-Bar ([int](100 * $i / $urls.Count)) ("更新源 " + ([uri]$u).Host)
+        Show-Bar ([int](100 * $i / $urls.Count)) ("[{0}/{1}] {2}" -f $i, $urls.Count, ([uri]$u).Host)
         $json = Get-TextViaCurl $u
         if ($json) {
             try { $mf = $json | ConvertFrom-Json; break } catch { continue }
@@ -323,7 +324,7 @@ function Invoke-UpdateCheck {
         $dictUrls = Get-SourceUrls 'dictionary_zh_cn.tsv'
         foreach ($u in $dictUrls) {
             $i++
-            Show-Bar ([int](100 * $i / $dictUrls.Count)) ("词库下载 " + ([uri]$u).Host)
+            Show-Bar ([int](100 * $i / $dictUrls.Count)) ("[{0}/{1}] {2}" -f $i, $dictUrls.Count, ([uri]$u).Host)
             if (Save-FileViaCurl $u $dictFile) {
                 $got = (Get-FileHash $dictFile -Algorithm SHA256).Hash.ToLower()
                 if (-not $mf.dictSha256 -or $got -eq $mf.dictSha256.ToLower()) {

@@ -1,9 +1,9 @@
 {
-  "modVersion": "1.6.0",
+  "modVersion": "1.6.1",
   "dictVersion": "e8a0c95dfa74",
   "dictRows": 10416,
   "dictSha256": "e8a0c95dfa74f8825f401122104d970ad4870ae3762305df4ff9daa494f2abb6",
-  "generatedAt": "2026-10-22T04:02:52+08:00",
+  "generatedAt": "2026-10-22T17:52:25+08:00",
   "author": "白杨木",
   "qqGroup": "1128992783",
   "repository": "https://github.com/baiyangmuzz/SP2Chinese",
@@ -97,7 +97,7 @@
       "size": 795383
     },
     "BepInEx/plugins/SP2Chinese/SP2Chinese.dll": {
-      "sha256": "a4ed0eadab3b2ea2be99ed37c93092c82c5e6d77104b8189bc8f295a24cae85f",
+      "sha256": "3593c88299cd1ab733488ecdb779e81966a5c2ba0709fa4478ea43124818aa9c",
       "size": 99840
     }
   },
