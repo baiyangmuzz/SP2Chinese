@@ -1,0 +1,3 @@
+# 词库以字节为单位发布，插件按 manifest 里的 SHA256 校验下载结果，
+# 禁止 Git 做换行转换，否则 raw 文件哈希会和 manifest 对不上。
+*.tsv -text

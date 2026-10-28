@@ -12,7 +12,7 @@ using UnityEngine.UI;
 
 namespace SP2Chinese
 {
-    [BepInPlugin("sp2.zh", "SimplePlanes 2 \u7b80\u4f53\u4e2d\u6587 by \u767d\u6768\u6728", "1.6.1")]
+    [BepInPlugin("sp2.zh", "SimplePlanes 2 \u7b80\u4f53\u4e2d\u6587 by \u767d\u6768\u6728", "1.6.2")]
     public class Plugin : BaseUnityPlugin
     {
         private string _dictPath;
@@ -22,6 +22,7 @@ namespace SP2Chinese
         private int _frame;
         private float _updateDelay = 15f;      // 启动后等 15 秒再联网，别和加载抢带宽
         private string _pendingHandled;
+        private string _lastUpdateStatus;
         private ConfigEntry<bool> _autoUpdate;
 
         private void Awake()
@@ -126,6 +127,14 @@ namespace SP2Chinese
                     _pendingHandled = pending;
                     ApplyDownloadedDictionary(pending);
                 }
+
+                // 更新检查跑在后台线程，状态在主线程统一落日志，出问题时至少能查到原因。
+                var status = DictionaryUpdater.LastStatus;
+                if (!string.IsNullOrEmpty(status) && status != _lastUpdateStatus)
+                {
+                    _lastUpdateStatus = status;
+                    Logger.LogInfo("[更新] " + status);
+                }
             }
 
             // Only the dictionary hot-reload check lives here now.
@@ -154,6 +163,19 @@ namespace SP2Chinese
                 if (File.Exists(_dictPath)) File.Copy(_dictPath, _dictPath + ".bak-auto", true);
                 File.Copy(downloaded, _dictPath, true);
                 try { File.Delete(downloaded); } catch { }
+
+                // 构建号和词库一起更新，否则下次比较时本地 build 仍落后于自己的词库。
+                var build = DictionaryUpdater.PendingBuild;
+                if (!string.IsNullOrEmpty(build))
+                {
+                    try
+                    {
+                        File.WriteAllText(Path.Combine(Path.GetDirectoryName(_dictPath), "dict.build"),
+                            build, new UTF8Encoding(false));
+                    }
+                    catch (Exception e) { Logger.LogWarning("dict.build 写入失败: " + e.Message); }
+                }
+                DictionaryUpdater.PendingBuild = null;
 
                 Translator.I.Load(_dictPath);
                 FontLoader.Ensure(Translator.I.UsedCharacters);

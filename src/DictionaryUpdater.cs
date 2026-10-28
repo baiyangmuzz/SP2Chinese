@@ -20,11 +20,18 @@ namespace SP2Chinese
     /// </summary>
     internal static class DictionaryUpdater
     {
-        private const string ManifestUrl =
-            "https://raw.githubusercontent.com/baiyangmuzz/SP2Chinese/main/manifest.json";
+        private static readonly string[] ManifestUrls =
+        {
+            "https://raw.githubusercontent.com/baiyangmuzz/SP2Chinese/main/manifest.json",
+            "https://fastly.jsdelivr.net/gh/baiyangmuzz/SP2Chinese@main/manifest.json",
+            "https://cdn.jsdelivr.net/gh/baiyangmuzz/SP2Chinese@main/manifest.json",
+        };
 
         /// <summary>已下载并校验通过的临时字典路径；主线程消费后置空。</summary>
         internal static volatile string PendingPath;
+
+        /// <summary>与 PendingPath 对应的线上构建号，热重载时写入 dict.build。</summary>
+        internal static volatile string PendingBuild;
 
         internal static volatile string LastStatus;
 
@@ -40,7 +47,7 @@ namespace SP2Chinese
         {
             try
             {
-                var json = Fetch(ManifestUrl);
+                var json = FetchManifest();
                 if (string.IsNullOrEmpty(json))
                 {
                     LastStatus = "manifest 获取失败，使用本地词库";
@@ -54,9 +61,10 @@ namespace SP2Chinese
                     return;
                 }
 
-                // 插件本身变了 -> 提示下载完整包，不动字典（避免新旧逻辑配新字典出新问题）
+                // 远程插件比本地新才提示下载完整包，不动字典（避免新旧逻辑配新字典出新问题）。
+                // 只比字符串不等会把“本地开发版比线上新”误报成有新版本。
                 var remoteMod = Str(manifest, "modVersion");
-                if (!string.IsNullOrEmpty(remoteMod) && remoteMod != localVersion)
+                if (!string.IsNullOrEmpty(remoteMod) && IsNewer(remoteMod, localVersion))
                 {
                     LastStatus = "有新版本插件 " + remoteMod + "（当前 " + localVersion +
                                  "），请到 QQ 群 1128992783 或 Releases 下载完整包";
@@ -66,6 +74,21 @@ namespace SP2Chinese
                 var remoteDictId = Str(manifest, "dictVersion");
                 var localDictId = Sha256OfFile(localDictPath);
                 if (localDictId != null && localDictId.Length > 12) localDictId = localDictId.Substring(0, 12);
+
+                // 词库构建序号：本地不旧于线上就不下载。
+                // 只比哈希会把"本地已修好、线上还是旧版"的情况误判成需要更新，反而覆盖掉修复。
+                var remoteBuild = Long(manifest, "dictBuild");
+                var localBuild = ReadLocalBuild(localDictPath);
+                if (localBuild > 0)
+                {
+                    // 远程没写版本号（老 manifest）或版本不高于本地，都保留本地：
+                    // 本地带版本号说明是比线上更新的构建，覆盖只会把修复打回去。
+                    if (remoteBuild == 0 || remoteBuild <= localBuild)
+                    {
+                        LastStatus = "词库已是本地较新版本（build " + localBuild + "），不覆盖";
+                        return;
+                    }
+                }
 
                 if (string.IsNullOrEmpty(remoteDictId) || remoteDictId == localDictId)
                 {
@@ -81,6 +104,11 @@ namespace SP2Chinese
                 }
 
                 var body = FetchBytes(url);
+                if (body == null)
+                {
+                    var mirror = MirrorUrl(url);
+                    if (mirror != null) body = FetchBytes(mirror);
+                }
                 if (body == null)
                 {
                     LastStatus = "词库下载失败，继续用本地版本";
@@ -104,6 +132,9 @@ namespace SP2Chinese
 
                 var tmp = localDictPath + ".download";
                 File.WriteAllBytes(tmp, body);
+                PendingBuild = remoteBuild > 0
+                    ? remoteBuild.ToString(System.Globalization.CultureInfo.InvariantCulture)
+                    : null;
                 PendingPath = tmp;
                 LastStatus = "已下载新词库 " + remoteDictId + "（" + (body.Length / 1024) + " KB），等待热重载";
             }
@@ -139,11 +170,21 @@ namespace SP2Chinese
             return v as string;
         }
 
-        private static string Fetch(string url)
+        private static string FetchManifest()
+        {
+            for (var i = 0; i < ManifestUrls.Length; i++)
+            {
+                var json = Fetch(ManifestUrls[i], 6);
+                if (!string.IsNullOrEmpty(json)) return json;
+            }
+            return null;
+        }
+
+        private static string Fetch(string url, int timeoutSeconds)
         {
             try
             {
-                using (var http = NewClient())
+                using (var http = NewClient(timeoutSeconds))
                 {
                     return http.GetStringAsync(url).GetAwaiter().GetResult();
                 }
@@ -154,11 +195,11 @@ namespace SP2Chinese
             }
         }
 
-        private static byte[] FetchBytes(string url)
+        private static byte[] FetchBytes(string url, int timeoutSeconds = 20)
         {
             try
             {
-                using (var http = NewClient())
+                using (var http = NewClient(timeoutSeconds))
                 {
                     return http.GetByteArrayAsync(url).GetAwaiter().GetResult();
                 }
@@ -169,13 +210,57 @@ namespace SP2Chinese
             }
         }
 
-        private static HttpClient NewClient()
+        private static HttpClient NewClient(int timeoutSeconds)
         {
             var http = new HttpClient();
-            http.Timeout = TimeSpan.FromSeconds(15);
+            http.Timeout = TimeSpan.FromSeconds(timeoutSeconds);
             // GitHub raw 需要 UA，否则可能被拒
             http.DefaultRequestHeaders.TryAddWithoutValidation("User-Agent", "SP2Chinese-Updater");
             return http;
+        }
+
+        private static bool IsNewer(string remote, string local)
+        {
+            try { return new Version(remote) > new Version(local); }
+            catch { return false; }
+        }
+
+        /// <summary>把 GitHub 下载地址换成 jsDelivr 镜像，raw 被墙时还有一条路。</summary>
+        private static string MirrorUrl(string url)
+        {
+            const string marker = "/SP2Chinese/";
+            var i = url.IndexOf(marker, StringComparison.OrdinalIgnoreCase);
+            if (i < 0) return null;
+
+            var rest = url.Substring(i + marker.Length);
+            if (rest.StartsWith("raw/main/", StringComparison.OrdinalIgnoreCase))
+                rest = rest.Substring("raw/main/".Length);
+            else if (rest.StartsWith("main/", StringComparison.OrdinalIgnoreCase))
+                rest = rest.Substring("main/".Length);
+            else
+                return null;
+
+            return "https://fastly.jsdelivr.net/gh/baiyangmuzz/SP2Chinese@main/" + rest;
+        }
+
+
+        private static long ReadLocalBuild(string localDictPath)
+        {
+            try
+            {
+                var p = Path.Combine(Path.GetDirectoryName(localDictPath), "dict.build");
+                if (!File.Exists(p)) return 0;
+                long v;
+                return long.TryParse(File.ReadAllText(p).Trim(), out v) ? v : 0;
+            }
+            catch { return 0; }
+        }
+
+        private static long Long(MiniJson node, string key)
+        {
+            var s = Str(node, key);
+            long v;
+            return long.TryParse(s, out v) ? v : 0;
         }
 
         private static string Sha256OfFile(string path)

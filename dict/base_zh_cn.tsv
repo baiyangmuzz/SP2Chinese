@@ -797,7 +797,6 @@ Are you sure you want to leave this activity?	确定要离开此活动吗？
 Are you sure you want to quit the tutorial?	确定要退出教程吗？
 Argentina	阿根廷
 Arrow	箭头
-Arrows	箭头
 Artillery	火炮
 AspectRatio: {0}	宽高比：{0}
 Assemblies	程序集
@@ -2169,7 +2168,7 @@ HP Mixed Reality Controller OpenXR	HP 混合现实控制器 OpenXR
 HTC Vive Controller OpenXR	HTC Vive 控制器 OpenXR
 Half Res	半分辨率
 Halo	光环
-Hand	手部
+Hand	抓手处
 HandleUrl: 	处理 URL：
 Hard	困难
 Has air brake.	有减速板。
@@ -2530,7 +2529,6 @@ Location	地点
 Location 	地点
 Location Discovered: 	已发现地点：
 Location: {0}, 	地点：{0}，
-Locations	地点
 Locked	已锁定
 Log	日志
 Log In	登录
@@ -2558,7 +2556,7 @@ MP_Steam_Join	MP_Steam_Join
 MPa	兆帕
 MTU: reliable = {0}, unreliable = {1}	MTU：可靠 = {0}，不可靠 = {1}
 MULTIPLAYER SETTINGS	多人游戏设置
-Magnet	磁铁
+Magnet	小心磁场
 Main	主
 Main Drive Shaft	主传动轴
 Main Rotor	主旋翼
@@ -2600,7 +2598,6 @@ Material ID does not exist: 	材质 ID 不存在：
 Material Overrides	材质覆盖
 Material Properties	材质属性
 Material Settings	材质设置
-Materials	材质
 Max	最大
 Max Bullets Per Second	每秒最大子弹数
 Max Cars	最大车辆数
@@ -3229,7 +3226,7 @@ Physics Settings	物理设置
 PicoXR Controller-Left	PicoXR 左控制器
 PicoXR Controller-Right	PicoXR 右控制器
 Pilot Seat	飞行员座椅
-Pinch	捏合
+Pinch	小心夹手
 Ping	延迟
 Ping: {0}ms, 	延迟：{0}毫秒，
 Piston	活塞
@@ -3852,7 +3849,6 @@ Showing the collider volume is not currently functional. RigidBody.SetDensity ha
 Shows outlines around selected parts in the designer.	在设计器中显示所选部件周围的轮廓。
 Shows the active tool. Click to open the tool selection panel.	显示当前工具。点击打开工具选择面板。
 Side View\nAlign the camera to view the craft from the side.	侧视图\n将相机对准载具侧面。
-Sign	符号
 Simple	简单
 SimpleGroundVehicleScript.CheckForObstructions	SimpleGroundVehicleScript.CheckForObstructions
 SimpleGroundVehicleScript.OnNavigationTargetReached	SimpleGroundVehicleScript.OnNavigationTargetReached
@@ -3987,7 +3983,7 @@ Steam Required	需要 Steam
 Steam lobby join requested while a scene transition is in progress. Waiting for current scene transition to finish.	场景切换进行中请求加入 Steam 大厅。正在等待当前场景切换完成。
 Steampunk	蒸汽朋克
 Stencil	模板
-Step	步骤
+Step	踩踏点
 Step #{0}	步骤 #{0}
 Steps (L1):	步数（L1）：
 Stick X	摇杆 X

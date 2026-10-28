@@ -1,10 +1,10 @@
 # SimplePlanes 2 简体中文汉化
 
-**English:** Full Simplified Chinese localization for [SimplePlanes 2](https://store.steampowered.com/app/2840470/) — runtime text replacement via BepInEx/Harmony, 10,416 entries, dynamic CJK font atlas that fixes tofu boxes in chat and UI, one-click installer with SHA256 verification, and in-game dictionary auto-updates. The game has no i18n framework; all strings are replaced at runtime.
+**English:** Full Simplified Chinese localization for [SimplePlanes 2](https://store.steampowered.com/app/2840470/) — runtime text replacement via BepInEx/Harmony, 10,393 entries, dynamic CJK font atlas that fixes tofu boxes in chat and UI, one-click installer with SHA256 verification, and in-game dictionary auto-updates. The game has no i18n framework; all strings are replaced at runtime.
 
 [SimplePlanes 2](https://store.steampowered.com/app/2840470/) 的社区汉化补丁。
 
-**中文：** 为 SimplePlanes 2 提供完整的简体中文汉化——通过 BepInEx/Harmony 在运行时替换文本，共 10416 条词条，动态生成中文字体图集（修复聊天与界面的方块字），一键安装器带 SHA256 校验，支持游戏内词库自动更新。游戏本身没有 i18n 框架，所有文本均在运行时替换。
+**中文：** 为 SimplePlanes 2 提供完整的简体中文汉化——通过 BepInEx/Harmony 在运行时替换文本，共 10393 条词条，动态生成中文字体图集（修复聊天与界面的方块字），一键安装器带 SHA256 校验，支持游戏内词库自动更新。游戏本身没有 i18n 框架，所有文本均在运行时替换。
 
 游戏官方只提供英语界面（Steam 商店页的语言表里简体中文标注为「不支持」），
 且游戏内没有 i18n 框架，所有文本硬编码在资源 XML 与 DLL 里。因此这个项目不做
@@ -12,8 +12,8 @@
 
 | 项 | 值 |
 |---|---|
-| 词库条目 | 10416 |
-| 插件版本 | 1.6.1 |
+| 词库条目 | 10393 |
+| 插件版本 | 1.6.2 |
 | 作者 | 白杨木（[baiyangmuzz](https://github.com/baiyangmuzz)） |
 | 交流群 | QQ 1128992783 |
 | 下载 | [Releases 最新版](https://github.com/baiyangmuzz/SP2Chinese/releases/latest) |
@@ -34,7 +34,7 @@
 然后在每个库下找 `steamapps\common\SimplePlanes 2` 。找不到时弹出文件夹选择窗口，
 再失败才要求手动输入路径。
 
-安装完成后按包内 `manifest.json` 逐文件校验 SHA256，共 23 个文件。
+安装完成后逐个校验本次写入文件的 SHA256。
 
 ## 卸载
 
@@ -49,7 +49,10 @@ BepInEx 本体与其它模组不受影响。
 manifest 里的 `dictVersion` 。不一致时下载新字典、校验 SHA256、替换并热重载，
 不需要重装或重启。旧字典保留为 `.bak-auto` 。
 
-下载地址优先 `raw.githubusercontent.com` ，失败回落到 `www.baiyangmu.xyz` 。
+本地 `dict.build` 比线上新时保留本地词库，不覆盖。安装器也按同一规则跳过已装的
+较新词库，不会把本地修复打回旧版。
+
+下载地址优先 `raw.githubusercontent.com` ，失败后尝试 jsDelivr 镜像。
 断网或校验失败时继续使用本地词库，不阻塞游戏。
 
 **插件更新**：manifest 的 `modVersion` 与本地版本不同时，只在日志里提示到 Releases
@@ -148,6 +151,9 @@ dotnet build -c Release
 python tools/verify_dict.py
 python dist/build_dist.py
 ```
+
+`build_dist.py` 优先使用 `bin/Release/SP2Chinese.dll`（比游戏目录里的副本新时），
+否则使用游戏目录里已部署的那份。
 
 ## 许可
 

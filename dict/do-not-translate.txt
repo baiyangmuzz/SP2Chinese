@@ -177,3 +177,27 @@ String
 Transparency
 True
 Vector3
+
+# 贴图/贴花分类名：游戏按分类文本筛选，翻译后点分类会显示空列表
+Animal Pattern
+Animal Stripe
+Animals
+Arrows
+Big Camo
+Blob Camo
+Camo
+Digi Camo
+Elements
+Examples
+Geometric
+Gradients
+Grid Pattern
+Grunge
+Liveries
+Materials
+Nature Camo
+Patterns
+Shapes
+Signs
+Stripes
+Vegetation

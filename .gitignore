@@ -3,14 +3,15 @@ bin/
 obj/
 _stage/
 dist/payload/
-dist/payload/
 
 # 本地反编译缓存（10MB+，不要进仓库）
 .cache/
 
-# 外部参照分析（仅保留缺口清单，不进仓库）
-_ref/*.json
-_ref/*.txt
+# 反编译产物、端到端测试包、分析缓存（仅本地使用）
+_decomp/
+_e2e/
+_ref/
+_funcs.json
 
 # 测试脚手架
 _other.json

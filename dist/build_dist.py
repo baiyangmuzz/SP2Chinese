@@ -20,6 +20,9 @@ from datetime import datetime
 
 GAME = r"D:\steam\steamapps\common\SimplePlanes 2"
 SRC = r"D:\SP2Chinese\dist"
+# 词库构建序号（yyyyMMddHHmm）：插件与安装器据此判断本地是否已比线上新，
+# 避免本地修好的词库被线上旧版覆盖。
+DICT_BUILD = int(__import__("time").strftime("%Y%m%d%H%M"))
 PAYLOAD = os.path.join(SRC, "payload")
 BEP_SRC = os.path.join(GAME, "BepInEx")
 PLUG_SRC = os.path.join(BEP_SRC, "plugins", "SP2Chinese")
@@ -58,11 +61,27 @@ def load_payload():
     # --- the mod itself ---
     plug_dst = os.path.join(PAYLOAD, "BepInEx", "plugins", "SP2Chinese")
     os.makedirs(plug_dst)
-    for f in ("SP2Chinese.dll", "dictionary_zh_cn.tsv"):
-        src = os.path.join(PLUG_SRC, f)
-        if not os.path.isfile(src):
-            raise SystemExit("missing " + src)
-        shutil.copy2(src, plug_dst)
+
+    # 优先用 bin/Release 的新构建，避免“改了源码没部署，打包还是旧 DLL”。
+    built_dll = os.path.join(DIST_ROOT, "bin", "Release", "SP2Chinese.dll")
+    deployed_dll = os.path.join(PLUG_SRC, "SP2Chinese.dll")
+    if os.path.isfile(built_dll) and (
+            not os.path.isfile(deployed_dll)
+            or os.path.getmtime(built_dll) >= os.path.getmtime(deployed_dll)):
+        dll_src, dll_from = built_dll, "bin/Release"
+    else:
+        dll_src, dll_from = deployed_dll, "game dir"
+    if not os.path.isfile(dll_src):
+        raise SystemExit("missing " + dll_src)
+
+    dict_src = os.path.join(PLUG_SRC, "dictionary_zh_cn.tsv")
+    if not os.path.isfile(dict_src):
+        raise SystemExit("missing " + dict_src)
+
+    shutil.copy2(dll_src, plug_dst)
+    shutil.copy2(dict_src, plug_dst)
+    print("dll          : %s (%s)" % (
+        dll_from, datetime.fromtimestamp(os.path.getmtime(dll_src)).strftime("%Y-%m-%d %H:%M")))
 
     with open(os.path.join(PAYLOAD, "VERSION.txt"), "w", encoding="ascii", newline="\n") as f:
         f.write(read_version() + "\n")
@@ -102,7 +121,7 @@ Steam 库里右键游戏 → 管理 → 浏览本地文件 → 复制地址栏�
 1. 确认是从 Steam 正常启动，不要用别的快捷方式
 2. 完全退出游戏（不是最小化）再重新打开
 3. 打开游戏目录下的 BepInEx\\LogOutput.log，搜索
-   "SP2 chinese loaded"
+   "SP2 chinese"
    找得到 → 插件在跑，可能是字典没读到
    找不到 → 插件没被加载，BepInEx 没装好，重新跑一遍安装
 
@@ -183,6 +202,7 @@ def build_manifest(version, rows):
         "modVersion": version,
         # Content hash, not a date: unchanged dictionary => identical id => nobody re-downloads.
         "dictVersion": dict_sha[:12],
+        "dictBuild": DICT_BUILD,
         "dictRows": rows,
         "dictSha256": dict_sha,
         "generatedAt": datetime.now().astimezone().isoformat(timespec="seconds"),
@@ -197,6 +217,21 @@ def build_manifest(version, rows):
             "release": repo + "/releases/latest",
         },
     }
+
+
+def write_dict_build(build):
+    """把构建号写到字典旁边：插件与安装器据此判断本地是否已经比线上新。"""
+    targets = [
+        os.path.join(PAYLOAD, "BepInEx", "plugins", "SP2Chinese", "dict.build"),
+        os.path.join(PLUG_SRC, "dict.build"),
+    ]
+    for t in targets:
+        try:
+            os.makedirs(os.path.dirname(t), exist_ok=True)
+            with open(t, "w", encoding="utf-8", newline="\n") as f:
+                f.write(str(build) + "\n")
+        except OSError:
+            pass
 
 
 def main():
@@ -231,6 +266,9 @@ def main():
               encoding="utf-8-sig", newline="\r\n") as out:
         out.write(readme_text(version, rows, len(chars)))
 
+    # 构建号必须先写进 PAYLOAD，再整体拷到 stage，否则安装包里不会有这个文件，
+    # 安装器读不到本地 build 就会误判"本地是旧版"而去拉线上旧词库。
+    write_dict_build(DICT_BUILD)
     shutil.copytree(PAYLOAD, os.path.join(stage, "payload"))
 
     # --- manifest: lets the installer verify files and lets the plugin self-update ---
@@ -241,9 +279,7 @@ def main():
     # Full merged dictionary at the repo root: this is the exact file the plugin downloads.
     shutil.copy2(os.path.join(PLUG_SRC, "dictionary_zh_cn.tsv"),
                  os.path.join(DIST_ROOT, "dictionary_zh_cn.tsv"))
-    # Full merged dictionary at the repo root: this is the exact file the plugin downloads.
-    shutil.copy2(os.path.join(PLUG_SRC, "dictionary_zh_cn.tsv"),
-                 os.path.join(DIST_ROOT, "dictionary_zh_cn.tsv"))
+
     # A copy at the repo root is what the plugin fetches from raw.githubusercontent.com.
     with open(os.path.join(DIST_ROOT, "manifest.json"), "w", encoding="utf-8", newline="\n") as f:
         json.dump(manifest, f, ensure_ascii=False, indent=2)

@@ -1,9 +1,10 @@
 {
-  "modVersion": "1.6.1",
-  "dictVersion": "e8a0c95dfa74",
-  "dictRows": 10416,
-  "dictSha256": "e8a0c95dfa74f8825f401122104d970ad4870ae3762305df4ff9daa494f2abb6",
-  "generatedAt": "2026-10-22T17:52:25+08:00",
+  "modVersion": "1.6.2",
+  "dictVersion": "b4343617ea10",
+  "dictBuild": 202610281914,
+  "dictRows": 10393,
+  "dictSha256": "b4343617ea107f3f2b133862316e2256941e77a261b003dcdfa67ab5f9232329",
+  "generatedAt": "2026-10-28T19:14:18+08:00",
   "author": "白杨木",
   "qqGroup": "1128992783",
   "repository": "https://github.com/baiyangmuzz/SP2Chinese",
@@ -92,13 +93,17 @@
       "sha256": "0577b362023a3432d6e8d7934c5eddc3e08fdbb19e191af083e341562c5ede38",
       "size": 78973
     },
+    "BepInEx/plugins/SP2Chinese/dict.build": {
+      "sha256": "c43b9253d7c18948999a89fda331f878f9b397582d1a87a3d5830c372d8ed01e",
+      "size": 13
+    },
     "BepInEx/plugins/SP2Chinese/dictionary_zh_cn.tsv": {
-      "sha256": "e8a0c95dfa74f8825f401122104d970ad4870ae3762305df4ff9daa494f2abb6",
-      "size": 795383
+      "sha256": "b4343617ea107f3f2b133862316e2256941e77a261b003dcdfa67ab5f9232329",
+      "size": 794936
     },
     "BepInEx/plugins/SP2Chinese/SP2Chinese.dll": {
-      "sha256": "3593c88299cd1ab733488ecdb779e81966a5c2ba0709fa4478ea43124818aa9c",
-      "size": 99840
+      "sha256": "c03cd4d2df8c63bcc33721ab61bc94cb352118bde8406a571a02d723bccfc74d",
+      "size": 101376
     }
   },
   "update": {

@@ -797,7 +797,6 @@ Are you sure you want to leave this activity?	确定要离开此活动吗？
 Are you sure you want to quit the tutorial?	确定要退出教程吗？
 Argentina	阿根廷
 Arrow	箭头
-Arrows	箭头
 Artillery	火炮
 AspectRatio: {0}	宽高比：{0}
 Assemblies	程序集
@@ -956,7 +955,6 @@ BodyScript.DisconnectParts running for a body with zero part groups.	BodyScript.
 BodyScript.OnFixedUpdate	BodyScript.OnFixedUpdate
 BodyScript.OnUpdate	BodyScript.OnUpdate
 BodyScript.ResetInertiaTensor	BodyScript.ResetInertiaTensor
-Bomb	炸弹
 Bomb exploded {0:n1}m from target.	炸弹在距目标 {0:n1} 米处爆炸。
 Bomb explosion burn mark component configuration not found	未找到炸弹爆炸灼痕组件配置
 Bomb explosion burn mark component object not found	未找到炸弹爆炸灼痕组件对象
@@ -1173,7 +1171,6 @@ Click	点击
 Click 'Start' and let's build an airplane together!	点击“开始”，让我们一起造一架飞机！
 Click When Ready	准备好后点击
 Click and drag the '	点击并拖动“
-Click here to\nde-select part	点击此处\n取消选择部件
 Click on '	点击“
 Click on the back arrow at the top so we can look for the next part in a different category.	点击顶部的返回箭头，以便我们在其他分类中寻找下一个部件。
 Click on the gear button to open the Part Properties for this propeller engine.	点击齿轮按钮，打开该螺旋桨发动机的部件属性。
@@ -1201,7 +1198,6 @@ CoL	升力中心
 CoM	质心
 CoM is not finite	质心为非有限值
 CoT	推力中心
-Cockpit	驾驶舱
 Cockpit Hole	驾驶舱开孔
 Cockpit View	驾驶舱视角
 Cold War	冷战
@@ -1769,7 +1765,6 @@ Enabled	已启用
 Enabled Ghost View	已启用幽灵视图
 Enabled Powertrain View	已启用动力系统视图
 Enabled:	已启用：
-Enables Overload, an advanced part property XML Editor, in the designer.	在设计器中启用 Overload（高级部件属性 XML 编辑器）。
 Enables or disables support for toggling the mouse as joystick control scheme during flight. (Bound to right mouse click by default)	启用或禁用飞行期间切换鼠标摇杆控制方案的支持。（默认绑定到鼠标右键）
 Encountered duplicate craft decal with id '	遇到重复的载具贴花，ID：
 Encountered duplicate paint texture with id '{0}' for paint style '{1}'.	遇到重复的涂装纹理，涂装样式“{1}”的 ID 为“{0}”
@@ -1783,7 +1778,6 @@ Enemy bombs have been dropped!	敌方已投弹！
 Enemy flew too far away, distance: {0:n0}m	敌机飞得太远，距离：{0:n0}米
 Enemy threat detected. Defend the airport!	检测到敌方威胁。保卫机场！
 Enemy went underwater: {0}	敌机进入水下：{0}
-Engine	发动机
 Engine #{0} was not connected to anything so it has been disabled.	发动机 #{0} 未连接到任何部件，已被禁用。
 Engine destroyed from overspeed	发动机因超速损毁
 Engine power multiplier did not pass validation.	发动机功率倍率未通过验证。
@@ -2174,7 +2168,7 @@ HP Mixed Reality Controller OpenXR	HP 混合现实控制器 OpenXR
 HTC Vive Controller OpenXR	HTC Vive 控制器 OpenXR
 Half Res	半分辨率
 Halo	光环
-Hand	手部
+Hand	抓手处
 HandleUrl: 	处理 URL：
 Hard	困难
 Has air brake.	有减速板。
@@ -2380,7 +2374,6 @@ Italy	意大利
 Item	项
 Item: 	项：
 JDifferential	JDifferential
-JEngine	发动机
 JFuselage	JFuselage
 JFuselage-1	JFuselage-1
 JFuselage-Cone-1	JFuselage-Cone-1
@@ -2401,7 +2394,6 @@ JGearbox	JGearbox
 JOIN SERVER	加入服务器
 JTransmission	JTransmission
 JWheel	JWheel
-JWing	机翼
 JWing-1	JWing-1
 JWing.State	JWing.State
 Japan	日本
@@ -2537,7 +2529,6 @@ Location	地点
 Location 	地点
 Location Discovered: 	已发现地点：
 Location: {0}, 	地点：{0}，
-Locations	地点
 Locked	已锁定
 Log	日志
 Log In	登录
@@ -2565,7 +2556,7 @@ MP_Steam_Join	MP_Steam_Join
 MPa	兆帕
 MTU: reliable = {0}, unreliable = {1}	MTU：可靠 = {0}，不可靠 = {1}
 MULTIPLAYER SETTINGS	多人游戏设置
-Magnet	磁铁
+Magnet	小心磁场
 Main	主
 Main Drive Shaft	主传动轴
 Main Rotor	主旋翼
@@ -2607,7 +2598,6 @@ Material ID does not exist: 	材质 ID 不存在：
 Material Overrides	材质覆盖
 Material Properties	材质属性
 Material Settings	材质设置
-Materials	材质
 Max	最大
 Max Bullets Per Second	每秒最大子弹数
 Max Cars	最大车辆数
@@ -2686,7 +2676,6 @@ Mirroring disabled for part 	已为部件禁用镜像：
 Mirroring enabled for part 	已为部件启用镜像：
 Mismatched on A at {0} -> {1} -> {2}	A 侧在 {0} -> {1} -> {2} 处不匹配
 Mismatched on B at {0} -> {1} -> {2}	B 侧在 {0} -> {1} -> {2} 处不匹配
-Missile	导弹
 Missile Launcher	导弹发射器
 Missile explosion core component configuration not found	未找到导弹爆炸核心组件配置
 Missile explosion core component object not found	未找到导弹爆炸核心组件对象
@@ -3100,8 +3089,6 @@ Overcast	阴天
 Overflow start location '	Overflow 起始地点“
 Overlapping regions in surface {0} ({1})	表面 {0}（{1}）中有重叠区域
 Overlay	覆盖层
-Overload XML Editor	Overload XML 编辑器
-Overload XML Modification	Overload XML 修改
 Overrides the collider generation strategy. Omit to use the default for this fuselage style.	覆盖碰撞体生成策略。留空则使用此机身样式的默认策略。
 Overrides the drag calculation method for this part. 'Default' inherits from the part type.	覆盖此部件的阻力计算方法。“默认”继承自部件类型。
 Overwrite	覆盖
@@ -3239,7 +3226,7 @@ Physics Settings	物理设置
 PicoXR Controller-Left	PicoXR 左控制器
 PicoXR Controller-Right	PicoXR 右控制器
 Pilot Seat	飞行员座椅
-Pinch	捏合
+Pinch	小心夹手
 Ping	延迟
 Ping: {0}ms, 	延迟：{0}毫秒，
 Piston	活塞
@@ -3862,7 +3849,6 @@ Showing the collider volume is not currently functional. RigidBody.SetDensity ha
 Shows outlines around selected parts in the designer.	在设计器中显示所选部件周围的轮廓。
 Shows the active tool. Click to open the tool selection panel.	显示当前工具。点击打开工具选择面板。
 Side View\nAlign the camera to view the craft from the side.	侧视图\n将相机对准载具侧面。
-Sign	符号
 Simple	简单
 SimpleGroundVehicleScript.CheckForObstructions	SimpleGroundVehicleScript.CheckForObstructions
 SimpleGroundVehicleScript.OnNavigationTargetReached	SimpleGroundVehicleScript.OnNavigationTargetReached
@@ -3997,7 +3983,7 @@ Steam Required	需要 Steam
 Steam lobby join requested while a scene transition is in progress. Waiting for current scene transition to finish.	场景切换进行中请求加入 Steam 大厅。正在等待当前场景切换完成。
 Steampunk	蒸汽朋克
 Stencil	模板
-Step	步骤
+Step	踩踏点
 Step #{0}	步骤 #{0}
 Steps (L1):	步数（L1）：
 Stick X	摇杆 X
@@ -4055,7 +4041,6 @@ SupportsSparseTextures: 	支持稀疏纹理：
 SupportsTextureFormat: 	支持纹理格式：
 SupportsVibration: 	支持震动：
 Surfaces[{0}] ({1}) failed validation: {2}	表面 [{0}]（{1}）未通过验证：{2}
-Suspension	悬挂
 Suspension Back Left	左后悬挂
 Suspension Back Right	右后悬挂
 Suspension Front Left	左前悬挂
@@ -4555,7 +4540,6 @@ Tris: 	三角形：
 Truck	卡车
 Try putting some inlets on your plane.	试着在飞机上加一些进气口。
 Turbojet	涡轮喷气发动机
-Turboshaft	涡轮轴发动机
 Turboshaft RPM	涡轴转速
 Turboshaft Torque (Nm)	涡轴扭矩（牛米）
 Turkey	土耳其
@@ -5030,7 +5014,6 @@ WindSettings.DefaultWindGusts	WindSettings.DefaultWindGusts
 WindSettings.DefaultWindHeading	WindSettings.DefaultWindHeading
 Windows MR Controller OpenXR	Windows MR 控制器 OpenXR
 Windows Mixed Reality	Windows 混合现实
-Wing	机翼式
 Wing Airfoil	机翼翼型
 Wing Airfoil Mode	机翼翼型模式
 Wing Area	机翼面积
@@ -6973,98 +6956,8 @@ Sometimes slowing down can be tough, but these can really help with that.	有时
 Special camera that can give you a different view from your plane. Check the Part Properties for several features.	可为您提供飞机不同视角的专用相机，在部件属性中可查看多项功能。
 This is a magical 'camera' that gives you the ability to orbit the camera around different parts of your plane. Don't worry about its ugly appearance, it will disappear when you start flying.	一个神奇的“相机”，让您能围绕飞机的不同部件环绕观察；别在意它丑陋的外表，开始飞行后它就会消失。
 These blocks float! Place them strategically around your aircraft to build floats, or in certain places of the hull to make a full-on boat plane.  They take some number-crunching to make work, so don't use more than you need or will slow the game down.	这些方块能浮起来！将它们布置在飞机周围制作浮筒，或放在船体特定位置打造完整的水上飞机；它们需要一定算力才能工作，因此别用得过多，否则会拖慢游戏。
-New Text	新文本
-Hide	隐藏
-Exit VR (ESC)	退出 VR（ESC）
-Chat	聊天
 Part Name	部件名称
 SimplePlanes 2 Demo	SimplePlanes 2 演示版
-Paint Name	涂装名称
-Enter text...	输入文字……
-Wrap Mode	换行模式
-Search	搜索
-No filters selected	未选择筛选条件
-Interpolated	插值
-New Property Value	新属性值
-HP/Weight Ratio	马力/重量比
-Power/Weight Ratio	功率/重量比
-Off	关闭
-Reaction Control Nozzle	反作用控制喷口
-Wheel Suspension	机轮悬挂
-Resizable Shape	可缩放形状
-Posed Grip	姿态握把
-Control Base	控制底座
-Refuel Drouge	加油锥套
-Seat IK	座椅 IK
-IK Target	IK 目标
-Missile Configuration	导弹配置
-Propellers	螺旋桨
-Cockpit Sound	驾驶舱音效
-Procedural Bay	程序化弹舱
-Procedural Window	程序化窗户
-Part Targeting	部件瞄准
-Legacy	旧版
-Surfaces	操纵面
-Tip: Left click on a part in the part list to show detailed information about it.	提示：左键单击部件列表中的部件，可查看其详细信息。
-Tip: You can clone parts by clicking and dragging them with the right mouse button.	提示：按住鼠标右键点击并拖动部件，即可克隆部件。
-\n<color=#6AAFE6><b><size=115%>New Parts</size></b></color>	\n<color=#6AAFE6><b><size=115%>新部件</size></b></color>
-\n**Turboshafts**	\n**涡轮轴发动机**
-\nA new family of turbine engines built for driving propellers and shafts. Turboshafts come in small, medium, and large sizes and hook into the existing powertrain through a new set of gearbox parts.	\n专为驱动螺旋桨和传动轴设计的全新涡轮发动机系列。涡轮轴发动机提供小、中、大三种尺寸，通过一套全新的齿轮箱部件接入现有动力系统。
-\n**Curved Fuselages**	\n**弯曲机身**
-\nA new three-slice fuselage style with a middle section that lets you shape smooth, curved bodies and fairings without stacking parts. Bay doors and cutting tools work on it just like a standard fuselage.	\n全新的三段式机身样式，中段可塑造平滑弯曲的机体与整流罩，无需堆叠部件。舱门与切割工具在它上面的用法和标准机身完全相同。
-\n**Exhaust Part**	\n**排气管部件**
-\nA new exhaust pipe part with many tip styles and configurable plume effects.	\n全新的排气管部件，提供多种管口样式和可配置的喷焰效果。
-\n<color=#6AAFE6><b><size=115%>Multiplayer</size></b></color>	\n<color=#6AAFE6><b><size=115%>多人游戏</size></b></color>
-\n•<indent=5%>Updated the player list in multiplayer to show steam avatar images. Clicking on an image opens the steam overlay browser to that player's Steam profile</indent>	\n•<indent=5%>更新了多人游戏玩家列表，现可显示 Steam 头像；点击头像会打开 Steam 悬浮浏览器并跳转到该玩家的 Steam 个人资料</indent>
-\n•<indent=5%>Added a ban list flyout accessible from the server's multiplayer settings flyout where the server can view the list of banned and temp-banned steam players and unban them if desired.</indent>	\n•<indent=5%>在服务器的多人游戏设置浮出面板中新增封禁列表页，服主可查看被永久封禁和临时封禁的 Steam 玩家并按需解封。</indent>
-\n•<indent=5%>Chat blocks now persist across game sessions.</indent>	\n•<indent=5%>聊天记录块现在会跨游戏会话保留。</indent>
-\n•<indent=5%>Fixed players getting permanently stuck in a multiplayer level, unable to exit.</indent>	\n•<indent=5%>修复了玩家永久卡在多人游戏关卡中无法退出的问题。</indent>
-\n•<indent=5%>Fixed newlines not displaying correctly on labels when downloading another player's craft.</indent>	\n•<indent=5%>修复了下载其他玩家的载具时标签上换行符无法正确显示的问题。</indent>
-\n•<indent=5%>Fixed the dev console opening when pressing the backtick key in chat.</indent>	\n•<indent=5%>修复了在聊天时按反引号键会打开开发者控制台的问题。</indent>
-\n•<indent=5%>Teleport Up/Down now defaults to ON when starting a server.</indent>	\n•<indent=5%>启动服务器时，向上/向下传送现在默认为开启。</indent>
-\n•<indent=5%>Added a server setting for changing the max bullets per second each craft can produce.</indent>	\n•<indent=5%>新增服务器设置，可更改每架载具每秒可产生的最大子弹数。</indent>
-\n•<indent=5%>Capped the number of active bullets from remote craft to prevent lag.</indent>	\n•<indent=5%>限制了远程载具的有效子弹数量，以防卡顿。</indent>
-\n•<indent=5%>Capped the maximum size of bullets.</indent>	\n•<indent=5%>限制了子弹的最大尺寸。</indent>
-\n<color=#6AAFE6><b><size=115%>Flight</size></b></color>	\n<color=#6AAFE6><b><size=115%>飞行</size></b></color>
-\n•<indent=5%>Fixed countermeasure spam permanently blocking future missile locks.</indent>	\n•<indent=5%>修复了连续投放干扰弹会永久阻止后续导弹锁定的问题。</indent>
-\n•<indent=5%>Fixed craft joints being looser than intended after the Unity 6.3 upgrade</indent>	\n•<indent=5%>修复了升级至 Unity 6.3 后载具连接比预期更松散的问题</indent>
-\n•<indent=5%>Fixed a second gun crosshair appearing behind the camera.</indent>	\n•<indent=5%>修复了摄像机后方出现第二个机炮准星的问题。</indent>
-\n•<indent=5%>Fixed the catapult over-seating craft with large wheel assemblies.</indent>	\n•<indent=5%>修复了弹射器对带大型机轮总成的载具弹射就位过度的问题。</indent>
-\n•<indent=5%>Fixed Chad not hiding when his seat was hidden.</indent>	\n•<indent=5%>修复了隐藏查德的座椅时他本人不会随之隐藏的问题。</indent>
-\n•<indent=5%>Fixed a duplicate T-posing Chad when a suit config referenced an unknown item.</indent>	\n•<indent=5%>修复了套装配置引用未知物品时会出现一个呈 T 字姿势的重复查德的问题。</indent>
-\n•<indent=5%>Fixed craft decals rendering on other craft.</indent>	\n•<indent=5%>修复了某架载具的贴花会渲染到其他载具上的问题。</indent>
-\n•<indent=5%>Fixed rendering issues when using the last few materials of a theme with a maxed-out material set.</indent>	\n•<indent=5%>修复了材质集已满时使用某主题最后几种材质会出现的渲染问题。</indent>
-\n•<indent=5%>Fixed craft tag duplication and stray leading or trailing whitespace.</indent>	\n•<indent=5%>修复了载具标签重复以及首尾出现多余空白字符的问题。</indent>
-\n•<indent=5%>Gave New Yoke's tunnels colliders.</indent>	\n•<indent=5%>为新约克（New Yoke）的隧道添加了碰撞体。</indent>
-\n•<indent=5%>Fixed procedural missiles not being able to be fired via a detacher.</indent>	\n•<indent=5%>修复了程序化导弹无法通过分离器发射的问题。</indent>
-\n•<indent=5%>Added auto feather option to propeller assembly</indent>	\n•<indent=5%>为螺旋桨总成添加了自动顺桨选项</indent>
-\n•<indent=5%>Fixed bug where wheels would lose their magic engine reference when used in a subassembly</indent>	\n•<indent=5%>修复了机轮在子组件中使用时会丢失其魔法发动机引用的问题</indent>
-\n<color=#6AAFE6><b><size=115%>Designer</size></b></color>	\n<color=#6AAFE6><b><size=115%>设计器</size></b></color>
-\n•<indent=5%>Added a designer setting and keybinding for toggling the selected part outline.</indent>	\n•<indent=5%>添加了用于切换选中部件轮廓显示的设计器设置和按键绑定。</indent>
-\n•<indent=5%>Fixed upright wings randomly inverting their airfoil on connection.</indent>	\n•<indent=5%>修复了直立机翼连接时会随机反转翼型的问题。</indent>
-\n•<indent=5%>Fixed some parts randomly disconnecting from the craft after saving.</indent>	\n•<indent=5%>修复了保存后某些部件会随机从载具上断开的问题。</indent>
-\n•<indent=5%>Fixed changing a part's angle via Transform Part breaking the Translate tool.</indent>	\n•<indent=5%>修复了通过“变换部件”更改部件角度会导致平移工具失效的问题。</indent>
-\n•<indent=5%>Fixed Overload on a mirrored part moving the mirror to the wrong position.</indent>	\n•<indent=5%>修复了对镜像部件使用 Overload 会使镜像移到错误位置的问题。</indent>
-\n•<indent=5%>Fixed Overload filling in fuselage windows and holes.</indent>	\n•<indent=5%>修复了 Overload 会填死机身窗户和孔洞的问题。</indent>
-\n•<indent=5%>Fixed mirrored animators inheriting the original's parent animator instead of its mirror.</indent>	\n•<indent=5%>修复了镜像动画器会继承原件的父动画器而非其镜像对应物的问题。</indent>
-\n•<indent=5%>Fixed fuselage tools not checking both parts of a selection for the sync adjacent flag.</indent>	\n•<indent=5%>修复了机身工具不会检查选区中两个部件的“同步相邻”标志的问题。</indent>
-\n•<indent=5%>Fixed errors and lingering meshes when mesh modifiers are sized to zero.</indent>	\n•<indent=5%>修复了网格修改器尺寸被调整为零时出现报错和残留网格的问题。</indent>
-\n•<indent=5%>Fixed microscopic mesh slivers throwing off bay door generation.</indent>	\n•<indent=5%>修复了微小网格碎片会干扰舱门生成的问题。</indent>
-\n•<indent=5%>Fixed decimals that start with a non-zero digit not being enterable in window dimensions.</indent>	\n•<indent=5%>修复了窗户尺寸中无法输入以非零数字开头的小数的问题。</indent>
-\n•<indent=5%>Fixed the control surface counter in the properties menu.</indent>	\n•<indent=5%>修复了属性菜单中操纵面计数器的问题。</indent>
-\n•<indent=5%>Fixed Label offset not working for labels on buttons.</indent>	\n•<indent=5%>修复了按钮上标签的偏移不生效的问题。</indent>
-\n•<indent=5%>Visibility of decals and cutting volumes can now be toggled while manually adding a part connection.</indent>	\n•<indent=5%>手动添加部件连接时，现在可以切换贴花和切割体积的可见性。</indent>
-\n•<indent=5%>Non-wheel parts can no longer connect to gear legs.</indent>	\n•<indent=5%>非机轮部件现在无法再连接到起落架支柱上。</indent>
-\n•<indent=5%>Posed Grip text spinners are now dropdowns so they are readable.</indent>	\n•<indent=5%>姿态握把的文本微调框现在改为下拉菜单，以便于阅读。</indent>
-\n•<indent=5%>Removed liftScale from the delta wing designer part.</indent>	\n•<indent=5%>从三角翼设计器部件中移除了 liftScale（升力缩放）。</indent>
-\n•<indent=5%>Prevented wing lift and drag scales from being negative, non-finite, or over 1000.</indent>	\n•<indent=5%>防止机翼升力和阻力缩放值为负数、非有限值或超过 1000。</indent>
-\n<color=#6AAFE6><b><size=115%>Misc</size></b></color>	\n<color=#6AAFE6><b><size=115%>其他</size></b></color>
-\n•<indent=5%>Fix screen turning black after a resolution change on macOS</indent>	\n•<indent=5%>修复了 macOS 上更改分辨率后屏幕变黑的问题</indent>
-\n•<indent=5%>Added an auto feather option to the propeller assembly.</indent>	\n•<indent=5%>为螺旋桨总成添加了自动顺桨选项。</indent>
-\n•<indent=5%>Added PitchAngle (degrees), Thrust (N), Torque (Nm), and RPM output variables to the propeller assembly.</indent>	\n•<indent=5%>为螺旋桨总成添加了俯仰角（度）、推力（牛）、扭矩（牛·米）和 RPM 输出变量。</indent>
-\n•<indent=5%>Added a `minExtensionForWheelPhysics` to Gear Legs so you can choose when wheel physics turns off during retraction. Default value is 0.4</indent>	\n•<indent=5%>为起落架支柱添加了 `minExtensionForWheelPhysics`，可选择收轮过程中机轮物理在何时关闭，默认值为 0.4</indent>
-\nYou can view these release notes in your browser <color=#306BBE><link="https://www.simpleplanes.com/Releases/View/2268777">here</link></color>.	\n您可以在浏览器中<color=#306BBE><link="https://www.simpleplanes.com/Releases/View/2268777">此处</link></color>查看这些更新说明。
-Tip: Several parts have properties that can be set by clicking the button with the wrench icon.	提示：有几种部件的属性，可点击带扳手图标的按钮进行设置。
 Diameter	直径
 Fan Style	风扇样式
 Straight	直叶
@@ -8253,129 +8146,6 @@ was connected.	已连接。
 was disconnected.	已断开连接。
 xbox bluetooth	Xbox 蓝牙
 xbox one	Xbox One
-  *If you have a dedicated graphics card, Windows may be running this game on integrated graphics by mistake. You can force 'High Performance' in Windows Display Graphics Settings.\n	  *如果你有独立显卡，Windows 可能误将本游戏设为使用核芯显卡运行。你可以在 Windows 显示图形设置中强制选择“高性能”。\n
-\nUpdating your drivers may help resolve this issue. \n\n	\n更新显卡驱动可能有助于解决该问题。\n\n
-- Memory: {0}MB RAM detected. 8GB RAM is required.\n	- 内存：检测到 {0}MB 内存，需要 8GB 内存。\n
-It looks like the game crashed during your last session, and outdated graphics drivers might be the cause.\nYour detected graphics card:\n	看起来游戏在上次运行时崩溃了，过期的显卡驱动可能是原因。\n检测到的显卡：\n
-Your computer appears to be below the minimum system requirements for this game:\n	你的电脑似乎未达到本游戏的最低系统需求：\n
-Your craft file has been backed up here:\n	你的机体文件已备份到此处：\n
-Error obtaining or loading plane file from Steam:{0}\n{1}	从 Steam 获取或载入机体文件时出错：{0}\n{1}
-Error reading/validating downloaded plane file: {0}\n{1}	读取/校验已下载的机体文件时出错：{0}\n{1}
-Server returned invalid response:\n{0}\n\nException:\n{1}	服务器返回了无效响应：\n{0}\n\n异常：\n{1}
-Request failed for craft details: \n	获取机体详情失败：\n
-Could not initialize Steam Lobby Manager.\n\nEnsure you are logged into Steam and try restarting the game.	无法初始化 Steam 大厅管理器。\n\n请确认已登录 Steam，然后尝试重启游戏。
-Could not initialize Steam Multiplayer.\nEnsure you are logged into Steam and try restarting the game.	无法初始化 Steam 多人功能。\n请确认已登录 Steam，然后尝试重启游戏。
- from XML. \nIf unexpected input issues occur, the loaded XML data may be outdated or invalid. Delete the ControlInputData.xml file in your game's app data folder.	来自 XML。\n如果出现异常的输入问题，已加载的 XML 数据可能已过期或无效。请删除游戏应用数据文件夹中的 ControlInputData.xml 文件。
- user data from XML. \nIf unexpected input issues occur, the loaded XML data may be outdated or invalid. Delete the ControlInputData.xml file in your game's app data folder.	的用户数据来自 XML。\n如果出现异常的输入问题，已加载的 XML 数据可能已过期或无效。请删除游戏应用数据文件夹中的 ControlInputData.xml 文件。
-) data from XML. \nIf unexpected input issues occur, the loaded XML data may be outdated or invalid. Delete the ControlInputData.xml file in your game's app data folder.	）的数据来自 XML。\n如果出现异常的输入问题，已加载的 XML 数据可能已过期或无效。请删除游戏应用数据文件夹中的 ControlInputData.xml 文件。
- InputBehavior data from XML. \nIf unexpected input issues occur, the loaded XML data may be outdated or invalid. Delete the ControlInputData.xml file in your game's app data folder.	InputBehavior 数据来自 XML。\n如果出现异常的输入问题，已加载的 XML 数据可能已过期或无效。请删除游戏应用数据文件夹中的 ControlInputData.xml 文件。
-Game Version: {0}\n	游戏版本：{0}\n
-Version: {0} \n	版本：{0}\n
-Version: {0}\n\n	版本：{0}\n\n
-Last Updated: {0} \n	最后更新：{0}\n
-{0}\nTags: {1}{2}\nLast Modified: {3:G}	{0}\n标签：{1}{2}\n最后修改：{3:G}
-\nFile: 	\n文件：
-Variables Error:\n	变量错误：\n
-Total Road Length: {0:n1}km. Average Length: {1:n2}km. Median Length: {2:n2}km\n	道路总长：{0:n1}km。平均长度：{1:n2}km。中位长度：{2:n2}km
-'{0}' Road Length: {1:n1}km\n	“{0}”的道路长度：{1:n1}km\n
-Total Drag Comparison\n	总阻力对比
-Blueprint failed to load:\n	蓝图加载失败：\n
-Error saving blueprints:\n	保存蓝图时出错：\n
-Could not generate part XML. Do you have duplicate part properties?\nCheck log for error details.	无法生成部件 XML。是否存在重复的部件属性？\n查看日志了解详细错误信息。
-\nAutomatically created {0} {1} parts.	\n已自动创建 {0} 个{1}部件。
-\nAutomatically linked {0} existing sets of {1} parts.	\n已自动关联 {0} 组现有的{1}部件。
-.\nDeleted {0} symmetric parts.	。\n已删除 {0} 个对称部件。
-.\nDeleted symmetric part 	。\n已删除对称部件
-A symmetric target part could not be found.\nSymmetry has been disabled for part '{0} (ID: {1})'	未找到对称的目标部件。\n已为部件“{0}（ID：{1}）”关闭对称功能
-The root part of the craft has been moved.\nThe mirror plane for all symmetric parts has been updated.	机体根部件已移动。\n所有对称部件的镜像平面已更新。
-You are moving the root part of the craft.\nThis will change the position of the mirror plane for all symmetric parts.	你正在移动机体的根部件。\n这会改变所有对称部件的镜像平面位置。
-The target part does not have a mirrored symmetric part.\nUnable to mirror and attach the selected parts.	目标部件没有对应的镜像对称部件。\n无法镜像并连接所选部件。
-The target part does not lie on the mirror plane. Unable to mirror the selected parts.\nThe target fuselage has a non-zero amount of 'Run', shifting its position off the mirror plane\nand making it asymmetrical.	目标部件不在镜像平面上，无法镜像所选部件。\n目标机身的“Run”值不为零，使其位置偏离镜像平面\n并导致不对称。
-The target fuselage lies on the mirror plane but,\nthe fuselage has a non-zero amount of 'Run', making it asymmetrical.	目标机身位于镜像平面上，但\n该机身的“Run”值不为零，导致其不对称。
-The airplane uses one or more 'mods'.\nContact the airplane designer to find out more.	该机体使用了一个或多个“模组”。\n请联系机体设计者了解详情。
-There are two possible reasons for this:\n1) You need to update to the newest version of SimplePlanes (check your app store)\n2) The airplane uses a 'mod' and you'll need to contact the airplane designer to find out more.	可能有两个原因：\n1）你需要把 SimplePlanes 更新到最新版本（请查看你的应用商店）\n2）该机体使用了“模组”，需要联系机体设计者了解详情。
-This airplane requires missing part(s):\n	该机体缺少以下部件：\n
-This is the airplane designer and this is where you will build your masterpiece.\n\nClick 'Start' and let's build an airplane together!	这就是机体设计器，你将在此打造自己的杰作。\n\n点击“开始”，让我们一起造一架飞机吧！
-This will convert the selected fuselage to the new fuselage part.\n\nThe conversion is experimental! Please inspect the result and use Undo if needed.\n\nDo you want to continue?	这会把所选机身转换为新的机身部件。\n\n该转换仍处于实验阶段！请检查结果，如有需要请使用“撤销”。\n\n是否继续？
-The fuselage could not be upgraded:\n\n	机身无法升级：\n\n
-Upgrade complete with warnings:\n\n	升级完成，但有警告：\n\n
-Invalid expression on part {0}: Click for details\n{1}\nExpressions: {2}	部件 {0} 上的表达式无效：点击查看详情\n{1}\n表达式：{2}
-Invalid syntax in expression on part {0}: Click for details\n{1}\nExpressions: {2}	部件 {0} 上的表达式语法无效：点击查看详情\n{1}\n表达式：{2}
-Error calculating bounds for part '{0}' (ID: {1}). \n{2}	计算部件“{0}”（ID：{1}）的边界时出错。\n{2}
-FYI: Your engines aren't getting enough air.\nTry putting some inlets on your plane.	提示：你的发动机进气不足。\n试试在飞机上加装进气道。
-Click\nFlip Switch\nPush Button	点击\n翻转开关\n按下按钮
-Switch Throttle/VTOL	切换 油门/VTOL
- and 	 和 
-\n\nDo you want to replace it? You may also choose to add the assignment to this action as well.	\n\n要替换它吗？你也可以把该绑定同时添加到此操作上。
-\n\nModifier keys may also be used. To assign a modifier key alone, hold it down for 1 second.	\n\n也可以使用修饰键。若要单独绑定某个修饰键，请长按它 1 秒。
-\n\nWould you like to remove or replace this binding?	\n\n你要移除还是替换此绑定？
- is already in use by:\n	 已被以下内容占用：\n
-Now press a button or move an axis to assign it to\n	现在按下按钮或移动摇杆轴，将其绑定到\n
-Press a key to assign it to\n	请按一个键，将其绑定到\n
-Press any button or move an axis on the controller you would like to use. \n \n	请按下想使用的控制器上的任意按钮，或移动其摇杆轴。\n \n
-This will reset all inputs to the default input configuration, removing any custom input mappings. \n\n Are you certain you want to do this?	这会把所有输入重置为默认输入配置，并移除所有自定义输入映射。\n\n你确定要这样做吗？
-The mobile version of SimplePlanes 2 does not require any additional keyboards or controllers to be fully enjoyed. \n\n For players who do wish to use these devices however, this dialog can be used to configure those controls.	SimplePlanes 2 的移动版无需额外键盘或手柄也能完整游玩。\n\n如果你想使用这些设备，可通过此对话框进行相关设置。
-The mobile version of SimplePlanes does not require any additional keyboards or controllers to be fully enjoyed.\n\nFor players who do wish to use these devices however, this dialog can be used to configure those controls.	SimplePlanes 的移动版无需额外键盘或手柄也能完整游玩。\n\n如果你想使用这些设备，可通过此对话框进行相关设置。
-[mobile:You can also zoom in and out by pinching with two fingers. Go ahead and try it out.|steamdeck:You can also zoom in and out with the mouse wheel. Go ahead and try it out.|keyboard:You can also zoom in and out with the mouse wheel. Go ahead and try it out.]	[mobile:你也可以用双指捏合来缩放。快来试试吧。|steamdeck:你也可以用鼠标滚轮缩放。快来试试吧。|keyboard:你也可以用鼠标滚轮缩放。快来试试吧。]
-[mobile:You can also pan the view around with a two-finger drag. Go ahead and give it a try.|steamdeck:You can also pan the view around by right [clicking:] and dragging. Go ahead and give it a try.|keyboard:You can also pan the view around by right [clicking:] and dragging. Go ahead and give it a try.]	[mobile:你也可以用双指拖动来平移视角。快来试试吧。|steamdeck:你也可以按住鼠标右键拖动来平移视角。快来试试吧。|keyboard:你也可以按住鼠标右键拖动来平移视角。快来试试吧。]
-\n How does this look?\nReverting resolution change in [t] seconds, just in case something went wrong.	\n这样看起来如何？\n若一切正常，将在 [t] 秒后撤销分辨率更改，以防万一。
-Screen Size: {0}x{1}, Requested: {2}x{3}@{4}hz\nResolution: {5}x{6}@{7}hz, Full Screen: {8}	屏幕尺寸：{0}x{1}，请求：{2}x{3}@{4}hz\n分辨率：{5}x{6}@{7}hz，全屏：{8}
-Screen Size: {0}x{1}, Requested: {2}x{3}\nNative Resolution: {4}x{5}@{6}Hz\nMobile Resolution Scale: {7}	屏幕尺寸：{0}x{1}，请求：{2}x{3}\n原生分辨率：{4}x{5}@{6}Hz\n移动端分辨率缩放：{7}
-Screen Size: {0}x{1}, Requested: {2}x{3}\nResolution: {4}x{5}@{6}hz, Full Screen: {7}	屏幕尺寸：{0}x{1}，请求：{2}x{3}\n分辨率：{4}x{5}@{6}hz，全屏：{7}
-Default HDR Format: {0}\n	默认 HDR 格式：{0}\n
-Default LDR Format: {0}\n	默认 LDR 格式：{0}\n
-There are warnings for some settings you changed:\n\n	你更改的部分设置存在警告：\n\n
-There is a warning for a setting you changed:\n\n	你更改的部分设置存在警告：\n\n
-You have unsaved character settings.\n\n Save changes?	角色设置尚未保存。\n\n要保存更改吗？
-You have modified properties that have a high risk of breaking something.\nPlease read the warnings below and confirm whether you want to make these changes.\n\n<color=#ffae00>	你修改了某些风险很高的属性，可能导致出现问题。\n请阅读以下警告，并确认是否要应用这些更改。\n\n<color=#ffae00>
-Move your hands while holding down the \ngrip buttons to adjust your camera offset.	按住 \n扳机按钮并移动双手，以调整视角偏移。
-Press the grip button on both controllers \nwhile keeping your hands close together.	双手靠拢，\n同时按下两个手柄上的扳机按钮。
-Well done. \nNow let go of the grip buttons to complete the adjustment.	做得好。\n现在松开扳机按钮以完成调整。
-Your hands were not close enough together when gripped. \nRelease your grips, move your hands closer together and try again.	按下扳机时，你的双手靠得不够近。\n松开扳机，把双手移得更近一些再试。
-The full game will let you build planes, cars, and just about anything you can imagine, all from the ground up.\n\nIn this Open Playtest, the designer is locked down, but you can still load and paint crafts to make them your own.	完整版中，你可以从零开始打造飞机、汽车，以及几乎任何你能想象的东西。\n\n在本次公开测试中，设计器功能受限，但你仍然可以载入并涂装机体，使其成为你的专属机体。
-New Personal Best!\n	新的个人最佳纪录！\n
-You unlocked the {0}!\n{1}/{2} Hidden Crafts	你解锁了{0}！\n隐藏机体 {1}/{2}
-ACCOUNT	账号
-AUTO	自动
-CANCEL	取消
-DISABLE	禁用
-ENABLE	启用
-FILTERS	筛选
-HOST	主机
-LOCKED	已锁定
-MODS	模组
-OFFLINE	离线
-ONLINE	在线
-RETRY	重试
-SCENARIO	情景
-TAGS	标签
-WARNING	警告
-OBSCURED	已隐藏
-HIDE	隐藏
-START	开始
-CONTINUE	继续
-Tooltip Text	提示文本
-Tooltip Text Goes Here	此处显示提示文本
-Craft instructions	机体说明
-Tutorial Name	教程名称
-Tutorial Message	教程内容
-Show on Start	启动时显示
-Disabled During \n\n\nChallenge	挑战期间禁用\n\n\n
-Few Clouds	少云
-Dynamic\nWeather	动态\n天气
-Dist	距离
-Programmer	程序设计
-Community Manager	社区管理
-Lead 3D Artist	3D 美术主管
-Tech Artist	技术美术
-Stock Craft Liaison	自带机体顾问
-Character Artist	角色美术
-Environment Artist	场景美术
-Soundtrack	音乐
-Texture Artist	贴图美术
-Trailers	预告片
-This location hasn't been discovered...yet!\n\nSimplePlanes has a large, seamless world to explore with no loading screens in between.  Start from one of the available locations and fly around to discover the other islands.\n\nWhen you spot one of the other large islands, make sure to fly there and unlock all the locations each island has to offer!	此地尚未被发现……\n\nSimplePlanes 拥有一个巨大且无缝的世界，无需加载画面即可四处探索。从一个可选地点出发四处飞行，去发现其他岛屿。\n\n当你发现其他大型岛屿时，一定要飞过去，并解锁该岛屿提供的所有地点！
-Private	私有
 Acceleration	加速度
 Activation Group	激活组
 Add Control Surface	添加操纵面
@@ -8659,156 +8429,10 @@ Wheel Assembly Style	起落架样式
 Wheel Offset	车轮偏移
 Yaw Power	偏航功率
 Zero Angle	零位角
-CameraVantage	摄像视角
-CarEngine	汽车发动机
-CounterMeasureDispenser	干扰弹发射器
-HeliMainRotor	直升机主旋翼
-JointRotator	关节转盘
-PropellerAssembly	螺旋桨总成
-ResizableWheel	可调轮组
-Altitude	高度
-Ammo	弹药量
-Current Angle	当前角度
-Drag Force	阻力
-Fired	已发射
-Forward Slip	纵向滑移
-Gear	挡位
-GearRatio	传动比
-Heading Angle	航向角
-InputTorque	输入扭矩
-Is Active	已激活
-Latitude	纬度
-Lift Force	升力
-Longitude	经度
-Look Pitch	视角俯仰
-Look Roll	视角滚转
-Look Yaw	视角偏航
-N1	N1 转速
-N2	N2 转速
-Offroad	越野中
-OutputTorque	输出扭矩
-Pitch Angle	俯仰角
-Pitch Rate	俯仰角速度
-PitchAngle	俯仰角
-RPM	转速
-Roll Angle	滚转角
-Roll Rate	滚转角速度
-Sideways Slip	横向滑移
-Torque	扭矩
-TorqueRatio	扭矩比
-View Offset X	视角偏移 X
-View Offset Y	视角偏移 Y
-View Offset Z	视角偏移 Z
-Yaw Rate	偏航角速度
-Variable Name	变量名
-JetEngine	喷气发动机
-Airbrake	减速板
-Floating Part	漂浮部件
-FloatingPart	漂浮部件
-Joint Motor	关节马达
-JointMotor	关节马达
-Thrust Port	推力喷口
-ThrustPort	推力喷口
-Advanced Performance Scalars	高级性能参数
-Activator	激活组
-Overload	过载编辑器
-rotation	旋转
-position	位置
-id	编号
-partType	部件类型
-drag	阻力
-materials	材质
-partCollisionResponse	碰撞响应
-dragArea	阻力面积
-offset	偏移
-version	版本
-fuel	燃油
-capacity	容量
-opacity	不透明度
-style	样式
-name	名称
-buoyancy	浮力
-hideFront	隐藏前部
-hideBack	隐藏后部
-overrideHide	覆盖隐藏
-mass	质量
-deadMassKg	空重 (kg)
-fuelProportion	燃油占比
-glass	玻璃
-symmetryDisabled	禁用对称
-hideInside	隐藏内部
-symmetryId	对称组
-legacyThickness	旧版厚度
-numColliders	碰撞体采样
-activationGroup	激活组
-invert	反转
-input	输入
-min	最小值
-max	最大值
-disableAircraftCollisions	禁用机体碰撞
-size	尺寸
-scale	缩放
-height	高度
-type	类型
-priority	优先级
-range	行程
-path	路径
-zeroOnDeactivate	失活归零
-massScale	质量倍率
-width	宽度
-targetMode	目标模式
-fuelPercentage	燃油百分比
-speed	速度
-penetration	穿透力
-centerOfMass	重心
-fontSize	字号
-decalRotation	贴标旋转
-color	颜色
-frontScale	前端缩放
-rearScale	后端缩放
-deadWeight	空重
-cornerTypes	圆角类型
-length	长度
-minPosition	最小位置
-maxPosition	最大位置
-health	耐久
-dragScale	阻力倍率
-dragType	阻力类型
-attachPosition	挂载位置
-autoCenterCamera	摄像机自动居中
-autoOrient	自动朝向
-autoZoomOnCockpit	座舱自动变焦
-body	弹体
-burnTime	燃烧时间
-engine	发动机
-explosionScale	爆炸规模
-firingDelay	发射延迟
-function	用途
-guidanceActivationDelay	制导启动延迟
-ignitionDelay	点火延迟
-killCam	击杀镜头
-loft	抛射弧
-lookAtCockpit	注视座舱
-maxForwardThrustForce	最大前向推力
-maxFuelTime	最长燃油时间
-maxHeadingAngleAdjustmentRate	最大航向调整速率
-maxRange	最大射程
-maxSpeed	最大速度
-maxTargetingAngle	最大锁定角
-maxThrustVectoringRate	最大推力矢量速率
-maxVelocityAngleAdjustmentRate	最大速度矢量调整速率
-minRange	最小射程
-noseLength	头部长度
-proximityDetonationRangeMin	近炸最小距离
-radius	半径
-seeker	导引头
-seekerFOV	导引头视场
-upOffset	垂直偏移
-viewMode	视角模式
-warheadBias	战斗部偏置
-ProceduralMissile	程序化导弹
-MissileSubPart	导弹子部件
-MissileState	导弹状态
+Power/Weight Ratio	功率/重量比
+\n•<indent=5%>Chat blocks now persist across game sessions.</indent>	\n•<indent=5%>聊天记录块现在会跨游戏会话保留。</indent>
+\n**Exhaust Part**	\n**排气管部件**
+\nA new exhaust pipe part with many tip styles and configurable plume effects.	\n全新的排气管部件，提供多种管口样式和可配置的喷焰效果。
 burnerTemp	燃烧室温度
 afterburnerThrottleStart	加力油门阈值
 afterburnerBaseColor	加力底色
@@ -8959,6 +8583,7 @@ designText	设计文本
 fontName	字体名
 font	字体
 text	文本
+fontSize	字号
 horizontalAlignment	水平对齐
 verticalAlignment	垂直对齐
 alignH	水平对齐
@@ -9497,7 +9122,7 @@ Blobby Camo 3	斑点迷彩
 Blobby Camo 4	斑点迷彩
 Blobby Camo 5	斑点迷彩
 Bricks	砖纹
-Brown Pearl	棕珍珠
+Brown Pearl	黑珍珠号
 Brushed	拉丝
 Carbon	碳纤维
 Catapult A	弹射器 A
@@ -9512,7 +9137,7 @@ Crack 2	裂纹
 Crescent	新月
 Cross	十字
 Cross Stripe	十字条纹
-Crush	皱褶
+Crush	小心挤压
 Cthulhu	克苏鲁
 Cthulhu Tentacle	克苏鲁触手
 Cthulhu Tentacles	克苏鲁触手
@@ -9529,15 +9154,15 @@ Droplet	水滴
 Eagle Head	鹰首
 Eagle Paw	鹰爪
 Eagle Wing	鹰翼
-Electricity	电流
+Electricity	小心触电
 Elephant	大象
-Entangle	缠结
+Entangle	小心缠绕
 Example 1	示例
 Example 2	示例
 Example 3	示例
 Example 4	示例
 Example Decal 1	示例贴花
-Explosives	爆炸物
+Explosives	小心爆炸
 Feather	羽毛
 Feather 1	羽毛
 Feather 2	羽毛
@@ -9548,7 +9173,7 @@ Flame 2	火焰
 Flame 3	火焰
 Flame 4	火焰
 Flame 5	火焰
-Flammable	易燃
+Flammable	小心火灾
 Flow 1	流线
 Flow 2	流线
 Flow 3	流线
@@ -9577,7 +9202,7 @@ Large Camo 2	大型迷彩
 Large Camo 3	大型迷彩
 Large Camo 4	大型迷彩
 Large Camo 5	大型迷彩
-Lasers	激光
+Lasers	小心激光
 Leaf 1	叶子
 Leaf 2	叶子
 Lightning	闪电
@@ -9609,16 +9234,16 @@ Palm	棕榈
 Palm Leaf	棕榈叶
 Panels	板纹
 Pentagon	五边形
-Pirate	海盗
+Pirate	海盗旗
 Planks	木板
-Poison	剧毒
+Poison	有毒
 Preset 1	预设
 Prohibited	禁止
 Punk Skull	朋克骷髅
 Puzzle	拼图
 Quad Stripe	四条纹
 Radial Gradient	径向渐变
-Radiation	辐射
+Radiation	小心辐射
 Ring 1	圆环
 Ring 2	圆环
 Ring 3	圆环
@@ -9661,9 +9286,8 @@ Sports 6	运动
 Star 5	星形
 Star 6	星形
 Stars	星形
-Stickman	火柴人
+Stickman	注意行人
 Stripe	条纹
-Stripes	条纹
 Tape Stripe	胶带条纹
 Tape X	胶带 X
 Thin Stripe	细条纹
@@ -9921,15 +9545,6 @@ Part damaged: {*}	部件受损：{*}
 Loaded '{*}'	已加载「{*}」
 Saved '{*}'	已保存「{*}」
 Deleted '{*}'	已删除「{*}」
-Animals	动物
-Camo	迷彩
-Elements	元素
-Grunge	做旧
-Liveries	涂装
-Patterns	图案
-Shapes	形状
-Signs	标志
-Vegetation	植被
 Move Sideways	左右平移
 Move Right	右移
 Move Left	左移
@@ -9985,7 +9600,7 @@ Rotate Left	左旋
 Rotate Up/Down	上下旋转
 Rotate Up	上旋
 Rotate Down	下旋
-Translate Left/Right	左右平移移位
+Translate Left/Right	左右移位
 Translate Right	向右移位
 Translate Left	向左移位
 Translate Up/Down	上下移位
@@ -10081,57 +9696,6 @@ You can rotate the view around by clicking and dragging. Go ahead and try, just 
 Wind Speed: {0}mph	风速：{0}mph
 Wind Speed: {0}km/h	风速：{0}km/h
 Wind Speed: {0}m/s	风速：{0} 米/秒
-Wind Speed: {0}mph	风速：{0}mph
-Wind Speed: {0}km/h	风速：{0}km/h
-Wind Speed: {0}m/s	风速：{0} 米/秒
-Adder\nBy: dots\n\nAG1: Open/Close Canopy\nAG4: Attitude Hold Mode (caution)\nAG6: Jettison fuel pods\nAG7: Jettison Weapons\nAG8: Toggle Lights\n\nAttitude Hold Mode:\n- Do NOT land with it enabled\n- Do NOT perform intentional stalls with it enabled\n- Disables trim\n\nNotes: Fast and agile fighter jet. Meet the upgraded version! Smoother intake, new landing gear and improved maneuverability.\n   	Adder\nBy: dots\n\nAG1: 座舱盖开/关\nAG4: 姿态保持模式（注意）\nAG6: 抛弃副油箱\nAG7: 抛弃武器\nAG8: 切换灯光\n\n姿态保持模式：\n- 启用时切勿着陆\n- 启用时切勿做有意失速\n- 会禁用配平\n\n说明：高速灵活的喷气战斗机。升级版来了！进气道更顺滑、起落架全新、机动性更好。\n   
-Little Gebie\nBy: Walv!s\n\nAG1: Toggle Taxi Mode	Little Gebie\nBy: Walv!s\n\nAG1: 切换滑行模式
-Grand Camel\nBy: MrSilverWolf\n\nAG1: Open Rear Door	Grand Camel\nBy: MrSilverWolf\n\nAG1: 打开后门
-P-51D\nBy: Mod\n\nAG1: Canopy Open/Close\nAG2: Jettison Weapons\n\nThe better looking P-51 with rockets!	P-51D\nBy: Mod\n\nAG1: 座舱盖开/关\nAG2: 抛弃武器\n\n更好看的 P-51，还带火箭弹！
-The Gaming Chair\nBy: FairFireFlight\n\nLock in.\n\nXML Modifications: Wheels/engine/transmission scale	The Gaming Chair\nBy: FairFireFlight\n\n坐稳了。\n\nXML 修改：机轮/发动机/变速箱缩放
-Simpleze\nBy: crazyplaness\n\nAG1: Cockpit Open/Close\n\nNotes:\nThe front gear is the only gear that moves on this craft, weird isn't it?	Simpleze\nBy: crazyplaness\n\nAG1: 驾驶舱开/关\n\n说明：\n这架飞机只有前起落架会动，奇怪吧？
-Bugger\nBy: Mod\n\nAG1: Lights\n\nNotes:\nThis craft started out as some sort of formula buggy, and then found it's roots as a regular dune buggy.	Bugger\nBy: Mod\n\nAG1: 灯光\n\n说明：\n这架车起初想做成一款方程式越野车，结果找回了自己沙丘越野车的本性。
-Blade 360\nBy: Vincent\nFlightmodel By: DeezDucks\n\nAG1: Canopy\nAG2: Increase elevator authority (Off by default)\nAG8: Engine ignition (On by default)	Blade 360\nBy: Vincent\n飞行动力学 By: DeezDucks\n\nAG1: 座舱盖\nAG2: 增大升降舵权限（默认关闭）\nAG8: 发动机点火（默认开启）
-Super Mustang\nBy: rexzion\n\nAG1: Open/Close Canopy\nAG8: Engine On/Off (Default On)\n\nNotes: It's the Mustang you all know and love.. but now its Super!!!	Super Mustang\nBy: rexzion\n\nAG1: 座舱盖开/关\nAG8: 发动机开/关（默认开）\n\n说明：就是那架你们都熟悉的 Mustang……但现在它 Super 了！！！
-Cobia 1B \nBy: MrSilverWolf\n\nAG1 - open/close canopy\nAG2 - Turn On/Off Landing Lights\nAG3 - Turn On/Off Navigation Lights\nAG4 - Open/Close Side Windows\nVTOL - Adjust the sunshade	Cobia 1B \nBy: MrSilverWolf\n\nAG1 - 座舱盖开/关\nAG2 - 着陆灯开/关\nAG3 - 航行灯开/关\nAG4 - 侧窗开/关\nVTOL - 调整遮阳板
-Sparrow\nBy: dots\n\nAG1: Open/Close Doors\nAG2: Toggle cruise mode\nAG8: Engine\n\nNotes: Teeny - tiny prop with great cockpit visibility capable of long and scenic cruise flights.\n   	Sparrow\nBy: dots\n\nAG1: 舱门开/关\nAG2: 切换巡航模式\nAG8: 发动机\n\n说明：小小一架螺旋桨飞机，座舱视野极佳，能进行长途观光巡航。\n   
-Whistler Mk.2\nBy: Mod\n\nAG1: Canopy Open/Close\nAG2: Arrestor Hook\nAG3: Drop Weapons\nAG4: Nav Lights\n\nNote: Hold brake button to deploy main landing gear halfway to slow down while flying.	Whistler Mk.2\nBy: Mod\n\nAG1: 座舱盖开/关\nAG2: 着舰钩\nAG3: 投放武器\nAG4: 航行灯\n\n注意：飞行中按住刹车键可让主起落架半放，用来减速。
-Sand Frog\nBy: DeezDucks\n\nAG1: Prime Nitroboost\nAG2: Headlights\nAG3-4: Doors\n\nSpacebar: Handbrake\nVTOL: 4WD Adjust (Up for more FWD, Down for more RWD)\n\nHave Fun!\n\nXML Modifications: Nitroboost	Sand Frog\nBy: DeezDucks\n\nAG1: 预注氮气加速\nAG2: 前灯\nAG3-4: 车门\n\n空格键：手刹\nVTOL: 四驱调节（上为更偏前驱，下为更偏后驱）\n\n玩得开心！\n\nXML 修改：氮气加速
-Gecko\nBy: Mod\n\nAG1: Hatch Open/Close\nAG2: Headlights On/Off\n\nTurret is controlled by Pitch/Roll (Use Mouse-as-Joystick) when the turret camera is in use, the vehicle will automatically brake when aiming.	Gecko\nBy: Mod\n\nAG1: 舱盖开/关\nAG2: 前灯开/关\n\n炮塔由俯仰/滚转控制（需开启鼠标摇杆）。使用炮塔视角瞄准时，车辆会自动刹停。
-KT Veleten\nBy: Shizzle Styx\n\nAG1: Opens rear cargo door\nAG2: Opens nose cargo door\nAG3: Deploys cockpit ramp\nAG4: Activates magnets\n\nVTOL: Lowers the cargo bay magnets at negative %s\n\nNotes: Go find them.	KT Veleten\nBy: Shizzle Styx\n\nAG1: 打开后货舱门\nAG2: 打开前货舱门\nAG3: 放下驾驶舱坡道\nAG4: 激活磁铁\n\nVTOL: 数值为负时放下货舱磁铁\n\n说明：自己去找吧。
-Maxi\nBy: 6wheel\n\nAG1: HeadLights\nAG2: Boot\nAG3: Bonnet \nAG4: Doors\nAG5: ASM (default on)\n\nFireGuns: Handbrake\n\nNotes: '2 Litre Kit Car' FWD Style Rally Car. Specially tuned for Asphault Assault.\nUse the handbrake!	Maxi\nBy: 6wheel\n\nAG1: 前灯\nAG2: 后备箱\nAG3: 引擎盖 \nAG4: 车门\nAG5: ASM（默认开启）\n\nFireGuns: 手刹\n\n说明：“2 升套件车”前驱风格拉力车，专为沥青突击调校。\n记得用手刹！
-Pigpen\nBy: exosuit\n\nAG1: Airbrake\nAG2: Nav Lights\nAG3: Formation lights\nAG4: \nAG5: Jettison Fuel Tank\nAG6: Jettison inner pylons\nAG7: Canopy\nAG8: Engine\n\nLight supersonic fighter.\n\nXML edits: main shocks spring value	Pigpen\nBy: exosuit\n\nAG1: 减速板\nAG2: 航行灯\nAG3: 编队灯\nAG4: \nAG5: 抛弃油箱\nAG6: 抛弃内侧挂架\nAG7: 座舱盖\nAG8: 发动机\n\n轻型超音速战斗机。\n\nXML 修改：主减震弹簧值
-Longtail\nBy: 6wheel\n\nAG1 - Lights\nAG2 - High/Low Boost (default High)\n\nAG3 - ASM (default on)\n\nFireGuns: Handbrake\n\nNotes: 'C' style sports car. Features a powerful turbocharger that requires skill and finesse to master. 	Longtail\nBy: 6wheel\n\nAG1 - 灯光\nAG2 - 高/低增压（默认高）\n\nAG3 - ASM（默认开启）\n\nFireGuns: 手刹\n\n说明：“C”形跑车，涡轮增压强劲，需要技术与细腻操作才能驾驭。 
-Wurger\nBy: Mod (exterior, flight model, paint) & HuskyDynamics (cockpit)\n\nAG8: Engine\n\nA toy plane based on a famous real-life warbird.  Fun to fly but capable of holding its own in a dogfight once you get the hang of it.	Wurger\nBy: Mod（外观、飞行模型、涂装）& HuskyDynamics（驾驶舱）\n\nAG8: 发动机\n\n一架以现实著名战机为原型的玩具飞机。飞起来很欢乐，等你上手之后，格斗中也能站稳脚跟。
-Gator 3\nBy: BaconEggs\n\nAg1: Pilot door\nAg2: Co-pilot door\nAg3: Rear left sliding door\nAg4: Rear right sliding door\nAg7: Rotor brake\nAg8: Engine (on by default)\n\nNotes: Remaster of the original SP1 Gator, rebuilt from the ground up with the new parts. 	Gator 3\nBy: BaconEggs\n\nAg1: 驾驶员门\nAg2: 副驾门\nAg3: 左后滑门\nAg4: 右后滑门\nAg7: 旋翼刹车\nAg8: 发动机（默认开启）\n\n说明：SP1 初代 Gator 的重制版，用全新部件从零重建。 
-Stinker\nBy: MisterT\n\nAG1: Canopy\nAG2 : Tail Wheel\nAG3 : Lights\nAG4 : Smoke\nAG5 : Smoke Color\nAG7 : Instructions\nAG8 : Engine On/Off\nFireGuns : Smoke\n\nXML Modifications : Reduced fuselage mass and drag, scaled and disabled collisions on multiple parts.	Stinker\nBy: MisterT\n\nAG1: 座舱盖\nAG2 : 尾轮\nAG3 : 灯光\nAG4 : 烟雾\nAG5 : 烟雾颜色\nAG7 : 说明\nAG8 : 发动机开/关\nFireGuns : 烟雾\n\nXML 修改：降低机身质量与阻力，对多个部件做了缩放并关闭碰撞。
-Trisaurus\nBy: BaconEggs\n\nAG8: Engines & Lights\n\nNotes: It doesn't have two, it doesn't have four, it has three!!!\n\nXML Changes: Disabled part collisions, part scales, mass scales in custom landing gear and stabilizer, part scaled airbrake parts and lights	Trisaurus\nBy: BaconEggs\n\nAG8: 发动机与灯光\n\n说明：不是两个，也不是四个，是三个！！！\n\nXML 修改：关闭部件碰撞；自定义起落架与稳定器做了部件缩放与质量缩放；减速板与灯具做了缩放
-Empress\nBy: BaconEggs\n\nAg8: Engines (on by default)\n\nNotes: Big jet that flies to the airports. \n\nXML Changes: mass scaling, part scaling, disabling collosions to the landing gear and tail, some dead weight to the fuselage thats beyond the bounds of 1000kg	Empress\nBy: BaconEggs\n\nAg8: 发动机（默认开启）\n\n说明：飞往各机场的大飞机。 \n\nXML 修改：质量缩放、部件缩放、关闭起落架与尾部的碰撞；机身上带有超出 1000kg 上限的配重
-Windrider 2000\nBy: Vincent\n\nAG2: Open cockpit\nAG8: Engine (on by default)\n\nNotes: A motorglider based of the real Swedish designed Radab Windex, featuring a two cylinder engine producing 35 hp.\n\nXML Modifications: Reduced mass of wings and engine, adjusted engine power values.	Windrider 2000\nBy: Vincent\n\nAG2: 打开座舱\nAG8: 发动机（默认开启）\n\n说明：以瑞典 Radab Windex 为原型的动力滑翔机，搭载一台 35 马力的双缸发动机。\n\nXML 修改：降低机翼与发动机质量，调整发动机功率。
-- AG 1 and Yaw: Front Wheel Steering\n- AG 2 and Yaw: Rear Wheel Steering\n- AG 3: Bomb Bay and Arm All Bombs\n- AG 4: Drop Tanks\n- AG 5: Drogue Chute\n- AG 6: Air Brake\n- Trim for trim\n- VTOL for flaps\n- Tail turret will auto-aim at targets within 1.3 NM, press Fire Guns to shoot	- AG 1 与偏航：前轮转向\n- AG 2 与偏航：后轮转向\n- AG 3：打开弹舱并为所有炸弹解除保险\n- AG 4：抛弃副油箱\n- AG 5：阻力伞\n- AG 6：减速板\n- Trim 键对应配平\n- VTOL 键对应襟翼\n- 尾部炮塔会自动瞄准 1.3 海里内的目标，按 Fire Guns 开火
-Pinball\nBy: Mod (exterior, flight model) & HuskyDynamics (cockpit, paint)\n\nAG8: Engine\n\nA toy plane based on a famous real-life warbird.  Pretty easy to fly and capable of holding its own in a dogfight once you get the hang of it, though the bright color won't do you many favors.	Pinball\nBy: Mod（外观、飞行模型）& HuskyDynamics（驾驶舱、涂装）\n\nAG8: 发动机\n\n一架以现实著名战机为原型的玩具飞机。相当好飞，上手之后格斗中也能站稳脚跟，只是这身鲜亮涂装不怎么帮你藏身。
-Bronte GT\nBy: WhoTookCarter\n\nAG1: Hood\nAG2: Driver's Door\nAG3: Passenger's Door\nAG4: Trunk\nAG6: Toggle Driving Assist (on by default)\nAG7: Headlights\n\nFireGuns for handbrake on rear wheels.\n\nNotes: Rear-wheel drive, 4.6 L V8 producing 300 hp.\n\nXML Modifications: Transmission shift points	Bronte GT\nBy: WhoTookCarter\n\nAG1: 引擎盖\nAG2: 驾驶员门\nAG3: 副驾门\nAG4: 后备箱\nAG6: 切换驾驶辅助（默认开启）\nAG7: 前灯\n\nFireGuns 是后轮手刹。\n\n说明：后轮驱动，4.6 升 V8，输出 300 马力。\n\nXML 修改：变速箱换挡点
-Duster\nBy: Mod\n\nAG1: Front Left Door\nAG2: Front Right Door\nAG3: Rear Left Door\nAG4: Rear Right Door\nAG7: Landing Headlights\nAG8: Wing Lights\n\nThis, like the Whistler, is based loosely on one of my favorite real life aircraft, and has a general performance that should be similar but still fun.	Duster\nBy: Mod\n\nAG1: 左前门\nAG2: 右前门\nAG3: 左后门\nAG4: 右后门\nAG7: 着陆灯\nAG8: 翼灯\n\n和 Whistler 一样，这架飞机松散地参照了我最喜欢的现实机型之一，整体性能相近，但依旧好玩。
-Dandy\nBy: HuskyDynamics\n\nYaw: Shift Up/Down\nAG1: Headlights\nAG2: Driver Door\nAG3: Passenger Door\nAG4: Left Hood\nAG5: Right Hood\n\nNotes: Another innovation from the finest minds of the early 20th century, this classic car has been restored and tuned up for the streets and highways of the archipelago.	Dandy\nBy: HuskyDynamics\n\nYaw: 升/降挡\nAG1: 前灯\nAG2: 驾驶员门\nAG3: 副驾门\nAG4: 左引擎盖\nAG5: 右引擎盖\n\n说明：20 世纪初最聪明的头脑带来的又一项创新。这辆老爷车已被修复调校，如今跑在群岛的街道与公路上。
-Prowler\nBy: dots\n\nAG1: Doors (pilot & copilot)\nAG2: Windows (Activate window gunners)\nAG3: Left Door (sliding)\nAG4: Right Door (sliding)\nAG5: Lower Hook\nAG6: Auto Hover (Altitude Hold)\nAG7: Lights\nAG8: Engine (ON by default)\n\nThrottle: Collective\n\nXML Modifications: Main rotor properties, winch and piston scaling.	Prowler\nBy: dots\n\nAG1: 舱门（驾驶员与副驾）\nAG2: 舷窗（激活窗口机枪手）\nAG3: 左门（滑动）\nAG4: 右门（滑动）\nAG5: 放下尾钩\nAG6: 自动悬停（高度保持）\nAG7: 灯光\nAG8: 发动机（默认开启）\n\nThrottle: 总距\n\nXML 修改：主旋翼参数、绞盘与活塞缩放。
-Snoot\nBy: BaconEggs\n\nAg1: Snoot Droop\nAg8: Lights & Engines \n\nNotes: The aircraft included a droop snoot. Droop Snoot. The snoot would droop. The snoot drooped.\n\nXML Changes: Part scaling, mass scaling, disabling collisions in the landing gear, stabilator and droop snoot, and some xml edited weight in the main fuselage	Snoot\nBy: BaconEggs\n\nAg1: 机鼻下垂\nAg8: 灯光与发动机 \n\n说明：这架飞机配了可下垂机鼻。下垂机鼻。机鼻会下垂。机鼻下垂了。\n\nXML 修改：部件缩放、质量缩放、关闭起落架/全动平尾/下垂机鼻的碰撞，主机身另做了配重调整
-Chaddaray\nBy: Mod & Pedro\n\nUh, yeah. It's a flying stunt fish that was initially made as a joke, but turned out to work really well all things considered. It can do flips and borderline PSM manuevers without thrust vectoring, which is kind of wild. Oh, and then there's Chad at the belly of the beast just doing chad things. Yup.	Chaddaray\nBy: Mod & Pedro\n\n呃，对。这是一条会飞的特技鱼，最初只是开个玩笑，结果意外地好用。它不用推力矢量就能翻滚和做接近 PSM 的机动，简直离谱。哦，还有 Chad 趴在它肚子上，干着 Chad 该干的事。就是这样。
-Banshee RC\nBy: HuskyDynamcs \n\nNotes: The Banshee is a lightning-fast 4WD nitro car, ready to tear up any terrain at a moment's notice and packing so much power that its tiny frame can barely contain it.  Sixty miles per hour has never felt this exciting.\n\nDon't forget about the "Upright Craft" button!  You will probably need it.	Banshee RC\nBy: HuskyDynamcs \n\n说明：Banshee 是一辆闪电般的四驱燃油遥控车，随时能把任何地形撕开，动力大到那副小身架几乎塞不下。每小时六十英里从没这么刺激过。\n\n别忘了「扶正载具」按钮！你多半会用到。
-Aeon\nBy: BaconEggs\n\nAg1: Headlights\nAg2: Driver door\nAg3: Passenger door\nAg4: Roof vent\nAg7: Hazard lights\n\nYaw: Gear shift (manual)\n\nVTOL: Turn signal\nUp: Left turn\nDown: Right turn\n\nFireGuns: Handbrake\n\nNotes: Car. "V6" (stand-in for a 1.3L 2-rotor) making ~220 hp at ~8500 rpm\n\nXML Changes: Disabled collisions on all moving parts	Aeon\nBy: BaconEggs\n\nAg1: 前灯\nAg2: 驾驶员门\nAg3: 副驾门\nAg4: 车顶通风口\nAg7: 危险警示灯\n\nYaw: 换挡（手动）\n\nVTOL: 转向灯\n上：左转\n下：右转\n\nFireGuns: 手刹\n\n说明：一辆车。“V6”（实为 1.3 升双转子发动机的替身），约 8500 转时输出 220 马力\n\nXML 修改：关闭所有活动部件的碰撞
-Kicking Fish\nBy: HuskyDynamics\n\nAG1: Canopy\nAG2: Drop Tank\nAG8: Engine (Default On)\n\nNotes: Raw speed and off-the-scales agility help you reel in the competition before casting them back out into the Kicking Fish's fiery wake.  Don't get caught off guard though, because you're not off the hook yet - this slick fish is both fast and feisty.	Kicking Fish\nBy: HuskyDynamics\n\nAG1: 座舱盖\nAG2: 副油箱\nAG8: 发动机（默认开启）\n\n说明：纯粹的速度与爆表的灵活性，帮你把对手钓过来，再甩回踢鱼炽热的尾流里。但别掉以轻心——你还没脱钩呢，这条滑溜的鱼又快又凶。
-Rag-Chad\nBy: Bjac0\n\nSelect weapon "chad" and fire to launch chad >:)\n(Or use activate1)\nAG2: Activate magnets\nAG3: Deploy parachute\n\nAG5: Enable auto-aim \n(this won't lead moving targets and just points the cannon in the general direction of your target)\n\nPitch+Roll to aim\nYaw for fine lateral aiming\nThrottle+Roll to drive around\n\nNotes: Chaos reigns!	Rag-Chad\nBy: Bjac0\n\n选择武器「chad」并开火即可发射 chad >:)\n（或者用 activate1）\nAG2: 激活磁铁\nAG3: 展开降落伞\n\nAG5: 启用自动瞄准 \n（不会预判移动目标，只是把机炮大致指向目标方向）\n\n俯仰+滚转用于瞄准\n偏航做横向微调瞄准\n油门+滚转用于地面行驶\n\n说明：混沌统治一切！
-Hoister\nBy: HuskyDynamics\n\nAG1: Headlight\nAG2: Open Hood\nAG8: Master Power / Emergency Stop (Default On)\n\nThrottle: Raise/Lower Forks\nYaw: Shift Gears Up/Down\nVTOL: Adjust Fork Width\nTrim: Tilt Mast\n\nNotes: AWD automatically engages in high gear.  Maximum rated load 12000 lbs (5443 kg).  Do not indulge in stunt driving or horseplay under any circumstances.	Hoister\nBy: HuskyDynamics\n\nAG1: 前灯\nAG2: 打开引擎盖\nAG8: 主电源 / 紧急停止（默认开启）\n\nThrottle: 升/降货叉\nYaw: 升/降挡\nVTOL: 调整货叉宽度\nTrim: 倾斜门架\n\n说明：高速挡会自动接合全轮驱动。额定最大载荷 12000 磅（5443 公斤）。任何情况下都不要玩特技驾驶或胡闹。
-Backdraft\nBy: HuskyDynamics\n\nAG1: Roof Hatch\nAG8: Anti-Lock Brake System / Traction Control (Default On)\n\nNotes: Though it hails from a racing series best known for turning left, this chunky stock car is surprisingly unwieldy in the Driftwood Circuit's tight corners.  Brake early and keep all four wheels on the ground, or you might spin into the fence.  Let's go racing!	Backdraft\nBy: HuskyDynamics\n\nAG1: 车顶舱盖\nAG8: 防抱死制动 / 牵引力控制（默认开启）\n\n说明：虽然它出身于以「只会左转」闻名的赛事系列，这辆敦实的原厂赛车在 Driftwood 赛道的急弯里却意外地笨拙。早点刹车，四个轮子都别离地，否则可能打转撞上围栏。开跑吧！
-Snowfinch\nBy: BaconAircraft\n\nAG3, AG4: Passenger doors\nAG5, AG6: Cockpit doors\n\nNotes: A quick transport helicopter for medical evacuation, or just hauling your friends back to civilization after they've made questionable decisions. This helicopter is quite quick - your untimely demise might come sooner than you expect if you don't keep watch of your speeds and attitude. 	Snowfinch\nBy: BaconAircraft\n\nAG3、AG4: 客舱门\nAG5、AG6: 驾驶舱门\n\n说明：一架飞得很快的运输直升机，可用于医疗后送，也可以在你朋友做出可疑决定之后把他们拉回文明世界。这架直升机相当快——如果不盯着速度和姿态，你的「意外」可能比预想来得更早。 
-Oxlift\nBy: Exosuit\n\nAG1: Stabilizing Gyro\nAG2: Toggle Magnet\nAG3: Navigation Light\nAG4: Nose Light\nAG5: Anti Collision Light\nAG6: Side Door\nAG8: Engine\n\nVTOL: Extend/Retract Winch\n\nAchieved hover with 30% throttle no load, 90% max load.\nThe maximum safe operating payload is rated at 10000Kg.\n\nDeco engine has zero mass and power, main rotor has engine power edited to 13500HP.	Oxlift\nBy: Exosuit\n\nAG1: 增稳陀螺\nAG2: 切换磁铁\nAG3: 航行灯\nAG4: 机鼻灯\nAG5: 防撞灯\nAG6: 侧门\nAG8: 发动机\n\nVTOL: 伸出/收回绞盘\n\n空载时 30% 油门即可悬停，满载时需 90%。\n额定最大安全作业载荷 10000 公斤。\n\n装饰用发动机质量与功率为零；主旋翼的发动机功率已改为 13500 马力。
-Competitor\nBy: BaconAircraft\n\nAG2: Door\nAG3: Speedbrake\nAG7: Disable auto-trim\nAG8: Navigation Lights\n\nNotes:\nThis is a glorified bus with wings, expect it to fly like a glorified bus with wings.\nYou'll need to use flaps on takeoff, or risk a nice warm campfire at the end of the runway.\n\nXML notes:\n- Various interior items scaled (i.e. seats)\n- Various landing gear components scaled	Competitor\nBy: BaconAircraft\n\nAG2: 舱门\nAG3: 减速板\nAG7: 禁用自动配平\nAG8: 航行灯\n\n说明：\n这不过是一辆长了翅膀的高级巴士，那就按长了翅膀的高级巴士来期待它的飞行性能。\n起飞时必须放襟翼，否则小心在跑道尽头点起一堆温暖的篝火。\n\nXML 备注：\n- 多个内饰件做了缩放（例如座椅）\n- 多个起落架部件做了缩放
-Raccoon\nBy: dots (Airframe) & WhoTookCarter (Gun auto-aim)\n\nAG1: Auto-Yaw (Flight assist)\nAG4: Gunner's HMD\nAG5: Auto-Yaw to target\nAG6: AutoHover\nAG7: Jettison\nAG8: Engine\n\nNotes: \nMeet the updated Raccoon! Switch on the hover mode and relax in the gunner seat. Chain gun aims all by itself, making your job just that much easier\n\nXML Changes: Disabled gear collisions, MFD and TGP scales.	Raccoon\nBy: dots（机体）& WhoTookCarter（机炮自动瞄准）\n\nAG1: 自动偏航（飞行辅助）\nAG4: 炮手头盔显示器\nAG5: 自动偏航指向目标\nAG6: 自动悬停\nAG7: 抛弃\nAG8: 发动机\n\n说明： \n来看看更新后的 Raccoon！开启悬停模式，然后在炮手席上放松就好。链炮会自己瞄准，让你的活儿轻松不少\n\nXML 修改：关闭起落架碰撞；多功能显示器与瞄准吊舱做了缩放。
-Athena\nBy: Shizzle Styx\n\nAG1: Canopy\nAG2: Lights\nAG3: Bomb Bay Manual Open\n\nNotes: First. Also first bomber plane. Sadly, there are no baked beans inside the payload. There is however Dave... Dave's exact purpose has been lost to time, budget cuts, three office relocations, and an incident nobody will properly explain unless they have prepared an ominous monologue and the room is poorly lit.	Athena\nBy: Shizzle Styx\n\nAG1: 座舱盖\nAG2: 灯光\nAG3: 手动打开弹舱\n\n说明：第一架。也是第一架轰炸机。可惜载荷里没有焗豆罐头。不过里面有 Dave……Dave 的确切用途已经失落在时间、预算削减、三次办公室搬迁，以及一起除非有人准备好一段不祥独白并让房间灯光昏暗、否则没人会好好解释的事件之中。
-Formula\nBy: BaconEggs\n\nAg1: Manual DRS\nAg2: Traction control (on by default)\nAg3: Steer assist (on by default)\nAg4: KMH / MPH switch\nAg5: Pit speed limiter\nAg6: Manual caution lights\n\nNotes: FAST!!!!\n\nXML Changes: Mass scaling to the wings to keep the weight down, some parts with disabled collisions, and one hidden wing with a lift scale of 20 to reflect the downforce created by the floor & diffuser	Formula\nBy: BaconEggs\n\nAg1: 手动 DRS\nAg2: 牵引力控制（默认开启）\nAg3: 转向辅助（默认开启）\nAg4: KMH / MPH 切换\nAg5: 维修区限速\nAg6: 手动警示灯\n\n说明：快！！！！\n\nXML 修改：对机翼做质量缩放以减重，部分部件关闭碰撞，另有一片隐藏机翼的升力系数设为 20，用来模拟底板与扩散器产生的下压力
-Sailer & Meadowlark (tow airplane)\nBy: BaconEggs & MrSilverWolf\n\nAg1: Takeoff\nAg2: Release from tow cable\nAg3: Open canopy\n\nTrim: Tow airplane climb rate, Pitch trim\nFlaps: Wing spoilers\n\nNotes: A huge thanks to my friend MrSilverWolf for making the tow airplane. Pressing the "Go" button should result in the glider and tow taking off by themselves, avoid making any roll commands while on the ground.	Sailer & Meadowlark (tow airplane)\nBy: BaconEggs & MrSilverWolf\n\nAg1: 起飞\nAg2: 脱离牵引缆\nAg3: 打开座舱盖\n\nTrim: 牵引机爬升率、俯仰配平\nFlaps: 机翼扰流板\n\n说明：非常感谢我的朋友 MrSilverWolf 制作了牵引机。按下「Go」按钮后，滑翔机与牵引机会自行起飞；在地面上不要发出任何滚转指令。
-Arbitrator\nBy: dots\n\nAG1: Canopy\nAG2: Drag Chute \nAG3: Raw Controls\nAG4: Attitude Hold Mode (aka autotrim)\nAG5: Lights\nAG7: Weapon Jettison\nAG8: Engines (ON by default)\n\nNotes: Fly like an overweight butterfly, sting like a SAM system. The beast grants its blessings if you ask for them correctly. Legends say it came back to haunt the skies once again. \n\nXML edits: main wing liftscale, engine fuel consumption.	Arbitrator\nBy: dots\n\nAG1: 座舱盖\nAG2: 减速伞 \nAG3: 原始操纵\nAG4: 姿态保持模式（即自动配平）\nAG5: 灯光\nAG7: 抛弃武器\nAG8: 发动机（默认开启）\n\n说明：像超重的蝴蝶一样飞，像防空导弹一样蜇人。只要请求方式正确，这头野兽就会赐下祝福。传说它再次归来，游荡于天空。 \n\nXML 修改：主翼升力系数、发动机油耗。
-The Chief\nBy: HuskyDynamics\n\nAG1: Door Turret\nAG2: Crew Door\nAG3: Winch Magnet\nAG4: Formation Lights\nAG8: Master Arm (Default On)\n\nThrottle: Collective\nLanding Gear: Rear Ramp\nVTOL: Winch (maximum safe load 16,000lbs)\nTrim: Autopilot Pitch Trim\n\nNotes: Equipped for both logistics and air support, this mighty twin-rotor helicopter is armed to the teeth and ready to handle anything on the ground, friend or foe.	The Chief\nBy: HuskyDynamics\n\nAG1: 舱门炮塔\nAG2: 乘员舱门\nAG3: 绞盘磁铁\nAG4: 编队灯\nAG8: 总军械开关（默认开启）\n\nThrottle: 总距\nLanding Gear: 后舱门坡道\nVTOL: 绞盘（最大安全载荷 16000 磅）\nTrim: 自动驾驶俯仰配平\n\n说明：这架强悍的双旋翼直升机兼顾后勤与空中支援，武装到牙齿，随时应对地面上的一切——无论敌友。
-Tadpole\nBy: BaconEggs\n\nAg1: Canopy\nAg2: Emergency jettison\nAg3: Tail hook\nAg4: Wing fold\nAg5: Speedbrake\nAg8: Engines (on by default)\n\nNotes: Navalized ground attack jet. This thing barely gets airborne off the catapult, and can barely recover successfully at the boat with all of its weapons still on. Good luck getting off the ground!\n\nXML Changes: Custom tail hook, part scaling around the whole build, some mass scaling	Tadpole\nBy: BaconEggs\n\nAg1: 座舱盖\nAg2: 紧急抛弃\nAg3: 尾钩\nAg4: 机翼折叠\nAg5: 减速板\nAg8: 发动机（默认开启）\n\n说明：舰载化的对地攻击机。这东西从弹射器上勉强能升空，满挂武器时也勉强能落回船上。祝你起飞顺利！\n\nXML 修改：自定义尾钩、整机部件缩放、部分质量缩放
 Capybara\nBy: Thecatbaron\n\nAG1: Left Side Door\nAG2: Right Side Door\nAG3: Cargo Door\nAG4: Nav Lights\nAG5: Strobe Lights\nAG6: Beacon Light\nAG7: Reverse Thrust\nAG8: Engine (defaut on) on/off\n\nVTOL: Constant speed prop RPM control\nTRIM: <----\nFLAPS: <----\n\nNotes:\nThe perfect aircraft for transporting illicit xml modded parts across state lines at the backbending speed of 150kts over the ground! Rotation speed should be around 70kts with 10 degrees of flaps. Good luck with the rest ya scamps!\n\nXML Modifications:\n\n-Wings inset in the front of the cowling with modified drag and lift for performance reasons.\n-physical flaps (control surface) scaled down to make room for more realisic flap mechanism.\n-3 scaled down airbrakes for further flight performance reasons, two in the wing roots for flap drag, and one in the spinner for prop stuff. \n-Engine given slighly more rpm for flight performance reasons.	Capybara\nBy: Thecatbaron\n\nAG1: 左侧门\nAG2: 右侧门\nAG3: 货舱门\nAG4: 航行灯\nAG5: 频闪灯\nAG6: 信标灯\nAG7: 反推\nAG8: 发动机开/关（默认开）\n\nVTOL: 恒速桨转速控制\nTRIM: <----\nFLAPS: <----\n\n说明：\n想在州际之间运送来路不明的 XML 改造部件？就是它了，150 节地速能把你的腰都折弯！襟翼放 10 度时抬轮速度约 70 节。剩下的就靠你们这些小鬼自己啦！\n\nXML 修改：\n\n- 机翼嵌入整流罩前部，并调整阻力与升力以提升性能。\n- 实体襟翼（操纵面）缩小，为更真实的襟翼机构腾出空间。\n- 为飞行性能又加了 3 个缩小的减速板：两个在翼根模拟襟翼阻力，一个在桨毂用于螺旋桨相关效果。 \n- 为飞行性能略微提高了发动机转速。
 Chungus\nBy: BaconAircraft\n\nAG1: Speedbrake\nAG2: Open cargo door\nAG3: Drop cargo door ramp\nAG5: Open cabin door\nAG7: Disable autotrim\n\nNotes:\nShe's a bit on the heavy side, some may even say it costs 400 thousand dollars to fly this airplane for 12 seconds... Anyways, plan your maneuvers 2-3 business days in advance and remember that high lift devices exist, otherwise you may experience an impromptu lesson in lithobraking.\n\nXML notes:\n- MassScale>1 applied to physics items and attachments (i.e. landing gear components, cargo door)\n- Reduced friction on main gear\n- Various scaled parts on physics items (i.e. landing gear, cabin door, cargo door) and cockpit details. 	Chungus\nBy: BaconAircraft\n\nAG1: 减速板\nAG2: 打开货舱门\nAG3: 放下货舱门坡道\nAG5: 打开客舱门\nAG7: 禁用自动配平\n\n说明：\n她确实有点重，甚至有人说让这飞机飞 12 秒要花 40 万美元……总之，机动请提前 2 到 3 个工作日规划，并且记住高升力装置是存在的，否则你可能会上一堂意料之外的「岩石刹车」课。\n\nXML 备注：\n- 物理部件与挂载件（如起落架组件、货舱门）应用了 MassScale>1\n- 降低主起落架摩擦\n- 物理部件（如起落架、客舱门、货舱门）与驾驶舱细节做了多项缩放。 
 Dragon\nBy: BaconAircraft, with feedback from the community. <3\n\nAG1: Air brake\nAG2: Turn off AoA limiter \n(Enabled at 35deg by default)\nAG3: Drag chute\nAG4: Manual canopy closing \n(Automatic by default)\nAG5: Reduced/formation mode\n(Pitch/roll set to fine control)\nAG8: Lights\n\nNotes: This aircraft has relaxed stability and uses a rudimentary augmented control system. Mind your speed and attitude, especially in turns - otherwise its appetite for high AoA will send you to a smoking crater in no time.\n\nAbout: A cynical conglomeration of parts exhibiting questionable building techniques all in the effort to save on parts, further complimented by utterly nefarious abuse of the new paint pattern tool. All to bring you this aircraft in this special livery ...let's just say ...it pays homage to a certain flight demo team. This was a lot of fun to make, and the end goal was to produce a high-performance jet aircraft that is fun to look at and fun to fly - even without weapons. The sky is your canvas, this is your high-AoA paintbrush. \n\nXML notes:\n- Various rotators' massScale set to 0\n- Scaled items inside cockpit	Dragon\nBy: BaconAircraft，以及社区的反馈。<3\n\nAG1: 减速板\nAG2: 关闭迎角限制器 \n（默认开启，限制 35 度）\nAG3: 减速伞\nAG4: 手动关闭座舱盖 \n（默认自动）\nAG5: 减量/编队模式\n（俯仰/滚转切为精细控制）\nAG8: 灯光\n\n说明：这架飞机采用松弛稳定性，配了一套简易增稳系统。注意速度和姿态，转弯时尤其要小心——否则它对大迎角的胃口会很快把你送进一个冒烟的坑里。\n\n关于：这架飞机是把一堆部件用可疑的建造手法拼在一起（全为了省部件数量），再加上对新涂装图案工具的彻底滥用。一切都是为了给你这架特殊涂装的飞机……这么说吧……它是在向某支飞行表演队致敬。做它非常有意思，最终目标是造出一架好看又好玩的高性能喷气机——即使不带武器。天空是你的画布，这就是你那支大迎角画笔。 \n\nXML 备注：\n- 多个旋转部件的 massScale 设为 0\n- 驾驶舱内部件做了缩放
@@ -10168,6 +9732,54 @@ Juggernaut\nBy: dots\n\nAG1: Canopy\nAG5: Lights\nAG7: Weapon Jettison\nAG8: Eng
 Vertigo IV\nBy: Exosuit\n\nAG1: Alt. Hold (Thr <25 down, >75 up), use during hover\nAG2: Nav Lights\nAG3: Formation Lights\nAG4: Air Brake, also works with regular brake\nAG5: Refueling Probe\nAG6: Jettison Rocket Pods\nAG7: Canopy\nAG8: Engine\nVTOL: 100% foward, 0% diagonal, -80% hover, -100% reverse\nTrim	: Trim\nFlaps: Flaps\n\nNotes: The chevron on the HUD is aligned to the horizon when hovering. Auto Stabilization under 93kmh reduces control rate.\n\nOlder, subsonic relative to the Peregrine.	Vertigo IV\nBy: Exosuit\n\nAG1: 高度保持（油门 <25 下降，>75 上升），悬停时使用\nAG2: 航行灯\nAG3: 编队灯\nAG4: 减速板，与常规刹车共用\nAG5: 受油探管\nAG6: 抛弃火箭巢\nAG7: 座舱盖\nAG8: 发动机\nVTOL: 100% 前飞，0% 斜向，-80% 悬停，-100% 后退\nTrim	: 配平\nFlaps: 襟翼\n\n说明：悬停时 HUD 上的楔形标记与地平线对齐。速度低于 93 公里/小时时，自动增稳会降低操纵速率。\n\n比 Peregrine 更老、亚音速。
 USS Tiny\nBy: HuskyDynamics (model/propulsion/steering), Shizzle Styx (floating/stabilization)\n\nAG8: Engines (Default On)\n\nThrottle: Speed Control\nPitch: Forward/Reverse Gear\nRoll: Steering\n\nNotes: You didn't think a wreck was the only version of the USS Tiny you'd be getting in SimplePlanes 2, did you?\n\nDon't expect to keep up with a speedboat, though.  It is still an aircraft carrier, even if it's only a small one.  Fortunately, clutch-dumping the engines works great for quick starts!	USS Tiny\nBy: HuskyDynamics（模型/推进/转向），Shizzle Styx（漂浮/增稳）\n\nAG8: 发动机（默认开启）\n\nThrottle: 速度控制\nPitch: 前进/倒挡\nRoll: 转向\n\n说明：你该不会以为 SimplePlanes 2 里的 USS Tiny 只有残骸那个版本吧？\n\n不过别指望能追上快艇。它毕竟是一艘航空母舰，哪怕只是个小号。好消息是，猛松离合起步效果很好！
 Goke\nBy: bjac0\n\nAG1: Traction Assist (on by default)\nAG2: Burnout Prevention (on by default)\n\nYaw (Q+E Keys by default) to shoulder check\nFireGuns (Spacebar) for handbrake\n\nMade for a certain Australian friend of mine, the Goke is an amalgumation of several gokarts from professional and recreational specs. The mindset I went into building this with was essentially to make it maximally fun, and I think features like the shoulder check have lead to some pretty funny moments between playtesters.	Goke\nBy: bjac0\n\nAG1: 牵引力辅助（默认开启）\nAG2: 防打滑起步（默认开启）\n\n偏航（默认 Q+E）用于回头观察\nFireGuns（空格）是手刹\n\n这辆 Goke 是为我某位澳大利亚朋友做的，融合了几款专业与休闲规格的卡丁车。我做它时的核心想法就是「尽可能好玩」，而像回头观察这样的功能，确实在测试者之间制造了不少搞笑瞬间。
+Hoister\nBy: HuskyDynamics\n\nAG1: Headlight\nAG2: Open Hood\nAG8: Master Power / Emergency Stop (Default On)\n\nThrottle: Raise/Lower Forks\nYaw: Shift Gears Up/Down\nVTOL: Adjust Fork Width\nTrim: Tilt Mast\n\nNotes: AWD automatically engages in high gear.  Maximum rated load 12000 lbs (5443 kg).  Do not indulge in stunt driving or horseplay under any circumstances.	Hoister\nBy: HuskyDynamics\n\nAG1: 前灯\nAG2: 打开引擎盖\nAG8: 主电源 / 紧急停止（默认开启）\n\nThrottle: 升/降货叉\nYaw: 升/降挡\nVTOL: 调整货叉宽度\nTrim: 倾斜门架\n\n说明：高速挡会自动接合全轮驱动。额定最大载荷 12000 磅（5443 公斤）。任何情况下都不要玩特技驾驶或胡闹。
+Backdraft\nBy: HuskyDynamics\n\nAG1: Roof Hatch\nAG8: Anti-Lock Brake System / Traction Control (Default On)\n\nNotes: Though it hails from a racing series best known for turning left, this chunky stock car is surprisingly unwieldy in the Driftwood Circuit's tight corners.  Brake early and keep all four wheels on the ground, or you might spin into the fence.  Let's go racing!	Backdraft\nBy: HuskyDynamics\n\nAG1: 车顶舱盖\nAG8: 防抱死制动 / 牵引力控制（默认开启）\n\n说明：虽然它出身于以「只会左转」闻名的赛事系列，这辆敦实的原厂赛车在 Driftwood 赛道的急弯里却意外地笨拙。早点刹车，四个轮子都别离地，否则可能打转撞上围栏。开跑吧！
+Snowfinch\nBy: BaconAircraft\n\nAG3, AG4: Passenger doors\nAG5, AG6: Cockpit doors\n\nNotes: A quick transport helicopter for medical evacuation, or just hauling your friends back to civilization after they've made questionable decisions. This helicopter is quite quick - your untimely demise might come sooner than you expect if you don't keep watch of your speeds and attitude. 	Snowfinch\nBy: BaconAircraft\n\nAG3、AG4: 客舱门\nAG5、AG6: 驾驶舱门\n\n说明：一架飞得很快的运输直升机，可用于医疗后送，也可以在你朋友做出可疑决定之后把他们拉回文明世界。这架直升机相当快——如果不盯着速度和姿态，你的「意外」可能比预想来得更早。 
+Oxlift\nBy: Exosuit\n\nAG1: Stabilizing Gyro\nAG2: Toggle Magnet\nAG3: Navigation Light\nAG4: Nose Light\nAG5: Anti Collision Light\nAG6: Side Door\nAG8: Engine\n\nVTOL: Extend/Retract Winch\n\nAchieved hover with 30% throttle no load, 90% max load.\nThe maximum safe operating payload is rated at 10000Kg.\n\nDeco engine has zero mass and power, main rotor has engine power edited to 13500HP.	Oxlift\nBy: Exosuit\n\nAG1: 增稳陀螺\nAG2: 切换磁铁\nAG3: 航行灯\nAG4: 机鼻灯\nAG5: 防撞灯\nAG6: 侧门\nAG8: 发动机\n\nVTOL: 伸出/收回绞盘\n\n空载时 30% 油门即可悬停，满载时需 90%。\n额定最大安全作业载荷 10000 公斤。\n\n装饰用发动机质量与功率为零；主旋翼的发动机功率已改为 13500 马力。
+Competitor\nBy: BaconAircraft\n\nAG2: Door\nAG3: Speedbrake\nAG7: Disable auto-trim\nAG8: Navigation Lights\n\nNotes:\nThis is a glorified bus with wings, expect it to fly like a glorified bus with wings.\nYou'll need to use flaps on takeoff, or risk a nice warm campfire at the end of the runway.\n\nXML notes:\n- Various interior items scaled (i.e. seats)\n- Various landing gear components scaled	Competitor\nBy: BaconAircraft\n\nAG2: 舱门\nAG3: 减速板\nAG7: 禁用自动配平\nAG8: 航行灯\n\n说明：\n这不过是一辆长了翅膀的高级巴士，那就按长了翅膀的高级巴士来期待它的飞行性能。\n起飞时必须放襟翼，否则小心在跑道尽头点起一堆温暖的篝火。\n\nXML 备注：\n- 多个内饰件做了缩放（例如座椅）\n- 多个起落架部件做了缩放
+Raccoon\nBy: dots (Airframe) & WhoTookCarter (Gun auto-aim)\n\nAG1: Auto-Yaw (Flight assist)\nAG4: Gunner's HMD\nAG5: Auto-Yaw to target\nAG6: AutoHover\nAG7: Jettison\nAG8: Engine\n\nNotes: \nMeet the updated Raccoon! Switch on the hover mode and relax in the gunner seat. Chain gun aims all by itself, making your job just that much easier\n\nXML Changes: Disabled gear collisions, MFD and TGP scales.	Raccoon\nBy: dots（机体）& WhoTookCarter（机炮自动瞄准）\n\nAG1: 自动偏航（飞行辅助）\nAG4: 炮手头盔显示器\nAG5: 自动偏航指向目标\nAG6: 自动悬停\nAG7: 抛弃\nAG8: 发动机\n\n说明： \n来看看更新后的 Raccoon！开启悬停模式，然后在炮手席上放松就好。链炮会自己瞄准，让你的活儿轻松不少\n\nXML 修改：关闭起落架碰撞；多功能显示器与瞄准吊舱做了缩放。
+Athena\nBy: Shizzle Styx\n\nAG1: Canopy\nAG2: Lights\nAG3: Bomb Bay Manual Open\n\nNotes: First. Also first bomber plane. Sadly, there are no baked beans inside the payload. There is however Dave... Dave's exact purpose has been lost to time, budget cuts, three office relocations, and an incident nobody will properly explain unless they have prepared an ominous monologue and the room is poorly lit.	Athena\nBy: Shizzle Styx\n\nAG1: 座舱盖\nAG2: 灯光\nAG3: 手动打开弹舱\n\n说明：第一架。也是第一架轰炸机。可惜载荷里没有焗豆罐头。不过里面有 Dave……Dave 的确切用途已经失落在时间、预算削减、三次办公室搬迁，以及一起除非有人准备好一段不祥独白并让房间灯光昏暗、否则没人会好好解释的事件之中。
+Formula\nBy: BaconEggs\n\nAg1: Manual DRS\nAg2: Traction control (on by default)\nAg3: Steer assist (on by default)\nAg4: KMH / MPH switch\nAg5: Pit speed limiter\nAg6: Manual caution lights\n\nNotes: FAST!!!!\n\nXML Changes: Mass scaling to the wings to keep the weight down, some parts with disabled collisions, and one hidden wing with a lift scale of 20 to reflect the downforce created by the floor & diffuser	Formula\nBy: BaconEggs\n\nAg1: 手动 DRS\nAg2: 牵引力控制（默认开启）\nAg3: 转向辅助（默认开启）\nAg4: KMH / MPH 切换\nAg5: 维修区限速\nAg6: 手动警示灯\n\n说明：快！！！！\n\nXML 修改：对机翼做质量缩放以减重，部分部件关闭碰撞，另有一片隐藏机翼的升力系数设为 20，用来模拟底板与扩散器产生的下压力
+Sailer & Meadowlark (tow airplane)\nBy: BaconEggs & MrSilverWolf\n\nAg1: Takeoff\nAg2: Release from tow cable\nAg3: Open canopy\n\nTrim: Tow airplane climb rate, Pitch trim\nFlaps: Wing spoilers\n\nNotes: A huge thanks to my friend MrSilverWolf for making the tow airplane. Pressing the "Go" button should result in the glider and tow taking off by themselves, avoid making any roll commands while on the ground.	Sailer & Meadowlark (tow airplane)\nBy: BaconEggs & MrSilverWolf\n\nAg1: 起飞\nAg2: 脱离牵引缆\nAg3: 打开座舱盖\n\nTrim: 牵引机爬升率、俯仰配平\nFlaps: 机翼扰流板\n\n说明：非常感谢我的朋友 MrSilverWolf 制作了牵引机。按下「Go」按钮后，滑翔机与牵引机会自行起飞；在地面上不要发出任何滚转指令。
+Arbitrator\nBy: dots\n\nAG1: Canopy\nAG2: Drag Chute \nAG3: Raw Controls\nAG4: Attitude Hold Mode (aka autotrim)\nAG5: Lights\nAG7: Weapon Jettison\nAG8: Engines (ON by default)\n\nNotes: Fly like an overweight butterfly, sting like a SAM system. The beast grants its blessings if you ask for them correctly. Legends say it came back to haunt the skies once again. \n\nXML edits: main wing liftscale, engine fuel consumption.	Arbitrator\nBy: dots\n\nAG1: 座舱盖\nAG2: 减速伞 \nAG3: 原始操纵\nAG4: 姿态保持模式（即自动配平）\nAG5: 灯光\nAG7: 抛弃武器\nAG8: 发动机（默认开启）\n\n说明：像超重的蝴蝶一样飞，像防空导弹一样蜇人。只要请求方式正确，这头野兽就会赐下祝福。传说它再次归来，游荡于天空。 \n\nXML 修改：主翼升力系数、发动机油耗。
+The Chief\nBy: HuskyDynamics\n\nAG1: Door Turret\nAG2: Crew Door\nAG3: Winch Magnet\nAG4: Formation Lights\nAG8: Master Arm (Default On)\n\nThrottle: Collective\nLanding Gear: Rear Ramp\nVTOL: Winch (maximum safe load 16,000lbs)\nTrim: Autopilot Pitch Trim\n\nNotes: Equipped for both logistics and air support, this mighty twin-rotor helicopter is armed to the teeth and ready to handle anything on the ground, friend or foe.	The Chief\nBy: HuskyDynamics\n\nAG1: 舱门炮塔\nAG2: 乘员舱门\nAG3: 绞盘磁铁\nAG4: 编队灯\nAG8: 总军械开关（默认开启）\n\nThrottle: 总距\nLanding Gear: 后舱门坡道\nVTOL: 绞盘（最大安全载荷 16000 磅）\nTrim: 自动驾驶俯仰配平\n\n说明：这架强悍的双旋翼直升机兼顾后勤与空中支援，武装到牙齿，随时应对地面上的一切——无论敌友。
+Tadpole\nBy: BaconEggs\n\nAg1: Canopy\nAg2: Emergency jettison\nAg3: Tail hook\nAg4: Wing fold\nAg5: Speedbrake\nAg8: Engines (on by default)\n\nNotes: Navalized ground attack jet. This thing barely gets airborne off the catapult, and can barely recover successfully at the boat with all of its weapons still on. Good luck getting off the ground!\n\nXML Changes: Custom tail hook, part scaling around the whole build, some mass scaling	Tadpole\nBy: BaconEggs\n\nAg1: 座舱盖\nAg2: 紧急抛弃\nAg3: 尾钩\nAg4: 机翼折叠\nAg5: 减速板\nAg8: 发动机（默认开启）\n\n说明：舰载化的对地攻击机。这东西从弹射器上勉强能升空，满挂武器时也勉强能落回船上。祝你起飞顺利！\n\nXML 修改：自定义尾钩、整机部件缩放、部分质量缩放
+- AG 1 and Yaw: Front Wheel Steering\n- AG 2 and Yaw: Rear Wheel Steering\n- AG 3: Bomb Bay and Arm All Bombs\n- AG 4: Drop Tanks\n- AG 5: Drogue Chute\n- AG 6: Air Brake\n- Trim for trim\n- VTOL for flaps\n- Tail turret will auto-aim at targets within 1.3 NM, press Fire Guns to shoot	- AG 1 与偏航：前轮转向\n- AG 2 与偏航：后轮转向\n- AG 3：打开弹舱并为所有炸弹解除保险\n- AG 4：抛弃副油箱\n- AG 5：阻力伞\n- AG 6：减速板\n- Trim 键对应配平\n- VTOL 键对应襟翼\n- 尾部炮塔会自动瞄准 1.3 海里内的目标，按 Fire Guns 开火
+Pinball\nBy: Mod (exterior, flight model) & HuskyDynamics (cockpit, paint)\n\nAG8: Engine\n\nA toy plane based on a famous real-life warbird.  Pretty easy to fly and capable of holding its own in a dogfight once you get the hang of it, though the bright color won't do you many favors.	Pinball\nBy: Mod（外观、飞行模型）& HuskyDynamics（驾驶舱、涂装）\n\nAG8: 发动机\n\n一架以现实著名战机为原型的玩具飞机。相当好飞，上手之后格斗中也能站稳脚跟，只是这身鲜亮涂装不怎么帮你藏身。
+Bronte GT\nBy: WhoTookCarter\n\nAG1: Hood\nAG2: Driver's Door\nAG3: Passenger's Door\nAG4: Trunk\nAG6: Toggle Driving Assist (on by default)\nAG7: Headlights\n\nFireGuns for handbrake on rear wheels.\n\nNotes: Rear-wheel drive, 4.6 L V8 producing 300 hp.\n\nXML Modifications: Transmission shift points	Bronte GT\nBy: WhoTookCarter\n\nAG1: 引擎盖\nAG2: 驾驶员门\nAG3: 副驾门\nAG4: 后备箱\nAG6: 切换驾驶辅助（默认开启）\nAG7: 前灯\n\nFireGuns 是后轮手刹。\n\n说明：后轮驱动，4.6 升 V8，输出 300 马力。\n\nXML 修改：变速箱换挡点
+Duster\nBy: Mod\n\nAG1: Front Left Door\nAG2: Front Right Door\nAG3: Rear Left Door\nAG4: Rear Right Door\nAG7: Landing Headlights\nAG8: Wing Lights\n\nThis, like the Whistler, is based loosely on one of my favorite real life aircraft, and has a general performance that should be similar but still fun.	Duster\nBy: Mod\n\nAG1: 左前门\nAG2: 右前门\nAG3: 左后门\nAG4: 右后门\nAG7: 着陆灯\nAG8: 翼灯\n\n和 Whistler 一样，这架飞机松散地参照了我最喜欢的现实机型之一，整体性能相近，但依旧好玩。
+Dandy\nBy: HuskyDynamics\n\nYaw: Shift Up/Down\nAG1: Headlights\nAG2: Driver Door\nAG3: Passenger Door\nAG4: Left Hood\nAG5: Right Hood\n\nNotes: Another innovation from the finest minds of the early 20th century, this classic car has been restored and tuned up for the streets and highways of the archipelago.	Dandy\nBy: HuskyDynamics\n\nYaw: 升/降挡\nAG1: 前灯\nAG2: 驾驶员门\nAG3: 副驾门\nAG4: 左引擎盖\nAG5: 右引擎盖\n\n说明：20 世纪初最聪明的头脑带来的又一项创新。这辆老爷车已被修复调校，如今跑在群岛的街道与公路上。
+Prowler\nBy: dots\n\nAG1: Doors (pilot & copilot)\nAG2: Windows (Activate window gunners)\nAG3: Left Door (sliding)\nAG4: Right Door (sliding)\nAG5: Lower Hook\nAG6: Auto Hover (Altitude Hold)\nAG7: Lights\nAG8: Engine (ON by default)\n\nThrottle: Collective\n\nXML Modifications: Main rotor properties, winch and piston scaling.	Prowler\nBy: dots\n\nAG1: 舱门（驾驶员与副驾）\nAG2: 舷窗（激活窗口机枪手）\nAG3: 左门（滑动）\nAG4: 右门（滑动）\nAG5: 放下尾钩\nAG6: 自动悬停（高度保持）\nAG7: 灯光\nAG8: 发动机（默认开启）\n\nThrottle: 总距\n\nXML 修改：主旋翼参数、绞盘与活塞缩放。
+Snoot\nBy: BaconEggs\n\nAg1: Snoot Droop\nAg8: Lights & Engines \n\nNotes: The aircraft included a droop snoot. Droop Snoot. The snoot would droop. The snoot drooped.\n\nXML Changes: Part scaling, mass scaling, disabling collisions in the landing gear, stabilator and droop snoot, and some xml edited weight in the main fuselage	Snoot\nBy: BaconEggs\n\nAg1: 机鼻下垂\nAg8: 灯光与发动机 \n\n说明：这架飞机配了可下垂机鼻。下垂机鼻。机鼻会下垂。机鼻下垂了。\n\nXML 修改：部件缩放、质量缩放、关闭起落架/全动平尾/下垂机鼻的碰撞，主机身另做了配重调整
+Chaddaray\nBy: Mod & Pedro\n\nUh, yeah. It's a flying stunt fish that was initially made as a joke, but turned out to work really well all things considered. It can do flips and borderline PSM manuevers without thrust vectoring, which is kind of wild. Oh, and then there's Chad at the belly of the beast just doing chad things. Yup.	Chaddaray\nBy: Mod & Pedro\n\n呃，对。这是一条会飞的特技鱼，最初只是开个玩笑，结果意外地好用。它不用推力矢量就能翻滚和做接近 PSM 的机动，简直离谱。哦，还有 Chad 趴在它肚子上，干着 Chad 该干的事。就是这样。
+Banshee RC\nBy: HuskyDynamcs \n\nNotes: The Banshee is a lightning-fast 4WD nitro car, ready to tear up any terrain at a moment's notice and packing so much power that its tiny frame can barely contain it.  Sixty miles per hour has never felt this exciting.\n\nDon't forget about the "Upright Craft" button!  You will probably need it.	Banshee RC\nBy: HuskyDynamcs \n\n说明：Banshee 是一辆闪电般的四驱燃油遥控车，随时能把任何地形撕开，动力大到那副小身架几乎塞不下。每小时六十英里从没这么刺激过。\n\n别忘了「扶正载具」按钮！你多半会用到。
+Aeon\nBy: BaconEggs\n\nAg1: Headlights\nAg2: Driver door\nAg3: Passenger door\nAg4: Roof vent\nAg7: Hazard lights\n\nYaw: Gear shift (manual)\n\nVTOL: Turn signal\nUp: Left turn\nDown: Right turn\n\nFireGuns: Handbrake\n\nNotes: Car. "V6" (stand-in for a 1.3L 2-rotor) making ~220 hp at ~8500 rpm\n\nXML Changes: Disabled collisions on all moving parts	Aeon\nBy: BaconEggs\n\nAg1: 前灯\nAg2: 驾驶员门\nAg3: 副驾门\nAg4: 车顶通风口\nAg7: 危险警示灯\n\nYaw: 换挡（手动）\n\nVTOL: 转向灯\n上：左转\n下：右转\n\nFireGuns: 手刹\n\n说明：一辆车。“V6”（实为 1.3 升双转子发动机的替身），约 8500 转时输出 220 马力\n\nXML 修改：关闭所有活动部件的碰撞
+Kicking Fish\nBy: HuskyDynamics\n\nAG1: Canopy\nAG2: Drop Tank\nAG8: Engine (Default On)\n\nNotes: Raw speed and off-the-scales agility help you reel in the competition before casting them back out into the Kicking Fish's fiery wake.  Don't get caught off guard though, because you're not off the hook yet - this slick fish is both fast and feisty.	Kicking Fish\nBy: HuskyDynamics\n\nAG1: 座舱盖\nAG2: 副油箱\nAG8: 发动机（默认开启）\n\n说明：纯粹的速度与爆表的灵活性，帮你把对手钓过来，再甩回踢鱼炽热的尾流里。但别掉以轻心——你还没脱钩呢，这条滑溜的鱼又快又凶。
+Rag-Chad\nBy: Bjac0\n\nSelect weapon "chad" and fire to launch chad >:)\n(Or use activate1)\nAG2: Activate magnets\nAG3: Deploy parachute\n\nAG5: Enable auto-aim \n(this won't lead moving targets and just points the cannon in the general direction of your target)\n\nPitch+Roll to aim\nYaw for fine lateral aiming\nThrottle+Roll to drive around\n\nNotes: Chaos reigns!	Rag-Chad\nBy: Bjac0\n\n选择武器「chad」并开火即可发射 chad >:)\n（或者用 activate1）\nAG2: 激活磁铁\nAG3: 展开降落伞\n\nAG5: 启用自动瞄准 \n（不会预判移动目标，只是把机炮大致指向目标方向）\n\n俯仰+滚转用于瞄准\n偏航做横向微调瞄准\n油门+滚转用于地面行驶\n\n说明：混沌统治一切！
+Gecko\nBy: Mod\n\nAG1: Hatch Open/Close\nAG2: Headlights On/Off\n\nTurret is controlled by Pitch/Roll (Use Mouse-as-Joystick) when the turret camera is in use, the vehicle will automatically brake when aiming.	Gecko\nBy: Mod\n\nAG1: 舱盖开/关\nAG2: 前灯开/关\n\n炮塔由俯仰/滚转控制（需开启鼠标摇杆）。使用炮塔视角瞄准时，车辆会自动刹停。
+KT Veleten\nBy: Shizzle Styx\n\nAG1: Opens rear cargo door\nAG2: Opens nose cargo door\nAG3: Deploys cockpit ramp\nAG4: Activates magnets\n\nVTOL: Lowers the cargo bay magnets at negative %s\n\nNotes: Go find them.	KT Veleten\nBy: Shizzle Styx\n\nAG1: 打开后货舱门\nAG2: 打开前货舱门\nAG3: 放下驾驶舱坡道\nAG4: 激活磁铁\n\nVTOL: 数值为负时放下货舱磁铁\n\n说明：自己去找吧。
+Maxi\nBy: 6wheel\n\nAG1: HeadLights\nAG2: Boot\nAG3: Bonnet \nAG4: Doors\nAG5: ASM (default on)\n\nFireGuns: Handbrake\n\nNotes: '2 Litre Kit Car' FWD Style Rally Car. Specially tuned for Asphault Assault.\nUse the handbrake!	Maxi\nBy: 6wheel\n\nAG1: 前灯\nAG2: 后备箱\nAG3: 引擎盖 \nAG4: 车门\nAG5: ASM（默认开启）\n\nFireGuns: 手刹\n\n说明：“2 升套件车”前驱风格拉力车，专为沥青突击调校。\n记得用手刹！
+Pigpen\nBy: exosuit\n\nAG1: Airbrake\nAG2: Nav Lights\nAG3: Formation lights\nAG4: \nAG5: Jettison Fuel Tank\nAG6: Jettison inner pylons\nAG7: Canopy\nAG8: Engine\n\nLight supersonic fighter.\n\nXML edits: main shocks spring value	Pigpen\nBy: exosuit\n\nAG1: 减速板\nAG2: 航行灯\nAG3: 编队灯\nAG4: \nAG5: 抛弃油箱\nAG6: 抛弃内侧挂架\nAG7: 座舱盖\nAG8: 发动机\n\n轻型超音速战斗机。\n\nXML 修改：主减震弹簧值
+Longtail\nBy: 6wheel\n\nAG1 - Lights\nAG2 - High/Low Boost (default High)\n\nAG3 - ASM (default on)\n\nFireGuns: Handbrake\n\nNotes: 'C' style sports car. Features a powerful turbocharger that requires skill and finesse to master. 	Longtail\nBy: 6wheel\n\nAG1 - 灯光\nAG2 - 高/低增压（默认高）\n\nAG3 - ASM（默认开启）\n\nFireGuns: 手刹\n\n说明：“C”形跑车，涡轮增压强劲，需要技术与细腻操作才能驾驭。 
+Wurger\nBy: Mod (exterior, flight model, paint) & HuskyDynamics (cockpit)\n\nAG8: Engine\n\nA toy plane based on a famous real-life warbird.  Fun to fly but capable of holding its own in a dogfight once you get the hang of it.	Wurger\nBy: Mod（外观、飞行模型、涂装）& HuskyDynamics（驾驶舱）\n\nAG8: 发动机\n\n一架以现实著名战机为原型的玩具飞机。飞起来很欢乐，等你上手之后，格斗中也能站稳脚跟。
+Gator 3\nBy: BaconEggs\n\nAg1: Pilot door\nAg2: Co-pilot door\nAg3: Rear left sliding door\nAg4: Rear right sliding door\nAg7: Rotor brake\nAg8: Engine (on by default)\n\nNotes: Remaster of the original SP1 Gator, rebuilt from the ground up with the new parts. 	Gator 3\nBy: BaconEggs\n\nAg1: 驾驶员门\nAg2: 副驾门\nAg3: 左后滑门\nAg4: 右后滑门\nAg7: 旋翼刹车\nAg8: 发动机（默认开启）\n\n说明：SP1 初代 Gator 的重制版，用全新部件从零重建。 
+Stinker\nBy: MisterT\n\nAG1: Canopy\nAG2 : Tail Wheel\nAG3 : Lights\nAG4 : Smoke\nAG5 : Smoke Color\nAG7 : Instructions\nAG8 : Engine On/Off\nFireGuns : Smoke\n\nXML Modifications : Reduced fuselage mass and drag, scaled and disabled collisions on multiple parts.	Stinker\nBy: MisterT\n\nAG1: 座舱盖\nAG2 : 尾轮\nAG3 : 灯光\nAG4 : 烟雾\nAG5 : 烟雾颜色\nAG7 : 说明\nAG8 : 发动机开/关\nFireGuns : 烟雾\n\nXML 修改：降低机身质量与阻力，对多个部件做了缩放并关闭碰撞。
+Trisaurus\nBy: BaconEggs\n\nAG8: Engines & Lights\n\nNotes: It doesn't have two, it doesn't have four, it has three!!!\n\nXML Changes: Disabled part collisions, part scales, mass scales in custom landing gear and stabilizer, part scaled airbrake parts and lights	Trisaurus\nBy: BaconEggs\n\nAG8: 发动机与灯光\n\n说明：不是两个，也不是四个，是三个！！！\n\nXML 修改：关闭部件碰撞；自定义起落架与稳定器做了部件缩放与质量缩放；减速板与灯具做了缩放
+Empress\nBy: BaconEggs\n\nAg8: Engines (on by default)\n\nNotes: Big jet that flies to the airports. \n\nXML Changes: mass scaling, part scaling, disabling collosions to the landing gear and tail, some dead weight to the fuselage thats beyond the bounds of 1000kg	Empress\nBy: BaconEggs\n\nAg8: 发动机（默认开启）\n\n说明：飞往各机场的大飞机。 \n\nXML 修改：质量缩放、部件缩放、关闭起落架与尾部的碰撞；机身上带有超出 1000kg 上限的配重
+Windrider 2000\nBy: Vincent\n\nAG2: Open cockpit\nAG8: Engine (on by default)\n\nNotes: A motorglider based of the real Swedish designed Radab Windex, featuring a two cylinder engine producing 35 hp.\n\nXML Modifications: Reduced mass of wings and engine, adjusted engine power values.	Windrider 2000\nBy: Vincent\n\nAG2: 打开座舱\nAG8: 发动机（默认开启）\n\n说明：以瑞典 Radab Windex 为原型的动力滑翔机，搭载一台 35 马力的双缸发动机。\n\nXML 修改：降低机翼与发动机质量，调整发动机功率。
+Adder\nBy: dots\n\nAG1: Open/Close Canopy\nAG4: Attitude Hold Mode (caution)\nAG6: Jettison fuel pods\nAG7: Jettison Weapons\nAG8: Toggle Lights\n\nAttitude Hold Mode:\n- Do NOT land with it enabled\n- Do NOT perform intentional stalls with it enabled\n- Disables trim\n\nNotes: Fast and agile fighter jet. Meet the upgraded version! Smoother intake, new landing gear and improved maneuverability.\n   	Adder\nBy: dots\n\nAG1: 座舱盖开/关\nAG4: 姿态保持模式（注意）\nAG6: 抛弃副油箱\nAG7: 抛弃武器\nAG8: 切换灯光\n\n姿态保持模式：\n- 启用时切勿着陆\n- 启用时切勿做有意失速\n- 会禁用配平\n\n说明：高速灵活的喷气战斗机。升级版来了！进气道更顺滑、起落架全新、机动性更好。\n   
+Little Gebie\nBy: Walv!s\n\nAG1: Toggle Taxi Mode	Little Gebie\nBy: Walv!s\n\nAG1: 切换滑行模式
+Grand Camel\nBy: MrSilverWolf\n\nAG1: Open Rear Door	Grand Camel\nBy: MrSilverWolf\n\nAG1: 打开后门
+P-51D\nBy: Mod\n\nAG1: Canopy Open/Close\nAG2: Jettison Weapons\n\nThe better looking P-51 with rockets!	P-51D\nBy: Mod\n\nAG1: 座舱盖开/关\nAG2: 抛弃武器\n\n更好看的 P-51，还带火箭弹！
+The Gaming Chair\nBy: FairFireFlight\n\nLock in.\n\nXML Modifications: Wheels/engine/transmission scale	The Gaming Chair\nBy: FairFireFlight\n\n坐稳了。\n\nXML 修改：机轮/发动机/变速箱缩放
+Simpleze\nBy: crazyplaness\n\nAG1: Cockpit Open/Close\n\nNotes:\nThe front gear is the only gear that moves on this craft, weird isn't it?	Simpleze\nBy: crazyplaness\n\nAG1: 驾驶舱开/关\n\n说明：\n这架飞机只有前起落架会动，奇怪吧？
+Bugger\nBy: Mod\n\nAG1: Lights\n\nNotes:\nThis craft started out as some sort of formula buggy, and then found it's roots as a regular dune buggy.	Bugger\nBy: Mod\n\nAG1: 灯光\n\n说明：\n这架车起初想做成一款方程式越野车，结果找回了自己沙丘越野车的本性。
+Blade 360\nBy: Vincent\nFlightmodel By: DeezDucks\n\nAG1: Canopy\nAG2: Increase elevator authority (Off by default)\nAG8: Engine ignition (On by default)	Blade 360\nBy: Vincent\n飞行动力学 By: DeezDucks\n\nAG1: 座舱盖\nAG2: 增大升降舵权限（默认关闭）\nAG8: 发动机点火（默认开启）
+Super Mustang\nBy: rexzion\n\nAG1: Open/Close Canopy\nAG8: Engine On/Off (Default On)\n\nNotes: It's the Mustang you all know and love.. but now its Super!!!	Super Mustang\nBy: rexzion\n\nAG1: 座舱盖开/关\nAG8: 发动机开/关（默认开）\n\n说明：就是那架你们都熟悉的 Mustang……但现在它 Super 了！！！
+Cobia 1B \nBy: MrSilverWolf\n\nAG1 - open/close canopy\nAG2 - Turn On/Off Landing Lights\nAG3 - Turn On/Off Navigation Lights\nAG4 - Open/Close Side Windows\nVTOL - Adjust the sunshade	Cobia 1B \nBy: MrSilverWolf\n\nAG1 - 座舱盖开/关\nAG2 - 着陆灯开/关\nAG3 - 航行灯开/关\nAG4 - 侧窗开/关\nVTOL - 调整遮阳板
+Sparrow\nBy: dots\n\nAG1: Open/Close Doors\nAG2: Toggle cruise mode\nAG8: Engine\n\nNotes: Teeny - tiny prop with great cockpit visibility capable of long and scenic cruise flights.\n   	Sparrow\nBy: dots\n\nAG1: 舱门开/关\nAG2: 切换巡航模式\nAG8: 发动机\n\n说明：小小一架螺旋桨飞机，座舱视野极佳，能进行长途观光巡航。\n   
+Whistler Mk.2\nBy: Mod\n\nAG1: Canopy Open/Close\nAG2: Arrestor Hook\nAG3: Drop Weapons\nAG4: Nav Lights\n\nNote: Hold brake button to deploy main landing gear halfway to slow down while flying.	Whistler Mk.2\nBy: Mod\n\nAG1: 座舱盖开/关\nAG2: 着舰钩\nAG3: 投放武器\nAG4: 航行灯\n\n注意：飞行中按住刹车键可让主起落架半放，用来减速。
+Sand Frog\nBy: DeezDucks\n\nAG1: Prime Nitroboost\nAG2: Headlights\nAG3-4: Doors\n\nSpacebar: Handbrake\nVTOL: 4WD Adjust (Up for more FWD, Down for more RWD)\n\nHave Fun!\n\nXML Modifications: Nitroboost	Sand Frog\nBy: DeezDucks\n\nAG1: 预注氮气加速\nAG2: 前灯\nAG3-4: 车门\n\n空格键：手刹\nVTOL: 四驱调节（上为更偏前驱，下为更偏后驱）\n\n玩得开心！\n\nXML 修改：氮气加速
 Mirroring enabled for part {*}	已为部件 {*} 开启镜像
 Symmetry enabled for part {*}	已为部件 {*} 开启对称
 Symmetry enabled for part {*} and automatically linked to {*} other parts	已为部件 {*} 开启对称，并自动链接到另外 {*} 个部件
@@ -10192,16 +9804,9 @@ Slew Targeting Pod Left / Right	瞄准吊舱左/右转
 Slew Targeting Pod Up / Down	瞄准吊舱上/下转
 Zoom In / Out	放大 / 缩小
 Move Forward / Backward	前进 / 后退
-Look Left/Right	左右看
-Look Up/Down	上下看
 Toggle New Part Initial Symmetry	切换新部件初始对称
 Toggle Part Symmetry (Single Part)	切换部件对称（单个部件）
 Toggle Part Symmetry (Mutiple Parts)	切换部件对称（多个部件）
-Rotate Left/Right	左右旋转
-Rotate Up/Down	上下旋转
-Translate Left/Right	左右移位
-Translate Up/Down	上下移位
-Translate In/Out	内外移位
 Developer Console	开发者控制台
 Load Aircraft From ClipBoard URL	从剪贴板 URL 载入载具
 Control Settings	控制设置
@@ -10322,6 +9927,7 @@ Click the indicated button to activate the view tool.	点击指示的按钮启�
 Click the indicated button to activate the move part tool.	点击指示的按钮启用移动部件工具。
 Click the indicated button to activate the rotate tool.	点击指示的按钮启用旋转工具。
 Click the indicated button to activate the translate tool.	点击指示的按钮启用平移工具。
+Click here to\nde-select part	点击此处\n取消选择部件
 Click the 'Add Parts' button to open the parts list.	点击「添加部件」按钮打开部件列表。
 Select the 'Structure' category in the part list flyout on the left.	在左侧部件列表里选择「结构」分类。
 Click and drag the 'Fuselage' part from the part list and add it to your craft at the indicated position.	从部件列表里拖出「机身」部件，按指示位置添加到你的载具上。
@@ -10414,3 +10020,374 @@ Rear Gear	后起落架
 Wing Gear	翼式起落架
 Paint Tool	喷漆工具
 Saves the current craft.	保存当前载具。
+Missile	导弹
+Blueprint failed to load:\n	蓝图加载失败：\n
+Error saving blueprints:\n	保存蓝图时出错：\n
+Could not generate part XML. Do you have duplicate part properties?\nCheck log for error details.	无法生成部件 XML。是否存在重复的部件属性？\n查看日志了解详细错误信息。
+\nAutomatically created {0} {1} parts.	\n已自动创建 {0} 个{1}部件。
+\nAutomatically linked {0} existing sets of {1} parts.	\n已自动关联 {0} 组现有的{1}部件。
+.\nDeleted {0} symmetric parts.	。\n已删除 {0} 个对称部件。
+.\nDeleted symmetric part 	。\n已删除对称部件
+A symmetric target part could not be found.\nSymmetry has been disabled for part '{0} (ID: {1})'	未找到对称的目标部件。\n已为部件“{0}（ID：{1}）”关闭对称功能
+The root part of the craft has been moved.\nThe mirror plane for all symmetric parts has been updated.	机体根部件已移动。\n所有对称部件的镜像平面已更新。
+You are moving the root part of the craft.\nThis will change the position of the mirror plane for all symmetric parts.	你正在移动机体的根部件。\n这会改变所有对称部件的镜像平面位置。
+The target part does not have a mirrored symmetric part.\nUnable to mirror and attach the selected parts.	目标部件没有对应的镜像对称部件。\n无法镜像并连接所选部件。
+The target part does not lie on the mirror plane. Unable to mirror the selected parts.\nThe target fuselage has a non-zero amount of 'Run', shifting its position off the mirror plane\nand making it asymmetrical.	目标部件不在镜像平面上，无法镜像所选部件。\n目标机身的“Run”值不为零，使其位置偏离镜像平面\n并导致不对称。
+The target fuselage lies on the mirror plane but,\nthe fuselage has a non-zero amount of 'Run', making it asymmetrical.	目标机身位于镜像平面上，但\n该机身的“Run”值不为零，导致其不对称。
+The airplane uses one or more 'mods'.\nContact the airplane designer to find out more.	该机体使用了一个或多个“模组”。\n请联系机体设计者了解详情。
+There are two possible reasons for this:\n1) You need to update to the newest version of SimplePlanes (check your app store)\n2) The airplane uses a 'mod' and you'll need to contact the airplane designer to find out more.	可能有两个原因：\n1）你需要把 SimplePlanes 更新到最新版本（请查看你的应用商店）\n2）该机体使用了“模组”，需要联系机体设计者了解详情。
+This airplane requires missing part(s):\n	该机体缺少以下部件：\n
+This is the airplane designer and this is where you will build your masterpiece.\n\nClick 'Start' and let's build an airplane together!	这就是机体设计器，你将在此打造自己的杰作。\n\n点击“开始”，让我们一起造一架飞机吧！
+This will convert the selected fuselage to the new fuselage part.\n\nThe conversion is experimental! Please inspect the result and use Undo if needed.\n\nDo you want to continue?	这会把所选机身转换为新的机身部件。\n\n该转换仍处于实验阶段！请检查结果，如有需要请使用“撤销”。\n\n是否继续？
+The fuselage could not be upgraded:\n\n	机身无法升级：\n\n
+Upgrade complete with warnings:\n\n	升级完成，但有警告：\n\n
+Invalid expression on part {0}: Click for details\n{1}\nExpressions: {2}	部件 {0} 上的表达式无效：点击查看详情\n{1}\n表达式：{2}
+Invalid syntax in expression on part {0}: Click for details\n{1}\nExpressions: {2}	部件 {0} 上的表达式语法无效：点击查看详情\n{1}\n表达式：{2}
+Error calculating bounds for part '{0}' (ID: {1}). \n{2}	计算部件“{0}”（ID：{1}）的边界时出错。\n{2}
+FYI: Your engines aren't getting enough air.\nTry putting some inlets on your plane.	提示：你的发动机进气不足。\n试试在飞机上加装进气道。
+Click\nFlip Switch\nPush Button	点击\n翻转开关\n按下按钮
+Switch Throttle/VTOL	切换 油门/VTOL
+ and 	 和 
+\n\nDo you want to replace it? You may also choose to add the assignment to this action as well.	\n\n要替换它吗？你也可以把该绑定同时添加到此操作上。
+\n\nModifier keys may also be used. To assign a modifier key alone, hold it down for 1 second.	\n\n也可以使用修饰键。若要单独绑定某个修饰键，请长按它 1 秒。
+\n\nWould you like to remove or replace this binding?	\n\n你要移除还是替换此绑定？
+ is already in use by:\n	 已被以下内容占用：\n
+Now press a button or move an axis to assign it to\n	现在按下按钮或移动摇杆轴，将其绑定到\n
+Press a key to assign it to\n	请按一个键，将其绑定到\n
+Press any button or move an axis on the controller you would like to use. \n \n	请按下想使用的控制器上的任意按钮，或移动其摇杆轴。\n \n
+This will reset all inputs to the default input configuration, removing any custom input mappings. \n\n Are you certain you want to do this?	这会把所有输入重置为默认输入配置，并移除所有自定义输入映射。\n\n你确定要这样做吗？
+The mobile version of SimplePlanes 2 does not require any additional keyboards or controllers to be fully enjoyed. \n\n For players who do wish to use these devices however, this dialog can be used to configure those controls.	SimplePlanes 2 的移动版无需额外键盘或手柄也能完整游玩。\n\n如果你想使用这些设备，可通过此对话框进行相关设置。
+The mobile version of SimplePlanes does not require any additional keyboards or controllers to be fully enjoyed.\n\nFor players who do wish to use these devices however, this dialog can be used to configure those controls.	SimplePlanes 的移动版无需额外键盘或手柄也能完整游玩。\n\n如果你想使用这些设备，可通过此对话框进行相关设置。
+[mobile:You can also zoom in and out by pinching with two fingers. Go ahead and try it out.|steamdeck:You can also zoom in and out with the mouse wheel. Go ahead and try it out.|keyboard:You can also zoom in and out with the mouse wheel. Go ahead and try it out.]	[mobile:你也可以用双指捏合来缩放。快来试试吧。|steamdeck:你也可以用鼠标滚轮缩放。快来试试吧。|keyboard:你也可以用鼠标滚轮缩放。快来试试吧。]
+[mobile:You can also pan the view around with a two-finger drag. Go ahead and give it a try.|steamdeck:You can also pan the view around by right [clicking:] and dragging. Go ahead and give it a try.|keyboard:You can also pan the view around by right [clicking:] and dragging. Go ahead and give it a try.]	[mobile:你也可以用双指拖动来平移视角。快来试试吧。|steamdeck:你也可以按住鼠标右键拖动来平移视角。快来试试吧。|keyboard:你也可以按住鼠标右键拖动来平移视角。快来试试吧。]
+\n How does this look?\nReverting resolution change in [t] seconds, just in case something went wrong.	\n这样看起来如何？\n若一切正常，将在 [t] 秒后撤销分辨率更改，以防万一。
+Screen Size: {0}x{1}, Requested: {2}x{3}@{4}hz\nResolution: {5}x{6}@{7}hz, Full Screen: {8}	屏幕尺寸：{0}x{1}，请求：{2}x{3}@{4}hz\n分辨率：{5}x{6}@{7}hz，全屏：{8}
+Screen Size: {0}x{1}, Requested: {2}x{3}\nNative Resolution: {4}x{5}@{6}Hz\nMobile Resolution Scale: {7}	屏幕尺寸：{0}x{1}，请求：{2}x{3}\n原生分辨率：{4}x{5}@{6}Hz\n移动端分辨率缩放：{7}
+Screen Size: {0}x{1}, Requested: {2}x{3}\nResolution: {4}x{5}@{6}hz, Full Screen: {7}	屏幕尺寸：{0}x{1}，请求：{2}x{3}\n分辨率：{4}x{5}@{6}hz，全屏：{7}
+Default HDR Format: {0}\n	默认 HDR 格式：{0}\n
+Default LDR Format: {0}\n	默认 LDR 格式：{0}\n
+There are warnings for some settings you changed:\n\n	你更改的部分设置存在警告：\n\n
+There is a warning for a setting you changed:\n\n	你更改的部分设置存在警告：\n\n
+You have unsaved character settings.\n\n Save changes?	角色设置尚未保存。\n\n要保存更改吗？
+You have modified properties that have a high risk of breaking something.\nPlease read the warnings below and confirm whether you want to make these changes.\n\n<color=#ffae00>	你修改了某些风险很高的属性，可能导致出现问题。\n请阅读以下警告，并确认是否要应用这些更改。\n\n<color=#ffae00>
+Move your hands while holding down the \ngrip buttons to adjust your camera offset.	按住 \n扳机按钮并移动双手，以调整视角偏移。
+Press the grip button on both controllers \nwhile keeping your hands close together.	双手靠拢，\n同时按下两个手柄上的扳机按钮。
+Well done. \nNow let go of the grip buttons to complete the adjustment.	做得好。\n现在松开扳机按钮以完成调整。
+Your hands were not close enough together when gripped. \nRelease your grips, move your hands closer together and try again.	按下扳机时，你的双手靠得不够近。\n松开扳机，把双手移得更近一些再试。
+The full game will let you build planes, cars, and just about anything you can imagine, all from the ground up.\n\nIn this Open Playtest, the designer is locked down, but you can still load and paint crafts to make them your own.	完整版中，你可以从零开始打造飞机、汽车，以及几乎任何你能想象的东西。\n\n在本次公开测试中，设计器功能受限，但你仍然可以载入并涂装机体，使其成为你的专属机体。
+New Personal Best!\n	新的个人最佳纪录！\n
+You unlocked the {0}!\n{1}/{2} Hidden Crafts	你解锁了{0}！\n隐藏机体 {1}/{2}
+Gas	小心毒气
+ACCOUNT	账号
+AUTO	自动
+CANCEL	取消
+DISABLE	禁用
+ENABLE	启用
+FILTERS	筛选
+HOST	主机
+LOCKED	已锁定
+MODS	模组
+OFFLINE	离线
+ONLINE	在线
+RETRY	重试
+SCENARIO	情景
+TAGS	标签
+WARNING	警告
+OBSCURED	已隐藏
+New Text	新文本
+Hide	隐藏
+HIDE	隐藏
+START	开始
+CONTINUE	继续
+Exit VR (ESC)	退出 VR（ESC）
+Chat	聊天
+Paint Name	涂装名称
+Enter text...	输入文字……
+Wrap Mode	换行模式
+Search	搜索
+No filters selected	未选择筛选条件
+Interpolated	插值
+New Property Value	新属性值
+HP/Weight Ratio	马力/重量比
+Off	关闭
+Reaction Control Nozzle	反作用控制喷口
+Wheel Suspension	机轮悬挂
+Resizable Shape	可缩放形状
+Posed Grip	姿态握把
+Control Base	控制底座
+Refuel Drouge	加油锥套
+Seat IK	座椅 IK
+IK Target	IK 目标
+Missile Configuration	导弹配置
+Propellers	螺旋桨
+Cockpit Sound	驾驶舱音效
+Procedural Bay	程序化弹舱
+Procedural Window	程序化窗户
+Part Targeting	部件瞄准
+Legacy	旧版
+Surfaces	操纵面
+Tip: Left click on a part in the part list to show detailed information about it.	提示：左键单击部件列表中的部件，可查看其详细信息。
+Tip: Several parts have properties that can be set by clicking the button with the wrench icon.	提示：有几种部件的属性，可点击带扳手图标的按钮进行设置。
+Tip: You can clone parts by clicking and dragging them with the right mouse button.	提示：按住鼠标右键点击并拖动部件，即可克隆部件。
+Tooltip Text	提示文本
+Tooltip Text Goes Here	此处显示提示文本
+Craft instructions	机体说明
+Tutorial Name	教程名称
+Tutorial Message	教程内容
+Show on Start	启动时显示
+Disabled During \n\n\nChallenge	挑战期间禁用\n\n\n
+Few Clouds	少云
+Dynamic\nWeather	动态\n天气
+Dist	距离
+Programmer	程序设计
+Community Manager	社区管理
+Lead 3D Artist	3D 美术主管
+Tech Artist	技术美术
+Stock Craft Liaison	自带机体顾问
+Character Artist	角色美术
+Environment Artist	场景美术
+Soundtrack	音乐
+Texture Artist	贴图美术
+Trailers	预告片
+\n<color=#6AAFE6><b><size=115%>New Parts</size></b></color>	\n<color=#6AAFE6><b><size=115%>新部件</size></b></color>
+\n**Turboshafts**	\n**涡轮轴发动机**
+\nA new family of turbine engines built for driving propellers and shafts. Turboshafts come in small, medium, and large sizes and hook into the existing powertrain through a new set of gearbox parts.	\n专为驱动螺旋桨和传动轴设计的全新涡轮发动机系列。涡轮轴发动机提供小、中、大三种尺寸，通过一套全新的齿轮箱部件接入现有动力系统。
+\n**Curved Fuselages**	\n**弯曲机身**
+\nA new three-slice fuselage style with a middle section that lets you shape smooth, curved bodies and fairings without stacking parts. Bay doors and cutting tools work on it just like a standard fuselage.	\n全新的三段式机身样式，中段可塑造平滑弯曲的机体与整流罩，无需堆叠部件。舱门与切割工具在它上面的用法和标准机身完全相同。
+\n<color=#6AAFE6><b><size=115%>Multiplayer</size></b></color>	\n<color=#6AAFE6><b><size=115%>多人游戏</size></b></color>
+\n•<indent=5%>Updated the player list in multiplayer to show steam avatar images. Clicking on an image opens the steam overlay browser to that player's Steam profile</indent>	\n•<indent=5%>更新了多人游戏玩家列表，现可显示 Steam 头像；点击头像会打开 Steam 悬浮浏览器并跳转到该玩家的 Steam 个人资料</indent>
+\n•<indent=5%>Added a ban list flyout accessible from the server's multiplayer settings flyout where the server can view the list of banned and temp-banned steam players and unban them if desired.</indent>	\n•<indent=5%>在服务器的多人游戏设置浮出面板中新增封禁列表页，服主可查看被永久封禁和临时封禁的 Steam 玩家并按需解封。</indent>
+\n•<indent=5%>Fixed players getting permanently stuck in a multiplayer level, unable to exit.</indent>	\n•<indent=5%>修复了玩家永久卡在多人游戏关卡中无法退出的问题。</indent>
+\n•<indent=5%>Fixed newlines not displaying correctly on labels when downloading another player's craft.</indent>	\n•<indent=5%>修复了下载其他玩家的载具时标签上换行符无法正确显示的问题。</indent>
+\n•<indent=5%>Fixed the dev console opening when pressing the backtick key in chat.</indent>	\n•<indent=5%>修复了在聊天时按反引号键会打开开发者控制台的问题。</indent>
+\n•<indent=5%>Teleport Up/Down now defaults to ON when starting a server.</indent>	\n•<indent=5%>启动服务器时，向上/向下传送现在默认为开启。</indent>
+\n•<indent=5%>Added a server setting for changing the max bullets per second each craft can produce.</indent>	\n•<indent=5%>新增服务器设置，可更改每架载具每秒可产生的最大子弹数。</indent>
+\n•<indent=5%>Capped the number of active bullets from remote craft to prevent lag.</indent>	\n•<indent=5%>限制了远程载具的有效子弹数量，以防卡顿。</indent>
+\n•<indent=5%>Capped the maximum size of bullets.</indent>	\n•<indent=5%>限制了子弹的最大尺寸。</indent>
+\n<color=#6AAFE6><b><size=115%>Flight</size></b></color>	\n<color=#6AAFE6><b><size=115%>飞行</size></b></color>
+\n•<indent=5%>Fixed countermeasure spam permanently blocking future missile locks.</indent>	\n•<indent=5%>修复了连续投放干扰弹会永久阻止后续导弹锁定的问题。</indent>
+\n•<indent=5%>Fixed craft joints being looser than intended after the Unity 6.3 upgrade</indent>	\n•<indent=5%>修复了升级至 Unity 6.3 后载具连接比预期更松散的问题</indent>
+\n•<indent=5%>Fixed a second gun crosshair appearing behind the camera.</indent>	\n•<indent=5%>修复了摄像机后方出现第二个机炮准星的问题。</indent>
+\n•<indent=5%>Fixed the catapult over-seating craft with large wheel assemblies.</indent>	\n•<indent=5%>修复了弹射器对带大型机轮总成的载具弹射就位过度的问题。</indent>
+\n•<indent=5%>Fixed Chad not hiding when his seat was hidden.</indent>	\n•<indent=5%>修复了隐藏查德的座椅时他本人不会随之隐藏的问题。</indent>
+\n•<indent=5%>Fixed a duplicate T-posing Chad when a suit config referenced an unknown item.</indent>	\n•<indent=5%>修复了套装配置引用未知物品时会出现一个呈 T 字姿势的重复查德的问题。</indent>
+\n•<indent=5%>Fixed craft decals rendering on other craft.</indent>	\n•<indent=5%>修复了某架载具的贴花会渲染到其他载具上的问题。</indent>
+\n•<indent=5%>Fixed rendering issues when using the last few materials of a theme with a maxed-out material set.</indent>	\n•<indent=5%>修复了材质集已满时使用某主题最后几种材质会出现的渲染问题。</indent>
+\n•<indent=5%>Fixed craft tag duplication and stray leading or trailing whitespace.</indent>	\n•<indent=5%>修复了载具标签重复以及首尾出现多余空白字符的问题。</indent>
+\n•<indent=5%>Gave New Yoke's tunnels colliders.</indent>	\n•<indent=5%>为新约克（New Yoke）的隧道添加了碰撞体。</indent>
+\n•<indent=5%>Fixed procedural missiles not being able to be fired via a detacher.</indent>	\n•<indent=5%>修复了程序化导弹无法通过分离器发射的问题。</indent>
+\n•<indent=5%>Added auto feather option to propeller assembly</indent>	\n•<indent=5%>为螺旋桨总成添加了自动顺桨选项</indent>
+\n•<indent=5%>Fixed bug where wheels would lose their magic engine reference when used in a subassembly</indent>	\n•<indent=5%>修复了机轮在子组件中使用时会丢失其魔法发动机引用的问题</indent>
+\n<color=#6AAFE6><b><size=115%>Designer</size></b></color>	\n<color=#6AAFE6><b><size=115%>设计器</size></b></color>
+\n•<indent=5%>Added a designer setting and keybinding for toggling the selected part outline.</indent>	\n•<indent=5%>添加了用于切换选中部件轮廓显示的设计器设置和按键绑定。</indent>
+\n•<indent=5%>Fixed upright wings randomly inverting their airfoil on connection.</indent>	\n•<indent=5%>修复了直立机翼连接时会随机反转翼型的问题。</indent>
+\n•<indent=5%>Fixed some parts randomly disconnecting from the craft after saving.</indent>	\n•<indent=5%>修复了保存后某些部件会随机从载具上断开的问题。</indent>
+\n•<indent=5%>Fixed changing a part's angle via Transform Part breaking the Translate tool.</indent>	\n•<indent=5%>修复了通过“变换部件”更改部件角度会导致平移工具失效的问题。</indent>
+\n•<indent=5%>Fixed Overload on a mirrored part moving the mirror to the wrong position.</indent>	\n•<indent=5%>修复了对镜像部件使用 Overload 会使镜像移到错误位置的问题。</indent>
+\n•<indent=5%>Fixed Overload filling in fuselage windows and holes.</indent>	\n•<indent=5%>修复了 Overload 会填死机身窗户和孔洞的问题。</indent>
+\n•<indent=5%>Fixed mirrored animators inheriting the original's parent animator instead of its mirror.</indent>	\n•<indent=5%>修复了镜像动画器会继承原件的父动画器而非其镜像对应物的问题。</indent>
+\n•<indent=5%>Fixed fuselage tools not checking both parts of a selection for the sync adjacent flag.</indent>	\n•<indent=5%>修复了机身工具不会检查选区中两个部件的“同步相邻”标志的问题。</indent>
+\n•<indent=5%>Fixed errors and lingering meshes when mesh modifiers are sized to zero.</indent>	\n•<indent=5%>修复了网格修改器尺寸被调整为零时出现报错和残留网格的问题。</indent>
+\n•<indent=5%>Fixed microscopic mesh slivers throwing off bay door generation.</indent>	\n•<indent=5%>修复了微小网格碎片会干扰舱门生成的问题。</indent>
+\n•<indent=5%>Fixed decimals that start with a non-zero digit not being enterable in window dimensions.</indent>	\n•<indent=5%>修复了窗户尺寸中无法输入以非零数字开头的小数的问题。</indent>
+\n•<indent=5%>Fixed the control surface counter in the properties menu.</indent>	\n•<indent=5%>修复了属性菜单中操纵面计数器的问题。</indent>
+\n•<indent=5%>Fixed Label offset not working for labels on buttons.</indent>	\n•<indent=5%>修复了按钮上标签的偏移不生效的问题。</indent>
+\n•<indent=5%>Visibility of decals and cutting volumes can now be toggled while manually adding a part connection.</indent>	\n•<indent=5%>手动添加部件连接时，现在可以切换贴花和切割体积的可见性。</indent>
+\n•<indent=5%>Non-wheel parts can no longer connect to gear legs.</indent>	\n•<indent=5%>非机轮部件现在无法再连接到起落架支柱上。</indent>
+\n•<indent=5%>Posed Grip text spinners are now dropdowns so they are readable.</indent>	\n•<indent=5%>姿态握把的文本微调框现在改为下拉菜单，以便于阅读。</indent>
+\n•<indent=5%>Removed liftScale from the delta wing designer part.</indent>	\n•<indent=5%>从三角翼设计器部件中移除了 liftScale（升力缩放）。</indent>
+\n•<indent=5%>Prevented wing lift and drag scales from being negative, non-finite, or over 1000.</indent>	\n•<indent=5%>防止机翼升力和阻力缩放值为负数、非有限值或超过 1000。</indent>
+\n<color=#6AAFE6><b><size=115%>Misc</size></b></color>	\n<color=#6AAFE6><b><size=115%>其他</size></b></color>
+\n•<indent=5%>Fix screen turning black after a resolution change on macOS</indent>	\n•<indent=5%>修复了 macOS 上更改分辨率后屏幕变黑的问题</indent>
+\n•<indent=5%>Added an auto feather option to the propeller assembly.</indent>	\n•<indent=5%>为螺旋桨总成添加了自动顺桨选项。</indent>
+\n•<indent=5%>Added PitchAngle (degrees), Thrust (N), Torque (Nm), and RPM output variables to the propeller assembly.</indent>	\n•<indent=5%>为螺旋桨总成添加了俯仰角（度）、推力（牛）、扭矩（牛·米）和 RPM 输出变量。</indent>
+\n•<indent=5%>Added a `minExtensionForWheelPhysics` to Gear Legs so you can choose when wheel physics turns off during retraction. Default value is 0.4</indent>	\n•<indent=5%>为起落架支柱添加了 `minExtensionForWheelPhysics`，可选择收轮过程中机轮物理在何时关闭，默认值为 0.4</indent>
+\nYou can view these release notes in your browser <color=#306BBE><link="https://www.simpleplanes.com/Releases/View/2268777">here</link></color>.	\n您可以在浏览器中<color=#306BBE><link="https://www.simpleplanes.com/Releases/View/2268777">此处</link></color>查看这些更新说明。
+This location hasn't been discovered...yet!\n\nSimplePlanes has a large, seamless world to explore with no loading screens in between.  Start from one of the available locations and fly around to discover the other islands.\n\nWhen you spot one of the other large islands, make sure to fly there and unlock all the locations each island has to offer!	此地尚未被发现……\n\nSimplePlanes 拥有一个巨大且无缝的世界，无需加载画面即可四处探索。从一个可选地点出发四处飞行，去发现其他岛屿。\n\n当你发现其他大型岛屿时，一定要飞过去，并解锁该岛屿提供的所有地点！
+Private	私有
+Bomb	炸弹
+CameraVantage	摄像视角
+CarEngine	汽车发动机
+Cockpit	驾驶舱
+CounterMeasureDispenser	干扰弹发射器
+Engine	发动机
+HeliMainRotor	直升机主旋翼
+JEngine	发动机
+JointRotator	关节转盘
+PropellerAssembly	螺旋桨总成
+ResizableWheel	可调轮组
+Suspension	悬挂
+Turboshaft	涡轮轴发动机
+Wing	机翼式
+Altitude	高度
+Ammo	弹药量
+Current Angle	当前角度
+Drag Force	阻力
+Fired	已发射
+Forward Slip	纵向滑移
+Gear	挡位
+GearRatio	传动比
+Heading Angle	航向角
+InputTorque	输入扭矩
+Is Active	已激活
+Latitude	纬度
+Lift Force	升力
+Longitude	经度
+Look Pitch	视角俯仰
+Look Roll	视角滚转
+Look Yaw	视角偏航
+N1	N1 转速
+N2	N2 转速
+Offroad	越野中
+OutputTorque	输出扭矩
+Pitch Angle	俯仰角
+Pitch Rate	俯仰角速度
+PitchAngle	俯仰角
+RPM	转速
+Roll Angle	滚转角
+Roll Rate	滚转角速度
+Sideways Slip	横向滑移
+Torque	扭矩
+TorqueRatio	扭矩比
+View Offset X	视角偏移 X
+View Offset Y	视角偏移 Y
+View Offset Z	视角偏移 Z
+Yaw Rate	偏航角速度
+Variable Name	变量名
+JWing	机翼
+JetEngine	喷气发动机
+Airbrake	减速板
+Floating Part	漂浮部件
+FloatingPart	漂浮部件
+Joint Motor	关节马达
+JointMotor	关节马达
+Thrust Port	推力喷口
+ThrustPort	推力喷口
+Advanced Performance Scalars	高级性能参数
+Activator	激活组
+Overload	过载编辑器
+Overload XML Editor	Overload XML 编辑器
+Overload XML Modification	Overload XML 修改
+Enables Overload, an advanced part property XML Editor, in the designer.	在设计器中启用 Overload（高级部件属性 XML 编辑器）。
+rotation	旋转
+position	位置
+id	编号
+partType	部件类型
+drag	阻力
+materials	材质
+partCollisionResponse	碰撞响应
+dragArea	阻力面积
+offset	偏移
+version	版本
+fuel	燃油
+capacity	容量
+opacity	不透明度
+style	样式
+name	名称
+buoyancy	浮力
+hideFront	隐藏前部
+hideBack	隐藏后部
+overrideHide	覆盖隐藏
+mass	质量
+deadMassKg	空重 (kg)
+fuelProportion	燃油占比
+glass	玻璃
+symmetryDisabled	禁用对称
+hideInside	隐藏内部
+symmetryId	对称组
+legacyThickness	旧版厚度
+numColliders	碰撞体采样
+activationGroup	激活组
+invert	反转
+input	输入
+min	最小值
+max	最大值
+disableAircraftCollisions	禁用机体碰撞
+size	尺寸
+scale	缩放
+height	高度
+type	类型
+priority	优先级
+range	行程
+path	路径
+zeroOnDeactivate	失活归零
+massScale	质量倍率
+width	宽度
+targetMode	目标模式
+fuelPercentage	燃油百分比
+speed	速度
+penetration	穿透力
+centerOfMass	重心
+decalRotation	贴标旋转
+color	颜色
+frontScale	前端缩放
+rearScale	后端缩放
+deadWeight	空重
+cornerTypes	圆角类型
+length	长度
+minPosition	最小位置
+maxPosition	最大位置
+health	耐久
+dragScale	阻力倍率
+dragType	阻力类型
+attachPosition	挂载位置
+autoCenterCamera	摄像机自动居中
+autoOrient	自动朝向
+autoZoomOnCockpit	座舱自动变焦
+body	弹体
+burnTime	燃烧时间
+engine	发动机
+explosionScale	爆炸规模
+firingDelay	发射延迟
+function	用途
+guidanceActivationDelay	制导启动延迟
+ignitionDelay	点火延迟
+killCam	击杀镜头
+loft	抛射弧
+lookAtCockpit	注视座舱
+maxForwardThrustForce	最大前向推力
+maxFuelTime	最长燃油时间
+maxHeadingAngleAdjustmentRate	最大航向调整速率
+maxRange	最大射程
+maxSpeed	最大速度
+maxTargetingAngle	最大锁定角
+maxThrustVectoringRate	最大推力矢量速率
+maxVelocityAngleAdjustmentRate	最大速度矢量调整速率
+minRange	最小射程
+noseLength	头部长度
+proximityDetonationRangeMin	近炸最小距离
+radius	半径
+seeker	导引头
+seekerFOV	导引头视场
+upOffset	垂直偏移
+viewMode	视角模式
+warheadBias	战斗部偏置
+ProceduralMissile	程序化导弹
+MissileSubPart	导弹子部件
+MissileState	导弹状态
+  *If you have a dedicated graphics card, Windows may be running this game on integrated graphics by mistake. You can force 'High Performance' in Windows Display Graphics Settings.\n	  *如果你有独立显卡，Windows 可能误将本游戏设为使用核芯显卡运行。你可以在 Windows 显示图形设置中强制选择“高性能”。\n
+\nUpdating your drivers may help resolve this issue. \n\n	\n更新显卡驱动可能有助于解决该问题。\n\n
+- Memory: {0}MB RAM detected. 8GB RAM is required.\n	- 内存：检测到 {0}MB 内存，需要 8GB 内存。\n
+It looks like the game crashed during your last session, and outdated graphics drivers might be the cause.\nYour detected graphics card:\n	看起来游戏在上次运行时崩溃了，过期的显卡驱动可能是原因。\n检测到的显卡：\n
+Your computer appears to be below the minimum system requirements for this game:\n	你的电脑似乎未达到本游戏的最低系统需求：\n
+Your craft file has been backed up here:\n	你的机体文件已备份到此处：\n
+Error obtaining or loading plane file from Steam:{0}\n{1}	从 Steam 获取或载入机体文件时出错：{0}\n{1}
+Error reading/validating downloaded plane file: {0}\n{1}	读取/校验已下载的机体文件时出错：{0}\n{1}
+Server returned invalid response:\n{0}\n\nException:\n{1}	服务器返回了无效响应：\n{0}\n\n异常：\n{1}
+Request failed for craft details: \n	获取机体详情失败：\n
+Could not initialize Steam Lobby Manager.\n\nEnsure you are logged into Steam and try restarting the game.	无法初始化 Steam 大厅管理器。\n\n请确认已登录 Steam，然后尝试重启游戏。
+Could not initialize Steam Multiplayer.\nEnsure you are logged into Steam and try restarting the game.	无法初始化 Steam 多人功能。\n请确认已登录 Steam，然后尝试重启游戏。
+ from XML. \nIf unexpected input issues occur, the loaded XML data may be outdated or invalid. Delete the ControlInputData.xml file in your game's app data folder.	来自 XML。\n如果出现异常的输入问题，已加载的 XML 数据可能已过期或无效。请删除游戏应用数据文件夹中的 ControlInputData.xml 文件。
+ user data from XML. \nIf unexpected input issues occur, the loaded XML data may be outdated or invalid. Delete the ControlInputData.xml file in your game's app data folder.	的用户数据来自 XML。\n如果出现异常的输入问题，已加载的 XML 数据可能已过期或无效。请删除游戏应用数据文件夹中的 ControlInputData.xml 文件。
+) data from XML. \nIf unexpected input issues occur, the loaded XML data may be outdated or invalid. Delete the ControlInputData.xml file in your game's app data folder.	）的数据来自 XML。\n如果出现异常的输入问题，已加载的 XML 数据可能已过期或无效。请删除游戏应用数据文件夹中的 ControlInputData.xml 文件。
+ InputBehavior data from XML. \nIf unexpected input issues occur, the loaded XML data may be outdated or invalid. Delete the ControlInputData.xml file in your game's app data folder.	InputBehavior 数据来自 XML。\n如果出现异常的输入问题，已加载的 XML 数据可能已过期或无效。请删除游戏应用数据文件夹中的 ControlInputData.xml 文件。
+Game Version: {0}\n	游戏版本：{0}\n
+Version: {0} \n	版本：{0}\n
+Version: {0}\n\n	版本：{0}\n\n
+Last Updated: {0} \n	最后更新：{0}\n
+{0}\nTags: {1}{2}\nLast Modified: {3:G}	{0}\n标签：{1}{2}\n最后修改：{3:G}
+\nFile: 	\n文件：
+Variables Error:\n	变量错误：\n
+Total Road Length: {0:n1}km. Average Length: {1:n2}km. Median Length: {2:n2}km\n	道路总长：{0:n1}km。平均长度：{1:n2}km。中位长度：{2:n2}km
+'{0}' Road Length: {1:n1}km\n	“{0}”的道路长度：{1:n1}km\n
+Total Drag Comparison\n	总阻力对比
