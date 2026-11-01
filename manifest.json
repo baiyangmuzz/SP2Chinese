@@ -1,10 +1,10 @@
 {
   "modVersion": "1.6.2",
   "dictVersion": "b4343617ea10",
-  "dictBuild": 202610281914,
+  "dictBuild": 202611011750,
   "dictRows": 10393,
   "dictSha256": "b4343617ea107f3f2b133862316e2256941e77a261b003dcdfa67ab5f9232329",
-  "generatedAt": "2026-10-28T19:14:18+08:00",
+  "generatedAt": "2026-11-01T17:50:54+08:00",
   "author": "白杨木",
   "qqGroup": "1128992783",
   "repository": "https://github.com/baiyangmuzz/SP2Chinese",
@@ -94,7 +94,7 @@
       "size": 78973
     },
     "BepInEx/plugins/SP2Chinese/dict.build": {
-      "sha256": "c43b9253d7c18948999a89fda331f878f9b397582d1a87a3d5830c372d8ed01e",
+      "sha256": "dae1b950b7085c383d8feaf619675cfac3ae52234c693413e27acdd6e7d970e7",
       "size": 13
     },
     "BepInEx/plugins/SP2Chinese/dictionary_zh_cn.tsv": {
