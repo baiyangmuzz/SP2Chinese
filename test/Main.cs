@@ -18,6 +18,42 @@ internal static class Program
         Console.OutputEncoding = Encoding.UTF8;
         Console.WriteLine("entries: " + t.Count);
 
+        if (probe == "--manifest")
+        {
+            var json = File.ReadAllText(args[2]);
+            var m = MiniJson.Parse(json);
+            Console.WriteLine("parse: " + (m != null ? "OK" : "FAILED"));
+            if (m == null) return 1;
+
+            object v;
+            Console.WriteLine("  modVersion  = " + (m.TryGet("modVersion", out v) ? v : "<none>"));
+            Console.WriteLine("  dictVersion = " + (m.TryGet("dictVersion", out v) ? v : "<none>"));
+            Console.WriteLine("  dictRows    = " + (m.TryGet("dictRows", out v) ? v : "<none>"));
+            Console.WriteLine("  author      = " + (m.TryGet("author", out v) ? v : "<none>"));
+            if (m.TryGet("update", out v) && v is MiniJson up && up.TryGet("dictionary", out var u))
+                Console.WriteLine("  dict url    = " + u);
+
+            // 回归断言：manifest.json 里的 dictBuild / dictRows 是 JSON 数字（无引号）。
+            // 早期 MiniJson 把数字解析成 double，而 Str()/Long() 用 `as string` 读取，
+            // 导致 dictBuild 恒为 0、游戏内词库自更新被永久跳过。任何让数字字段
+            // 重新变成不可读的改动都应让这里失败。
+            long build = 0, rows = 0;
+            if (m.TryGet("dictBuild", out v) && v != null)
+                long.TryParse(Convert.ToString(v, System.Globalization.CultureInfo.InvariantCulture), out build);
+            if (m.TryGet("dictRows", out v) && v != null)
+                long.TryParse(Convert.ToString(v, System.Globalization.CultureInfo.InvariantCulture), out rows);
+            Console.WriteLine("  dictBuild   = " + build);
+            var ok = build > 0 && rows > 0;
+            Console.WriteLine(ok ? "RESULT: manifest numeric fields OK"
+                                 : "RESULT: FAILED - dictBuild/dictRows unreadable");
+            return ok ? 0 : 1;
+        }
+
+        if (probe == "--format")
+        {
+            return FormatRegression(t, dict);
+        }
+
         if (probe == "--diag")
         {
             Diag(t);
@@ -91,6 +127,80 @@ internal static class Program
     private static string Quote(string s)
     {
         return s.Replace("\r", "\\r").Replace("\n", "\\n");
+    }
+
+    // Matches {2:F0} / {0,9} / {Name} / {0} in dictionary keys.
+    private static readonly System.Text.RegularExpressions.Regex FmtTok =
+        new System.Text.RegularExpressions.Regex(
+            @"\{(?:\d+(?:,-?\d+)?(?::[^}]*)?|[A-Za-z_][A-Za-z0-9_]*)\}");
+
+    /// <summary>
+    /// Regression for the format-template fallback: keys whose rendered form MaskNumbers can
+    /// never reproduce (non-zero indices, format specifiers, literal digits, named slots) must
+    /// still translate. Generates a numeric runtime string for each such key and asserts a HIT.
+    /// </summary>
+    private static int FormatRegression(Translator t, string dict)
+    {
+        Console.WriteLine("indexed format templates: " + t.FormatTemplateCount);
+        var rows = File.ReadAllLines(dict);
+        var tested = 0;
+        var miss = 0;
+        var skipped = 0;
+        foreach (var line in rows)
+        {
+            var i = line.IndexOf('\t');
+            if (i <= 0) continue;
+            var key = Translator.Unescape(line.Substring(0, i));
+            var val = Translator.Unescape(line.Substring(i + 1));
+            if (key == val || key.IndexOf("{*}", StringComparison.Ordinal) >= 0 ||
+                key.IndexOf('[') >= 0) continue;   // handled by the wildcard / shortcut paths
+            var ms = FmtTok.Matches(key);
+            if (ms.Count == 0) continue;
+            var fixedText = FmtTok.Replace(key, "");
+            var plain = true;
+            for (var c = 0; c < fixedText.Length; c++)
+                if (char.IsDigit(fixedText[c])) { plain = false; break; }
+            for (var m = 0; m < ms.Count && plain; m++)
+                if (ms[m].Value != "{" + m + "}") plain = false;
+            if (plain) continue;   // MaskNumbers path, not this fallback
+
+            // A date/custom format renders text, not a bare number; those rows are verified by
+            // the exact/shortcut paths instead.
+            var hasTextFormat = false;
+            foreach (System.Text.RegularExpressions.Match m in ms)
+                if (m.Value.IndexOf(":yyyy", StringComparison.Ordinal) >= 0 ||
+                    m.Value.IndexOf(":G", StringComparison.Ordinal) >= 0) hasTextFormat = true;
+            if (hasTextFormat) { skipped++; continue; }
+
+            // Rows whose only literal text is a single character ("{0:n0}d ") are deliberately
+            // not indexed: one literal char is too weak an anchor to claim arbitrary text. They
+            // also carry no real translation (the value is the key with the trailing space
+            // trimmed), so skipping them cannot lose a translation.
+            var anchor = 0;
+            for (var c = 0; c < fixedText.Length; c++)
+                if (!char.IsWhiteSpace(fixedText[c])) anchor++;
+            if (anchor < 2) { skipped++; continue; }
+
+            var runtime = FmtTok.Replace(key, delegate (System.Text.RegularExpressions.Match m)
+            {
+                var tok = m.Value;
+                if (tok.IndexOf("P0", StringComparison.Ordinal) >= 0 ||
+                    tok.IndexOf("P1", StringComparison.Ordinal) >= 0) return "50%";
+                return "12.5";
+            });
+            tested++;
+            var res = t.Apply(runtime);
+            if (res == runtime)
+            {
+                miss++;
+                if (miss <= 15) Console.WriteLine("MISS [" + runtime.Replace("\n", "\\n") + "]");
+            }
+        }
+        Console.WriteLine("format probes: " + tested + ", miss " + miss + ", skipped " + skipped);
+        var ok = t.FormatTemplateCount > 0 && miss == 0;
+        Console.WriteLine(ok ? "RESULT: format templates OK"
+                             : "RESULT: FAILED - " + miss + " format row(s) never match");
+        return ok ? 0 : 1;
     }
 
     /// <summary>

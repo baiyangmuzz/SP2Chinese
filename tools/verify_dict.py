@@ -8,6 +8,10 @@ be rebuilt. That drift went unnoticed for weeks because nothing ever compared th
 Usage:
     python tools/verify_dict.py [--live <path to dictionary_zh_cn.tsv>]
 
+By default the live dictionary is the repo-root dictionary_zh_cn.tsv, so CI and
+contributors need no local game install. Override with SP2_DICT=<path> or --live.
+Set SP2_LIVE_GAME_DICT=<path> to compare against an installed copy instead.
+
 Exit code 0 = in sync, 1 = drifted (prints the first few offenders).
 Run this after every batch is added, and before building a release package.
 """
@@ -15,18 +19,31 @@ import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DICT_DIR = os.path.join(os.path.dirname(HERE), "dict")
-DEFAULT_LIVE = r"D:\steam\steamapps\common\SimplePlanes 2\BepInEx\plugins\SP2Chinese\dictionary_zh_cn.tsv"
+ROOT = os.path.dirname(HERE)
+DICT_DIR = os.path.join(ROOT, "dict")
+# CI / 贡献者机器上没有作者的 D:\steam... 安装：优先用环境变量 SP2_DICT，
+# 否则用仓库根目录的 dictionary_zh_cn.tsv（它是打包时同步出来的权威副本）。
+# 只有显式设置 SP2_LIVE_GAME_DICT 时才去读游戏安装目录里的那份。
+_env = os.environ.get("SP2_DICT")
+if _env:
+    DEFAULT_LIVE = _env
+elif os.environ.get("SP2_LIVE_GAME_DICT"):
+    DEFAULT_LIVE = os.environ["SP2_LIVE_GAME_DICT"]
+else:
+    DEFAULT_LIVE = os.path.join(ROOT, "dictionary_zh_cn.tsv")
 
 
 def read_rows(path):
     """[(key, value)] in file order. Lines without a tab are comments/blank and are skipped."""
     rows = []
-    with open(path, encoding="utf-8-sig") as f:
-        for line in f:
+    with open(path, encoding="utf-8-sig", newline="") as f:
+        for n, line in enumerate(f, 1):
             line = line.rstrip("\r\n")
             if not line.strip():
                 continue
+            if line.count("\t") != 1:
+                raise SystemExit("%s:%d has %d TABs (need exactly 1)"
+                                 % (path, n, line.count("\t")))
             i = line.find("\t")
             if i > 0:
                 rows.append((line[:i], line[i + 1:]))
@@ -34,14 +51,18 @@ def read_rows(path):
 
 
 def load_batches():
-    merged, origin = {}, {}
+    """Returns (merged, origin, conflicts). A key defined twice with different values is a
+    silent filename-order decision and must be reported, not swallowed."""
+    merged, origin, conflicts = {}, {}, []
     for name in sorted(os.listdir(DICT_DIR)):
         if not name.endswith(".tsv"):
             continue
         for k, v in read_rows(os.path.join(DICT_DIR, name)):
+            if k in merged and merged[k] != v:
+                conflicts.append((k, origin[k], name))
             merged[k] = v
             origin.setdefault(k, name)
-    return merged, origin
+    return merged, origin, conflicts
 
 
 def main():
@@ -54,7 +75,7 @@ def main():
         return 2
 
     live = dict(read_rows(live_path))
-    merged, origin = load_batches()
+    merged, origin, conflicts = load_batches()
 
     missing = [k for k in live if k not in merged]
     extra = [k for k in merged if k not in live]
@@ -65,6 +86,9 @@ def main():
     print("missing in dict: %d" % len(missing))
     print("extra in dict  : %d" % len(extra))
     print("value mismatch : %d" % len(differ))
+    print("batch conflicts: %d" % len(conflicts))
+    for k, a, b in conflicts[:5]:
+        print("  CONFLICT %r (%s -> %s)" % (k[:70], a, b))
 
     for label, keys in (("MISSING", missing), ("EXTRA", extra), ("DIFFER", differ)):
         for k in keys[:5]:
@@ -73,7 +97,7 @@ def main():
                 print("          live : %s" % live[k][:60])
                 print("          batch: %s" % merged[k][:60])
 
-    if missing or extra or differ:
+    if missing or extra or differ or conflicts:
         print("\nRESULT: dict/ CANNOT rebuild the live dictionary.")
         return 1
     print("\nRESULT: in sync.")
