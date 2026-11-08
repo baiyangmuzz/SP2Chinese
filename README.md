@@ -1,4 +1,4 @@
-# SimplePlanes 2 简体中文汉化
+﻿# SimplePlanes 2 简体中文汉化
 
 **English:** Full Simplified Chinese localization for [SimplePlanes 2](https://store.steampowered.com/app/2840470/) — runtime text replacement via BepInEx/Harmony, 10,393 dictionary rows (8,675 translated + 1,718 deliberately kept in English), dynamic CJK font atlas that fixes tofu boxes in chat and UI, one-click installer with SHA256 verification, and in-game dictionary auto-updates. The game has no i18n framework; all strings are replaced at runtime.
 
@@ -13,7 +13,7 @@
 | 项 | 值 |
 |---|---|
 | 词库条目 | 10393（TSV 行数；每行 key 唯一，无重复；含 1718 条刻意保留英文的恒等行） |
-| 插件版本 | 1.6.2 |
+| 插件版本 | 1.6.3 |
 | 作者 | 白杨木（[baiyangmuzz](https://github.com/baiyangmuzz)） |
 | 交流群 | QQ 1128992783 |
 | 下载 | [Releases 最新版](https://github.com/baiyangmuzz/SP2Chinese/releases/latest) |
