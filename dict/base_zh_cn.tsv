@@ -49,7 +49,7 @@
  +{0} other part(s) 	 另有 {0} 个部件
  <color=#ccc>by 	 <color=#ccc>作者：
  Are you certain you want to do this?	 您确定要这样做吗？
- Disabled [Shared Instance]	 已禁用 [共享实例]
+ Disabled [Shared Instance]	 Disabled [Shared Instance]
  Error: 	 错误：
  Exceeded Budget: {0}	 超出预算：{0}
  For players who do wish to use these devices however, this dialog can be used to configure those controls.	 对于确实希望使用这些设备的玩家，可通过此对话框配置相应控制。
@@ -61,8 +61,8 @@
  Save changes?	 保存更改？
  Target	 目标
  WINS!	 获胜！
- [Instance]	 [实例]
- [Shared Instance]	 [共享实例]
+ [Instance]	 [Instance]
+ [Shared Instance]	 [Shared Instance]
  already defined.	 已定义。
  already exists	 已存在
  and automatically created mirrored part 	 并自动创建了镜像部件
@@ -797,7 +797,6 @@ Are you sure you want to leave this activity?	确定要离开此活动吗？
 Are you sure you want to quit the tutorial?	确定要退出教程吗？
 Argentina	阿根廷
 Arrow	箭头
-Arrows	箭头
 Artillery	火炮
 AspectRatio: {0}	宽高比：{0}
 Assemblies	程序集
@@ -2169,7 +2168,7 @@ HP Mixed Reality Controller OpenXR	HP 混合现实控制器 OpenXR
 HTC Vive Controller OpenXR	HTC Vive 控制器 OpenXR
 Half Res	半分辨率
 Halo	光环
-Hand	手部
+Hand	抓手处
 HandleUrl: 	处理 URL：
 Hard	困难
 Has air brake.	有减速板。
@@ -2530,7 +2529,6 @@ Location	地点
 Location 	地点
 Location Discovered: 	已发现地点：
 Location: {0}, 	地点：{0}，
-Locations	地点
 Locked	已锁定
 Log	日志
 Log In	登录
@@ -2558,7 +2556,7 @@ MP_Steam_Join	MP_Steam_Join
 MPa	兆帕
 MTU: reliable = {0}, unreliable = {1}	MTU：可靠 = {0}，不可靠 = {1}
 MULTIPLAYER SETTINGS	多人游戏设置
-Magnet	磁铁
+Magnet	小心磁场
 Main	主
 Main Drive Shaft	主传动轴
 Main Rotor	主旋翼
@@ -2600,7 +2598,6 @@ Material ID does not exist: 	材质 ID 不存在：
 Material Overrides	材质覆盖
 Material Properties	材质属性
 Material Settings	材质设置
-Materials	材质
 Max	最大
 Max Bullets Per Second	每秒最大子弹数
 Max Cars	最大车辆数
@@ -2641,7 +2638,7 @@ MeshModifierBaseScript.Apply.Transform	MeshModifierBaseScript.Apply.Transform
 MeshModifierBaseScript.ApplyToPart	MeshModifierBaseScript.ApplyToPart
 MeshModifierBaseScript.UpdateCombinedMeshes	MeshModifierBaseScript.UpdateCombinedMeshes
 MeshModifyContext.EmitLocalMeshPart	MeshModifyContext.EmitLocalMeshPart
-Meshes/	保留
+Meshes/	Meshes/
 Message recieved from other game instance: 	收到来自其他游戏实例的消息：
 Message: 	消息：
 Metallic	金属度
@@ -2710,7 +2707,7 @@ Mod levels are not currently supported	当前不支持模组关卡
 Mod part modifiers are not currently supported	当前不支持模组部件修改器
 Mod settings have already been loaded.	模组设置已加载。
 Mod: {0}, Author: {1}, Version: {2}, Created: {3}, Path: {4}	模组：{0}，作者：{1}，版本：{2}，创建：{3}，路径：{4}
-ModLoadLog.txt	保留
+ModLoadLog.txt	ModLoadLog.txt
 Modded Max RPM is greater than calculated RPM: {0} > {1}	改装最大转速大于计算转速：{0} > {1}
 Modded {0}.	已改装 {0}。
 Mode	模式
@@ -2746,7 +2743,7 @@ More than one joint was found when only one was expected. Unable to detach part.
 More than one multiplayer lobby was found with name: 	找到多个同名的多人游戏大厅：
 Motor	电机
 Motorcycle	摩托车
-Motorway 2x2 0018 1	保留
+Motorway 2x2 0018 1	Motorway 2x2 0018 1
 Mouse As Joystick	鼠标摇杆
 Mouse As Joystick Enabled	已启用鼠标摇杆
 Mouse Joystick	鼠标摇杆
@@ -2850,8 +2847,8 @@ NetworkFlightObjectManager.RegisterSpawner may only be called on the server.	Net
 NetworkFlightObjectManager.UnregisterSpawner may only be called on the server.	NetworkFlightObjectManager.UnregisterSpawner 只能在服务器上调用。
 NetworkPlayerScript is overwriting existing data for 'Owner.CustomData'.	NetworkPlayerScript 正在覆盖“Owner.CustomData”的现有数据。
 NetworkStateRegistryScript.OnPostTick	NetworkStateRegistryScript.OnPostTick
-NetworkVehicle_Local_{0}	保留
-NetworkVehicle_Remote_{0}	保留
+NetworkVehicle_Local_{0}	NetworkVehicle_Local_{0}
+NetworkVehicle_Remote_{0}	NetworkVehicle_Remote_{0}
 Networked Activity State Change: {0}: {1}	联网活动状态变更：{0}：{1}
 Networked areas cannot have more than 256 objects	联网区域对象不能超过 256 个
 NetworkedActivity: 	联网活动：
@@ -3123,7 +3120,7 @@ Paint texture location type of '{0}' is not currently supported	当前不支持�
 PaintTextureManager.CreateTextureArrays	PaintTextureManager.CreateTextureArrays
 PaintTextureManager.LoadTexture_File	PaintTextureManager.LoadTexture_File
 PaintTextureManager.LoadTexture_Resource	PaintTextureManager.LoadTexture_Resource
-PaintTextures/	保留
+PaintTextures/	PaintTextures/
 Painted	已涂装
 Paired Devices: 	已配对设备：
 Pairing Device: {0} {1}	正在配对设备：{0} {1}
@@ -3229,7 +3226,7 @@ Physics Settings	物理设置
 PicoXR Controller-Left	PicoXR 左控制器
 PicoXR Controller-Right	PicoXR 右控制器
 Pilot Seat	飞行员座椅
-Pinch	捏合
+Pinch	小心夹手
 Ping	延迟
 Ping: {0}ms, 	延迟：{0}毫秒，
 Piston	活塞
@@ -3695,7 +3692,7 @@ ScriptableRenderContext:Internal_Cull_Injected	ScriptableRenderContext:Internal_
 Scripted	脚本化
 Sea Plane	水上飞机
 Seaplane	水上飞机
-Search Parts\nFind parts by name or ID, and manage their visibility.\nShortcut: [ToggleSearchPartsPanel]	搜索部件\n按名称或 ID 查找部件，并管理其可见性。\n快捷键：[ToggleSearchPartsPartsPanel]
+Search Parts\nFind parts by name or ID, and manage their visibility.\nShortcut: [ToggleSearchPartsPanel]	搜索部件\n按名称或 ID 查找部件，并管理其可见性。\n快捷键：[ToggleSearchPartsPanel]
 Searching {0} colliders	正在搜索 {0} 个碰撞体
 Seat	座椅
 Seat Part-{0} recliner not found at path {1}.	部件 {0} 座椅的躺椅在路径 {1} 找不到。
@@ -3852,7 +3849,6 @@ Showing the collider volume is not currently functional. RigidBody.SetDensity ha
 Shows outlines around selected parts in the designer.	在设计器中显示所选部件周围的轮廓。
 Shows the active tool. Click to open the tool selection panel.	显示当前工具。点击打开工具选择面板。
 Side View\nAlign the camera to view the craft from the side.	侧视图\n将相机对准载具侧面。
-Sign	符号
 Simple	简单
 SimpleGroundVehicleScript.CheckForObstructions	SimpleGroundVehicleScript.CheckForObstructions
 SimpleGroundVehicleScript.OnNavigationTargetReached	SimpleGroundVehicleScript.OnNavigationTargetReached
@@ -3987,7 +3983,7 @@ Steam Required	需要 Steam
 Steam lobby join requested while a scene transition is in progress. Waiting for current scene transition to finish.	场景切换进行中请求加入 Steam 大厅。正在等待当前场景切换完成。
 Steampunk	蒸汽朋克
 Stencil	模板
-Step	步骤
+Step	踩踏点
 Step #{0}	步骤 #{0}
 Steps (L1):	步数（L1）：
 Stick X	摇杆 X
@@ -4401,7 +4397,7 @@ This button opens Part Properties for the selected part. SP2 parts are highly cu
 This button opens the Search Parts panel where you can easily find parts in your craft and toggle their visibility.	此按钮打开搜索部件面板，可轻松找到载具中的部件并切换其可见性。
 This button opens the paint panel where you can customize the colors and textures of your craft.	此按钮打开涂装面板，可自定义载具的颜色和纹理。
 This craft does not have any instructions.	此载具没有任何说明。
-This craft file was hand edited by its author to make use of features that are not directly supported in the game. Many advanced players use XML-modding to work around limitations in the game to enable really cool functionality that would otherwise not be possible. It is perfectly safe to pilot, but modifying this craft yourself may reset their special properties or cause unexpected behavior.\n\n	此载具文件由作者手动编辑，使用了游戏不直接支持的功能。许多高级玩家使用 XML 改装绕过游戏限制，实现原本不可能的酷炫功能。驾驶完全安全，但自行修改可能重置其特殊属性或导致意外行为。\n\n
+This craft file was hand edited by its author to make use of features that are not directly supported in the game. Many advanced players use XML-modding to work around limitations in the game to enable really cool functionality that would otherwise not be possible. It is perfectly safe to pilot, but modifying this craft yourself may reset their special properties or cause unexpected behavior.\n\n	这架载具被作者手工编辑过，使用了游戏本身并不直接支持的功能。许多进阶玩家会用 XML 改造来绕过游戏的限制，实现原本做不到的有趣功能。驾驶它完全安全，但你自己改动这架载具可能会重置它的特殊属性，或导致意外行为。\n\n
 This craft has no instructions	此载具没有说明
 This craft is XML-modded.	此载具经过 XML 改装。
 This craft is moderately complex and may not run well on your device.	此载具复杂度中等，在您的设备上可能运行不佳。
@@ -7112,7 +7108,7 @@ Debug session has been closed by the hosting process.	调试会话已被宿主�
 Debugging script '{0}'; use the debug console to debug another script.	正在调试脚本“{0}”；请使用调试控制台调试其他脚本。
 DecalTargetScript._decals is out of sync with DecalTargetScript._decalObjects.	DecalTargetScript._decals 与 DecalTargetScript._decalObjects 不同步。
 Deleted symmetric part	已删除对称部件
-Disabled [Shared Instance]	已禁用 [共享实例]
+Disabled [Shared Instance]	Disabled [Shared Instance]
 Do you want to reassign or remove this assignment?	您要重新分配还是移除这项分配？
 Doing great. Keep adding more blocks.	做得很好，继续添加更多方块。
 Drag {0,9}:  {1:00.0000}  -->  {2:00.0000}	拖动 {0,9}：{1:00.0000} --> {2:00.0000}

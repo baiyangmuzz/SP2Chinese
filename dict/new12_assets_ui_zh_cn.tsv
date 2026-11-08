@@ -49,7 +49,7 @@ When toggled, apply changes to the mirrored part as well (if there is one)	开�
 Choose the coordinate space for movement: local (part's orientation) or world.	选择移动所用的坐标系：局部（部件朝向）或世界。
 Choose the coordinate space for rotation: local (part's orientation) or world.	选择旋转所用的坐标系：局部（部件朝向）或世界。
 Disabled while under AI control.	AI 控制时禁用。
-This craft file was hand edited by its author to make use of features that are not directly supported in the game. Many advanced players use XML-modding to work around limitations in the game to enable really cool functionality that would otherwise not be possible. It is perfectly safe to pilot, but modifying this craft yourself may reset their special properties or cause unexpected behavior.	该载具文件由其作者手工编辑，使用了游戏未直接支持的功能。许多进阶玩家通过修改 XML 绕过游戏限制，实现本来无法做到的有趣功能。驾驶它是完全安全的，但你自己修改该载具可能会重置其特殊属性，或引发意外行为。
+This craft file was hand edited by its author to make use of features that are not directly supported in the game. Many advanced players use XML-modding to work around limitations in the game to enable really cool functionality that would otherwise not be possible. It is perfectly safe to pilot, but modifying this craft yourself may reset their special properties or cause unexpected behavior.	这架载具被作者手工编辑过，使用了游戏本身并不直接支持的功能。许多进阶玩家会用 XML 改造来绕过游戏的限制，实现原本做不到的有趣功能。驾驶它完全安全，但你自己改动这架载具可能会重置它的特殊属性，或导致意外行为。\n\n
 2D Thrust Vectoring	二维推力矢量
 AoA Limiter	迎角限制器
 Alt Hold	高度保持
