@@ -8,6 +8,57 @@
 不确定游戏实际渲染出什么字符串时，看 `BepInEx/plugins/SP2Chinese/untranslated.txt` ，
 里面是被记录下来的未命中文本原文。
 
+## 提交流程（三步）
+
+**推荐用 Pull Request，不要直接改 `main`。** 流程很短：
+
+```bash
+# 1. Fork 仓库并克隆你自己的 fork
+git clone https://github.com/<你的用户名>/SP2Chinese
+cd SP2Chinese
+
+# 2. 新建批次文件放译文（见下节格式）
+#    dict/new40_你的主题_zh_cn.tsv
+
+# 3. 合并进运行时字典（关键一步，别漏）
+python tools/rebuild_dict.py
+
+# 4. 校验
+python tools/verify_dict.py     # 必须 RESULT: in sync.
+python tools/check_dict.py      # 必须 RESULT: OK
+
+# 5. 提交并发起 PR
+git add dict/ dictionary_zh_cn.tsv manifest.json
+git commit -m "词库：补充 XXX 相关译文"
+git push origin master
+```
+
+然后在 GitHub 上开 Pull Request 到 `main` 分支。CI 会自动跑全部检查，
+**任何一项不过都无法合并**。
+
+### 为什么需要 `rebuild_dict.py`
+
+插件运行时读的是仓库根目录的 `dictionary_zh_cn.tsv`，不是 `dict/` 下的批次。
+只改批次而不重建，`verify_dict.py` 会报 `extra in dict`（新词条没进运行时字典）。
+`rebuild_dict.py` 做的就是「按文件名排序合并批次 + 更新 manifest 的字典哈希」，
+合并规则与发布打包完全一致。
+
+它会顺带校验跨批次冲突：同一个 key 在两个批次里译文不同时会直接报错，
+并指出是哪两个文件、各自写了什么，而不是靠文件名顺序静默覆盖。
+
+### 常见问题
+
+**Q：只改一个已有词条的译文怎么办？**
+直接改它所在的那个批次文件，然后同样跑 `rebuild_dict.py`。不要新建批次。
+
+**Q：`check_dist.py` 报错？**
+它是发布前检查，依赖 `dist/payload` 和本地 zip。贡献翻译不需要跑它，
+CI 上也会自动跳过。
+
+**Q：不想装 .NET SDK？**
+只改词库的话不需要，`rebuild_dict.py` / `verify_dict.py` / `check_dict.py`
+都只要 Python 3。
+
 ## 新增词条
 
 在 `dict/` 下新建批次文件，不要修改已有批次：
@@ -60,18 +111,20 @@ NetworkVehicle_Local_{0}	NetworkVehicle_Local_{0}
 ## 提交前校验
 
 ```bash
-python tools/verify_dict.py              # 批次能否逐条重建运行时字典（含多 TAB / 跨批次冲突）
-python tools/check_dict.py --no-manifest # 占位符 / 禁译 / 恒等行 / 结构 / 行数口径
-python tools/check_dist.py               # 发布前：payload / zip / manifest 全量哈希一致
+python tools/rebuild_dict.py   # 合并批次进运行时字典并同步 manifest（改词库后必跑）
+python tools/verify_dict.py    # 批次能否逐条重建运行时字典（含多 TAB / 跨批次冲突）
+python tools/check_dict.py     # 占位符 / 禁译 / 恒等行 / 结构 / 行数口径
 ```
 
-`check_dist.py` 依赖 `dist/payload` 与本地 zip，这两者都被 `.gitignore` 排除，
-所以在 CI 上会自动跳过产物比对（只校验字典哈希与 manifest 字段），不会误报红灯；
-本地发布前必须先 `python dist/build_dist.py` 再跑它，才有完整校验效果。
-
 `verify_dict.py` 必须输出 `RESULT: in sync.`；`check_dict.py` 必须输出
-`RESULT: OK`。改了词库但还没重跑打包时用 `--no-manifest` 跳过 manifest 断言，
-其余检查照常执行。
+`RESULT: OK`。
+
+发布前额外跑（依赖打包产物，贡献翻译不需要）：
+
+```bash
+python dist/build_dist.py      # 重新打包，同步 payload / zip / manifest
+python tools/check_dist.py     # payload / zip / manifest 全量哈希一致
+```
 
 `check_dict.py` 现在还会检查：每行恰好一个 TAB、`{*}` 与 `[Binding]` 在译文中
 原样保留、跨批次同 key 不同值必须显式裁决（不能靠文件名顺序静默覆盖）、

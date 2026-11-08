@@ -99,6 +99,13 @@ def main():
 
     if missing or extra or differ or conflicts:
         print("\nRESULT: dict/ CANNOT rebuild the live dictionary.")
+        if extra:
+            # 最常见的场景：贡献者新建了批次但没重建运行时字典。
+            print("提示：有 %d 条只存在于 dict/ 批次、还没进 dictionary_zh_cn.tsv。" % len(extra))
+            print("      运行 `python tools/rebuild_dict.py` 合并后重试。")
+        if differ:
+            print("提示：%d 条 key 的译文在批次与运行时字典里不一致，" % len(differ))
+            print("      同样运行 `python tools/rebuild_dict.py` 同步（会以批次为准）。")
         return 1
     print("\nRESULT: in sync.")
     return 0
