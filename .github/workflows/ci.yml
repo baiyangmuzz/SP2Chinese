@@ -15,8 +15,8 @@ jobs:
     name: 词库一致性 / 完整性
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
       - name: 批次能否重建运行时字典（含多 TAB / 跨批次冲突检查）
@@ -30,8 +30,8 @@ jobs:
     name: 离线翻译引擎测试
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
         with:
           dotnet-version: '10.0.x'
       # trtest 只编译 Translator.cs + DictionaryUpdater.cs + Main.cs，不依赖 Unity/BepInEx。
