@@ -1,0 +1,49 @@
+name: 词库与逻辑检查
+
+# CONTRIBUTING.md 承诺的 CI：验证词库批次可重建运行时字典、占位符/禁译清单完整，
+# 并运行离线测试器的 roundtrip / 格式模板 / 性能 / 索引诊断。
+# 注意：SP2Chinese.csproj 引用游戏安装目录下的 BepInEx / UnityEngine / TMPro DLL，
+# 公共 runner 上没有这些文件，因此插件 DLL 本身的编译不在这里做（需本地有游戏安装）。
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  dictionary:
+    name: 词库一致性 / 完整性
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: 批次能否重建运行时字典（含多 TAB / 跨批次冲突检查）
+        run: python tools/verify_dict.py
+      - name: 词库静态检查（占位符 / 禁译 / 哨兵 / manifest 一致性 / 行数口径）
+        run: python tools/check_dict.py
+      - name: 发布产物与 manifest 一致性（payload 全量哈希 / dict.build）
+        run: python tools/check_dist.py
+
+  offline-tests:
+    name: 离线翻译引擎测试
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.0.x'
+      # trtest 只编译 Translator.cs + DictionaryUpdater.cs + Main.cs，不依赖 Unity/BepInEx。
+      - name: 编译离线测试器
+        run: dotnet build test/trtest.csproj -c Release --nologo
+      - name: 字典往返与占位符审计
+        run: dotnet test/bin/Release/trtest.dll dictionary_zh_cn.tsv
+      - name: 格式模板回归（非零索引 / 格式说明符 / 字面数字 / 命名槽位）
+        run: dotnet test/bin/Release/trtest.dll dictionary_zh_cn.tsv --format
+      - name: 内部索引诊断
+        run: dotnet test/bin/Release/trtest.dll dictionary_zh_cn.tsv --diag
+      - name: 性能基准（冷/热）
+        run: dotnet test/bin/Release/trtest.dll dictionary_zh_cn.tsv --bench
+      - name: manifest 解析回归（dictBuild 为 JSON 数字，必须被正确读出）
+        run: dotnet test/bin/Release/trtest.dll dictionary_zh_cn.tsv --manifest manifest.json
