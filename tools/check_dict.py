@@ -224,6 +224,9 @@ def main():
                 problems.append("dist/payload dict.build=%s != manifest.dictBuild=%s"
                                 % (local_build, mf.get("dictBuild")))
 
+        if not str(mf.get("dictBuild") or "").isdigit():
+            problems.append("manifest.dictBuild is not a plain integer: %r" % (mf.get("dictBuild"),))
+
     print("rows          : %d" % len(rows))
     print("translated    : %d (identity rows excluded)" % (len(rows) - identity))
     print("unique keys   : %d" % len(live_map))

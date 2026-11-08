@@ -59,6 +59,43 @@ CI 上也会自动跳过。
 只改词库的话不需要，`rebuild_dict.py` / `verify_dict.py` / `check_dict.py`
 都只要 Python 3。
 
+## 译稿怎么变成玩家的更新
+
+新译稿**不会**一合并就推送给玩家。流程是「审核 + 攒批发布」：
+
+```
+你的 PR  ──▶  CI 自动检查 ──▶  维护者审核译稿
+                                      │
+                                      ▼
+                            攒够一批后维护者打包
+                            （dist/build_dist.py 生成新 dictBuild）
+                                      │
+                                      ▼
+                            打 Release ──▶ 玩家一次性收到整批
+```
+
+所以 `rebuild_dict.py` **只更新字典哈希，不动 `dictBuild`**。`dictBuild` 是
+「一次发布」的标识，由维护者打包时统一推进——这样不会因为某一条译稿合并，
+就让所有在线玩家的词库热重载一次。
+
+维护者侧的操作：
+
+```bash
+# 平时只管 review 和合并 PR，玩家侧不会有任何变化
+# 攒够一批译稿后：
+python dist/build_dist.py     # 生成新的 dictBuild，七处产物同源
+python tools/check_dist.py    # 确认产物一致
+git commit -m "词库：XX 批译稿汇总"
+# 打 Release 上传 SP2Chinese-v<版本>-<日期>.zip
+```
+
+审核时主要看这几类问题（CI 能查格式，查不了译法）：
+
+- **术语统一**：`Aircraft` 统一译「载具」而非「飞机」，`Part` 统一「部件」
+- **长度**：按钮/标签文字过长会被 UI 截断，需要更短的译法
+- **语气**：游戏是飞行模拟，提示语保持简洁、避免口语化
+- **禁译项**：官方载具名、挑战名、品牌、XML 属性名不得翻译（`do-not-translate.txt`）
+
 ## 新增词条
 
 在 `dict/` 下新建批次文件，不要修改已有批次：
