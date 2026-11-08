@@ -32,10 +32,14 @@
     <Compile Include="src\Translator.cs" />
     <Compile Include="src\CommonChars.cs" />
     <Compile Include="src\Identifiers.cs" />
+    <Compile Include="src\DictionaryUpdater.cs" />
   </ItemGroup>
 
   <PropertyGroup>
-    <GameDir>D:\steam\steamapps\common\SimplePlanes 2</GameDir>
+    <!-- 允许 `dotnet build -p:GameDir=...` 或环境变量 SP2_GAME_DIR 覆盖，
+         让没有本机游戏安装的贡献者/CI 也能编译（引用 DLL 需自行准备）。 -->
+    <GameDir Condition="'$(GameDir)' == ''">$(SP2_GAME_DIR)</GameDir>
+    <GameDir Condition="'$(GameDir)' == ''">D:\steam\steamapps\common\SimplePlanes 2</GameDir>
   </PropertyGroup>
 
   <ItemGroup>
