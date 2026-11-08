@@ -1,128 +1,206 @@
 # SimplePlanes 2 简体中文汉化
 
-给 [SimplePlanes 2](https://store.steampowered.com/) 用的社区汉化补丁。游戏本身**没有多语言架构**，所有界面文字都硬编码在 XML 和 DLL 里，所以这里用的是运行时文本替换，而不是语言文件。
+**English:** Full Simplified Chinese localization for [SimplePlanes 2](https://store.steampowered.com/app/2840470/) — runtime text replacement via BepInEx/Harmony, 10,393 dictionary rows (8,675 translated + 1,718 deliberately kept in English), dynamic CJK font atlas that fixes tofu boxes in chat and UI, one-click installer with SHA256 verification, and in-game dictionary auto-updates. The game has no i18n framework; all strings are replaced at runtime.
 
-- 作者：**白杨木**（[baiyangmuzz](https://github.com/baiyangmuzz)）
-- 交流群：**QQ 1128992783**
-- 当前词库：**10220 条**
-- 支持版本：SimplePlanes 2 v1.4.x（游戏更新后可能需要补词条）
+[SimplePlanes 2](https://store.steampowered.com/app/2840470/) 的社区汉化补丁。
 
-> 非官方项目。SimplePlanes 2 及其内容的版权归 Jundroo 所有。
+**中文：** 为 SimplePlanes 2 提供完整的简体中文汉化——通过 BepInEx/Harmony 在运行时替换文本，共 10393 条词条（其中 8675 条译文、1718 条刻意保留英文），动态生成中文字体图集（修复聊天与界面的方块字），一键安装器带 SHA256 校验，支持游戏内词库自动更新。游戏本身没有 i18n 框架，所有文本均在运行时替换。
 
----
+游戏官方只提供英语界面（Steam 商店页的语言表里简体中文标注为「不支持」），
+且游戏内没有 i18n 框架，所有文本硬编码在资源 XML 与 DLL 里。因此这个项目不做
+语言文件注入，而是在运行时替换 TMP 文本。
 
-## 给玩家
+| 项 | 值 |
+|---|---|
+| 词库条目 | 10393（TSV 行数；每行 key 唯一，无重复；含 1718 条刻意保留英文的恒等行） |
+| 插件版本 | 1.6.2 |
+| 作者 | 白杨木（[baiyangmuzz](https://github.com/baiyangmuzz)） |
+| 交流群 | QQ 1128992783 |
+| 下载 | [Releases 最新版](https://github.com/baiyangmuzz/SP2Chinese/releases/latest) |
+| 仓库 | https://github.com/baiyangmuzz/SP2Chinese |
 
-### 安装
+游戏处于 Early Access，文本会随更新变动，词库需要持续跟进。
 
-1. 完全退出游戏
-2. 解压，双击 `一键安装中文.bat`
-3. 弹管理员授权时选「是」（游戏一般在 `Program Files` 下）
+## 安装
 
-安装器会自己找游戏目录（读注册表 + 解析 `libraryfolders.vdf`，支持多硬盘多 Steam 库）；找不到会弹出文件夹选择窗口，再不行才让你粘贴路径。
+1. 到 [Releases 页面](https://github.com/baiyangmuzz/SP2Chinese/releases/latest)
+   下载 `SP2汉化_v<版本>_<日期>.zip`。不要下载页面里的 Source code，
+   那是源码，不是安装包
+2. 退出游戏，解压
+3. 运行 ` SP2汉化.bat` ，管理员授权选「是」
+4. 在图形界面里点「检查更新并安装」（也可点「卸载」/「回滚」），完成后启动游戏
 
-装完会自动按 `manifest.json` 做 **SHA256 校验**，23 个文件逐个核对，装歪了当场报错，不会让你进游戏才发现没生效。
+安装器默认打开 **WinForms 图形界面**（仅依赖 Windows 自带的 PowerShell 5.1 +
+.NET Framework，不额外安装运行库）。需要脚本化或回到旧版控制台菜单时可用：
 
-### 更新
+```bat
+SP2汉化.bat -Silent -Yes        :: 无人值守安装（无任何弹窗，供脚本 / CI 使用）
+SP2汉化.bat -Yes                :: 单次安装，不弹菜单
+SP2汉化.bat -Uninstall          :: 无人值守卸载
+SP2汉化.bat -NoGui              :: 回退到旧版数字菜单
+SP2汉化.bat -TestUpdate         :: 只诊断更新源连通性，不安装
+```
 
-- **小更新（只改词库）**：插件自动下载，几秒内热重载，**不用重装也不用重启**。
-- **大更新（插件代码变了）**：启动日志会提示新版本，到群里或 Releases 下载完整包。
+安装器会定位游戏目录：先读 Steam 注册表路径，再解析 `steamapps/libraryfolders.vdf` 里的所有库，
+然后在每个库下找 `steamapps\common\SimplePlanes 2` 。找不到时弹出文件夹选择窗口，
+再失败才要求手动输入路径。
 
-### 卸载
+安装器在覆盖写入**之前**先按随包 `manifest.json` 校验 payload 自身完整，写入后
+再逐个核对本次写入文件的 SHA256；任一环节失败都会自动回滚到安装前的版本并返回
+非零退出码，不会留下「装完但文件不一致」的状态。
 
-双击 `卸载中文.bat`。只把 `BepInEx\plugins\SP2Chinese` 挪进 `BepInEx\_mod_backups`，不删除，BepInEx 本体和其他模组不受影响。
+## 卸载
 
-### 不翻译的东西
+运行 ` SP2汉化.bat`（选择卸载） 。插件目录会被移动到 `BepInEx\_mod_backups` ，不删除文件，
+BepInEx 本体与其它模组不受影响。安装历史备份保留最近 3 份；卸载备份与回滚前的
+备份不会参与清理。
 
-这是刻意的，不是漏翻：
+## 更新机制
 
-- **官方载具名**（`Adder`、`Dragon`、`Kicking Fish`…）——社区靠这些名字对号入座
-- **挑战/赛道名**（`The Big L`、`On Rails`、`Driftwood Air Race`…）
-- **品牌**（`Jundroo`、`SP Logo`…）
-- **XML 编辑器的属性名与枚举值**（`partType`、`Part`、`Slice`…）——你要照着界面抄进 XML，翻了就错
-- 载具说明里的作者名与载具名
+分两种，由 `manifest.json` 里的字段区分。
+
+**词库更新**：插件启动 15 秒后请求 `manifest.json` ，比对本地字典的 SHA256 与
+manifest 里的 `dictVersion` 。不一致时下载新字典、校验 SHA256、原子替换并热重载，
+不需要重装或重启。旧字典保留为 `.bak-auto` ，安装失败会自动回滚。
+
+`dictVersion` 是字典内容的 SHA256 前 12 位（内容寻址），`dictBuild` 是构建序号；
+本地 `dict.build` 不旧于线上时保留本地词库，不覆盖。安装器也按同一规则跳过已装的
+较新词库，不会把本地修复打回旧版。
+
+下载体在后台线程校验后以字节形式交给主线程，安装前再复验一次哈希，避免
+「校验内存、却从可替换的临时文件安装」的窗口；下载地址限制为 https 且属于项目分发域名，
+并有 8 MB 大小上限。期望哈希缺失时直接拒绝安装（fail-closed）。
+
+下载地址为 `raw.githubusercontent.com`，失败后尝试 jsDelivr 镜像；manifest 从多个
+可信源取用并要求内容一致，始终校验 TLS 证书，不使用第三方代理站。网络类失败
+会在稍后自动重试（最多 3 次）。断网或校验失败时继续使用本地词库，不阻塞游戏。
+
+**插件更新**：manifest 的 `modVersion` 高于本地版本时，只在日志里提示到 Releases
+或群里下载完整包，不自动替换 DLL。
+
+自动检查可在 `BepInEx/config/sp2.zh.cfg` 关闭：
+
+```ini
+[更新]
+自动检查词库更新 = true
+```
+
+## 字体
+
+游戏自带字体不含中文字形，直接显示中文会是方块字。插件把词库里用到的全部汉字
+生成到字体图集，并把每个文本组件切换到该字体。聊天框这类运行时创建的文本同样
+会切换，所以联机聊天里看到的也是正常文字。
+
+词库热重载时，新词条带来的新字形会一并补上，不需要重新安装。
+
+## 翻译范围
+
+以下内容保留英文原文，这是刻意的：
+
+- 官方载具名（Adder、Dragon、Kicking Fish 等）
+- 挑战与赛道名（The Big L、On Rails、Driftwood Air Race 等）
+- 品牌名（Jundroo、SP Logo 等）
+- XML 编辑器中显示的属性名与枚举值（partType、Part、Slice 等）
+- 载具说明中的载具名与作者名
+
+前三类是因为社区用这些名字互相指认；第四类是因为玩家会照着界面抄进 XML，
+翻译后会导致属性不生效。
 
 完整清单见 [`dict/do-not-translate.txt`](dict/do-not-translate.txt)。
 
----
+## 贡献
 
-## 给贡献者
-
-想补词条、修错译，欢迎。流程很短：
+词库按批次管理，每个批次一个 TSV 文件，格式为 ` 英文<TAB>中文 ` （每行恰好一个 TAB）。
+新增词条时新建 `dict/new<编号>_<主题>_zh_cn.tsv` ，然后运行：
 
 ```bash
-# 1. 克隆
-git clone https://github.com/baiyangmuzz/SP2Chinese.git
-cd SP2Chinese
-
-# 2. 新建一个批次文件（不要改别人的）
-#    dict/new<编号>_<主题>_zh_cn.tsv
-#    格式：英文原文<TAB>中文译文，一行一条
-
-# 3. 把新条目合并进运行时字典并校验
 python tools/verify_dict.py
-
-# 4. 提交 PR
+python tools/check_dict.py --no-manifest
 ```
 
+`verify_dict.py` 输出 `RESULT: in sync.` 表示批次可重建运行时字典；`check_dict.py`
+检查占位符、禁译、哨兵与多 TAB 等结构问题，输出 `RESULT: OK` 才可提交。
+`--no-manifest` 用于打包前（manifest 尚未按新字典更新）；发布后 CI 会跑不带该参数的
+完整检查，并额外由 `tools/check_dist.py` 核对产物哈希。
 详细规则见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
-**词库的黄金法则：key 必须和游戏里渲染出来的字符串完全一致。** 差一个空格、一个换行、一个标点都匹配不上。改之前先跑 `verify_dict.py`，它会告诉你字典树能不能重建出运行时字典。
+## 实现说明
 
----
+### 文本匹配
 
-## 给好奇的技术人
+游戏中的文本有四种形态，字典对应四种写法：
 
-### 为什么不用语言文件
-
-查过 `resources.assets` 和 `Game.dll`：`Localization`、`zh_CN`、`LanguageTable`、`TranslationTable` 全部不存在。没有 i18n 框架，就没有可注入的语言文件，只能在运行时替换 TMP 文本。
-
-### 匹配引擎（`src/Translator.cs`）
-
-游戏里大量文本是**拼出来的**，精确匹配必然失败。字典支持三种写法：
-
-| 情况 | 字典写法 |
+| 游戏文本 | 字典写法 |
 |---|---|
-| 普通文本 | 直接写原文 |
-| 数字插值 `Fuel: 87.5%` | `Fuel: {0}%` |
-| 拼接消息 `Part damaged: Fuselage` | `Part damaged: {*}` |
-| 快捷键提示 `Shortcut: Ctrl + S` | `Shortcut: [SaveAircraft]` |
+| `Fuel: 87.5%` | `Fuel: {0}%` （数字掩码） |
+| ` pitch angle between 10 and 20 degrees.` | ` pitch angle between {2:F0} and {3:F0} degrees.` （格式模板） |
+| `Part damaged: Fuselage` | `Part damaged: {*}` （分段模板） |
+| `Shortcut: [SaveAircraft]` （渲染为 `Shortcut: Ctrl + S` ） | `Shortcut: [SaveAircraft]` （快捷键前后缀） |
 
-引擎会依次尝试：精确匹配 → 数字掩码 → 快捷键前后缀匹配 → `{*}` 分段模板。捕获到的变量**还会再翻一次**，所以 `Part damaged: Fuselage` 会输出「部件受损：机身」，不会留个英文部件名。
+匹配顺序为：精确匹配 → 数字掩码 → 格式模板 → 快捷键前后缀 → `{*}` 分段模板。
 
-几个踩过的坑，写在注释里了：
+数字掩码把运行时文本里的数字按出现顺序替换成 `{0}`,`{1}`,… 再查字典；
+它覆盖不了 C# 格式模板（非零索引 `{2}`、格式说明符 `{0:F0}`、对齐 `{0,9}`、
+固定文本里带字面数字、命名槽位 `{Name}`）。这些行会额外编译成锚定正则，
+把渲染后的值捕获回填到译文，玩家名/枚举名这类非数值槽位同样能命中。
 
-- 分段模板必须**按固定文本长度降序**匹配，否则短模板会把长消息的尾巴吞进 `{*}`
-- 快捷键索引只对含 `Shortcut` 的键建立 —— 字典里有大量 `[Error] ...` 日志行，方括号是日志级别不是按键
-- `TMPro.TMP_Text` 没有声明 `Awake`，`TextMeshProUGUI` 声明了但**不调用 `base.Awake()`**，所以只能补具体类
-- TMP 有 `SetText(string)`、`SetText(string, bool)`、`SetText(string, float...)` 一整套入口，漏一个就有一整块界面翻不了
+分段模板按固定文本长度降序尝试，避免短模板把长消息的剩余部分吞进 `{*}` 。
+`{*}` 捕获的内容会再次进入匹配流程，因此 `Part damaged: Fuselage` 会得到
+` 部件受损：机身 ` 。
+
+### 文本入口
+
+插件通过 Harmony 拦截以下位置：
+
+- `TMP_Text.set_text` 、 `SetText(string)` 、 `SetText(string, bool)` 、 `SetText(StringBuilder)`
+- `TMPro.TextMeshProUGUI.Awake` 、 `TMPro.TextMeshPro.Awake`
+- `UnityEngine.EventSystems.UIBehaviour.Awake` （对应旧版 uGUI `Text` ）
+
+补丁逐个类挂载，单个补丁失败不影响其余部分。 `loaded-build.txt` 会记录挂载结果
+（格式为 `版本<TAB>时间<TAB>identifiers=N<TAB>patches=N/M` ，例如 `patches=8/8` ）。
+
+序列化在 prefab 里的文本不经过 setter，由 Awake 钩子处理；另有每 5 秒一次的
+全场景扫描作为兜底（按真实时间计时，不受帧率影响）。
 
 ### 目录结构
 
 ```
-src/            插件源码（C# / BepInEx）
-dict/           词库批次 + 禁止翻译清单
-tools/          校验与合并工具
-dist/           打包脚本、安装器
-test/           离线测试器（--bench / --diag / probe）
-manifest.json   文件哈希 + 版本，插件靠它自更新
+src/                     插件源码（C# / BepInEx 5）
+dict/                    词库批次与禁用清单（base_zh_cn.tsv 为基线批次）
+tools/                   词库校验、静态检查、发布产物一致性检查
+dist/                    安装器（install.ps1 + Gui.ps1）、打包脚本与 payload
+test/                    离线测试器
+.github/workflows/ci.yml 词库一致性、静态检查、发布产物一致性、离线测试器回归
+manifest.json            文件哈希与版本信息
 ```
 
 ### 构建
 
-需要 .NET SDK 和一份 SimplePlanes 2 安装（csproj 里 `GameDir` 指向它）。
+需要 .NET SDK，以及一份 SimplePlanes 2 安装（ `SP2Chinese.csproj` 中的 `GameDir` 指向它）。
+路径不是默认值时可用 `dotnet build -p:GameDir=<路径>` 或 `SP2_GAME_DIR` 指定；
+打包脚本另支持 `SP2_REPO` / `SP2_GAME_DIR` 。运行时字体可用 `SP2_FONT` 覆盖
+（在插件进程里生效，非打包脚本参数）。
 
 ```bash
-dotnet build -c Release            # 产出 bin/Release/SP2Chinese.dll
-python tools/verify_dict.py        # 词库自检
-python dist/build_dist.py          # 打包 + 生成 manifest.json
+dotnet build -c Release
+python tools/verify_dict.py
+python tools/check_dict.py
+python dist/build_dist.py          # 会同步重建根字典、payload、stage、zip、manifest
+python tools/check_dist.py         # 发布前核对产物与 manifest 完全一致
 ```
 
----
+`build_dist.py` 强制使用 `bin/Release/SP2Chinese.dll`，并由 `dict/` 批次重建根字典，
+再把同一份字典与 manifest 写入 payload / stage / zip / dist / 仓库根，保证七处同源。
+CI 在 push / PR 时自动跑词库检查、发布产物一致性与离线测试器（含格式模板回归），
+但插件 DLL 本身需要游戏目录里的 BepInEx / Unity / TMPro 引用，只能在本地编译。
 
 ## 许可
 
-- **插件代码**（`src/`、`tools/`、`dist/`）：MIT
-- **词库**（`dict/`、`dictionary_zh_cn.tsv`）：CC BY-NC-SA 4.0
+- 插件代码：MIT
+- 词库：CC BY-NC-SA 4.0
 
-详见 [LICENSE](LICENSE)。
+见 [LICENSE](LICENSE)。
+
+SimplePlanes 2 及其原始文本、素材、载具版权归 Jundroo, LLC 所有。本项目不包含
+游戏原始资源，仅提供译文数据与运行时替换逻辑。若权利方认为本项目存在问题，
+请通过 Issue 联系。

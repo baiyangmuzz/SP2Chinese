@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Text;
 using BepInEx;
+using BepInEx.Configuration;
 using HarmonyLib;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,14 +12,29 @@ using UnityEngine.UI;
 
 namespace SP2Chinese
 {
-    [BepInPlugin("sp2.zh", "SimplePlanes 2 \u7b80\u4f53\u4e2d\u6587 by \u767d\u6768\u6728", "1.5.0")]
+    [BepInPlugin("sp2.zh", "SimplePlanes 2 \u7b80\u4f53\u4e2d\u6587 by \u767d\u6768\u6728", "1.6.2")]
     public class Plugin : BaseUnityPlugin
     {
         private string _dictPath;
         private string _logPath;
         private string _buildPath;
         private DateTime _mtime;
-        private int _frame;
+
+        // 全部计时改用不受帧率影响的真实时间（原先 _frame % 60 / % 300 / _updateDelay -= 1
+        // 都隐含 60 FPS 假设：144Hz 时延迟只有约 6 秒，30Hz 时长达 30 秒）。
+        private float _nextUpdateCheck;        // realtimeSinceStartup，到达即触发检查
+        private float _nextScan;               // realtimeSinceStartup，全场景兜底扫描
+        private float _nextTick;               // realtimeSinceStartup，每秒一次的门控
+        private float _nextRetry;              // 检查失败后的下一次重试时间（0 = 不重试）
+        private int _updateAttempts;
+        private const float UpdateStartDelay = 15f;   // 启动后等 15 秒再联网
+        private const float ScanInterval = 5f;        // 全场景扫描间隔（秒）
+        private const float RetryInterval = 120f;     // 失败后 2 分钟重试
+        private const int MaxUpdateAttempts = 3;
+
+        private DictionaryUpdater.Download _pendingHandled;
+        private string _lastUpdateStatus;
+        private ConfigEntry<bool> _autoUpdate;
 
         private void Awake()
         {
@@ -31,6 +47,9 @@ namespace SP2Chinese
             try { if (File.Exists(_logPath)) File.Delete(_logPath); }
             catch { /* read-only install dir; keep appending instead */ }
             var translator = new Translator(_dictPath, _logPath);
+
+            _autoUpdate = Config.Bind("更新", "自动检查词库更新", true,
+                "启动 15 秒后检查 GitHub 是否发布了新词库。只下载词典（数据文件），不会下载或替换程序本体。");
             MachineIdentifiers.Load();
             _mtime = File.GetLastWriteTime(_dictPath);
 
@@ -52,12 +71,25 @@ namespace SP2Chinese
             catch { /* never let diagnostics break startup */ }
 
             FontLoader.MissingPath = Path.Combine(dir, "font_missing.txt");
-            FontLoader.Setup(translator.UsedCharacters);
+            // Setup() 会访问 TMP_Settings；游戏资源尚未就绪或系统字体缺失时不能让它
+            // 把异常抛到 Awake 外面，否则 sceneLoaded 不会被订阅、启动横幅也不会打印。
+            try
+            {
+                FontLoader.Setup(translator.UsedCharacters);
+            }
+            catch (Exception e)
+            {
+                Logger.LogWarning("font setup failed, UI may show tofu boxes: " + e.Message);
+            }
             Logger.LogInfo(FontLoader.Assets.Count > 0
                 ? "font ready: " + FontLoader.Assets.Count + " atlas(es), " + FontLoader.TotalGlyphs + " glyphs"
                 : "font fallback missing");
 
             SceneManager.sceneLoaded += (s, m) => Scan();
+            var now = Time.realtimeSinceStartup;
+            _nextTick = now + 1f;
+            _nextUpdateCheck = now + UpdateStartDelay;
+            _nextScan = now + ScanInterval;
             Logger.LogInfo("SP2 chinese " + Info.Metadata.Version + " by \u767d\u6768\u6728 | QQ\u7fa4 1128992783 | " +
                 "github.com/baiyangmuzz/SP2Chinese | " + MachineIdentifiers.Count + " identifiers, patches " + patches);
         }
@@ -95,13 +127,65 @@ namespace SP2Chinese
 
         private void Update()
         {
-            _frame++;
-            if (_frame % 60 != 0) return;
+            // 每秒一次的门控，用真实时间而非帧计数。
+            var nowRt = Time.realtimeSinceStartup;
+            if (nowRt < _nextTick) return;
+            _nextTick = nowRt + 1f;
 
             // Belt and braces: the Awake hooks cover instantiated prefabs, but if one ever
             // fails to attach (or a component slips past them) this sweep still gets the text
-            // translated within five seconds instead of never. Cheap now that Apply memoizes.
-            if (_frame % 300 == 0) Scan();
+            // translated within ScanInterval seconds instead of never.
+            if (nowRt >= _nextScan)
+            {
+                _nextScan = nowRt + ScanInterval;
+                Scan();
+            }
+
+            // ---- 在线词库更新 ----
+            if (_autoUpdate != null && _autoUpdate.Value)
+            {
+                // 更新检查跑在后台线程，状态在主线程统一落日志，出问题时至少能查到原因。
+                var status = DictionaryUpdater.LastStatus;
+                if (!string.IsNullOrEmpty(status) && status != _lastUpdateStatus)
+                {
+                    _lastUpdateStatus = status;
+                    Logger.LogInfo("[更新] " + status);
+                    // 明确的终态（成功/已是最新）不再重试；网络类失败则安排一次重试。
+                    if (status.StartsWith("manifest 获取失败") || status.StartsWith("词库下载失败") ||
+                        status.StartsWith("更新检查异常"))
+                    {
+                        if (_updateAttempts < MaxUpdateAttempts)
+                        {
+                            _nextRetry = nowRt + RetryInterval;
+                            _updateAttempts++;
+                        }
+                    }
+                    else
+                    {
+                        _nextRetry = 0f;
+                    }
+                }
+
+                if (_nextUpdateCheck > 0f && nowRt >= _nextUpdateCheck)
+                {
+                    _nextUpdateCheck = 0f;
+                    DictionaryUpdater.Kick(_dictPath, Info.Metadata.Version.ToString());
+                }
+                else if (_nextRetry > 0f && nowRt >= _nextRetry)
+                {
+                    _nextRetry = 0f;
+                    DictionaryUpdater.Retry(_dictPath, Info.Metadata.Version.ToString());
+                }
+
+                var pending = DictionaryUpdater.Pending;
+                if (pending != null && !ReferenceEquals(pending, _pendingHandled))
+                {
+                    _pendingHandled = pending;
+                    ApplyDownloadedDictionary(pending);
+                    // 消费后由主线程释放引用，避免同一份下载被重复安装。
+                    DictionaryUpdater.Pending = null;
+                }
+            }
 
             // Only the dictionary hot-reload check lives here now.
             var now = File.GetLastWriteTime(_dictPath);
@@ -117,10 +201,83 @@ namespace SP2Chinese
         }
 
         /// <summary>
-        /// Full-scene fallback, deliberately rare now: once per scene load and once per
-        /// dictionary hot-reload. The Awake hooks handle everything instantiated afterwards,
-        /// so nothing needs to be polled on a timer anymore.
+        /// 把已校验的下载字节换上去并热重载。字节直接来自后台线程校验过的内存对象，
+        /// 安装前再复验一次哈希，用「临时文件 + File.Replace」原子替换；任何一步失败
+        /// 都从 .bak-auto 回滚，不留半截词典。旧文件保留一份 .bak-auto。
         /// </summary>
+        private void ApplyDownloadedDictionary(DictionaryUpdater.Download dl)
+        {
+            var bak = _dictPath + ".bak-auto";
+            var tmp = _dictPath + ".installing";
+            var buildPath = Path.Combine(Path.GetDirectoryName(_dictPath), "dict.build");
+            var bakBuild = buildPath + ".bak-auto";
+            var replaced = false;
+            try
+            {
+                // 防御性复验：下载对象发布后、安装前，字节不应再被改动。
+                var actual = Sha256OfBytes(dl.Bytes);
+                if (!string.Equals(actual, dl.Sha256, StringComparison.OrdinalIgnoreCase))
+                {
+                    Logger.LogWarning("dictionary auto-update aborted: bytes changed after verification");
+                    return;
+                }
+
+                if (File.Exists(_dictPath)) File.Copy(_dictPath, bak, true);
+                if (File.Exists(buildPath)) File.Copy(buildPath, bakBuild, true);
+
+                File.WriteAllBytes(tmp, dl.Bytes);
+                // 原子换入（同分区）。失败时 tmp 会被清理，_dictPath 保持原样。
+                if (File.Exists(_dictPath))
+                    File.Replace(tmp, _dictPath, bak);
+                else
+                    File.Move(tmp, _dictPath);
+                replaced = true;
+                try { if (File.Exists(tmp)) File.Delete(tmp); } catch { }
+
+                // 构建号和词库一起更新，否则下次比较时本地 build 仍落后于自己的词库。
+                if (!string.IsNullOrEmpty(dl.Build))
+                {
+                    File.WriteAllText(buildPath, dl.Build, new UTF8Encoding(false));
+                }
+
+                Translator.I.Load(_dictPath);
+                FontLoader.Ensure(Translator.I.UsedCharacters);
+                _mtime = File.GetLastWriteTime(_dictPath);
+                Scan();
+
+                Logger.LogInfo("dictionary auto-updated: " + Translator.I.Count + " entries");
+            }
+            catch (Exception e)
+            {
+                Logger.LogWarning("dictionary auto-update failed, rolling back: " + e.Message);
+                try
+                {
+                    try { if (File.Exists(tmp)) File.Delete(tmp); } catch { }
+                    if (replaced && File.Exists(bak))
+                    {
+                        File.Copy(bak, _dictPath, true);
+                        if (File.Exists(bakBuild)) File.Copy(bakBuild, buildPath, true);
+                        Translator.I.Load(_dictPath);
+                        FontLoader.Ensure(Translator.I.UsedCharacters);
+                        _mtime = File.GetLastWriteTime(_dictPath);
+                        Scan();
+                    }
+                }
+                catch (Exception e2) { Logger.LogWarning("rollback failed: " + e2.Message); }
+            }
+        }
+
+        private static string Sha256OfBytes(byte[] data)
+        {
+            using (var sha = System.Security.Cryptography.SHA256.Create())
+            {
+                var h = sha.ComputeHash(data);
+                var sb = new StringBuilder(h.Length * 2);
+                foreach (var b in h) sb.Append(b.ToString("x2"));
+                return sb.ToString();
+            }
+        }
+
         private void Scan()
         {
             var tmps = Resources.FindObjectsOfTypeAll<TMPro.TMP_Text>();
@@ -175,6 +332,10 @@ namespace SP2Chinese
 
         public static void Setup(string usedCharacters)
         {
+            // 重建前记下旧资产：Setup() 清空 Assets 后，场景里活着的 TMP_Text 仍指向
+            // 旧 asset（CJK 会重新变豆腐块，直到该文本下一次被 set_text）。重建后立即
+            // 把指向旧资产的组件切到新主图集 —— Ensure() 里"重建是最后手段"的副作用。
+            var old = new HashSet<TMPro.TMP_FontAsset>(Assets);
             Assets.Clear();
             TotalGlyphs = 0;
 
@@ -225,6 +386,7 @@ namespace SP2Chinese
                                              " glyphs but " + total + " were requested");
 
             Register();
+            if (old.Count > 0 && Assets.Count > 0) Repoint(old, Assets[0]);
 
             if (unresolved.Count > 0)
             {
@@ -302,9 +464,21 @@ namespace SP2Chinese
 
         private static string PickFont()
         {
+            // 允许 SP2_FONT 指定字体文件（非 Windows / Wine / 精简系统可用），
+            // 其次是环境变量 WINDIR 下的 Fonts 目录，最后才是硬编码的 Windows 路径。
+            var custom = Environment.GetEnvironmentVariable("SP2_FONT");
+            if (!string.IsNullOrEmpty(custom) && File.Exists(custom)) return custom;
+
+            var windir = Environment.GetEnvironmentVariable("WINDIR");
             foreach (var f in Files)
-                if (File.Exists(f))
-                    return f;
+            {
+                if (File.Exists(f)) return f;
+                if (!string.IsNullOrEmpty(windir))
+                {
+                    var alt = Path.Combine(windir, "Fonts", Path.GetFileName(f));
+                    if (File.Exists(alt)) return alt;
+                }
+            }
             return null;
         }
 
@@ -358,6 +532,24 @@ namespace SP2Chinese
             // Keep the request order stable for the next atlas.
             leftover.Sort();
             return leftover;
+        }
+
+        /// <summary>把仍指向旧图集的活动中文本组件切到重建后的新主图集。</summary>
+        private static void Repoint(HashSet<TMPro.TMP_FontAsset> old, TMPro.TMP_FontAsset replacement)
+        {
+            if (replacement == null) return;
+            try
+            {
+                foreach (var t in Resources.FindObjectsOfTypeAll<TMPro.TMP_Text>())
+                {
+                    if (t == null || !t.gameObject.scene.IsValid()) continue;
+                    if (old.Contains(t.font)) t.font = replacement;
+                }
+            }
+            catch (Exception e)
+            {
+                UnityEngine.Debug.LogWarning("[SP2Chinese] repoint after atlas rebuild failed: " + e.Message);
+            }
         }
 
         private static void Register()

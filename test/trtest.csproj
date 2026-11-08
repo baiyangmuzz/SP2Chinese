@@ -12,6 +12,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
-    <Compile Include="..\..\..\SP2Chinese\src\Translator.cs" />
+    <!-- 用 MSBuild 属性定位仓库根目录，不再依赖 "..\..\..\SP2Chinese" 这种绑死目录名的路径 -->
+    <Compile Include="$(MSBuildThisFileDirectory)..\src\Translator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)..\src\DictionaryUpdater.cs" />
   </ItemGroup>
 </Project>

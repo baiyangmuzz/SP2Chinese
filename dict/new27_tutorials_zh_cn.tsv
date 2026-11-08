@@ -1,0 +1,65 @@
+Click the indicated button to open the tool list.	点击指示的按钮打开工具列表。
+Click the indicated button to activate the view tool.	点击指示的按钮启用查看工具。
+Click the indicated button to activate the move part tool.	点击指示的按钮启用移动部件工具。
+Click the indicated button to activate the rotate tool.	点击指示的按钮启用旋转工具。
+Click the indicated button to activate the translate tool.	点击指示的按钮启用平移工具。
+Click here to\nde-select part	点击此处\n取消选择部件
+Click the 'Add Parts' button to open the parts list.	点击「添加部件」按钮打开部件列表。
+Select the 'Structure' category in the part list flyout on the left.	在左侧部件列表里选择「结构」分类。
+Click and drag the 'Fuselage' part from the part list and add it to your craft at the indicated position.	从部件列表里拖出「机身」部件，按指示位置添加到你的载具上。
+Click the 'Part Properties' button to open the part property options for this part.	点击「部件属性」按钮打开该部件的属性选项。
+Change the value of the 'Height' property to '1.1'.	把「高度」属性的值改为「1.1」。
+Click the 'Add Section' button to add a new section to the end of this fuselage	点击「添加分段」按钮，在这个机身末端新增一段
+Adjust the length of the fuselage to match the indicated shape by clicking and dragging the blue arrow at the front of the fuselage.	拖动机身前端的蓝色箭头，调整机身长度以匹配指示形状。
+Adjust the front width to match the indicated shape by clicking and dragging the red arrow at the front of the fuselage.	拖动机身前端的红色箭头，调整前端宽度以匹配指示形状。
+Adjust the length of the fuselage to match the indicated shape by clicking and dragging the blue arrow at the back of the fuselage.	拖动机身后端的蓝色箭头，调整机身长度以匹配指示形状。
+Adjust the back width to match the indicated shape by clicking and dragging the red arrow at the back of the fuselage.	拖动机身后端的红色箭头，调整后端宽度以匹配指示形状。
+Slope the top down.	让顶部向下倾斜。
+Adjust the back height to match the indicated shape by clicking and dragging the green arrow at the back of the fuselage.	拖动机身后端的绿色箭头，调整后端高度以匹配指示形状。
+Click the back button in the part list header to go back to the part categories, then select the 'Interiors' category.	点击部件列表顶部的返回按钮回到分类列表，然后选择「内饰」分类。
+Select the 'Interiors' category in the part list flyout on the left.	在左侧部件列表里选择「内饰」分类。
+Click and drag the 'Basic Seat' part from the part list and add it to your craft at the indicated position.	从部件列表里拖出「基础座椅」部件，按指示位置添加到载具上。
+Click the back button in the part list header to go back to the part categories, then select the 'Structure' category.	点击部件列表顶部的返回按钮回到分类列表，然后选择「结构」分类。
+Click and drag the 'Bay' part from the part list and add it to your craft at the indicated position.	从部件列表里拖出「舱」部件，按指示位置添加到载具上。
+Change the Bottom cutting parameter to 50% using the indicated slider.	用指示的滑块把底部切削参数改为 50%。
+Change the value of the 'Hollow' property to 'Yes'.	把「中空」属性的值改为「是」。
+Change the value of the 'Width' property to '0.7'.	把「宽度」属性的值改为「0.7」。
+Click the back button in the part list header to go back to the part categories, then select the 'Wings' category.	点击部件列表顶部的返回按钮回到分类列表，然后选择「机翼」分类。
+Select the 'Wings' category in the part list flyout on the left.	在左侧部件列表里选择「机翼」分类。
+Click and drag the 'Primary Wing' part from the part list and add it to your craft at the indicated position.	从部件列表里拖出「主翼」部件，按指示位置添加到载具上。
+Open the wing shape tool. This can be done by double clicking the part or it can be accessed via its part properties.	打开机翼形状工具。可以双击该部件，也可以通过它的部件属性进入。
+Change the value of the 'Fuel' property to '15%'.	把「燃油」属性的值改为「15%」。
+Click and drag the 'Horizontal Stabilizer' part from the part list and add it to your craft at the indicated position.	从部件列表里拖出「水平尾翼」部件，按指示位置添加到载具上。
+Click and drag the 'Vertical Stabilizer' part from the part list and add it to your craft at the indicated position.	从部件列表里拖出「垂直尾翼」部件，按指示位置添加到载具上。
+We don't want this part mirrored. Click the symmetry button to turn it off. Shortcut: 'Ctrl + X'	我们不希望这个部件镜像。点击对称按钮将其关闭。快捷键：「Ctrl + X」
+We want this part mirrored. Click the symmetry button to turn it on. Shortcut: 'Ctrl + X'	我们希望这个部件镜像。点击对称按钮将其开启。快捷键：「Ctrl + X」
+Click empty space to deselect your part so we can toggle symmetry.	点击空白处取消选择部件，这样才能切换对称。
+Click the back button in the part list header to go back to the part categories, then select the 'Aircraft Propulsion' category.	点击部件列表顶部的返回按钮回到分类列表，然后选择「航空推进」分类。
+Select the 'Aircraft Propulsion' category in the part list flyout on the left.	在左侧部件列表里选择「航空推进」分类。
+Click and drag the 'Small Prop' part from the part list and add it to your craft at the indicated position.	从部件列表里拖出「小型螺旋桨发动机」部件，按指示位置添加到载具上。
+Change the value of the 'Cylinders' property to '6'.	把「气缸数」属性的值改为「6」。
+Add the landing gear here.	在这里添加起落架。
+Click the back button in the part list header to go back to the part categories, then select the 'Wheels' category.	点击部件列表顶部的返回按钮回到分类列表，然后选择「机轮」分类。
+Select the 'Wheels' category in the part list flyout on the left.	在左侧部件列表里选择「机轮」分类。
+Click and drag the 'Wing Gear' part from the part list and add it to your craft at the indicated position.	从部件列表里拖出「翼式起落架」部件，按指示位置添加到载具上。
+Add a tiny wheel in the back to keep the tail out of the dirt.	在尾部加一个小轮子，免得机尾拖地。
+Click and drag the 'Fixed Gear' part from the part list and add it to your craft at the indicated position.	从部件列表里拖出「固定起落架」部件，按指示位置添加到载具上。
+Change the value of the 'Turnable' property to 'Yes'.	把「可转向」属性的值改为「是」。
+Our hole cutting parts may be in our way for this step. Let's disable their outlines for now. First, click the indicated button to open the view panel.	这一步里开孔部件可能碍事。先把它们的轮廓关掉。首先，点击指示的按钮打开视图面板。
+Disable the hole cutting outlines by clicking the indicated button. You can also use the '/' key.	点击指示的按钮关闭开孔轮廓。也可以用「/」键。
+Select the main section of the fuselage by clicking the 'Backwards' button. Alternatively, you can click on the middle of the part directly.	点击「向后」按钮选择机身主段。也可以直接点击部件中部。
+Select the main section of the fuselage by clicking the 'Forwards' button. Alternatively, you can click on the middle of the part directly.	点击「向前」按钮选择机身主段。也可以直接点击部件中部。
+Select the front of the fuselage by clicking the 'Forwards' button. Alternatively, you can click on the front of the part directly.	点击「向前」按钮选择机身前段。也可以直接点击部件前部。
+Open the fuselage shape tool. This can be done by double clicking the part or it can be accessed via its part properties.	打开机身形状工具。可以双击该部件，也可以通过它的部件属性进入。
+Select the back of the fuselage by clicking the 'Backwards' button. Alternatively, you can click on the back of the part directly.	点击「向后」按钮选择机身后段。也可以直接点击部件后部。
+We need to enable powertrain view for this step. First, click the indicated button to open the view panel.	这一步需要开启动力系统视图。首先，点击指示的按钮打开视图面板。
+Enable powertrain view by clicking the indicated button.	点击指示的按钮开启动力系统视图。
+Click the back button in the part list header to go back to the part categories, then select the 'Engines' category.	点击部件列表顶部的返回按钮回到分类列表，然后选择「发动机」分类。
+Select the 'Engines' category in the part list flyout on the left.	在左侧部件列表里选择「发动机」分类。
+Click and drag the 'Drive Shaft' part from the part list and add it to your craft at the indicated position.	从部件列表里拖出「传动轴」部件，按指示位置添加到载具上。
+Click and drag the 'Transmission' part from the part list and add it to your craft at the indicated position.	从部件列表里拖出「变速箱」部件，按指示位置添加到载具上。
+Change the value of the 'Number of Gears' property to '3'.	把「档位数」属性的值改为「3」。
+Click and drag the 'Differential' part from the part list and add it to your craft at the indicated position.	从部件列表里拖出「差速器」部件，按指示位置添加到载具上。
+Click and drag the 'Street Wheel' part from the part list and add it to your craft at the indicated position.	从部件列表里拖出「街道轮」部件，按指示位置添加到载具上。
+Click and drag the 'Double Wishbone' part from the part list and add it to your craft at the indicated position.	从部件列表里拖出「双叉臂」部件，按指示位置添加到载具上。
+Change the value of the 'Turning Angle' property to '20'.	把「转向角」属性的值改为「20」。
