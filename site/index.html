@@ -3,225 +3,305 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SimplePlanes 2 简体中文汉化</title>
-<meta name="description" content="SimplePlanes 2 的社区简体中文汉化。单文件安装器，双击即可安装；10393 条词库，支持游戏内热更新、一键回滚。">
-<meta name="theme-color" content="#0b1220">
+<title>SimplePlanes 2 简体中文汉化 · SP2Chinese</title>
+<meta name="description" content="SimplePlanes 2 社区简体中文汉化。10,393 条词库，单文件安装器，校验、回滚、游戏内热更新。免费开源。">
+<meta name="theme-color" content="#0c1320">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="SimplePlanes 2 简体中文汉化">
-<meta property="og:description" content="10393 条词条，单文件安装器，支持回滚与自动更新。">
+<meta property="og:description" content="10,393 条词条，单文件安装器，支持校验、回滚与热更新。">
 <meta property="og:image" content="assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <style>
-  :root{
-    --bg:#111214; --card:#1a1c20; --card2:#1f2227; --line:#2a2d33;
-    --text:#f2f3f5; --muted:#a0a5ae; --dim:#5f646d;
-    --accent:#3b82f6; --accent-h:#2f6fe0; --ok:#10b981; --warn:#e6b44e;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0;padding:0}
-  body{
-    background:var(--bg); color:var(--text); line-height:1.7;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei UI","PingFang SC","Hiragino Sans GB",sans-serif;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:860px;margin:0 auto;padding:40px 22px 72px}
-  a{color:#8fb8e8;text-decoration:none}
-  a:hover{text-decoration:underline}
+:root{--bg:#f7f9fc;--sf:#fff;--ink:#0f1b2d;--mut:#51607a;--line:#dde4ee;--ac:#0b5fd6;--acx:#fff;--soft:#eaf1fc;--code:#eef2f8}
+@media(prefers-color-scheme:dark){:root{--bg:#0c1320;--sf:#131c2c;--ink:#eaf0fa;--mut:#9aa8c0;--line:#243148;--ac:#4d8dff;--acx:#06142e;--soft:#16233a;--code:#1a2538}}
+*{box-sizing:border-box}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+html{scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei UI","Hiragino Sans GB",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--ac);text-decoration:none}a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:4px}
+.w{max-width:1040px;margin:0 auto;padding:0 24px}
+code{background:var(--code);padding:2px 6px;border-radius:4px;font:13px Consolas,"SF Mono",Menlo,monospace;word-break:break-all}
+h1,h2,h3,h4{margin:0;line-height:1.3}
+p{margin:0}
 
-  header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:34px}
-  h1{font-size:22px;margin:0;font-weight:600;letter-spacing:-.2px}
-  .badge{
-    font-size:12px;color:var(--muted);background:var(--card);
-    border:1px solid var(--line);border-radius:6px;padding:3px 8px;
-  }
-  .spacer{flex:1}
+/* ── 顶栏 ── */
+.top{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.top .w{display:flex;align-items:center;gap:28px;height:60px}
+.brand{font-weight:700;color:var(--ink);font-size:17px;display:flex;align-items:center;gap:9px}
+.brand:hover{text-decoration:none}
+.brand img{width:22px;height:22px;border-radius:5px;display:block}
+.top nav{display:flex;gap:22px;flex:1;font-size:14px}
+.top nav a{color:var(--mut)}
+.top nav a:hover{color:var(--ink);text-decoration:none}
 
-  .hero{margin-bottom:30px}
-  .hero p{margin:0 0 18px;color:var(--muted);font-size:15px}
-  .btn{
-    display:inline-block;background:var(--accent);color:#fff;font-weight:600;
-    font-size:15px;padding:13px 26px;border-radius:9px;border:0;cursor:pointer;
-  }
-  .btn:hover{background:var(--accent-h);text-decoration:none}
-  .btn.ghost{
-    background:transparent;color:var(--text);border:1px solid #3f3f46;
-    font-weight:400;margin-left:10px;
-  }
-  .btn.ghost:hover{background:var(--card);text-decoration:none}
-  .meta{margin-top:12px;font-size:12.5px;color:var(--dim)}
+/* ── 按钮 ── */
+.btn{display:inline-block;font:600 15px/1 inherit;padding:13px 22px;border-radius:8px;background:var(--ac);color:var(--acx);border:1px solid var(--ac);cursor:pointer;font-family:inherit;white-space:nowrap}
+.btn:hover{text-decoration:none;filter:brightness(1.06)}
+.btn.o{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.o:hover{background:var(--soft);border-color:var(--ac);color:var(--ac)}
+.btn.s{padding:10px 17px;font-size:14px}
 
-  .shot{
-    display:block;width:100%;height:auto;border-radius:12px;
-    border:1px solid var(--line);margin:26px 0 8px;
-  }
-  .cap{font-size:12px;color:var(--dim);text-align:center;margin-bottom:34px}
+/* ── 首屏 ── */
+.hero{padding:64px 0 56px}
+.hero h1{font-size:clamp(29px,4vw,42px);font-weight:800;letter-spacing:-.7px}
+.lead{margin-top:16px;font-size:17px;color:var(--mut);max-width:62ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.meta{margin-top:14px;font-size:13.5px;color:var(--mut)}
 
-  h2{font-size:15px;color:var(--dim);font-weight:600;margin:38px 0 14px;
-     text-transform:none;letter-spacing:.3px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px}
-  .card p:first-child{margin-top:0}
-  .card p:last-child{margin-bottom:0}
+/* 截图窗口框 */
+.frame{margin-top:34px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--sf);box-shadow:0 20px 46px -26px rgba(12,28,56,.45)}
+.bar{display:flex;align-items:center;gap:7px;padding:11px 14px;border-bottom:1px solid var(--line);background:var(--soft)}
+.bar i{width:10px;height:10px;border-radius:50%;background:var(--line);flex:none}
+.bar span{margin-left:8px;font-size:12.5px;color:var(--mut);font-family:Consolas,monospace}
+.frame img{display:block;width:100%;height:auto}
 
-  ol.steps{margin:0;padding-left:22px}
-  ol.steps li{margin:7px 0}
-  ul.plain{margin:0;padding-left:20px}
-  ul.plain li{margin:7px 0}
+/* 数据条 */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:34px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--sf)}
+.stats>div{padding:20px 22px;border-left:1px solid var(--line)}
+.stats>div:first-child{border-left:0}
+.stats b{display:block;font-size:25px;font-weight:800;letter-spacing:-.5px}
+.stats span{font-size:13px;color:var(--mut)}
 
-  dl.faq{margin:0}
-  dt{font-weight:600;margin:16px 0 4px}
-  dt:first-child{margin-top:0}
-  dd{margin:0;color:var(--muted);font-size:14px}
+/* ── 区块通用 ── */
+section{padding:60px 0;border-top:1px solid var(--line)}
+h2{font-size:23px;font-weight:700;letter-spacing:-.3px}
+.sub{margin-top:8px;color:var(--mut);max-width:64ch}
 
-  .note{
-    background:#1b2436;border:1px solid #2b3d5e;border-radius:10px;
-    padding:14px 18px;font-size:14px;color:#cbd8ea;margin:22px 0 0;
-  }
-  .note strong{color:#fff}
+/* 特性网格 */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 36px;margin-top:34px}
+.grid h3{font-size:15.5px;margin-bottom:7px}
+.grid p{color:var(--mut);font-size:15px}
 
-  footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
-         font-size:12.5px;color:var(--dim)}
-  .group{
-    display:inline-flex;align-items:center;gap:8px;background:var(--card2);
-    border:1px solid var(--line);border-radius:8px;padding:6px 12px;font-size:13px;
-    color:var(--text);cursor:pointer;
-  }
-  .group:hover{border-color:var(--muted)}
-  .group span.k{color:var(--muted)}
-  code{background:#262a31;padding:2px 6px;border-radius:4px;font-size:12.5px;
-       font-family:Consolas,"SF Mono",Menlo,monospace}
-  @media (max-width:560px){
-    .wrap{padding:28px 16px 56px}
-    .btn{display:block;width:100%;text-align:center}
-    .btn.ghost{margin:10px 0 0}
-  }
+/* 安装：步骤 + 需求表 */
+.cols{display:grid;grid-template-columns:1.35fr 1fr;gap:48px;margin-top:34px}
+ol.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding:0 0 18px 44px;font-size:15px;color:var(--mut)}
+ol.steps li:last-child{padding-bottom:0}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;background:var(--soft);color:var(--ac);font-weight:700;font-size:14px;text-align:center;line-height:28px}
+ol.steps b{color:var(--ink);font-weight:600}
+dl.req{margin:0;border-top:1px solid var(--line)}
+dl.req div{display:flex;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+dl.req dt{width:72px;flex:none;color:var(--mut)}dl.req dd{margin:0}
+
+/* 下载表 */
+.tw{overflow-x:auto;margin-top:30px}
+table{width:100%;border-collapse:collapse;font-size:15px;min-width:560px}
+th{text-align:left;font-weight:500;font-size:13px;color:var(--mut);padding:0 12px 10px 0;border-bottom:1px solid var(--line)}
+td{padding:16px 12px 16px 0;border-bottom:1px solid var(--line);vertical-align:middle}
+td:last-child,th:last-child{text-align:right;padding-right:0}
+.fine{margin-top:18px;font-size:14px;color:var(--mut)}
+
+/* 更新日志 */
+.rel{margin-top:30px;border-left:2px solid var(--line);padding-left:24px}
+.rel h3{font-size:18px}
+.rel h3 small{margin-left:10px;font-size:13px;font-weight:400;color:var(--mut)}
+.rel ul{margin:12px 0 0;padding-left:20px;color:var(--mut);font-size:15px}
+.rel li{margin:5px 0}
+
+/* FAQ */
+.faq{margin-top:30px}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;padding:18px 32px 18px 0;font-weight:600;position:relative;font-size:15.5px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:15px;font-size:22px;font-weight:400;color:var(--mut)}
+details[open] summary::after{content:"\2212"}
+details p{padding:0 0 18px;color:var(--mut);font-size:15px;max-width:720px}
+
+.join{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:26px}
+
+/* 页脚 */
+footer{margin-top:0;border-top:1px solid var(--line);padding:36px 0 48px;font-size:14px;color:var(--mut)}
+footer .w{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:32px}
+footer h4{margin:0 0 8px;font-size:13px;color:var(--ink)}
+footer a{display:block;color:var(--mut);margin:4px 0}
+footer a:hover{color:var(--ac)}
+footer .cp{grid-column:1/-1;border-top:1px solid var(--line);padding-top:20px;font-size:13px;margin-top:8px}
+
+@media(max-width:860px){
+  .top nav{display:none}
+  .top .w{justify-content:space-between}
+  .grid{grid-template-columns:1fr 1fr;gap:26px 28px}
+}
+@media(max-width:760px){
+  .hero{padding-top:40px}
+  .stats{grid-template-columns:1fr 1fr}
+  .stats>div:nth-child(3){border-left:0}
+  .stats>div:nth-child(n+3){border-top:1px solid var(--line)}
+  .cols{grid-template-columns:1fr;gap:28px}
+  .grid{grid-template-columns:1fr}
+  footer .w{grid-template-columns:1fr 1fr}
+  footer .w>div:first-child{grid-column:1/-1}
+  .cta .btn{flex:1 1 100%;text-align:center}
+  section{padding:44px 0}
+}
 </style>
 </head>
 <body>
-<div class="wrap">
 
-  <header>
-    <h1>SimplePlanes 2 简体中文汉化</h1>
-    <span class="badge">v1.7.0</span>
-    <span class="spacer"></span>
-    <a href="https://gitee.com/baiyangmuzz/sp2-chinese" target="_blank" rel="noopener">Gitee</a>
-    <span style="color:var(--dim);margin:0 6px">·</span>
-    <a href="https://github.com/baiyangmuzz/SP2Chinese" target="_blank" rel="noopener">GitHub</a>
-  </header>
+<header class="top">
+  <div class="w">
+    <a class="brand" href="#"><img src="assets/icon-64.png" alt="">SP2Chinese</a>
+    <nav>
+      <a href="#features">特性</a><a href="#install">安装</a><a href="#download">下载</a><a href="#changelog">更新日志</a><a href="#faq">常见问题</a>
+    </nav>
+    <a class="btn o s" href="https://github.com/baiyangmuzz/SP2Chinese" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</header>
 
-  <div class="hero">
-    <p>
-      游戏本身没有中文。这个补丁在运行时把界面、聊天、载具说明等文本替换成中文，
-      共 10393 条词条。安装只需要一个 exe。
-    </p>
-    <a class="btn" href="https://gitee.com/baiyangmuzz/sp2-chinese/releases/download/v1.7.0/SP2Chinese-Setup-v1.7.0.exe"
-       download="SP2Chinese-Setup-v1.7.0.exe">直接下载安装包</a>
-    <a class="btn ghost" href="https://github.com/baiyangmuzz/SP2Chinese/releases/latest">GitHub 下载</a>
-    <div class="meta">
-      当前版本 v1.7.0 · 1.04 MB · 词库 10393 条 · 更新于 2026-11-14<br>
-      Windows 10 / 11，需 .NET Framework 4.8（系统自带）<br>
-      SHA256 <code style="font-size:11.5px">5ed4b437947c59df</code>…（完整值见 GitHub Release）
-    </div>
+<main>
+<div class="w hero">
+  <h1>SimplePlanes 2 简体中文汉化</h1>
+  <p class="lead">为 SimplePlanes 2 提供完整的简体中文界面。游戏运行时替换界面、聊天和载具说明文本，词库共 10,393 条。免费、开源，一个安装器即可完成。</p>
+  <div class="cta">
+    <a class="btn" href="https://gitee.com/baiyangmuzz/sp2-chinese/releases/download/v1.7.0/SP2Chinese-Setup-v1.7.0.exe" download="SP2Chinese-Setup-v1.7.0.exe">下载安装器 v1.7.0</a>
+    <a class="btn o" href="https://github.com/baiyangmuzz/SP2Chinese/releases/latest" target="_blank" rel="noopener">从 GitHub 下载</a>
+  </div>
+  <p class="meta">Windows 10 / 11 · 1.20 MB · 更新于 2026-11-14</p>
+
+  <div class="frame">
+    <div class="bar"><i></i><i></i><i></i><span>SP2Chinese 安装器</span></div>
+    <img src="assets/screenshot.png" alt="安装器界面：左侧为状态与操作按钮，右侧为实时日志" width="1750" height="1120">
   </div>
 
-
-  <img class="shot" src="assets/screenshot.png" alt="安装器界面：左侧状态与按钮，右侧实时日志">
-  <div class="cap">安装器界面</div>
-
-  <h2>安装</h2>
-  <div class="card">
-    <ol class="steps">
-      <li>点上面的「下载安装包」，或在 <a href="https://gitee.com/baiyangmuzz/sp2-chinese/releases">Gitee</a> / <a href="https://github.com/baiyangmuzz/SP2Chinese/releases/latest">GitHub</a> 的发行版里下载 <code>SP2Chinese-Setup-v1.7.0.exe</code>（不要下 Source code，那是源码包）</li>
-      <li>双击运行，管理员授权选「是」</li>
-      <li>点「开始安装」，显示「安装完成」后就能进游戏</li>
-    </ol>
-    <p class="meta" style="margin-bottom:0">
-      安装前请先退出游戏。安装器会自己找 Steam 游戏目录，找不到才让你选。
-    </p>
+  <div class="stats">
+    <div><b>10,393</b><span>词库条目</span></div>
+    <div><b>8,675</b><span>已翻译</span></div>
+    <div><b>1,718</b><span>保留英文</span></div>
+    <div><b>1.20 MB</b><span>安装包大小</span></div>
   </div>
-
-  <h2>安装器会做什么</h2>
-  <div class="card">
-    <ul class="plain">
-      <li>写入前校验包体，写入后逐个核对 SHA256，任一步失败自动回滚到安装前的状态</li>
-      <li>已有的 BepInEx 和其它模组不会被覆盖</li>
-      <li>装完顺带把词库更新到最新；本地词库比包内新时保留本地</li>
-      <li>没用懂可以点「回滚版本」，从历史备份里选一个恢复</li>
-    </ul>
-  </div>
-
-  <h2>常见问题</h2>
-  <div class="card">
-    <dl class="faq">
-      <dt>Windows 提示「已保护你的电脑」怎么办？</dt>
-      <dd>
-        这个 exe 没有做代码签名，Windows 会对未签名的程序弹这个提示。
-        点「更多信息」→「仍要运行」即可。不放心的话，仓库里第一个版本的全部源码和打包脚本都在，
-        可以自己编译比对。
-      </dd>
-
-      <dt>装完进游戏还是英文？</dt>
-      <dd>
-        汉化通过 BepInEx 在运行时替换文本，游戏必须通过 Steam 启动（直接双击游戏 exe 通常也能生效，
-        但 Steam 启动最稳）。如果装了别的 BepInEx 插件，可能有冲突，先看
-        <code>BepInEx\LogOutput.log</code>。
-      </dd>
-
-      <dt>怎么卸载？</dt>
-      <dd>
-        再运行一次安装器，点「卸载汉化」。插件目录会被移到
-        <code>BepInEx\_mod_backups</code>，不删文件；BepInEx 本体和其它模组不受影响。
-      </dd>
-
-      <dt>游戏更新后还能用吗？</dt>
-      <dd>
-        多数情况可以直接用。游戏大更新导致部分文本对不上时，等新版词库或插件即可，
-        词库是支持游戏内热更新的，不用重装。
-      </dd>
-
-      <dt>会影响联机吗？</dt>
-      <dd>
-        汉化只替换界面文本，不改游戏逻辑。但联机时请遵守服务器规则；和其它模组一起用时，
-        出问题的概率会高一些。
-      </dd>
-    </dl>
-  </div>
-
-  <div class="note">
-    <strong>本项目开源免费</strong>，只在 GitHub 发布。如果有人在任何平台向你收费，
-    那不是我们，请直接举报。
-  </div>
-
-  <footer>
-    <div style="margin-bottom:10px">
-      交流群
-      <span class="group" onclick="copyGroup(this)">
-        <span class="k">QQ</span> 1128992783 <span class="k">点击复制</span>
-      </span>
-    </div>
-    <div>
-      仓库：<a href="https://github.com/baiyangmuzz/SP2Chinese" target="_blank" rel="noopener">baiyangmuzz/SP2Chinese</a>
-      · 作者：白杨木 · 词库与代码分离授权（详见仓库 LICENSE）
-    </div>
-  </footer>
 </div>
 
+<section id="features">
+  <div class="w">
+    <h2>特性</h2>
+    <p class="sub">只改界面显示，不碰游戏逻辑；安装过程可校验、可回滚。</p>
+    <div class="grid">
+      <div><h3>运行时替换</h3><p>通过 BepInEx 在游戏运行时替换文本，覆盖界面、聊天与载具说明。</p></div>
+      <div><h3>词库热更新</h3><p>词库可在游戏内更新。游戏版本变动后，等待新词库即可，无需重装。</p></div>
+      <div><h3>校验与自动回滚</h3><p>写入前校验包体，写入后逐个核对 SHA256。任一步失败，自动恢复到安装前的状态。</p></div>
+      <div><h3>备份与恢复</h3><p>安装器保留历史备份，可在「回滚版本」中选择任一版本恢复。</p></div>
+      <div><h3>自动定位游戏</h3><p>自动查找 Steam 游戏库中的 SimplePlanes 2，找不到时再手动选择目录。</p></div>
+      <div><h3>与其它模组共存</h3><p>不会覆盖已有的 BepInEx 和其它模组。卸载时只移走汉化插件。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="install">
+  <div class="w">
+    <h2>安装</h2>
+    <p class="sub">安装前请先退出游戏。</p>
+    <div class="cols">
+      <ol class="steps">
+        <li><b>下载安装器。</b>在下方下载 <code>SP2Chinese-Setup-v1.7.0.exe</code>。Release 页面里不要选 Source code，那是源码包。</li>
+        <li><b>运行并授权。</b>双击运行，在管理员授权提示中选「是」。</li>
+        <li><b>开始安装。</b>点「开始安装」，显示「安装完成」后即可进入游戏。</li>
+        <li><b>需要卸载时</b>再次运行安装器，点「卸载汉化」。</li>
+      </ol>
+      <dl class="req">
+        <div><dt>系统</dt><dd>Windows 10 / 11</dd></div>
+        <div><dt>运行库</dt><dd>.NET Framework 4.8（系统自带）</dd></div>
+        <div><dt>游戏</dt><dd>SimplePlanes 2</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <div class="w">
+    <h2>下载</h2>
+    <p class="sub">两个渠道内容一致，选择访问更快的一个。</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>渠道</th><th>文件</th><th>大小</th><th></th></tr></thead>
+        <tbody>
+          <tr><td>Gitee（国内直连）</td><td><code>SP2Chinese-Setup-v1.7.0.exe</code></td><td>1.20 MB</td><td><a class="btn s" href="https://gitee.com/baiyangmuzz/sp2-chinese/releases/download/v1.7.0/SP2Chinese-Setup-v1.7.0.exe" download="SP2Chinese-Setup-v1.7.0.exe">下载</a></td></tr>
+          <tr><td>GitHub</td><td>Releases 页面</td><td>1.20 MB</td><td><a class="btn o s" href="https://github.com/baiyangmuzz/SP2Chinese/releases/latest" target="_blank" rel="noopener">前往</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fine">SHA256：<code>98aefd5c86b934d2…</code>（完整值见 GitHub Release）。脚本或 CI 部署请使用 Release 中的 zip 包。</p>
+  </div>
+</section>
+
+<section id="changelog">
+  <div class="w">
+    <h2>更新日志</h2>
+    <div class="rel">
+      <h3>v1.7.0<small>2026-11-14</small></h3>
+      <ul>
+        <li>新增 exe 安装器：双击安装，自动识别 Steam 游戏库。</li>
+        <li>写入前后均做 SHA256 校验，失败自动回滚。</li>
+        <li>支持备份、历史版本恢复与安装器自更新。</li>
+        <li>新增 <code>--selftest</code> 自检参数。</li>
+        <li>继续提供 zip 包，用于脚本与 CI 部署。</li>
+        <li>词库 10,393 条（8,675 已翻译，1,718 保留英文），游戏内热更新机制不变。</li>
+      </ul>
+    </div>
+    <p class="fine"><a href="https://github.com/baiyangmuzz/SP2Chinese/releases" target="_blank" rel="noopener">查看全部版本</a></p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="w">
+    <h2>常见问题</h2>
+    <div class="faq">
+      <details><summary>Windows 提示「已保护你的电脑」怎么办？</summary>
+        <p>安装器尚未做代码签名，Windows 会对未签名程序显示此提示。点「更多信息」→「仍要运行」即可。源码和打包脚本都在仓库中，可以自行编译比对。</p></details>
+      <details><summary>装完进游戏还是英文？</summary>
+        <p>汉化通过 BepInEx 在运行时替换文本，建议从 Steam 启动游戏。如果装了其它 BepInEx 插件，可能存在冲突，请先查看 <code>BepInEx\LogOutput.log</code>。</p></details>
+      <details><summary>怎么卸载？</summary>
+        <p>再次运行安装器，点「卸载汉化」。插件目录会被移到 <code>BepInEx\_mod_backups</code>，不会删除文件；BepInEx 本体和其它模组不受影响。</p></details>
+      <details><summary>游戏更新后还能用吗？</summary>
+        <p>多数情况下可以直接使用。游戏大版本更新导致部分文本对不上时，等待新版词库或插件即可。词库支持游戏内热更新，无需重装。</p></details>
+      <details><summary>会影响联机吗？</summary>
+        <p>汉化只替换界面文本，不改动游戏逻辑。联机时请遵守服务器规则；与其它模组同时使用时，出问题的概率会更高。</p></details>
+      <details><summary>自动更新失败了怎么办？</summary>
+        <p>自动更新需要访问 GitHub，网络不通时会失败。这时回到本页下载新版覆盖安装即可，词库和备份都会保留。</p></details>
+      <details><summary>需要付费吗？</summary>
+        <p>不需要。本项目开源免费，官方渠道只有 GitHub 和 Gitee。如果有人向你收费，那不是我们，请直接举报。</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="community">
+  <div class="w">
+    <h2>反馈与交流</h2>
+    <p class="sub">遇到问题请提交 Issue，并附上 <code>BepInEx\LogOutput.log</code>。也欢迎加入 QQ 群交流，或参与词条校对。</p>
+    <div class="join">
+      <button class="btn" type="button" id="qq">QQ 群 1128992783 · 点击复制</button>
+      <a class="btn o" href="https://github.com/baiyangmuzz/SP2Chinese/issues" target="_blank" rel="noopener">提交 Issue</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="w">
+    <div><h4>SP2Chinese</h4><p>SimplePlanes 2 简体中文汉化。作者：白杨木。</p></div>
+    <div><h4>项目</h4>
+      <a href="https://github.com/baiyangmuzz/SP2Chinese" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://gitee.com/baiyangmuzz/sp2-chinese" target="_blank" rel="noopener">Gitee</a>
+      <a href="https://github.com/baiyangmuzz/SP2Chinese/releases" target="_blank" rel="noopener">发行版</a></div>
+    <div><h4>帮助</h4>
+      <a href="#install">安装指南</a><a href="#faq">常见问题</a>
+      <a href="https://github.com/baiyangmuzz/SP2Chinese/issues" target="_blank" rel="noopener">问题反馈</a></div>
+    <p class="cp">词库与代码分离授权，详见仓库 LICENSE。本项目为社区作品，与游戏开发商无隶属关系。</p>
+  </div>
+</footer>
+
 <script>
-function copyGroup(el){
-  var n = "1128992783";
-  var done = function(){ var old = el.innerHTML; el.innerHTML = '<span class="k">已复制</span> ' + n;
-                         setTimeout(function(){ el.innerHTML = old; }, 1500); };
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(n).then(done, function(){ fallback(); });
-  } else { fallback(); }
-  function fallback(){
-    var t = document.createElement('textarea');
-    t.value = n; document.body.appendChild(t); t.select();
-    try { document.execCommand('copy'); done(); } catch(e){}
-    document.body.removeChild(t);
-  }
-}
+(function(){
+  var b=document.getElementById("qq"),n="1128992783",t;
+  function done(){var o=b.textContent;b.textContent="已复制群号 "+n;clearTimeout(t);t=setTimeout(function(){b.textContent="QQ 群 "+n+" · 点击复制"},1600)}
+  function fb(){var a=document.createElement("textarea");a.value=n;document.body.appendChild(a);a.select();try{document.execCommand("copy");done()}catch(e){}document.body.removeChild(a)}
+  b.addEventListener("click",function(){
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(n).then(done,fb)}else{fb()}
+  });
+})();
 </script>
 </body>
 </html>
