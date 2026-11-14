@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SimplePlanes 2 简体中文汉化</title>
+<meta name="description" content="SimplePlanes 2 的社区简体中文汉化。单文件安装器，双击即可安装；10393 条词库，支持游戏内热更新、一键回滚。">
+<style>
+  :root{
+    --bg:#111214; --card:#1a1c20; --card2:#1f2227; --line:#2a2d33;
+    --text:#f2f3f5; --muted:#a0a5ae; --dim:#5f646d;
+    --accent:#3b82f6; --accent-h:#2f6fe0; --ok:#10b981; --warn:#e6b44e;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--text); line-height:1.7;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei UI","PingFang SC","Hiragino Sans GB",sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px;margin:0 auto;padding:40px 22px 72px}
+  a{color:#8fb8e8;text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:34px}
+  h1{font-size:22px;margin:0;font-weight:600;letter-spacing:-.2px}
+  .badge{
+    font-size:12px;color:var(--muted);background:var(--card);
+    border:1px solid var(--line);border-radius:6px;padding:3px 8px;
+  }
+  .spacer{flex:1}
+
+  .hero{margin-bottom:30px}
+  .hero p{margin:0 0 18px;color:var(--muted);font-size:15px}
+  .btn{
+    display:inline-block;background:var(--accent);color:#fff;font-weight:600;
+    font-size:15px;padding:13px 26px;border-radius:9px;border:0;cursor:pointer;
+  }
+  .btn:hover{background:var(--accent-h);text-decoration:none}
+  .btn.ghost{
+    background:transparent;color:var(--text);border:1px solid #3f3f46;
+    font-weight:400;margin-left:10px;
+  }
+  .btn.ghost:hover{background:var(--card);text-decoration:none}
+  .meta{margin-top:12px;font-size:12.5px;color:var(--dim)}
+
+  .shot{
+    display:block;width:100%;height:auto;border-radius:12px;
+    border:1px solid var(--line);margin:26px 0 8px;
+  }
+  .cap{font-size:12px;color:var(--dim);text-align:center;margin-bottom:34px}
+
+  h2{font-size:15px;color:var(--dim);font-weight:600;margin:38px 0 14px;
+     text-transform:none;letter-spacing:.3px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px}
+  .card p:first-child{margin-top:0}
+  .card p:last-child{margin-bottom:0}
+
+  ol.steps{margin:0;padding-left:22px}
+  ol.steps li{margin:7px 0}
+  ul.plain{margin:0;padding-left:20px}
+  ul.plain li{margin:7px 0}
+
+  dl.faq{margin:0}
+  dt{font-weight:600;margin:16px 0 4px}
+  dt:first-child{margin-top:0}
+  dd{margin:0;color:var(--muted);font-size:14px}
+
+  .note{
+    background:#1b2436;border:1px solid #2b3d5e;border-radius:10px;
+    padding:14px 18px;font-size:14px;color:#cbd8ea;margin:22px 0 0;
+  }
+  .note strong{color:#fff}
+
+  footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
+         font-size:12.5px;color:var(--dim)}
+  .group{
+    display:inline-flex;align-items:center;gap:8px;background:var(--card2);
+    border:1px solid var(--line);border-radius:8px;padding:6px 12px;font-size:13px;
+    color:var(--text);cursor:pointer;
+  }
+  .group:hover{border-color:var(--muted)}
+  .group span.k{color:var(--muted)}
+  code{background:#262a31;padding:2px 6px;border-radius:4px;font-size:12.5px;
+       font-family:Consolas,"SF Mono",Menlo,monospace}
+  @media (max-width:560px){
+    .wrap{padding:28px 16px 56px}
+    .btn{display:block;width:100%;text-align:center}
+    .btn.ghost{margin:10px 0 0}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>SimplePlanes 2 简体中文汉化</h1>
+    <span class="badge">v1.7.0</span>
+    <span class="spacer"></span>
+    <a href="https://gitee.com/baiyangmuzz/sp2-chinese" target="_blank" rel="noopener">Gitee</a>
+    <span style="color:var(--dim);margin:0 6px">·</span>
+    <a href="https://github.com/baiyangmuzz/SP2Chinese" target="_blank" rel="noopener">GitHub</a>
+  </header>
+
+  <div class="hero">
+    <p>
+      游戏本身没有中文。这个补丁在运行时把界面、聊天、载具说明等文本替换成中文，
+      共 10393 条词条。安装只需要一个 exe。
+    </p>
+    <a class="btn" href="https://gitee.com/baiyangmuzz/sp2-chinese/releases/download/v1.7.0/SP2Chinese-Setup-v1.7.0.exe"
+       download="SP2Chinese-Setup-v1.7.0.exe">直接下载安装包</a>
+    <a class="btn ghost" href="https://github.com/baiyangmuzz/SP2Chinese/releases/latest">GitHub 下载</a>
+    <div class="meta">
+      当前版本 v1.7.0 · 1.04 MB · 词库 10393 条 · 更新于 2026-11-14<br>
+      Windows 10 / 11，需 .NET Framework 4.8（系统自带）<br>
+      SHA256 <code style="font-size:11.5px">5ed4b437947c59df</code>…（完整值见 GitHub Release）
+    </div>
+  </div>
+
+
+  <img class="shot" src="assets/screenshot.png" alt="安装器界面：左侧状态与按钮，右侧实时日志">
+  <div class="cap">安装器界面</div>
+
+  <h2>安装</h2>
+  <div class="card">
+    <ol class="steps">
+      <li>点上面的「下载安装包」，或在 <a href="https://gitee.com/baiyangmuzz/sp2-chinese/releases">Gitee</a> / <a href="https://github.com/baiyangmuzz/SP2Chinese/releases/latest">GitHub</a> 的发行版里下载 <code>SP2Chinese-Setup-v1.7.0.exe</code>（不要下 Source code，那是源码包）</li>
+      <li>双击运行，管理员授权选「是」</li>
+      <li>点「开始安装」，显示「安装完成」后就能进游戏</li>
+    </ol>
+    <p class="meta" style="margin-bottom:0">
+      安装前请先退出游戏。安装器会自己找 Steam 游戏目录，找不到才让你选。
+    </p>
+  </div>
+
+  <h2>安装器会做什么</h2>
+  <div class="card">
+    <ul class="plain">
+      <li>写入前校验包体，写入后逐个核对 SHA256，任一步失败自动回滚到安装前的状态</li>
+      <li>已有的 BepInEx 和其它模组不会被覆盖</li>
+      <li>装完顺带把词库更新到最新；本地词库比包内新时保留本地</li>
+      <li>没用懂可以点「回滚版本」，从历史备份里选一个恢复</li>
+    </ul>
+  </div>
+
+  <h2>常见问题</h2>
+  <div class="card">
+    <dl class="faq">
+      <dt>Windows 提示「已保护你的电脑」怎么办？</dt>
+      <dd>
+        这个 exe 没有做代码签名，Windows 会对未签名的程序弹这个提示。
+        点「更多信息」→「仍要运行」即可。不放心的话，仓库里第一个版本的全部源码和打包脚本都在，
+        可以自己编译比对。
+      </dd>
+
+      <dt>装完进游戏还是英文？</dt>
+      <dd>
+        汉化通过 BepInEx 在运行时替换文本，游戏必须通过 Steam 启动（直接双击游戏 exe 通常也能生效，
+        但 Steam 启动最稳）。如果装了别的 BepInEx 插件，可能有冲突，先看
+        <code>BepInEx\LogOutput.log</code>。
+      </dd>
+
+      <dt>怎么卸载？</dt>
+      <dd>
+        再运行一次安装器，点「卸载汉化」。插件目录会被移到
+        <code>BepInEx\_mod_backups</code>，不删文件；BepInEx 本体和其它模组不受影响。
+      </dd>
+
+      <dt>游戏更新后还能用吗？</dt>
+      <dd>
+        多数情况可以直接用。游戏大更新导致部分文本对不上时，等新版词库或插件即可，
+        词库是支持游戏内热更新的，不用重装。
+      </dd>
+
+      <dt>会影响联机吗？</dt>
+      <dd>
+        汉化只替换界面文本，不改游戏逻辑。但联机时请遵守服务器规则；和其它模组一起用时，
+        出问题的概率会高一些。
+      </dd>
+    </dl>
+  </div>
+
+  <div class="note">
+    <strong>本项目开源免费</strong>，只在 GitHub 发布。如果有人在任何平台向你收费，
+    那不是我们，请直接举报。
+  </div>
+
+  <footer>
+    <div style="margin-bottom:10px">
+      交流群
+      <span class="group" onclick="copyGroup(this)">
+        <span class="k">QQ</span> 1128992783 <span class="k">点击复制</span>
+      </span>
+    </div>
+    <div>
+      仓库：<a href="https://github.com/baiyangmuzz/SP2Chinese" target="_blank" rel="noopener">baiyangmuzz/SP2Chinese</a>
+      · 作者：白杨木 · 词库与代码分离授权（详见仓库 LICENSE）
+    </div>
+  </footer>
+</div>
+
+<script>
+function copyGroup(el){
+  var n = "1128992783";
+  var done = function(){ var old = el.innerHTML; el.innerHTML = '<span class="k">已复制</span> ' + n;
+                         setTimeout(function(){ el.innerHTML = old; }, 1500); };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(n).then(done, function(){ fallback(); });
+  } else { fallback(); }
+  function fallback(){
+    var t = document.createElement('textarea');
+    t.value = n; document.body.appendChild(t); t.select();
+    try { document.execCommand('copy'); done(); } catch(e){}
+    document.body.removeChild(t);
+  }
+}
+</script>
+</body>
+</html>
