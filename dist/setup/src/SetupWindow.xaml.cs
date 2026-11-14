@@ -41,6 +41,9 @@ namespace SP2Chinese.Setup
             // 所以更新成功后要刷新这一行，并明确标出「已更新」，否则用户会以为没生效。
             RefreshSubtitle(null);
             DictInfoRun.Text = _manifest.DictRows + " 条 · Build " + _manifest.DictBuild;
+            // 徽标在 XAML 里是占位文本，必须按实际 manifest 版本改写，
+            // 否则 1.7.0 的包也会显示成写死的旧版本号。
+            VersionBadge.Text = "v" + _manifest.ModVersion;
 
             InstallButton.Click += async (s, e) => await DoInstallAsync();
             UpdateButton.Click += async (s, e) => await DoUpdateCheckAsync();
