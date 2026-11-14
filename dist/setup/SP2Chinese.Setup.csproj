@@ -30,8 +30,8 @@
     <Copyright>Copyright © 2026 白杨木 (baiyangmuzz)</Copyright>
     <RepositoryUrl>https://github.com/baiyangmuzz/SP2Chinese</RepositoryUrl>
 
-    <Version>1.7.0</Version>
-    <FileVersion>1.7.0.0</FileVersion>
+    <Version>1.7.1</Version>
+    <FileVersion>1.7.1.0</FileVersion>
     <AssemblyTitle>SimplePlanes 2 简体中文汉化安装程序</AssemblyTitle>
   </PropertyGroup>
 

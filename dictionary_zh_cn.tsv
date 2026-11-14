@@ -10078,6 +10078,35 @@ The full game will let you build planes, cars, and just about anything you can i
 New Personal Best!\n	新的个人最佳纪录！\n
 You unlocked the {0}!\n{1}/{2} Hidden Crafts	你解锁了{0}！\n隐藏机体 {1}/{2}
 Gas	小心毒气
+Manage Bans	管理封禁
+BANS	封禁
+Add Ban	添加封禁
+Max Performance Cost	性能开销上限
+Max Craft Memory	载具内存上限
+Memory	内存
+Selected Part Memory	选中部件内存
+Perf Cost	性能开销
+Mass	质量
+You have no player, name or craft bans.	当前没有玩家、名称或载具的封禁记录。
+Low	低
+Medium	中
+High	高
+Canopy frame	座舱框架
+Canopy glass	座舱玻璃
+Canopy hinge	座舱铰链
+Brake pedal	刹车踏板
+Altimeter	高度表
+Attitude indicator	姿态仪
+Attitude nose indicator	俯仰姿态仪
+Air speed indicator	空速表
+Hide Mode	隐藏模式
+Steam ID	Steam ID
+River & Waves	河流与波浪
+Ambient Occlusion Strength	环境光遮蔽强度
+Max Missiles Per Second	每秒最大子弹数
+Peace Mode	和平模式
+Teleport To Player	传送到玩家
+Update Frequency	更新频率
 ACCOUNT	账号
 AUTO	自动
 CANCEL	取消
