@@ -2,6 +2,11 @@ using System;
 using System.IO;
 using SP2Chinese.Setup;
 
+/// <summary>
+/// 安装器自更新的端到端验证：从 manifest 的 setup 段发现新版 →
+/// 从 GitHub Releases 真实下载 → 校验大小与 SHA256 → 覆盖替换。
+/// 参数：manifest.json（可传本地副本，配合 file:// 指向测试清单）。
+/// </summary>
 class E2E {
     static int failed = 0;
     static void Check(string n, bool ok, string d = null) {

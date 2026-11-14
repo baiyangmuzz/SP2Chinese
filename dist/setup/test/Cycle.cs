@@ -2,6 +2,10 @@ using System;
 using System.IO;
 using SP2Chinese.Setup;
 
+/// <summary>
+/// 反复安装 / 卸载 5 轮，检查备份目录不会无限堆积，
+/// 并且每一轮都能装成功、卸干净。参���：payload.zip manifest.json
+/// </summary>
 class Cycle {
     static void Main(string[] a) {
         string zip = a[0], mf = a[1];

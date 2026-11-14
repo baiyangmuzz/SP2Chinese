@@ -23,14 +23,14 @@
 
 ## 安装
 
-**下载一个 exe，双击，点「开始安装」——就这三步。**
+下载 exe，双击，点「开始安装」。
 
 1. 到 [Releases 页面](https://github.com/baiyangmuzz/SP2Chinese/releases/latest)
    下载 `SP2Chinese-Setup-v<版本>.exe`（不要下 Source code，那是源码）
 2. 双击运行，管理员授权选「是」
 3. 点「开始安装」，看到「安装完成」即可启动游戏
 
-安装器会自己完成这些事，不需要你手动找目录或解压：
+安装器会处理这些：
 
 - 自动定位游戏：先读 Steam 注册表，再解析 `steamapps/libraryfolders.vdf` 的所有库；
   找不到才让你选文件夹
@@ -38,16 +38,16 @@
 - 已有 BepInEx 与其它模组不会被覆盖
 - 装完顺带把词库更新到最新，不需要二次操作
 
-这个 exe 是**自包含单文件**：不用解压、不用 PowerShell 脚本、不需要额外运行库
-（只需要 Windows 10/11 自带的 .NET Framework 4.8）。原生 C# + WPF，支持高分屏。
+这个 exe 是单文件：不用解压、不依赖 PowerShell 脚本，只需要 Windows 10/11
+自带的 .NET Framework 4.8。界面用 WPF 写的，支持高分屏。
 
-### 界面能做什么
+### 按钮说明
 
 | 按钮 | 作用 |
 |---|---|
 | 开始安装 / 重新安装 | 安装或覆盖安装汉化 |
-| 检查更新 | 同时检查插件、词库、安装器三者的新版本 |
-| 回滚版本 | 列出历史备份，选一个恢复（可反悔，回滚前会自动再备份当前版本） |
+| 检查更新 | 检查插件、词库、安装器三者有没有新版 |
+| 回滚版本 | 列出历史备份，选一个恢复；恢复前会自动备份当前版本 |
 | 卸载汉化 | 把插件目录移到 `BepInEx\_mod_backups`，不删文件 |
 
 **备选：传统压缩包**（脚本化 / CI / 批量部署用）
@@ -89,7 +89,7 @@ SP2Chinese-Setup-v<版本>.exe --selftest C:\selftest.log
 
 ## 更新机制
 
-分两种，由 `manifest.json` 里的字段区分。
+分三种，由 `manifest.json` 里的字段区分。
 
 **词库更新**：插件启动 15 秒后请求 `manifest.json` ，比对本地字典的 SHA256 与
 manifest 里的 `dictVersion` 。不一致时下载新字典、校验 SHA256、原子替换并热重载，
@@ -110,9 +110,9 @@ manifest 里的 `dictVersion` 。不一致时下载新字典、校验 SHA256、�
 **插件更新**：manifest 的 `modVersion` 高于本地版本时，只在日志里提示到 Releases
 或群里下载完整包，不自动替换 DLL。
 
-**安装器自更新**：manifest 的 `setup` 段公布安装器自身的 `version / sha256 / size /
-url`。点「检查更新」发现新版时会出现「立即更新」按钮：下载 → 校验 SHA256 →
-退出并由新版本覆盖自身 → 自动重启（文件名里的版本号也会同步改掉）。
+**安装器自更新**：manifest 的 `setup` 段记录了安装器自己的 `version / sha256 /
+size / url`。点「检查更新」发现新版后会出现「立即更新」按钮，流程是下载、
+校验 SHA256、退出、被新版本覆盖、重启。文件名里的版本号也会跟着改。
 
 `setup` 段走 `raw.githubusercontent` / jsDelivr，不依赖容易失效的 GitHub API。
 没有任何哈希可校验时，安装器**只提示、不下载**——不会执行来路不明的程序。

@@ -42,3 +42,5 @@ Thumbs.db
 desktop.ini
 # 本机测试用的旧版安装包解压目录（不属于源码）
 _oldpkg_test/
+# 内部审查记录，不进公开仓库
+审查报告_*.md
