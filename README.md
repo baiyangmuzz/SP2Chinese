@@ -18,6 +18,7 @@
 | 交流群 | QQ 1128992783 |
 | 下载 | [Releases 最新版](https://github.com/baiyangmuzz/SP2Chinese/releases/latest) |
 | 项目主页 | https://baiyangmuzz.github.io/SP2Chinese/ |
+| 国内镜像 | https://gitee.com/baiyangmuzz/sp2-chinese |
 | 仓库 | https://github.com/baiyangmuzz/SP2Chinese |
 
 游戏处于 Early Access，文本会随更新变动，词库需要持续跟进。
