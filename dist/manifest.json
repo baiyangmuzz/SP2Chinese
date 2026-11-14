@@ -1,10 +1,10 @@
 {
-  "modVersion": "1.7.2",
-  "dictVersion": "551fd67b5b34",
-  "dictBuild": 202611141522,
-  "dictRows": 10429,
-  "dictSha256": "551fd67b5b349f9bf10ea0672007debbfded04bce2e1a61e3ee23f37cd2210db",
-  "generatedAt": "2026-11-14T23:22:40+08:00",
+  "modVersion": "1.7.3",
+  "dictVersion": "d8a091fa6b2c",
+  "dictBuild": 202611141533,
+  "dictRows": 10441,
+  "dictSha256": "d8a091fa6b2cadb548db949be509855d355e766b956cee86eaa61d988ff260dd",
+  "generatedAt": "2026-11-14T23:33:33+08:00",
   "author": "白杨木",
   "qqGroup": "1128992783",
   "repository": "https://github.com/baiyangmuzz/SP2Chinese",
@@ -94,15 +94,15 @@
       "size": 78973
     },
     "BepInEx/plugins/SP2Chinese/dict.build": {
-      "sha256": "fcfc3aadfd69c6921c0306fa45f1432f89e7a2f18b3cc6d120d2855adce918da",
+      "sha256": "cf9baa01a08a7c5dd3b34cbb3dcabff7b2ec86f06230be34ed3157509db4ccbd",
       "size": 13
     },
     "BepInEx/plugins/SP2Chinese/dictionary_zh_cn.tsv": {
-      "sha256": "551fd67b5b349f9bf10ea0672007debbfded04bce2e1a61e3ee23f37cd2210db",
-      "size": 799880
+      "sha256": "d8a091fa6b2cadb548db949be509855d355e766b956cee86eaa61d988ff260dd",
+      "size": 801668
     },
     "BepInEx/plugins/SP2Chinese/SP2Chinese.dll": {
-      "sha256": "5b3788fad03ee6a38a64d5e655a67716b620ab92f037983d68e629d00354c7d3",
+      "sha256": "9ab89b6c824c751250a298d84369a73ec9387f029f494d340ebcf6c88e3cb917",
       "size": 109568
     }
   },
@@ -111,9 +111,9 @@
     "release": "https://github.com/baiyangmuzz/SP2Chinese/releases/latest"
   },
   "setup": {
-    "version": "1.7.2",
-    "sha256": "79a2d2cbe077da4ba5a4d3b301fbd63497ac4da763b2e3f4505b31081386f599",
-    "size": 1264128,
-    "url": "https://github.com/baiyangmuzz/SP2Chinese/releases/download/v1.7.2/SP2Chinese-Setup-v1.7.2.exe"
+    "version": "1.7.3",
+    "sha256": "f02dec5ef117e2e6405d0adf37695b1d0ddc54eb23636d12230269e1f6900f95",
+    "size": 1264640,
+    "url": "https://github.com/baiyangmuzz/SP2Chinese/releases/download/v1.7.3/SP2Chinese-Setup-v1.7.3.exe"
   }
 }

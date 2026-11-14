@@ -10114,6 +10114,18 @@ Adjusts the visual quality of the clouds, sky, and fog. Higher settings are very
 Adjusts the visual quality of the terrain's surface. Higher settings are very GPU heavy. Lowering this setting can have big performance gains for GPU limited situations.\r\n\r\nLow: The visual quality of the terrain surface will be significantly reduced.\r\n\r\nMedium: The visual quality of the terrain surface will be somewhat reduced.\r\n\r\nHigh: The visual quality of the terrain surface will be at its highest quality.	调整地形表面的视觉质量。设置越高，GPU 负担越重。在 GPU 性能受限时降低此项可大幅提升性能。\r\n\r\n低：地形表面的视觉质量大幅降低。\r\n\r\n中：地形表面的视觉质量略有降低。\r\n\r\n高：地形表面的视觉质量达到最高。
 Adjusts the density of the trees. Higher settings mean more trees being rendered on screen, which can reduce performance.\r\n\r\nNo Trees: No trees will be rendered.\r\n\r\nLow: Approximately 10% of the trees will be rendered.\r\n\r\nMedium: Approximately 50% of the trees will be rendered.\r\n\r\nHigh: All trees will be rendered.	调整树木密度。设置越高，画面中渲染的树木越多，可能降低性能。\r\n\r\n无树木：不渲染任何树木。\r\n\r\n低：渲染约 10% 的树木。\r\n\r\n中：渲染约 50% 的树木。\r\n\r\n高：渲染全部树木。
 Adjusts the quality of the water. This can impact visual effects as well as some physics effects.\r\n\r\nLow: Similar to medium quality without a few effects such as river flows, dynamic waves, and caustics\r\n\r\nMedium: Water will be rendered with all its various visual and physical effects fully enabled.\r\n\r\nHigh: Water will be rendered with all its various visual and physical effects fully enabled with increased detail at further distances.	调整水体的质量。这会影响视觉效果以及部分物理效果。\r\n\r\n低：与“中”接近，但缺少河流流动、动态波浪、焦散等效果。\r\n\r\n中：完整启用各种视觉与物理效果来渲染水体。\r\n\r\n高：完整启用各种视觉与物理效果，并在更远距离上提升细节。
+Look at your hands to see the controls for flying. If you ever want to see them again, you can find the controls button in the pop-up menu under settings.\r\n\r\nYou can adjust your view by moving your hands close together and then holding the grab button on both controllers. Then move your hands to change your view.\r\n\r\nEnjoy your flight!\r\n	低头看自己的双手即可看到飞行操作提示。如果想再次查看，可以在设置里的弹出菜单中找到操作提示按钮。\r\n\r\n将双手靠近并同时按住两个控制器的抓取键，即可调整视角。然后移动双手来改变视角。\r\n\r\n祝飞行愉快！\r\n
+View and edit player bans, and ban players or crafts by name.	查看并编辑玩家封禁名单，可按名称封禁玩家或载具。
+This setting changes the way reflections are handled on the craft surfaces.\r\n\r\nRealtime: Reflective craft parts will reflect the surrounding world in realtime. Enabling this option can result in extreme performance impacts.\r\n\r\nStatic: Reflective craft parts will use a vague static image to give the illusion of the parts reflecting their surroundings without actually doing so.	此设置决定载具表面的反射处理方式。\r\n\r\n实时：有反射效果的载具部件会实时反射周围环境。开启此项可能造成极大的性能开销。\r\n\r\n静态：有反射效果的载具部件会使用一张模糊的静态图像，制造出反射周围环境的假象，实际并不反射。
+Canopy front slice	座舱前切片
+Canopy rear slice	座舱后切片
+Canopy open handle	座舱开启把手
+Main wheel suspension	主轮悬挂
+Vertical speed indicator	升降速度表
+Cockpit canopy cutout	座舱开孔
+Cockpit canopy	座舱盖
+Canopy front	座舱前部
+Canopy rear	座舱后部
 ACCOUNT	账号
 AUTO	自动
 CANCEL	取消
