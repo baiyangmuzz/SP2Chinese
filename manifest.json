@@ -1,10 +1,10 @@
 {
   "modVersion": "1.7.0",
   "dictVersion": "32e94b7e9372",
-  "dictBuild": 202611140953,
+  "dictBuild": 202611141350,
   "dictRows": 10393,
   "dictSha256": "32e94b7e9372f00ea1569bd4011271aaffc86368c07b43084da2a08179a5a853",
-  "generatedAt": "2026-11-14T17:53:42+08:00",
+  "generatedAt": "2026-11-14T21:50:07+08:00",
   "author": "白杨木",
   "qqGroup": "1128992783",
   "repository": "https://github.com/baiyangmuzz/SP2Chinese",
@@ -94,7 +94,7 @@
       "size": 78973
     },
     "BepInEx/plugins/SP2Chinese/dict.build": {
-      "sha256": "4b9cc8da59283ba0e7297f82f6420d4a7eba2e91abe8ae35be69f860dbeaad8a",
+      "sha256": "3c53f2fc4fca456ed471acb3ecbad9e3c72b51fd98c06575d909bf29174eb0eb",
       "size": 13
     },
     "BepInEx/plugins/SP2Chinese/dictionary_zh_cn.tsv": {
@@ -112,8 +112,8 @@
   },
   "setup": {
     "version": "1.7.0",
-    "sha256": "98aefd5c86b934d2572f33b71680c1d68178a423a81afaa5a92742a1327a6413",
-    "size": 1260544,
+    "sha256": "c38dd9be837c08887117bb70dab904c9679afc434e960af5fa69c3cdf6c60bdb",
+    "size": 1262592,
     "url": "https://github.com/baiyangmuzz/SP2Chinese/releases/download/v1.7.0/SP2Chinese-Setup-v1.7.0.exe"
   }
 }

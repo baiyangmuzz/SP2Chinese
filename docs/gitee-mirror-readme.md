@@ -13,7 +13,7 @@ https://github.com/baiyangmuzz/SP2Chinese
 文件是从 GitHub 原样同步过来的，SHA256 与 GitHub Release 页面上写的一致：
 
 ```
-SHA256(SP2Chinese-Setup-v1.7.0.exe) = 5ed4b437947c59dfa629a84d7cc1a35ea452cb63db0e313306426f2fe715d4fe
+SHA256(SP2Chinese-Setup-v1.7.0.exe) = c38dd9be837c08887117bb70dab904c9679afc434e960af5fa69c3cdf6c60bdb
 ```
 
 ## 安装

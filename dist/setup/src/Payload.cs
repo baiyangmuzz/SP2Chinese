@@ -60,6 +60,41 @@ namespace SP2Chinese.Setup
 
         private Func<Stream> _opener;
 
+        /// <summary>payload 解压后的总字节数，供磁盘空间检查用。</summary>
+        internal long Size
+        {
+            get
+            {
+                long total = 0;
+                foreach (var e in _entries.Values) total += e.Length;
+                return total;
+            }
+        }
+
+        /// <summary>
+        /// 检查包里所有条目路径是否安全。
+        ///
+        /// 安装时只遍历 manifest 列出的文件，所以「manifest 与 payload 同时被换」
+        /// 才是真实威胁：那时恶意条目会出现在清单里并被写入。这里独立扫一遍
+        /// 全部条目，拒绝任何试图跳出游戏目录的路径。
+        /// </summary>
+        internal void ValidateAllPaths()
+        {
+            foreach (string name in _entries.Keys)
+            {
+                if (name.StartsWith("\\") || name.StartsWith("/")
+                    || (name.Length >= 2 && name[1] == ':')
+                    || Path.IsPathRooted(name))
+                    throw new InvalidDataException("安装包内含绝对路径：" + name);
+
+                foreach (string seg in name.Split('/', '\\'))
+                {
+                    if (seg == "..")
+                        throw new InvalidDataException("安装包内含上级目录引用：" + name);
+                }
+            }
+        }
+
         internal bool Contains(string relativePath)
         {
             return _entries.ContainsKey(Normalize(relativePath));

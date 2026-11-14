@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SP2 简中 · 封面</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+
+  /* 调色板与安装器图标统一 */
+  :root{
+    --navy-1:#0b1220;
+    --navy-2:#132340;
+    --navy-3:#1c3355;
+    --blue:#1e8ce8;
+    --blue-hi:#4aa8f5;
+    --red:#e23e3e;
+    --red-hi:#ff5a5a;
+    --white:#f4f7fb;
+    --dim:rgba(244,247,251,.55);
+  }
+
+  html,body{height:100%}
+  body{
+    display:grid;place-items:center;
+    min-height:100vh;padding:24px;
+    background:#05070c;
+    font-family:'Microsoft YaHei','Segoe UI',sans-serif;
+    overflow:hidden;
+  }
+
+  /* ══ 画布 ══
+     用 container-type:size + cqw 单位：字号跟着画布走，
+     无论画布多大排版比例都不变（原来用 vmin 会随窗口漂移）。 */
+  .cover{
+    position:relative;
+    width:min(90vmin,800px);
+    aspect-ratio:1/1;
+    container-type:size;
+    border-radius:6px;
+    overflow:hidden;
+    background:
+      radial-gradient(120% 90% at 50% 42%,var(--navy-3) 0%,var(--navy-2) 38%,var(--navy-1) 68%,#05080f 100%);
+    box-shadow:
+      0 24px 90px rgba(30,140,232,.18),
+      0 0 0 1px rgba(30,140,232,.14);
+    isolation:isolate;
+  }
+
+  /* ══ 背景层 ══ */
+  /* 1. 透视网格 */
+  .cover::before{
+    content:'';position:absolute;inset:-20%;
+    background-image:
+      linear-gradient(rgba(30,140,232,.16) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(30,140,232,.16) 1px,transparent 1px);
+    background-size:6cqw 6cqw;
+    transform:perspective(60cqw) rotateX(62deg) translateY(18cqw);
+    transform-origin:center 62%;
+    mask-image:linear-gradient(to bottom,transparent 42%,#000 78%);
+    opacity:.55;
+  }
+
+  /* 2. 扫描线（极淡，只在放大时能察觉，用来压住大色块的塑料感） */
+  .scanlines{
+    position:absolute;inset:0;z-index:6;pointer-events:none;
+    background:repeating-linear-gradient(
+      to bottom,rgba(0,0,0,.16) 0 1px,transparent 1px 3px);
+    opacity:.5;
+    mix-blend-mode:multiply;
+  }
+
+  /* 3. 暗角 */
+  .vignette{
+    position:absolute;inset:0;z-index:7;pointer-events:none;
+    background:radial-gradient(ellipse at 50% 46%,
+      transparent 45%,rgba(0,0,0,.35) 78%,rgba(0,0,0,.62) 100%);
+  }
+
+  /* ══ 红蓝斜带 ══
+     原来两块各带 opacity:.8，叠在一起发灰。
+     改成实色 + 只让边缘柔和，颜色才干净。 */
+  .band{position:absolute;left:-6%;width:112%;z-index:1}
+  .band-blue{
+    top:47.5%;height:13cqw;
+    background:linear-gradient(180deg,var(--blue-hi),var(--blue) 55%,#1466b4);
+    transform:skewY(-4.2deg);
+    clip-path:polygon(0 0,100% 13%,100% 100%,0 87%);
+    box-shadow:0 0 8cqw rgba(30,140,232,.35);
+  }
+  .band-red{
+    top:57%;height:10.5cqw;
+    background:linear-gradient(180deg,var(--red-hi),var(--red) 55%,#a82626);
+    transform:skewY(-4.2deg);
+    clip-path:polygon(0 14%,100% 0,100% 86%,0 100%);
+  }
+  /* 两带之间的白色跑道虚线 */
+  .band-seam{
+    position:absolute;left:-6%;width:112%;top:56.1%;height:.42cqw;z-index:2;
+    transform:skewY(-4.2deg);
+    background:repeating-linear-gradient(90deg,
+      rgba(255,255,255,.85) 0 2.6cqw,transparent 2.6cqw 5.6cqw);
+    opacity:.8;
+  }
+
+  /* ══ HUD 边角 ══ */
+  .hud{position:absolute;width:5.2cqw;height:5.2cqw;z-index:5;
+       border:2px solid rgba(74,168,245,.5)}
+  .hud.tl{top:4.4cqw;left:4.4cqw;border-right:0;border-bottom:0}
+  .hud.tr{top:4.4cqw;right:4.4cqw;border-left:0;border-bottom:0}
+  .hud.bl{bottom:4.4cqw;left:4.4cqw;border-right:0;border-top:0}
+  .hud.br{bottom:4.4cqw;right:4.4cqw;border-left:0;border-top:0}
+
+  /* ══ 装饰文字 ══ */
+  .deco{
+    position:absolute;left:50%;transform:translateX(-50%);
+    z-index:5;text-align:center;white-space:nowrap;
+    font-family:Consolas,'SF Mono',monospace;
+    font-weight:600;color:var(--dim);
+    letter-spacing:.28em;text-transform:uppercase;
+  }
+  .deco.top{top:5.4cqw;font-size:1.72cqw}
+  .deco.bottom{
+    bottom:6.2cqw;font-size:1.62cqw;line-height:1.9;letter-spacing:.34em;
+    color:rgba(74,168,245,.72);
+    text-shadow:0 0 2cqw rgba(30,140,232,.35);
+  }
+
+  /* ══ 主体 Logo ══
+     倾斜放在父层，字重和阴影在子层，避免阴影跟着斜切变形。
+     阴影用 em 单位，字号怎么变比例都不散。 */
+  .logo{
+    position:absolute;top:50%;left:50%;z-index:8;
+    transform:translate(-50%,-50%) skewX(-9deg);
+    display:flex;flex-direction:column;align-items:center;
+  }
+
+  .sp2{
+    font-family:'Arial Black','Segoe UI',sans-serif;
+    font-weight:900;
+    font-size:25cqw;
+    line-height:.82;
+    letter-spacing:-.035em;
+    display:flex;align-items:baseline;
+    transform:skewX(0deg);
+  }
+  /* SP：白字 + 蓝红双色投影 */
+  .sp2 .sp{
+    color:var(--white);
+    text-shadow:
+      .022em .026em 0 var(--blue),
+      .046em .054em 0 var(--red),
+      0 0 .16em rgba(30,140,232,.55);
+  }
+  /* 2：红字 + 白蓝投影，视觉上压过 SP */
+  .sp2 .num{
+    color:var(--red-hi);
+    text-shadow:
+      .022em .026em 0 var(--white),
+      .046em .054em 0 var(--blue),
+      0 0 .16em rgba(226,62,62,.5);
+  }
+
+  /* 徽章：反向倾斜抵消父层斜切，保持水平 */
+  .badge{
+    position:relative;
+    margin-top:1.4cqw;
+    padding:1.15cqw 5.2cqw;
+    transform:skewX(9deg);
+    background:linear-gradient(180deg,var(--blue-hi),var(--blue) 60%,#1466b4);
+    clip-path:polygon(9% 0,100% 0,91% 100%,0 100%);
+    box-shadow:0 1.4cqw 3.4cqw rgba(30,140,232,.42);
+    overflow:hidden;
+  }
+  .badge span{
+    display:block;
+    font-family:'Microsoft YaHei',sans-serif;
+    font-weight:900;
+    font-size:6.4cqw;
+    line-height:1.25;
+    letter-spacing:.22em;
+    text-indent:.22em;          /* 抵消末字后的字距，视觉居中 */
+    color:#fff;
+    text-shadow:0 .3cqw .8cqw rgba(0,40,90,.35);
+  }
+  /* 高光扫过 */
+  .badge::after{
+    content:'';position:absolute;top:0;left:-60%;
+    width:38%;height:100%;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);
+    transform:skewX(-16deg);
+    animation:sweep 4.2s ease-in-out infinite;
+  }
+  @keyframes sweep{
+    0%,55%{left:-60%}
+    100%{left:135%}
+  }
+
+  /* 右下角版本标 */
+  .version{
+    position:absolute;right:11.5cqw;bottom:5.6cqw;z-index:5;
+    font-family:Consolas,monospace;font-size:1.5cqw;
+    letter-spacing:.16em;color:rgba(244,247,251,.34);
+  }
+
+  /* 窄屏：画布贴边，去掉外阴影 */
+  @media (max-width:520px){
+    body{padding:0}
+    .cover{width:100vmin;border-radius:0;box-shadow:none}
+  }
+
+  /* 减少动效偏好 */
+  @media (prefers-reduced-motion:reduce){
+    .badge::after{animation:none;display:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="band band-blue"></div>
+  <div class="band band-red"></div>
+  <div class="band-seam"></div>
+
+  <div class="hud tl"></div>
+  <div class="hud tr"></div>
+  <div class="hud bl"></div>
+  <div class="hud br"></div>
+
+  <div class="deco top">SimplePlanes // Sandbox Flight Simulator</div>
+
+  <div class="logo">
+    <div class="sp2"><span class="sp">SP</span><span class="num">2</span></div>
+    <div class="badge"><span>简中</span></div>
+  </div>
+
+  <div class="deco bottom">飞行系统已就绪<br>准备起飞</div>
+  <div class="version">v1.7.0</div>
+
+  <div class="scanlines"></div>
+  <div class="vignette"></div>
+</div>
+
+</body>
+</html>

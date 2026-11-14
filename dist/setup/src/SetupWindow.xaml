@@ -1,7 +1,7 @@
 <Window x:Class="SP2Chinese.Setup.SetupWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="SimplePlanes 2 汉化管理器"
+        Title="SimplePlanes 2 简体中文汉化"
         Width="1000" Height="640"
         MinWidth="860" MinHeight="560"
         WindowStyle="None"
@@ -50,7 +50,7 @@
                     </Grid.ColumnDefinitions>
 
                     <StackPanel Orientation="Horizontal" Grid.Column="0" VerticalAlignment="Center">
-                        <TextBlock Text="SimplePlanes 2 汉化管理器"
+                        <TextBlock Text="SimplePlanes 2 简体中文汉化"
                                    Foreground="{StaticResource TextBrush}"
                                    FontFamily="{StaticResource UiFont}"
                                    FontSize="18" FontWeight="SemiBold" />

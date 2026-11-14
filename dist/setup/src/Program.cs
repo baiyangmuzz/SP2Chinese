@@ -41,6 +41,29 @@ namespace SP2Chinese.Setup
             if (args.Length >= 2 && args[0] == "--show-history")
                 return ShowHistoryPreview(args[1]);
 
+            // 单实例保护：两个安装器同时跑会互相覆盖文件，还可能争抢备份目录。
+            // 用命名互斥体拦住第二个实例，把已有的窗口叫到前台。
+            bool createdNew;
+            using (var mutex = new System.Threading.Mutex(true, MutexName, out createdNew))
+            {
+                if (!createdNew)
+                {
+                    MessageBox.Show(
+                        "安装器已经在运行了。\n\n请切到那个窗口继续操作；如果找不到，"
+                        + "在任务栏里找一下「SimplePlanes 2 汉化」。",
+                        "SimplePlanes 2 汉化", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return 0;
+                }
+                try { return RunGui(); }
+                finally { try { mutex.ReleaseMutex(); } catch { } }
+            }
+        }
+
+        /// <summary>互斥体名字。加 Global\ 前缀以便跨会话也能拦住。</summary>
+        private const string MutexName = "Global\\SP2Chinese.Setup.Instance";
+
+        private static int RunGui()
+        {
             var app = new Application { ShutdownMode = ShutdownMode.OnMainWindowClose };
             app.DispatcherUnhandledException += (s, e) =>
             {

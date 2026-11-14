@@ -63,7 +63,11 @@ namespace SP2Chinese.Setup
             try
             {
                 _progress(5, "检查安装包完整性…");
+                // 先扫一遍包里所有条目路径，再校验哈希。
+                // 顺序很重要：路径检查不依赖 manifest，即使清单被一起换掉也拦得住。
+                _payload.ValidateAllPaths();
                 VerifyPayloadIntegrity();
+                EnsureFreeSpace(gameDir);
 
                 bool hasBepInEx = File.Exists(Path.Combine(gameDir, "BepInEx", "core", "BepInEx.dll"));
                 long pkgBuild = _manifest.DictBuild;
@@ -172,11 +176,76 @@ namespace SP2Chinese.Setup
                 }
                 if (!wanted) continue;
 
-                string dest = Path.Combine(gameDir, kv.Key.Replace('/', '\\'));
+                string dest = SafeCombine(gameDir, kv.Key, "BepInEx 文件");
                 _payload.WriteTo(kv.Key, dest);
                 written.Add(dest);
             }
             _log("BepInEx 运行环境已就位");
+        }
+
+        /// <summary>
+        /// 检查目标盘剩余空间。
+        ///
+        /// 不检查的后果：盘快满时写到一半失败，回滚又要写，可能连回滚都失败，
+        /// 留下半装的目录。要求「包体大小 × 3 + 20 MB」余量：
+        /// 一份用于解压，一份用于备份，一份留给回滚和临时文件。
+        /// </summary>
+        private void EnsureFreeSpace(string gameDir)
+        {
+            try
+            {
+                string root = Path.GetPathRoot(Path.GetFullPath(gameDir));
+                if (string.IsNullOrEmpty(root)) return;
+
+                var drive = new DriveInfo(root);
+                if (!drive.IsReady) return;
+
+                long need = _payload.Size * 3 + 20L * 1024 * 1024;
+                if (drive.AvailableFreeSpace < need)
+                {
+                    throw new IOException(string.Format(
+                        "磁盘空间不足：{0} 还剩 {1:N0} MB，安装需要约 {2:N0} MB。\n请清理后重试。",
+                        root, drive.AvailableFreeSpace / 1048576, need / 1048576));
+                }
+            }
+            catch (IOException) { throw; }
+            catch { /* 读不到盘信息时不阻塞安装 */ }
+        }
+
+        /// <summary>
+        /// 把包内相对路径安全地拼到游戏目录下。
+        ///
+        /// 为什么必须校验：payload 里的路径来自 zip，如果包被替换成含
+        /// "../../Windows/System32/xxx" 的条目，直接 Path.Combine 会把文件写到
+        /// 游戏目录之外。SHA256 校验只保证「包没被改动」，不保证「路径安全」，
+        /// 所以这里独立做一次约束：结果必须仍在 gameDir 之内。
+        /// </summary>
+        private static string SafeCombine(string gameDir, string rel, string what)
+        {
+            if (string.IsNullOrEmpty(rel)) throw new InvalidDataException(what + " 路径为空");
+
+            // 绝对路径、盘符、UNC 一律拒绝
+            if (rel.StartsWith("\\\\") || rel.StartsWith("/")
+                || (rel.Length >= 2 && rel[1] == ':')
+                || Path.IsPathRooted(rel))
+                throw new InvalidDataException(what + " 使用了绝对路径：" + rel);
+
+            // 逐段检查 ".." —— 不能只查子串，否则 "..hidden" 会被误判
+            foreach (string seg in rel.Split('/', '\\'))
+            {
+                if (seg == "..")
+                    throw new InvalidDataException(what + " 含上级目录引用：" + rel);
+            }
+
+            string root = Path.GetFullPath(gameDir);
+            string full = Path.GetFullPath(Path.Combine(root, rel.Replace('/', '\\')));
+
+            // 去掉末尾分隔符再比前缀，避免 "C:\game-evil" 误判为 "C:\game" 的子路径
+            if (!full.StartsWith(root.TrimEnd('\\') + "\\", StringComparison.OrdinalIgnoreCase)
+                && !string.Equals(full, root, StringComparison.OrdinalIgnoreCase))
+                throw new InvalidDataException(what + " 越出游戏目录：" + rel);
+
+            return full;
         }
 
         private void WritePlugin(string gameDir, List<string> written, bool keepDict,
@@ -188,7 +257,7 @@ namespace SP2Chinese.Setup
 
             foreach (string rel in pluginFiles)
             {
-                string dest = Path.Combine(gameDir, rel.Replace('/', '\\'));
+                string dest = SafeCombine(gameDir, rel, "插件文件");
 
                 // 只保留「词库」相关文件。DLL 始终用包内的：
                 // 玩家拿旧 exe 重装时，本来就是为了换上新的安装器/插件本体。
@@ -220,7 +289,7 @@ namespace SP2Chinese.Setup
             // ── dict.build ──
             // 保留本地词库时沿用备份里那个更大的 build；否则用包内值。
             // 两种写法都带行尾 LF（manifest 里的哈希是对 "xxx\n" 算的）。
-            string buildPath = Path.Combine(gameDir, BuildRel.Replace('/', '\\'));
+            string buildPath = SafeCombine(gameDir, BuildRel, "dict.build");
             Directory.CreateDirectory(Path.GetDirectoryName(buildPath));
 
             string buildText = _manifest.DictBuild + "\n";
