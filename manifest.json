@@ -109,5 +109,11 @@
   "update": {
     "dictionary": "https://raw.githubusercontent.com/baiyangmuzz/SP2Chinese/main/dictionary_zh_cn.tsv",
     "release": "https://github.com/baiyangmuzz/SP2Chinese/releases/latest"
+  },
+  "setup": {
+    "version": "1.6.3",
+    "sha256": "23550d7aa475a92af3c52c2652830a7b66791537d98e583bd708fc2ebaafb2dd",
+    "size": 1086464,
+    "url": "https://github.com/baiyangmuzz/SP2Chinese/releases/download/v1.6.3/SP2Chinese-Setup-v1.6.3.exe"
   }
 }
