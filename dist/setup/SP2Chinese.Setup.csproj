@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <ApplicationIcon>icon\sp2.ico</ApplicationIcon>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net48</TargetFramework>
     <AssemblyName>SP2Chinese-Setup</AssemblyName>
@@ -79,6 +80,10 @@
     <EmbeddedResource Include="resources\manifest.json">
       <LogicalName>SP2Chinese.Setup.manifest.json</LogicalName>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icon\sp2.ico" />
   </ItemGroup>
 
 </Project>
