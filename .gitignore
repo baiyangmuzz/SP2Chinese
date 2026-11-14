@@ -3,6 +3,8 @@ bin/
 obj/
 _stage/
 dist/payload/
+# 安装器构建时生成的中间资源（payload.zip 是从 dist/payload 压出来的）
+dist/setup/resources/
 
 # 本地反编译缓存（10MB+，不要进仓库）
 .cache/
@@ -22,6 +24,8 @@ diag.txt
 # 分发包：走 Releases，不进 git 历史
 *.zip
 _archive_zip/
+# 单文件安装程序同样走 Releases
+SP2Chinese-Setup*.exe
 
 # Python
 __pycache__/
@@ -36,3 +40,5 @@ __pycache__/
 # 系统
 Thumbs.db
 desktop.ini
+# 本机测试用的旧版安装包解压目录（不属于源码）
+_oldpkg_test/

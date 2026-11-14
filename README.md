@@ -1,10 +1,10 @@
 # SimplePlanes 2 简体中文汉化
 
-**English:** Full Simplified Chinese localization for [SimplePlanes 2](https://store.steampowered.com/app/2840470/) — runtime text replacement via BepInEx/Harmony, 10,393 dictionary rows (8,675 translated + 1,718 deliberately kept in English), dynamic CJK font atlas that fixes tofu boxes in chat and UI, one-click installer with SHA256 verification, and in-game dictionary auto-updates. The game has no i18n framework; all strings are replaced at runtime.
+**English:** Full Simplified Chinese localization for [SimplePlanes 2](https://store.steampowered.com/app/2840470/) — runtime text replacement via BepInEx/Harmony, 10,393 dictionary rows (8,675 translated + 1,718 deliberately kept in English), dynamic CJK font atlas that fixes tofu boxes in chat and UI, a single-file one-click installer (auto game detection, SHA256 verification, one-click rollback, self-update), and in-game dictionary auto-updates. The game has no i18n framework; all strings are replaced at runtime.
 
 [SimplePlanes 2](https://store.steampowered.com/app/2840470/) 的社区汉化补丁。
 
-**中文：** 为 SimplePlanes 2 提供完整的简体中文汉化——通过 BepInEx/Harmony 在运行时替换文本，共 10393 条词条（其中 8675 条译文、1718 条刻意保留英文），动态生成中文字体图集（修复聊天与界面的方块字），一键安装器带 SHA256 校验，支持游戏内词库自动更新。游戏本身没有 i18n 框架，所有文本均在运行时替换。
+**中文：** 为 SimplePlanes 2 提供完整的简体中文汉化——通过 BepInEx/Harmony 在运行时替换文本，共 10393 条词条（其中 8675 条译文、1718 条刻意保留英文），动态生成中文字体图集（修复聊天与界面的方块字）；单文件一键安装器：自动找游戏目录、SHA256 校验、一键回滚、自动更新，支持游戏内词库热更新。游戏本身没有 i18n 框架，所有文本均在运行时替换。
 
 游戏官方只提供英语界面（Steam 商店页的语言表里简体中文标注为「不支持」），
 且游戏内没有 i18n 框架，所有文本硬编码在资源 XML 与 DLL 里。因此这个项目不做
@@ -13,7 +13,7 @@
 | 项 | 值 |
 |---|---|
 | 词库条目 | 10393（TSV 行数；每行 key 唯一，无重复；含 1718 条刻意保留英文的恒等行） |
-| 插件版本 | 1.6.3 |
+| 插件版本 | 1.7.0 |
 | 作者 | 白杨木（[baiyangmuzz](https://github.com/baiyangmuzz)） |
 | 交流群 | QQ 1128992783 |
 | 下载 | [Releases 最新版](https://github.com/baiyangmuzz/SP2Chinese/releases/latest) |
@@ -23,16 +23,36 @@
 
 ## 安装
 
-1. 到 [Releases 页面](https://github.com/baiyangmuzz/SP2Chinese/releases/latest)
-   下载 `SP2Chinese-v<版本>-<日期>.zip`（包内界面与文件仍是中文，只是压缩包名用英文，
-因为 GitHub 附件上传不接受中文文件名）。不要下载页面里的 Source code，
-   那是源码，不是安装包
-2. 退出游戏，解压
-3. 运行 ` SP2汉化.bat` ，管理员授权选「是」
-4. 在图形界面里点「检查更新并安装」（也可点「卸载」/「回滚」），完成后启动游戏
+**下载一个 exe，双击，点「开始安装」——就这三步。**
 
-安装器默认打开 **WinForms 图形界面**（仅依赖 Windows 自带的 PowerShell 5.1 +
-.NET Framework，不额外安装运行库）。需要脚本化或回到旧版控制台菜单时可用：
+1. 到 [Releases 页面](https://github.com/baiyangmuzz/SP2Chinese/releases/latest)
+   下载 `SP2Chinese-Setup-v<版本>.exe`（不要下 Source code，那是源码）
+2. 双击运行，管理员授权选「是」
+3. 点「开始安装」，看到「安装完成」即可启动游戏
+
+安装器会自己完成这些事，不需要你手动找目录或解压：
+
+- 自动定位游戏：先读 Steam 注册表，再解析 `steamapps/libraryfolders.vdf` 的所有库；
+  找不到才让你选文件夹
+- 自动备份旧版本，写入后逐个核对 SHA256，失败自动回滚
+- 已有 BepInEx 与其它模组不会被覆盖
+- 装完顺带把词库更新到最新，不需要二次操作
+
+这个 exe 是**自包含单文件**：不用解压、不用 PowerShell 脚本、不需要额外运行库
+（只需要 Windows 10/11 自带的 .NET Framework 4.8）。原生 C# + WPF，支持高分屏。
+
+### 界面能做什么
+
+| 按钮 | 作用 |
+|---|---|
+| 开始安装 / 重新安装 | 安装或覆盖安装汉化 |
+| 检查更新 | 同时检查插件、词库、安装器三者的新版本 |
+| 回滚版本 | 列出历史备份，选一个恢复（可反悔，回滚前会自动再备份当前版本） |
+| 卸载汉化 | 把插件目录移到 `BepInEx\_mod_backups`，不删文件 |
+
+**备选：传统压缩包**（脚本化 / CI / 批量部署用）
+
+下载 `SP2Chinese-v<版本>-<日期>.zip`，解压后运行 `SP2汉化.bat`。可用开关：
 
 ```bat
 SP2汉化.bat -Silent -Yes        :: 无人值守安装（无任何弹窗，供脚本 / CI 使用）
@@ -42,19 +62,30 @@ SP2汉化.bat -NoGui              :: 回退到旧版数字菜单
 SP2汉化.bat -TestUpdate         :: 只诊断更新源连通性，不安装
 ```
 
-安装器会定位游戏目录：先读 Steam 注册表路径，再解析 `steamapps/libraryfolders.vdf` 里的所有库，
-然后在每个库下找 `steamapps\common\SimplePlanes 2` 。找不到时弹出文件夹选择窗口，
-再失败才要求手动输入路径。
+安装器内置自测（供维护者验证发布包）：
 
-安装器在覆盖写入**之前**先按随包 `manifest.json` 校验 payload 自身完整，写入后
-再逐个核对本次写入文件的 SHA256；任一环节失败都会自动回滚到安装前的版本并返回
-非零退出码，不会留下「装完但文件不一致」的状态。
+```bat
+SP2Chinese-Setup-v<版本>.exe --selftest C:\selftest.log
+```
+
+它会跑全新安装、已装 BepInEx、卸载、坏包拒绝四个场景，退出码 0 表示全部通过。
 
 ## 卸载
 
-运行 ` SP2汉化.bat`（选择卸载） 。插件目录会被移动到 `BepInEx\_mod_backups` ，不删除文件，
-BepInEx 本体与其它模组不受影响。安装历史备份保留最近 3 份；卸载备份与回滚前的
-备份不会参与清理。
+直接运行安装器，点**「卸载汉化」**。插件目录会被移动到 `BepInEx\_mod_backups`，
+不删除文件，BepInEx 本体与其它模组不受影响。
+
+也可以用压缩包里的 `SP2汉化.bat -Uninstall` 无人值守卸载。
+
+安装备份保留最近 3 份；卸载备份与回滚前的备份单独计数，不会互相挤掉。
+
+## 回滚
+
+安装器保留最近 3 份安装备份、最近 3 份卸载备份、最近 2 份回滚前备份。
+点**「回滚版本」**会列出全部可用备份（时间、版本、类型），选一份即可恢复。
+
+回滚本身是可逆的：动手前会先把**当前**版本另存为 `-pre-rollback-` 备份，
+所以回滚错了还能再滚回来。选中的历史备份不会被消耗，可以反复使用。
 
 ## 更新机制
 
@@ -78,6 +109,13 @@ manifest 里的 `dictVersion` 。不一致时下载新字典、校验 SHA256、�
 
 **插件更新**：manifest 的 `modVersion` 高于本地版本时，只在日志里提示到 Releases
 或群里下载完整包，不自动替换 DLL。
+
+**安装器自更新**：manifest 的 `setup` 段公布安装器自身的 `version / sha256 / size /
+url`。点「检查更新」发现新版时会出现「立即更新」按钮：下载 → 校验 SHA256 →
+退出并由新版本覆盖自身 → 自动重启（文件名里的版本号也会同步改掉）。
+
+`setup` 段走 `raw.githubusercontent` / jsDelivr，不依赖容易失效的 GitHub API。
+没有任何哈希可校验时，安装器**只提示、不下载**——不会执行来路不明的程序。
 
 自动检查可在 `BepInEx/config/sp2.zh.cfg` 关闭：
 

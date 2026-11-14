@@ -160,8 +160,25 @@ python tools/check_dict.py     # 占位符 / 禁译 / 恒等行 / 结构 / 行�
 
 ```bash
 python dist/build_dist.py      # 重新打包，同步 payload / zip / manifest
+python dist/build_setup.py     # 生成单文件安装器 SP2Chinese-Setup-v<版本>.exe
 python tools/check_dist.py     # payload / zip / manifest 全量哈希一致
 ```
+
+`build_setup.py` 会顺带把安装器自身的 `version / sha256 / size / url` 写进
+`manifest.json` 的 `setup` 段 —— 旧版安装器的「检查更新」靠它发现新版本并自动替换。
+**发布时必须先把 exe 传到同名 Release，再提交 manifest.json**，否则哈希对不上。
+
+安装器工程在 `dist/setup/`（WPF / .NET Framework 4.8，原生 C#，不内嵌脚本）：
+
+```bash
+dotnet build dist/setup/SP2Chinese.Setup.csproj -c Release
+
+# 发布前自测：全新安装 / 已装 BepInEx / 卸载 / 坏包拒绝，四场景共 20 项断言
+SP2Chinese-Setup-v<版本>.exe --selftest C:\selftest.log
+```
+
+要求 `RESULT: ALL PASSED`、退出码 0。安装器本身不参与词库翻译流程，
+改界面或安装逻辑时跑这一条即可。
 
 `check_dict.py` 现在还会检查：每行恰好一个 TAB、`{*}` 与 `[Binding]` 在译文中
 原样保留、跨批次同 key 不同值必须显式裁决（不能靠文件名顺序静默覆盖）、

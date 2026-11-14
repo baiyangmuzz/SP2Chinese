@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>SP2Chinese-Setup</AssemblyName>
+    <RootNamespace>SP2Chinese.Setup</RootNamespace>
+    <LangVersion>7.3</LangVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+
+    <!-- WPF：现代渲染（抗锯齿、亚像素定位、圆角、阴影），远好于 WinForms 的 GDI+ -->
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <!-- SDK 默认会通配 xaml，与下面显式 Page 声明冲突 -->
+    <EnableDefaultPageItems>false</EnableDefaultPageItems>
+    <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
+
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+
+    <Authors>白杨木</Authors>
+    <Company>白杨木</Company>
+    <Product>SimplePlanes 2 简体中文汉化</Product>
+    <Description>SimplePlanes 2 社区简体中文汉化补丁安装程序（非官方）</Description>
+    <Copyright>Copyright © 2026 白杨木 (baiyangmuzz)</Copyright>
+    <RepositoryUrl>https://github.com/baiyangmuzz/SP2Chinese</RepositoryUrl>
+
+    <Version>1.6.3</Version>
+    <FileVersion>1.6.3.0</FileVersion>
+    <AssemblyTitle>SimplePlanes 2 简体中文汉化安装程序</AssemblyTitle>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- 逻辑层：与 UI 无关，WPF 与旧 WinForms 版共用 -->
+    <Compile Include="src\Program.cs" />
+    <Compile Include="src\GameLocator.cs" />
+    <Compile Include="src\Manifest.cs" />
+    <Compile Include="src\Payload.cs" />
+    <Compile Include="src\Installer.cs" />
+    <Compile Include="src\Updater.cs" />
+    <Compile Include="src\SelfTest.cs" />
+    <!-- UI 层：WPF 重写 -->
+    <Compile Include="src\SetupWindow.xaml.cs">
+      <DependentUpon>SetupWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\HistoryWindow.xaml.cs">
+      <DependentUpon>HistoryWindow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="src\SetupWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="src\HistoryWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="src\Theme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="resources\payload.zip">
+      <LogicalName>SP2Chinese.Setup.payload.zip</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resources\manifest.json">
+      <LogicalName>SP2Chinese.Setup.manifest.json</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
