@@ -46,3 +46,6 @@ _oldpkg_test/
 审查报告_*.md
 # Gitee 镜像仓的本地暂存目录（不是本项目的一部分）
 _gitee_mirror/
+# 本地截图/测量工具，不入库
+_captool/
+_sitebranch/
