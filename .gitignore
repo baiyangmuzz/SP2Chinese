@@ -44,3 +44,5 @@ desktop.ini
 _oldpkg_test/
 # 内部审查记录，不进公开仓库
 审查报告_*.md
+# Gitee 镜像仓的本地暂存目录（不是本项目的一部分）
+_gitee_mirror/
