@@ -37,6 +37,10 @@ namespace SP2Chinese.Setup
                 return Updater.RunReplaceSelf(args[1], args[2], args[3],
                     Path.Combine(Path.GetTempPath(), "sp2-selfupdate-error.txt"));
 
+            // 渲染宣传图用：隐藏版本徽标，截图不会因版本变化而过时
+            foreach (string a in args)
+                if (a == "--no-version") HideVersionBadge = true;
+
             // 回滚窗口预览（开发验证用）：列出指定游戏目录的历史备份并弹出选择框
             if (args.Length >= 2 && args[0] == "--show-history")
                 return ShowHistoryPreview(args[1]);
@@ -59,6 +63,9 @@ namespace SP2Chinese.Setup
             }
         }
 
+        /// <summary>渲染宣传图时隐藏版本徽标（--no-version），避免截图随版本过时。</summary>
+        internal static bool HideVersionBadge;
+
         /// <summary>互斥体名字。加 Global\ 前缀以便跨会话也能拦住。</summary>
         private const string MutexName = "Global\\SP2Chinese.Setup.Instance";
 
@@ -76,7 +83,7 @@ namespace SP2Chinese.Setup
             {
                 Manifest manifest = LoadManifest();
                 Payload payload = Payload.Open();
-                app.Run(new SetupWindow(payload, manifest));
+                app.Run(new SetupWindow(payload, manifest, HideVersionBadge));
                 return 0;
             }
             catch (Exception ex)

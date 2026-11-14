@@ -54,7 +54,8 @@
                                    Foreground="{StaticResource TextBrush}"
                                    FontFamily="{StaticResource UiFont}"
                                    FontSize="18" FontWeight="SemiBold" />
-                        <Border Background="{StaticResource CardBrush}"
+                        <Border x:Name="VersionBadgeBox"
+                                Background="{StaticResource CardBrush}"
                                 BorderBrush="{StaticResource BorderBrush2}" BorderThickness="1"
                                 CornerRadius="6" Padding="8,4" Margin="12,0,0,0"
                                 VerticalAlignment="Center">

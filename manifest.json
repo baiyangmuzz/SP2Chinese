@@ -112,8 +112,8 @@
   },
   "setup": {
     "version": "1.7.3",
-    "sha256": "f02dec5ef117e2e6405d0adf37695b1d0ddc54eb23636d12230269e1f6900f95",
-    "size": 1264640,
+    "sha256": "618ccefc97d85f888fcedee2897ffb634a6011a38dfba36a99b33ff58921e31f",
+    "size": 1265152,
     "url": "https://github.com/baiyangmuzz/SP2Chinese/releases/download/v1.7.3/SP2Chinese-Setup-v1.7.3.exe"
   }
 }

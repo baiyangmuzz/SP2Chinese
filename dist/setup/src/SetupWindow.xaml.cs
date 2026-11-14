@@ -29,7 +29,7 @@ namespace SP2Chinese.Setup
         private bool _busy;
         private double _progress;
 
-        internal SetupWindow(Payload payload, Manifest manifest)
+        internal SetupWindow(Payload payload, Manifest manifest, bool hideVersion = false)
         {
             _payload = payload;
             _manifest = manifest;
@@ -44,6 +44,9 @@ namespace SP2Chinese.Setup
             // 徽标在 XAML 里是占位文本，必须按实际 manifest 版本改写，
             // 否则 1.7.0 的包也会显示成写死的旧版本号。
             VersionBadge.Text = "v" + _manifest.ModVersion;
+            // 宣传图模式：整块隐藏，截图不会因为版本号过时而作废
+            if (hideVersion && VersionBadgeBox != null)
+                VersionBadgeBox.Visibility = Visibility.Collapsed;
 
             InstallButton.Click += async (s, e) => await DoInstallAsync();
             UpdateButton.Click += async (s, e) => await DoUpdateCheckAsync();
