@@ -113,6 +113,19 @@
     </div>
   </div>
 
+  <!-- 国内镜像：在下面 GITEE_MIRROR 填上地址后自动显示；留空则整块隐藏 -->
+  <div id="mirror" hidden style="margin:0 0 22px">
+    <div class="card" style="padding:16px 18px">
+      <div style="font-size:14px">
+        GitHub 下载慢的话，用国内镜像：
+        <a id="mirror-link" href="#" target="_blank" rel="noopener">Gitee 镜像下载</a>
+      </div>
+      <div class="meta" style="margin-top:6px">
+        镜像文件与这里完全一致，SHA256 相同。自动更新仍然走 GitHub，打不开时手动覆盖安装即可。
+      </div>
+    </div>
+  </div>
+
   <img class="shot" src="assets/screenshot.png" alt="安装器界面：左侧状态与按钮，右侧实时日志">
   <div class="cap">安装器界面</div>
 
@@ -196,6 +209,16 @@
 </div>
 
 <script>
+// 建好 Gitee 镜像仓库后把地址填这里，例如：
+//   "https://gitee.com/你的用户名/SP2Chinese-mirror/releases"
+var GITEE_MIRROR = "";
+(function(){
+  if (!GITEE_MIRROR) return;
+  var box = document.getElementById("mirror");
+  document.getElementById("mirror-link").href = GITEE_MIRROR;
+  box.hidden = false;
+})();
+
 function copyGroup(el){
   var n = "1128992783";
   var done = function(){ var old = el.innerHTML; el.innerHTML = '<span class="k">已复制</span> ' + n;
