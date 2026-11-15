@@ -17,7 +17,7 @@
 | 作者 | 白杨木（[baiyangmuzz](https://github.com/baiyangmuzz)） |
 | 交流群 | QQ 1128992783 |
 | 下载 | [Releases 最新版](https://github.com/baiyangmuzz/SP2Chinese/releases/latest) |
-| 项目主页 | https://baiyangmuzz.github.io/SP2Chinese/ |
+| 项目主页 | https://sp2chinese-10j3b3qz.maozi.io/ |
 | 社区帖子 | [simpleplanes.com 论坛](https://www.simpleplanes.com/Forums/View/2313197) |
 | 国内镜像 | https://gitee.com/baiyangmuzz/sp2-chinese |
 | 仓库 | https://github.com/baiyangmuzz/SP2Chinese |
