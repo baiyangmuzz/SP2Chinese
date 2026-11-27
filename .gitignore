@@ -51,3 +51,7 @@ _captool/
 _sitebranch/
 # 本地词库校对表
 SP2Chinese_v*_词库对照表.*
+# 内部工作文案与本地预览图，不公开
+_internal_docs/
+/_fav_preview*.png
+/_v16*.png
