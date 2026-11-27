@@ -13,7 +13,7 @@ using UnityEngine.UI;
 
 namespace SP2Chinese
 {
-    [BepInPlugin("sp2.zh", "SimplePlanes 2 \u7b80\u4f53\u4e2d\u6587 by \u767d\u6768\u6728", "1.7.4")]
+    [BepInPlugin("sp2.zh", "SimplePlanes 2 \u7b80\u4f53\u4e2d\u6587 by \u767d\u6768\u6728", "1.7.5")]
     public class Plugin : BaseUnityPlugin
     {
         private string _dictPath;
