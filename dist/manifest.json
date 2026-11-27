@@ -1,10 +1,10 @@
 {
-  "modVersion": "1.7.3",
-  "dictVersion": "d8a091fa6b2c",
-  "dictBuild": 202611141533,
-  "dictRows": 10441,
-  "dictSha256": "d8a091fa6b2cadb548db949be509855d355e766b956cee86eaa61d988ff260dd",
-  "generatedAt": "2026-11-14T23:33:33+08:00",
+  "modVersion": "1.7.4",
+  "dictVersion": "4e768ea5e131",
+  "dictBuild": 202611271643,
+  "dictRows": 10469,
+  "dictSha256": "4e768ea5e131c0830c9ff1a92110c03592b936230fdd33fcb1fb5255e57c522f",
+  "generatedAt": "2026-11-28T00:43:25+08:00",
   "author": "白杨木",
   "qqGroup": "1128992783",
   "repository": "https://github.com/baiyangmuzz/SP2Chinese",
@@ -94,16 +94,16 @@
       "size": 78973
     },
     "BepInEx/plugins/SP2Chinese/dict.build": {
-      "sha256": "cf9baa01a08a7c5dd3b34cbb3dcabff7b2ec86f06230be34ed3157509db4ccbd",
+      "sha256": "af16abe865aa044ca16dbcf4e15e38145453d8bc157938461f04a0075941dde9",
       "size": 13
     },
     "BepInEx/plugins/SP2Chinese/dictionary_zh_cn.tsv": {
-      "sha256": "d8a091fa6b2cadb548db949be509855d355e766b956cee86eaa61d988ff260dd",
-      "size": 801668
+      "sha256": "4e768ea5e131c0830c9ff1a92110c03592b936230fdd33fcb1fb5255e57c522f",
+      "size": 803496
     },
     "BepInEx/plugins/SP2Chinese/SP2Chinese.dll": {
-      "sha256": "9ab89b6c824c751250a298d84369a73ec9387f029f494d340ebcf6c88e3cb917",
-      "size": 109568
+      "sha256": "bf4cb296f0d087114753e0444f5f692bae4eb3b8aec851e74ad154aedeba3d04",
+      "size": 111104
     }
   },
   "update": {
@@ -111,9 +111,9 @@
     "release": "https://github.com/baiyangmuzz/SP2Chinese/releases/latest"
   },
   "setup": {
-    "version": "1.7.3",
-    "sha256": "618ccefc97d85f888fcedee2897ffb634a6011a38dfba36a99b33ff58921e31f",
-    "size": 1265152,
-    "url": "https://github.com/baiyangmuzz/SP2Chinese/releases/download/v1.7.3/SP2Chinese-Setup-v1.7.3.exe"
+    "version": "1.7.4",
+    "sha256": "8e7b2cac17afb486d859c95b746522b22b48e0a2b4f3202e28c9e90711b9501b",
+    "size": 1266176,
+    "url": "https://github.com/baiyangmuzz/SP2Chinese/releases/download/v1.7.4/SP2Chinese-Setup-v1.7.4.exe"
   }
 }
