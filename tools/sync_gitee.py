@@ -17,10 +17,12 @@ Gitee Pages 已经下线，但「仓库 + 发行版附件」仍然可用，所�
 注意：Gitee 的发行版附件有单文件大小限制（通常 100 MB 内），本项目约 1 MB，没问题。
 """
 import argparse
+import base64
 import json
 import os
 import re
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -59,6 +61,44 @@ def api_get(url, token):
         if e.code == 404:
             return None
         raise
+
+
+def api_json(url, method, payload, token):
+    """发送 JSON 请求（contents API 用）。"""
+    payload = dict(payload)
+    payload["access_token"] = token
+    data = json.dumps(payload).encode("utf-8")
+    req = urllib.request.Request(url, data=data, method=method)
+    req.add_header("Content-Type", "application/json;charset=UTF-8")
+    with urllib.request.urlopen(req, timeout=60) as r:
+        return json.loads(r.read().decode("utf-8"))
+
+
+def sync_manifest(repo, token, version):
+    """把根目录 manifest.json 同步到 Gitee 镜像仓库，供安装器优先检查。
+
+    安装器把 raw/master/manifest.json 作为第一更新源；Gitee 不可达时才回落
+    GitHub。这里用 contents API 更新，避免依赖本地 git 凭据。
+    """
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    path = os.path.join(root, "manifest.json")
+    if not os.path.isfile(path):
+        print("  ! 缺少 manifest.json，跳过同步")
+        return
+    content = base64.b64encode(open(path, "rb").read()).decode("ascii")
+    remote = api_get("%s/repos/%s/contents/manifest.json?ref=master" % (API, repo), token)
+    payload = {
+        "content": content,
+        "message": "同步 manifest.json（v%s）" % version,
+        "branch": "master",
+    }
+    if remote and remote.get("sha"):
+        payload["sha"] = remote["sha"]
+        method = "PUT"
+    else:
+        method = "POST"
+    api_json("%s/repos/%s/contents/manifest.json" % (API, repo), method, payload, token)
+    print("  manifest.json 已同步到 Gitee master")
 
 
 def upload_file(url, path, token):
@@ -149,6 +189,9 @@ def main():
         upload_file("%s/repos/%s/releases/%s/attach_files" % (API, args.repo, rel["id"]),
                     f, token)
         print("    完成")
+
+    # 3) 同步 manifest，安装器自更新优先读 Gitee raw
+    sync_manifest(args.repo, token, version)
 
     print("\n镜像地址：https://gitee.com/%s/releases" % args.repo)
     return 0
