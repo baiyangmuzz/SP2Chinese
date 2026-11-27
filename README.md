@@ -13,7 +13,7 @@
 | 项 | 值 |
 |---|---|
 | 词库条目 | 10469（TSV 行数；每行 key 唯一，无重复；含 1712 条刻意保留英文的恒等行） |
-| 插件版本 | 1.7.4 |
+| 插件版本 | 1.7.5 |
 | 作者 | 白杨木（[baiyangmuzz](https://github.com/baiyangmuzz)） |
 | 交流群 | QQ 1128992783 |
 | 下载 | [Releases 最新版](https://github.com/baiyangmuzz/SP2Chinese/releases/latest) |
@@ -114,11 +114,13 @@ manifest 里的 `dictVersion` 。不一致时下载新字典、校验 SHA256、�
 或群里下载完整包，不自动替换 DLL。
 
 **安装器自更新**：manifest 的 `setup` 段记录了安装器自己的 `version / sha256 /
-size / url`。点「检查更新」发现新版后会出现「立即更新」按钮，流程是下载、
+size / urlGitee / url`。点「检查更新」发现新版后会出现「立即更新」按钮，流程是下载、
 校验 SHA256、退出、被新版本覆盖、重启。文件名里的版本号也会跟着改。
 
-`setup` 段走 `raw.githubusercontent` / jsDelivr，不依赖容易失效的 GitHub API。
-没有任何哈希可校验时，安装器**只提示、不下载**——不会执行来路不明的程序。
+检查顺序优先 Gitee：先读 `gitee.com/.../raw/master/manifest.json`，再回落
+`raw.githubusercontent.com` / jsDelivr；下载也优先 `urlGitee`，Gitee 缺失或不可达时
+再用 GitHub。这样国内用户不会被 `api.github.com` 先卡住。没有任何哈希可校验时，
+安装器**只提示、不下载**——不会执行来路不明的程序。
 
 自动检查可在 `BepInEx/config/sp2.zh.cfg` 关闭：
 
