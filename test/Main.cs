@@ -197,9 +197,35 @@ internal static class Program
             }
         }
         Console.WriteLine("format probes: " + tested + ", miss " + miss + ", skipped " + skipped);
-        var ok = t.FormatTemplateCount > 0 && miss == 0;
+
+        // 运行时游戏先把 "point{2}" / "Mech{1}" 里的 {n} 替换成 "" 或 "s"，
+        // 再由插件匹配。中文没有复数词尾，这些 "s" 必须被丢掉，否则会出现「机甲s」。
+        var pluralCases = new[]
+        {
+            new[] { "3 Mechs Remaining", "剩余 3 机甲" },
+            new[] { "1 Mech Remaining", "剩余 1 机甲" },
+            new[] { "Player scored 3 points", "获得 3 分" },
+            new[] { "Player scored 1 point", "获得 1 分" },
+            new[] { "(3 frames)", "（3 帧）" },
+            new[] { " and 3 other symmetric connections", "对称连接" },
+        };
+        var pluralMiss = 0;
+        foreach (var c in pluralCases)
+        {
+            var res = t.Apply(c[0]);
+            if (res.IndexOf(c[1], StringComparison.Ordinal) < 0 ||
+                res.EndsWith("s", StringComparison.Ordinal) ||
+                res.IndexOf("s" + c[1], StringComparison.Ordinal) >= 0)
+            {
+                pluralMiss++;
+                Console.WriteLine("PLURAL MISS [" + c[0] + "] => [" + res + "]");
+            }
+        }
+        Console.WriteLine("plural probes: " + pluralCases.Length + ", miss " + pluralMiss);
+        var ok = t.FormatTemplateCount > 0 && miss == 0 && pluralMiss == 0;
         Console.WriteLine(ok ? "RESULT: format templates OK"
-                             : "RESULT: FAILED - " + miss + " format row(s) never match");
+                             : "RESULT: FAILED - " + miss + " format row(s) never match, " +
+                               pluralMiss + " plural probe(s) failed");
         return ok ? 0 : 1;
     }
 
