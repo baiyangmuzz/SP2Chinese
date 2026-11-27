@@ -1,10 +1,10 @@
 # SimplePlanes 2 简体中文汉化
 
-**English:** Full Simplified Chinese localization for [SimplePlanes 2](https://store.steampowered.com/app/2840470/) — runtime text replacement via BepInEx/Harmony, 10,441 dictionary rows (8,722 translated + 1,719 deliberately kept in English), dynamic CJK font atlas that fixes tofu boxes in chat and UI, a single-file one-click installer (auto game detection, SHA256 verification, one-click rollback, self-update), and in-game dictionary auto-updates. The game has no i18n framework; all strings are replaced at runtime.
+**English:** Full Simplified Chinese localization for [SimplePlanes 2](https://store.steampowered.com/app/2840470/) — runtime text replacement via BepInEx/Harmony, 10,469 dictionary rows (8,757 translated + 1,712 deliberately kept in English), dynamic CJK font atlas that fixes tofu boxes in chat and UI, a single-file one-click installer (auto game detection, SHA256 verification, one-click rollback, self-update), and in-game dictionary auto-updates. The game has no i18n framework; all strings are replaced at runtime.
 
 [SimplePlanes 2](https://store.steampowered.com/app/2840470/) 的社区汉化补丁。
 
-**中文：** 为 SimplePlanes 2 提供完整的简体中文汉化——通过 BepInEx/Harmony 在运行时替换文本，共 10441 条词条（其中 8722 条译文、1719 条刻意保留英文），动态生成中文字体图集（修复聊天与界面的方块字）；单文件一键安装器：自动找游戏目录、SHA256 校验、一键回滚、自动更新，支持游戏内词库热更新。游戏本身没有 i18n 框架，所有文本均在运行时替换。
+**中文：** 为 SimplePlanes 2 提供完整的简体中文汉化——通过 BepInEx/Harmony 在运行时替换文本，共 10469 条词条（其中 8757 条译文、1712 条刻意保留英文），动态生成中文字体图集（修复聊天与界面的方块字）；单文件一键安装器：自动找游戏目录、SHA256 校验、一键回滚、自动更新，支持游戏内词库热更新。游戏本身没有 i18n 框架，所有文本均在运行时替换。
 
 游戏官方只提供英语界面（Steam 商店页的语言表里简体中文标注为「不支持」），
 且游戏内没有 i18n 框架，所有文本硬编码在资源 XML 与 DLL 里。因此这个项目不做
@@ -12,8 +12,8 @@
 
 | 项 | 值 |
 |---|---|
-| 词库条目 | 10441（TSV 行数；每行 key 唯一，无重复；含 1719 条刻意保留英文的恒等行） |
-| 插件版本 | 1.7.3 |
+| 词库条目 | 10469（TSV 行数；每行 key 唯一，无重复；含 1712 条刻意保留英文的恒等行） |
+| 插件版本 | 1.7.4 |
 | 作者 | 白杨木（[baiyangmuzz](https://github.com/baiyangmuzz)） |
 | 交流群 | QQ 1128992783 |
 | 下载 | [Releases 最新版](https://github.com/baiyangmuzz/SP2Chinese/releases/latest) |

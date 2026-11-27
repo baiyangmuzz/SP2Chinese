@@ -49,3 +49,5 @@ _gitee_mirror/
 # 本地截图/测量工具，不入库
 _captool/
 _sitebranch/
+# 本地词库校对表
+SP2Chinese_v*_词库对照表.*
