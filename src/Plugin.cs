@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Reflection;
 using System.Text;
 using BepInEx;
 using BepInEx.Configuration;
@@ -12,7 +13,7 @@ using UnityEngine.UI;
 
 namespace SP2Chinese
 {
-    [BepInPlugin("sp2.zh", "SimplePlanes 2 \u7b80\u4f53\u4e2d\u6587 by \u767d\u6768\u6728", "1.7.3")]
+    [BepInPlugin("sp2.zh", "SimplePlanes 2 \u7b80\u4f53\u4e2d\u6587 by \u767d\u6768\u6728", "1.7.4")]
     public class Plugin : BaseUnityPlugin
     {
         private string _dictPath;
@@ -806,6 +807,62 @@ namespace SP2Chinese
         {
             if (MachineText.Skip(value, __instance)) return;
             value = Translator.I.Apply(value);
+        }
+    }
+
+    /// <summary>
+    /// 游戏有些逻辑直接把 <c>TextWidget.Text</c> 当数据用：
+    ///
+    /// 1. 「绑定输入」对话框用 <c>CenterButtonText.Text == "Remove"</c> 判断该移除还是替换；
+    /// 2. 贴纸/涂装分类用按钮上的文字去匹配 <c>textureItem.Category</c>；
+    /// 3. 可折叠分区用 header 的显示文字当展开状态的字典 key。
+    ///
+    /// 这个 getter 在 Jundroo 包里返回的是 TMP 渲染后的文字，汉化改的就是它，于是
+    /// 这些比较全部落空：按钮点了没反应、分类列表变空。逐个改调用点只能追着游戏
+    /// 版本跑，所以这里从源头分开——getter 返回 TextWidget 自己保存的原始字符串
+    /// <c>_text</c>，显示层仍由 TMP 钩子翻译。游戏逻辑看到英文源串，玩家看到中文。
+    ///
+    /// <c>_text</c> 为空时（例如只有 prefab 序列化文本、从没调用过 Text setter）
+    /// 退回原 getter，保持旧行为。
+    /// </summary>
+    [HarmonyPatch]
+    internal static class TextWidgetSourceTextPatch
+    {
+        private static AccessTools.FieldRef<object, string> _source;
+
+        private static bool Prepare()
+        {
+            var type = AccessTools.TypeByName("Jundroo.Juicy.Widgets.TextWidget");
+            if (type == null)
+            {
+                UnityEngine.Debug.LogWarning("[SP2Chinese] TextWidget type not found; UI logic text stays translated");
+                return false;
+            }
+            try
+            {
+                _source = AccessTools.FieldRefAccess<string>(type, "_text");
+            }
+            catch (Exception e)
+            {
+                UnityEngine.Debug.LogWarning("[SP2Chinese] TextWidget._text not accessible: " + e.Message);
+                return false;
+            }
+            UnityEngine.Debug.Log("[SP2Chinese] TextWidget source-text patch ready");
+            return _source != null;
+        }
+
+        private static MethodBase TargetMethod()
+        {
+            var type = AccessTools.TypeByName("Jundroo.Juicy.Widgets.TextWidget");
+            return type == null ? null : AccessTools.PropertyGetter(type, "Text");
+        }
+
+        private static bool Prefix(object __instance, ref string __result)
+        {
+            var source = _source(__instance);
+            if (source == null) return true;
+            __result = source;
+            return false;
         }
     }
 }

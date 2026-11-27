@@ -66,6 +66,7 @@ namespace SP2Chinese
             internal Regex Pattern;
             internal string[] ValueParts;   // literal text around the translation's placeholders
             internal int[] ValueGroups;     // capture group index for each gap (0 = drop)
+            internal HashSet<int> PluralGroups; // groups that are an English plural suffix ("s"/"es")
             internal int FixedLength;       // total literal length in the key; longer = more specific
             internal int AnchorChars;       // non-whitespace literal chars; guards over-matching
         }
@@ -278,6 +279,11 @@ namespace SP2Chinese
         private const string RenderedValue = @"[^\r\n]*?";
 
         /// <summary>Strips the ,alignment / :format part from a placeholder body ("2:F0" -> "2").</summary>
+        private static bool IsAsciiLetter(char c)
+        {
+            return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');
+        }
+
         private static string SlotId(string token)
         {
             var id = token.Substring(1, token.Length - 2);
@@ -306,7 +312,22 @@ namespace SP2Chinese
             for (var i = 0; i < keyMatches.Count && plain; i++)
                 if (keyMatches[i].Value != "{" + i.ToString(CultureInfo.InvariantCulture) + "}")
                     plain = false;
-            if (plain) return;   // MaskNumbers already handles this row
+            // Rows with a plural suffix slot need the regex path even when their numeric
+            // placeholder sequence is otherwise MaskNumbers-compatible.
+            var pluralGroups = new HashSet<int>();
+            var earlyGroups = new Dictionary<string, int>(StringComparer.Ordinal);
+            foreach (Match m in keyMatches)
+            {
+                var slot = SlotId(m.Value);
+                int g;
+                if (!earlyGroups.TryGetValue(slot, out g))
+                {
+                    g = earlyGroups.Count + 1;
+                    earlyGroups[slot] = g;
+                }
+                if (m.Index > 0 && IsAsciiLetter(key[m.Index - 1])) pluralGroups.Add(g);
+            }
+            if (plain && pluralGroups.Count == 0) return;   // MaskNumbers already handles this row
 
             // slot id -> 1-based ordinal among distinct slots. Each occurrence consumes its own
             // rendered value, so the Nth capture group belongs to the Nth slot in first-seen
@@ -319,6 +340,11 @@ namespace SP2Chinese
                 pattern.Append(Regex.Escape(key.Substring(pos, m.Index - pos)));
                 var slot = SlotId(m.Value);
                 if (!slotGroup.ContainsKey(slot)) slotGroup[slot] = slotGroup.Count + 1;
+                // "{0} Mech{1} Remaining" / "{0} point{2}" / "part{1}": the placeholder
+                // directly follows a letter and is filled with "" or "s"/"es" at runtime.
+                // English plural suffixes have no Chinese equivalent, so TryFormat drops them.
+                if (m.Index > 0 && IsAsciiLetter(key[m.Index - 1]))
+                    pluralGroups.Add(slotGroup[slot]);
                 pattern.Append('(').Append(RenderedValue).Append(')');
                 pos = m.Index + m.Length;
             }
@@ -364,6 +390,7 @@ namespace SP2Chinese
                 Pattern = rx,
                 ValueParts = valueParts.ToArray(),
                 ValueGroups = valueGroups.ToArray(),
+                PluralGroups = pluralGroups,
                 FixedLength = fixedText.Length,
                 AnchorChars = anchorChars
             };
@@ -409,7 +436,15 @@ namespace SP2Chinese
                     {
                         sb.Append(e.ValueParts[p]);
                         var g = e.ValueGroups[p];
-                        if (g > 0 && g < m.Groups.Count) sb.Append(m.Groups[g].Value);
+                        if (g > 0 && g < m.Groups.Count)
+                        {
+                            var captured = m.Groups[g].Value;
+                            if (e.PluralGroups != null && e.PluralGroups.Contains(g) &&
+                                (captured == "s" || captured == "es" ||
+                                 captured == "S" || captured == "ES"))
+                                captured = string.Empty;
+                            sb.Append(captured);
+                        }
                     }
                     sb.Append(e.ValueParts[e.ValueParts.Length - 1]);
                     return sb.ToString();
