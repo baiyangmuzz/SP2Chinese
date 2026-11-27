@@ -20,6 +20,8 @@ namespace SP2Chinese.Setup
     {
         private static readonly string[] ManifestUrls =
         {
+            // 国内优先走 Gitee 镜像；镜像不可达时再回落 GitHub / jsDelivr。
+            "https://gitee.com/baiyangmuzz/sp2-chinese/raw/master/manifest.json",
             "https://raw.githubusercontent.com/baiyangmuzz/SP2Chinese/main/manifest.json",
             "https://fastly.jsdelivr.net/gh/baiyangmuzz/SP2Chinese@main/manifest.json",
             "https://cdn.jsdelivr.net/gh/baiyangmuzz/SP2Chinese@main/manifest.json"
@@ -133,24 +135,24 @@ namespace SP2Chinese.Setup
         /// <summary>
         /// 查「最新安装器版本 + 可校验的下载地址」。
         ///
-        /// api.github.com 在国内经常被墙，所以按可靠性排多个来源：
-        ///   1. api.github.com —— 最规范，能拿到 digest/size
-        ///   2. manifest.json 的 setup 字段 —— 走 raw.githubusercontent / jsDelivr，
-        ///      国内可达，且带 sha256，可以安全自动下载
+        /// 更新检查优先走 Gitee，GitHub 只做兜底：
+        ///   1. manifest 的 setup 段 —— Gitee 镜像优先，失败再走 raw.githubusercontent / jsDelivr；
+        ///      带 sha256，可以安全自动下载。
+        ///   2. api.github.com —— 信息最全，但国内经常不可达。
         ///   3. github.com/releases/latest 的重定向 —— 只能拿到版本号，无哈希，
-        ///      仅提示用户手动下载（fail-closed：没有哈希绝不自动替换）
+        ///      仅提示用户手动下载（fail-closed：没有哈希绝不自动替换）。
         /// </summary>
         internal static async Task<NewInstaller> CheckInstallerUpdateAsync(
             string localVersion, string overrideManifestUrl = null)
         {
-            // 1) 官方 API：信息最全，能自动更新
-            var viaApi = await CheckInstallerViaApi(localVersion).ConfigureAwait(false);
-            if (viaApi.Available || viaApi.Online) return viaApi;
-
-            // 2) manifest 的 setup 段：API 被墙时可达，且带 sha256，同样能自动更新
+            // 1) manifest 的 setup 段：Gitee 优先，且带 sha256
             var viaManifest = await CheckInstallerViaManifest(localVersion, overrideManifestUrl)
                 .ConfigureAwait(false);
             if (viaManifest.Available || viaManifest.Online) return viaManifest;
+
+            // 2) 官方 API：Gitee manifest 不可达时的兜底
+            var viaApi = await CheckInstallerViaApi(localVersion).ConfigureAwait(false);
+            if (viaApi.Available || viaApi.Online) return viaApi;
 
             // 3) github.com 重定向：只能拿到版本号，无哈希 → 只提示手动下载
             var viaHtml = await CheckInstallerViaHtml(localVersion).ConfigureAwait(false);
@@ -244,13 +246,17 @@ namespace SP2Chinese.Setup
                 }
 
                 // 没有哈希或地址就不允许自动更新（fail-closed）
-                if (string.IsNullOrEmpty(remote.SetupSha256) || string.IsNullOrEmpty(remote.SetupUrl))
+                if (string.IsNullOrEmpty(remote.SetupSha256) ||
+                    (string.IsNullOrEmpty(remote.SetupUrl) && string.IsNullOrEmpty(remote.SetupUrlGitee)))
                 {
                     r.Online = false;
                     r.Message = "新版 " + remote.SetupVersion + " 可用，但缺哈希/地址，无法自动更新";
                     return r;
                 }
-                if (!IsAllowed(remote.SetupUrl))
+                // 下载优先 Gitee，缺失或不在白名单时回落 GitHub 地址。
+                string url = remote.SetupUrlGitee;
+                if (string.IsNullOrEmpty(url) || !IsAllowed(url)) url = remote.SetupUrl;
+                if (!IsAllowed(url))
                 {
                     r.Online = false;
                     r.Message = "新版 " + remote.SetupVersion + " 的下载地址不在允许列表";
@@ -258,7 +264,7 @@ namespace SP2Chinese.Setup
                 }
 
                 r.Available = true;
-                r.DownloadUrl = remote.SetupUrl;
+                r.DownloadUrl = url;
                 r.Sha256 = remote.SetupSha256;
                 r.Size = remote.SetupSize;
                 r.Message = "安装器新版 " + remote.SetupVersion + " 可用";
@@ -557,6 +563,7 @@ namespace SP2Chinese.Setup
             if (u.Scheme != Uri.UriSchemeHttps) return false;
             string host = u.Host.ToLowerInvariant();
             return host == "raw.githubusercontent.com" || host == "github.com"
+                || host == "gitee.com" || host == "foruda.gitee.com"
                 || host.EndsWith(".jsdelivr.net", StringComparison.Ordinal);
         }
 

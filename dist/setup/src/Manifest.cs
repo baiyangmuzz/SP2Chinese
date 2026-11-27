@@ -23,6 +23,7 @@ namespace SP2Chinese.Setup
         internal string SetupVersion = "";
         internal string SetupSha256 = "";
         internal string SetupUrl = "";
+        internal string SetupUrlGitee = "";
         internal long SetupSize;
         internal string DictVersion = "";
         internal long DictBuild;
@@ -69,6 +70,7 @@ namespace SP2Chinese.Setup
                 m.SetupVersion = Str(setup, "version");
                 m.SetupSha256 = Str(setup, "sha256");
                 m.SetupUrl = Str(setup, "url");
+                m.SetupUrlGitee = Str(setup, "urlGitee");
                 m.SetupSize = Long(setup, "size");
             }
 

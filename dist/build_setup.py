@@ -109,6 +109,9 @@ def write_setup_block(final, version):
         "version": version,
         "sha256": sha256(final),
         "size": os.path.getsize(final),
+        # Gitee 放前面：安装器自更新优先走国内镜像；GitHub 仅作兜底。
+        "urlGitee": ("https://gitee.com/baiyangmuzz/sp2-chinese/releases/download/"
+                     "v%s/SP2Chinese-Setup-v%s.exe" % (version, version)),
         "url": ("https://github.com/baiyangmuzz/SP2Chinese/releases/download/"
                 "v%s/SP2Chinese-Setup-v%s.exe" % (version, version)),
     }
