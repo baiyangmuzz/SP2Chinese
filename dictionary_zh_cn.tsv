@@ -15,7 +15,7 @@
   ... and {0} more	  ……以及另外 {0} 项
   ... and {0} more types	  ……以及另外 {0} 种类型
   All objects:{0}	  全部对象：{0}
-  Area {0,9}:  {1:00.0000}  -->  {2:00.0000}	  区域 {0,9}：{1:00.0000}  -->  {2:00.0000}
+  Area {0,9}:  {1:00.0000}  -->  {2:00.0000}	  面积 {0,9}：{1:00.0000}  -->  {2:00.0000}
   Drag {0,9}:  {1:00.0000}  -->  {2:00.0000}	  阻力 {0,9}：{1:00.0000}  -->  {2:00.0000}
   GameObject: {0}	  游戏对象：{0}
   Graphics driver:  	  图形驱动程序：
@@ -83,7 +83,7 @@
  data to XML.	 数据写入 XML。
  days ago	 天前
  disabled for part 	 已为部件禁用
- drag points	 拖拽点
+ drag points	 阻力点
  enabled for part 	 已为部件启用
  for Player 	 用于玩家
  for new parts.	 用于新部件。
@@ -1689,10 +1689,10 @@ Downloading crafts is disabled while the tutorial is running.	教程运行期间
 Downsampling:	下采样：
 Drag	阻力
 Drag Calculator Texture	阻力计算器纹理
-Drag GPU Readback	拖拽 GPU 回读
+Drag GPU Readback	阻力 GPU 回读
 Drag Model	阻力模型
-Drag Points	拖拽点
-Drag Render Texture {0}	拖拽渲染纹理 {0}
+Drag Points	阻力点
+Drag Render Texture {0}	阻力渲染纹理 {0}
 Drag Scale	阻力缩放
 Drag Type	阻力类型
 Drag force is NaN	阻力为非数值
@@ -4520,7 +4520,7 @@ Tried to generate stage {0} when the previous stage was not completed (current s
 Trigger	扳机
 Trigger Enter with: {0}	扳机进入：{0}
 Trigger Pressed	扳机已按下
-Trigger the elevator	触发电梯
+Trigger the elevator	触发升降机
 Trigr: {0}	扳机：{0}
 Trim	配平
 Trim 1	配平 1
@@ -6309,7 +6309,7 @@ zero-slider	zero-slider
 {0:0.0}x	{0:0.0}x
 {0:0.0}°C	{0:0.0}°C
 {0:0.0}°F	{0:0.0}°F
-{0:0} degrees	{0:0} degrees
+{0:0} degrees	{0:0} 度
 {0:0}M	{0:0}M
 {0:0}k	{0:0}k
 {0:D2}:{1:D2}	{0:D2}:{1:D2}
@@ -6329,10 +6329,10 @@ zero-slider	zero-slider
 {0:n0} K	{0:n0} K
 {0:n0} RPM	{0:n0} RPM
 {0:n0} bytes	{0:n0} bytes
-{0:n0} ft-lb	{0:n0} ft-lb
-{0:n0} hp	{0:n0} hp
-{0:n0} minute	{0:n0} minute
-{0:n0} parts	{0:n0} parts
+{0:n0} ft-lb	{0:n0} 英尺·磅
+{0:n0} hp	{0:n0} 马力
+{0:n0} minute	{0:n0} 分钟
+{0:n0} parts	{0:n0} 个部件
 {0:n0}%	{0:n0}%
 {0:n0}*	{0:n0}*
 {0:n0}G	{0:n0}G
@@ -6358,7 +6358,7 @@ zero-slider	zero-slider
 {0:n1} KB	{0:n1} KB
 {0:n1} MB	{0:n1} MB
 {0:n1} kB	{0:n1} kB
-{0:n1} seconds	{0:n1} seconds
+{0:n1} seconds	{0:n1} 秒
 {0:n1}G	{0:n1}G
 {0:n1}J	{0:n1}J
 {0:n1}M	{0:n1}M
@@ -6370,7 +6370,7 @@ zero-slider	zero-slider
 {0:n1}kW	{0:n1}kW
 {0:n1}kt	{0:n1}kt
 {0:n1}m	{0:n1}m
-{0:n1}mph	{0:n1}mph
+{0:n1}mph	{0:n1} 英里/小时
 {0:n1}s	{0:n1}s
 {0:n1}x	{0:n1}x
 {0:n1}years	{0:n1}years
@@ -6471,7 +6471,7 @@ zero-slider	zero-slider
 {0}: {1}: Synced Damage: {2} (Total: {3})	{0}: {1}: Synced Damage: {2} (Total: {3})
 {0}: {1}: Synced Notable Damage: {2} ({3})	{0}: {1}: Synced Notable Damage: {2} ({3})
 {0}Craft Database Initialized. Found {1} Crafts.	{0}载具数据库已初始化。找到 {1} 个载具。
-{0}HP	{0}HP
+{0}HP	{0} 马力
 {0}Hz	{0}Hz
 {0}New Location: {1} ({2})	{0}新地点：{1}（{2}）
 {0}Rescan of craft database completed in {1} ms	{0}载具数据库重新扫描完成，耗时 {1} 毫秒
@@ -6664,7 +6664,7 @@ Turboshaft Small	小型涡轮轴发动机
 Ultra Turbofan Engine	超大型涡扇发动机
 VTOL Engine	垂直起降发动机
 VTOL Nozzle	垂直起降喷管
-VTOL RCN	垂直起降反作用喷嘴
+VTOL RCN	垂直起降反作用控制喷口
 WWII Propeller Engine	二战螺旋桨发动机
 Window	舷窗
 Wing Gun	机翼机炮
@@ -6831,8 +6831,8 @@ A main rotor assembly for a helicopter.  It produces a lot of torque when it gen
 A small main rotor assembly for a helicopter.  It produces torque when it generates lift, so make sure to slap a tail rotor on as well.	小型直升机主旋翼总成，产生升力时会产生扭矩，务必再装一个尾桨。
 Attempts to counteract torque from a helicopter rotor assembly, and provides yaw control	用于抵消直升机旋翼总成的扭矩，并提供偏航控制。
 This engine produces thrust which is channelled to VTOL Nozzles for vertical take-off and landing maneuvers.	该发动机产生的推力被输送至垂直起降喷管，用于垂直起降机动。
-Powered by VTOL Engines. Power is evenly spread across all VTOL Nozzles. Carefully place these so that the Center of Thrust is near your airplane's Center of Mass, or you will have a lot of trouble hovering and transitioning to forward flight.	由垂直起降发动机驱动，动力均匀分配到所有垂直起降喷管；请谨慎布置，使推力中心靠近飞机重心，否则悬停和向平飞转换时会非常麻烦。
-Reaction Control Nozzles (RCN) are used to control the aircraft in a hover. The larger VTOL Nozzles provide the main thrust to get off the ground, and these little nozzles help to make sure you don't crash n' burn.	反作用控制喷嘴用于在悬停时控制飞机；较大的垂直起降喷管提供离地的主要推力，这些小喷嘴则帮助您避免坠毁。
+Powered by VTOL Engines. Power is evenly spread across all VTOL Nozzles. Carefully place these so that the Center of Thrust is near your airplane's Center of Mass, or you will have a lot of trouble hovering and transitioning to forward flight.	由垂直起降发动机驱动，动力均匀分配到所有垂直起降喷管；请谨慎布置，使推力中心靠近飞机质心，否则悬停和向平飞转换时会非常麻烦。
+Reaction Control Nozzles (RCN) are used to control the aircraft in a hover. The larger VTOL Nozzles provide the main thrust to get off the ground, and these little nozzles help to make sure you don't crash n' burn.	反作用控制喷口用于在悬停时控制飞机；较大的垂直起降喷管提供离地的主要推力，这些小喷口则帮助您避免坠毁。
 Large inlet that can suck in enough air for any jet engine. It works better when placed near the front where the air is less turbulent.	大型进气口，能为任何喷气发动机吸入足够空气，放在气流较平稳的前部效果更好。
 Inlets help suck air in so jet engines can breathe. Most engines will need at least two of these slim inlets.	进气口帮助吸入空气，让喷气发动机呼吸，多数发动机至少需要两个这种纤细进气口。
 Gimme fuel, gimme fire, gimme that which I desire.	给我燃油，给我火焰，给我所求之物。
@@ -7006,7 +7006,7 @@ An unexpected and unhandled exception occurred loading a craft.	加载载具时�
 Are you certain you want to do this?	您确定要这样做吗？
 Are you sure you want to initiate a vote kick against	您确定要对以下玩家发起投票踢出吗
 Are you sure you want to remove this assignment?	您确定要移除此项分配吗？
-Area {0,9}:  {1:00.0000}  -->  {2:00.0000}	区域 {0,9}：{1:00.0000} --> {2:00.0000}
+Area {0,9}:  {1:00.0000}  -->  {2:00.0000}	面积 {0,9}：{1:00.0000} --> {2:00.0000}
 ArithmeticOnNonNumber - both are numbers	ArithmeticOnNonNumber——两者都是数字
 Assigning on r-value	对右值进行赋值
 At values lower than 1, the game will be rendered at a lower resolution than the game screen and then upscaled. This is a trade-off of reduced graphical quality for performance gains.	当数值低于 1 时，游戏将以低于游戏屏幕的分辨率渲染，然后再放大；这是以降低画面质量来换取性能提升。
@@ -7111,7 +7111,7 @@ Deleted symmetric part	已删除对称部件
 Disabled [Shared Instance]	Disabled [Shared Instance]
 Do you want to reassign or remove this assignment?	您要重新分配还是移除这项分配？
 Doing great. Keep adding more blocks.	做得很好，继续添加更多方块。
-Drag {0,9}:  {1:00.0000}  -->  {2:00.0000}	拖动 {0,9}：{1:00.0000} --> {2:00.0000}
+Drag {0,9}:  {1:00.0000}  -->  {2:00.0000}	阻力 {0,9}：{1:00.0000} --> {2:00.0000}
 Dynamic Expressions cannot call functions.	动态表达式不能调用函数。
 Dynamic Expressions cannot define new functions.	动态表达式不能定义新函数。
 Dynamic Expressions cannot define new non-prime tables.	动态表达式不能定义新的非原始表。
@@ -7175,7 +7175,7 @@ Finger Event Detectors	手指事件检测器
 First center or zero all sticks and axes and press any button or wait for the timer to finish.	首先将所有摇杆和轴回中或归零，然后按任意按钮，或等待计时器结束。
 FixDisappearingTerrain: Exception while toggling terrain '{0}' on GameObject '{1}': {2}	FixDisappearingTerrain：在游戏对象“{1}”上切换地形“{0}”时出现异常：{2}
 For best results, use textures of size {0}x{1}.	为获得最佳效果，请使用尺寸为 {0}x{1} 的纹理。
-Frame {0}> BET Sim | RPM: {1:F0} | Thrust: {2:F0} N | Torque: {3:F0} Nm | Avg AoA: {4:F1} | J: {5:n3} | maxMach: {6:n2}	帧 {0}> BET 模拟 | RPM：{1:F0} | 推力：{2:F0} N | 扭矩：{3:F0} Nm | 平均攻角：{4:F1} | J：{5:n3} | 最大马赫：{6:n2}
+Frame {0}> BET Sim | RPM: {1:F0} | Thrust: {2:F0} N | Torque: {3:F0} Nm | Avg AoA: {4:F1} | J: {5:n3} | maxMach: {6:n2}	帧 {0}> BET 模拟 | RPM：{1:F0} | 推力：{2:F0} N | 扭矩：{3:F0} Nm | 平均迎角：{4:F1} | J：{5:n3} | 最大马赫：{6:n2}
 Full Body IK is missing the left thigh node.	全身 IK 缺少左大腿节点。
 Full Body IK is missing the left upper arm node.	全身 IK 缺少左上臂节点。
 Full Body IK is missing the right thigh node.	全身 IK 缺少右大腿节点。
@@ -7795,7 +7795,7 @@ on game object '	在游戏对象“
 path not well formed: '{0}'	路径格式不正确：“{0}”
 pattern too complex	模式过于复杂
 pitch angle between {2:F0} and {3:F0} degrees.	俯仰角在 {2:F0} 到 {3:F0} 度之间。
-pitch: {0:n1} deg, featherTarget: {1:n1} deg, zeroLiftAlpha: {2:n2} deg, feathering: {3}	俯仰：{0:n1} 度，顺桨目标：{1:n1} 度，零升力攻角：{2:n2} 度，顺桨：{3}
+pitch: {0:n1} deg, featherTarget: {1:n1} deg, zeroLiftAlpha: {2:n2} deg, feathering: {3}	俯仰：{0:n1} 度，顺桨目标：{1:n1} 度，零升力迎角：{2:n2} 度，顺桨：{3}
 player from the server.	玩家已移出服务器。
 prefab is missing RectTransform component!	预制体缺少 RectTransform 组件！
 prefab is null!	预制体为空！
@@ -8099,7 +8099,7 @@ assertion failed!	断言失败！
 attempt to	尝试
 bytecode:{0}: {1}	字节码：{0}：{1}
 closed file	已关闭的文件
-drag points	拖动点
+drag points	阻力点
 facet normal	面法线
 file (closed)	文件（已关闭）
 file ({0:X8})	文件（{0:X8}）
@@ -8203,8 +8203,8 @@ Cyclic Motor Drag	周期电机阻力
 Cyclic Pitch (deg)	周期变距(度)
 Cyclic Pitch Expo	周期变距指数
 Cyclic RPM Falloff Expo	周期转速衰减指数
-Cyclic Roll (deg)	周期横滚(度)
-Cyclic Roll Expo	周期横滚指数
+Cyclic Roll (deg)	周期滚转(度)
+Cyclic Roll Expo	周期滚转指数
 Cyclic Strength	周期强度
 Damper	阻尼器
 Damper Scale	阻尼比例
@@ -8264,7 +8264,7 @@ Gauge Face	表盘面
 Gear Profile	齿轮轮廓
 Gear Ratio	传动比
 Gear Ratio: R	传动比：R
-Gimbal Speed	万向节转速
+Gimbal Speed	矢量偏转速率
 Glass	玻璃
 Gradient	渐变
 Ground Effect	地面效应
@@ -8308,7 +8308,7 @@ Lofting	放样
 Look At Cockpit	注视座舱
 Magic Engine	魔法引擎
 Maintain Head Rotation	保持头部旋转
-Max Gimbal Angle	最大万向节角
+Max Gimbal Angle	最大矢量偏转角
 Max Pitch	最大桨距
 Max RPM	最大转速
 Max Range	最大射程
@@ -8362,7 +8362,7 @@ Right Hand	右手
 Right Knee	右膝
 Rim Offset	轮辋偏移
 Rim Style	轮辋样式
-Roll Range	横滚范围
+Roll Range	滚转范围
 Rotation Axis	旋转轴
 Rotation Max	最大旋转
 Rotor Tensor	旋翼张量
@@ -8442,8 +8442,8 @@ compressionRatio	压气比
 afterburner	加力燃烧室
 reverseThrust	反推
 turbinePressureRatio	涡轮压比
-maxGimbalAngle	最大万向节角
-gimbalSpeed	万向节转速
+maxGimbalAngle	最大矢量偏转角
+gimbalSpeed	矢量偏转速率
 fanStyle	风扇样式
 inletConeStyle	进气锥样式
 nozzleStyle	喷管样式
@@ -8496,7 +8496,7 @@ twistAngleRoot	根部扭角
 chordScale	弦长缩放
 chordRadiusRatio	弦径比
 axialStages	轴流级数
-legacyCotPos	旧版重心位置
+legacyCotPos	旧版推力中心位置
 maxPitch	最大桨距
 maxRpm	最大转速
 thickness	厚度
@@ -8510,7 +8510,7 @@ reversed	已反向
 disableBaseMesh	禁用基础网格
 hideBase	隐藏基部
 hideFace	隐藏面
-hideTrim	隐藏配平
+hideTrim	隐藏饰边
 maxDeflection	最大偏角
 deflectionDegrees	偏转角度
 startPos	起始位置
@@ -8596,7 +8596,7 @@ tooltip	提示
 group	分组
 inputId	输入编号
 engineId	发动机编号
-decalId	贴标编号
+decalId	贴花编号
 tiling	平铺
 customPartIds	自定义部件编号
 ammoCount	弹药数
@@ -8609,7 +8609,7 @@ launchForce	发射力
 detachForce	分离力
 detacherUiMaxForce	分离器界面最大力
 preventBreaking	防止断裂
-ignoreAircraftCollisions	忽略机体碰撞
+ignoreAircraftCollisions	忽略载具碰撞
 animationDuration	动画时长
 doorStyle	舱门样式
 startOpen	初始开启
@@ -8617,7 +8617,7 @@ haptics	触感反馈
 designerBlinkProgram	设计器闪烁程序
 blinkProgram	闪烁程序
 enabled	已启用
-inletTrimSize	进气口配平尺寸
+inletTrimSize	进气口饰边尺寸
 inletThicknessFront	进气口前厚度
 inletThicknessRear	进气口后厚度
 positionSpring	位置弹簧
@@ -8626,7 +8626,7 @@ positionMaximumForce	位置最大力
 powerCurve	功率曲线
 partIds	部件编号
 face	面
-trimType	配平类型
+trimType	饰边类型
 rotationType	旋转类型
 faceInput	面输入
 faceZero	面零位
@@ -9094,33 +9094,33 @@ Toggles ambient smoke and fire effects placed in the world.	开关世界中放�
 Automatically hides symmetric parts while they are disconnected and after they are placed without a connection.	当对称部件未连接时自动隐藏，无连接放置之后也会隐藏。
 Disables the display of custom profile pictures in multiplayer. This will prevent you from seeing other players' custom profile pictures.	在多人模式中禁用自定义头像显示，这样你就看不到其他玩家的自定义头像。
 Adjusts the amount of weather particles. More particles mean reduced GPU performance.At High, an additional occlusion map gets rendered, which is CPU heavy.	调整天气粒子的数量。粒子越多，GPU 性能越低。设为“高”时会额外渲染一张遮蔽贴图，CPU 开销较大。
-Arrow 1	箭头
-Arrow 2	箭头
-Arrow 3	箭头
-Arrow 4	箭头
-Arrow 5	箭头
-Arrow 6	箭头
-Arrow 7	箭头
+Arrow 1	箭头 1
+Arrow 2	箭头 2
+Arrow 3	箭头 3
+Arrow 4	箭头 4
+Arrow 5	箭头 5
+Arrow 6	箭头 6
+Arrow 7	箭头 7
 Autumn Forest	秋日森林
 Bear	熊
 Bestagon	蜂巢格
 Bestagons	蜂巢格
 Big Cat	大猫
 Biohazard	生物危害
-Blob 1	斑点
-Blob 2	斑点
-Blob 3	斑点
-Blob 4	斑点
-Blob 5	斑点
-Blob 6	斑点
-Blob 7	斑点
-Blob 8	斑点
-Blob 9	斑点
-Blobby Camo 1	斑点迷彩
-Blobby Camo 2	斑点迷彩
-Blobby Camo 3	斑点迷彩
-Blobby Camo 4	斑点迷彩
-Blobby Camo 5	斑点迷彩
+Blob 1	斑点 1
+Blob 2	斑点 2
+Blob 3	斑点 3
+Blob 4	斑点 4
+Blob 5	斑点 5
+Blob 6	斑点 6
+Blob 7	斑点 7
+Blob 8	斑点 8
+Blob 9	斑点 9
+Blobby Camo 1	斑点迷彩 1
+Blobby Camo 2	斑点迷彩 2
+Blobby Camo 3	斑点迷彩 3
+Blobby Camo 4	斑点迷彩 4
+Blobby Camo 5	斑点迷彩 5
 Bricks	砖纹
 Brown Pearl	黑珍珠号
 Brushed	拉丝
@@ -9128,12 +9128,12 @@ Carbon	碳纤维
 Catapult A	弹射器 A
 Catapult B	弹射器 B
 Checkered	棋盘格
-Chevron 1	人字纹
-Chevron 2	人字纹
-Chevron 3	人字纹
-Chevron 4	人字纹
-Crack 1	裂纹
-Crack 2	裂纹
+Chevron 1	人字纹 1
+Chevron 2	人字纹 2
+Chevron 3	人字纹 3
+Chevron 4	人字纹 4
+Crack 1	裂纹 1
+Crack 2	裂纹 2
 Crescent	新月
 Cross	十字
 Cross Stripe	十字条纹
@@ -9143,11 +9143,11 @@ Cthulhu Tentacle	克苏鲁触手
 Cthulhu Tentacles	克苏鲁触手
 Cubes	方块
 Desert	沙漠
-Digital Camo 1	数码迷彩
-Digital Camo 2	数码迷彩
-Digital Camo 3	数码迷彩
-Digital Camo 4	数码迷彩
-Digital Camo 5	数码迷彩
+Digital Camo 1	数码迷彩 1
+Digital Camo 2	数码迷彩 2
+Digital Camo 3	数码迷彩 3
+Digital Camo 4	数码迷彩 4
+Digital Camo 5	数码迷彩 5
 Dots	圆点
 Dotted Gradient	点状渐变
 Droplet	水滴
@@ -9157,33 +9157,33 @@ Eagle Wing	鹰翼
 Electricity	小心触电
 Elephant	大象
 Entangle	小心缠绕
-Example 1	示例
-Example 2	示例
-Example 3	示例
-Example 4	示例
-Example Decal 1	示例贴花
+Example 1	示例 1
+Example 2	示例 2
+Example 3	示例 3
+Example 4	示例 4
+Example Decal 1	示例贴花 1
 Explosives	小心爆炸
 Feather	羽毛
-Feather 1	羽毛
-Feather 2	羽毛
+Feather 1	羽毛 1
+Feather 2	羽毛 2
 Feathers	羽毛
 Fish	鱼
-Flame 1	火焰
-Flame 2	火焰
-Flame 3	火焰
-Flame 4	火焰
-Flame 5	火焰
+Flame 1	火焰 1
+Flame 2	火焰 2
+Flame 3	火焰 3
+Flame 4	火焰 4
+Flame 5	火焰 5
 Flammable	小心火灾
-Flow 1	流线
-Flow 2	流线
-Flow 3	流线
-Flow 4	流线
-Flow 5	流线
-Geometric Camo 1	几何迷彩
-Geometric Camo 2	几何迷彩
-Geometric Camo 3	几何迷彩
-Geometric Camo 4	几何迷彩
-Geometric Camo 5	几何迷彩
+Flow 1	流线 1
+Flow 2	流线 2
+Flow 3	流线 3
+Flow 4	流线 4
+Flow 5	流线 5
+Geometric Camo 1	几何迷彩 1
+Geometric Camo 2	几何迷彩 2
+Geometric Camo 3	几何迷彩 3
+Geometric Camo 4	几何迷彩 4
+Geometric Camo 5	几何迷彩 5
 Glass Crack	玻璃裂纹
 Goat	山羊
 Green Forest	绿林
@@ -9192,44 +9192,44 @@ Hatch	舱口
 Hatch Round	圆形舱口
 Hatch Square	方形舱口
 Heart	心形
-Hippy Flower 1	嬉皮花
-Hippy Flower 2	嬉皮花
-Landscape 1	风景
-Landscape 2	风景
+Hippy Flower 1	嬉皮花 1
+Hippy Flower 2	嬉皮花 2
+Landscape 1	风景 1
+Landscape 2	风景 2
 Laps	圈数
-Large Camo 1	大型迷彩
-Large Camo 2	大型迷彩
-Large Camo 3	大型迷彩
-Large Camo 4	大型迷彩
-Large Camo 5	大型迷彩
+Large Camo 1	大型迷彩 1
+Large Camo 2	大型迷彩 2
+Large Camo 3	大型迷彩 3
+Large Camo 4	大型迷彩 4
+Large Camo 5	大型迷彩 5
 Lasers	小心激光
-Leaf 1	叶子
-Leaf 2	叶子
+Leaf 1	叶子 1
+Leaf 2	叶子 2
 Lightning	闪电
 Lily	睡莲
-Lily Leaf 1	睡莲叶
-Lily Leaf 2	睡莲叶
+Lily Leaf 1	睡莲叶 1
+Lily Leaf 2	睡莲叶 2
 Linear Gradient	线性渐变
-Linear Gradient 2	线性渐变
-Linear Gradient 3	线性渐变
-Linear Gradient 4	线性渐变
+Linear Gradient 2	线性渐变 2
+Linear Gradient 3	线性渐变 3
+Linear Gradient 4	线性渐变 4
 Lion	狮子
 Maple Leaf	枫叶
 Metal	金属
-Nature 1	自然
-Nature 2	自然
-Nature 3	自然
-Nature 4	自然
-Nature 5	自然
-Nature 6	自然
-Nature 7	自然
-Nature 8	自然
-Nature 9	自然
-Nature Camo 1	自然迷彩
-Nature Camo 2	自然迷彩
-Nature Camo 3	自然迷彩
-Nature Camo 4	自然迷彩
-Nature Camo 5	自然迷彩
+Nature 1	自然 1
+Nature 2	自然 2
+Nature 3	自然 3
+Nature 4	自然 4
+Nature 5	自然 5
+Nature 6	自然 6
+Nature 7	自然 7
+Nature 8	自然 8
+Nature 9	自然 9
+Nature Camo 1	自然迷彩 1
+Nature Camo 2	自然迷彩 2
+Nature Camo 3	自然迷彩 3
+Nature Camo 4	自然迷彩 4
+Nature Camo 5	自然迷彩 5
 Palm	棕榈
 Palm Leaf	棕榈叶
 Panels	板纹
@@ -9237,32 +9237,32 @@ Pentagon	五边形
 Pirate	海盗旗
 Planks	木板
 Poison	有毒
-Preset 1	预设
+Preset 1	预设 1
 Prohibited	禁止
 Punk Skull	朋克骷髅
 Puzzle	拼图
 Quad Stripe	四条纹
 Radial Gradient	径向渐变
 Radiation	小心辐射
-Ring 1	圆环
-Ring 2	圆环
-Ring 3	圆环
+Ring 1	圆环 1
+Ring 2	圆环 2
+Ring 3	圆环 3
 Rivet	铆钉
 Rivets	铆钉
-Rock 1	岩石
-Rock 2	岩石
-Rock 3	岩石
-Rock 4	岩石
+Rock 1	岩石 1
+Rock 2	岩石 2
+Rock 3	岩石 3
+Rock 4	岩石 4
 Rose	玫瑰
-Rust 1	锈迹
-Rust 2	锈迹
-Rust 3	锈迹
+Rust 1	锈迹 1
+Rust 2	锈迹 2
+Rust 3	锈迹 3
 Sakura	樱花
-Scratch 1	划痕
-Scratch 2	划痕
+Scratch 1	划痕 1
+Scratch 2	划痕 2
 Seam	接缝
-Shared Preset 1	共享预设
-Shared Preset 2	共享预设
+Shared Preset 1	共享预设 1
+Shared Preset 2	共享预设 2
 Shark Eye	鲨鱼眼
 Shark Gills	鲨鱼鳃
 Shark Mouth Front	鲨鱼嘴（正面）
@@ -9270,21 +9270,21 @@ Shark Mouth Side	鲨鱼嘴（侧面）
 Sine Line	正弦线
 Sine Wave	正弦波
 Smoking Rivet	冒烟铆钉
-Spiral 1	螺旋
-Spiral 2	螺旋
-Spiral 3	螺旋
-Splat 1	泼溅
-Splat 2	泼溅
-Splat 3	泼溅
-Splat 4	泼溅
-Sports 1	运动
-Sports 2	运动
-Sports 3	运动
-Sports 4	运动
-Sports 5	运动
-Sports 6	运动
-Star 5	星形
-Star 6	星形
+Spiral 1	螺旋 1
+Spiral 2	螺旋 2
+Spiral 3	螺旋 3
+Splat 1	泼溅 1
+Splat 2	泼溅 2
+Splat 3	泼溅 3
+Splat 4	泼溅 4
+Sports 1	运动 1
+Sports 2	运动 2
+Sports 3	运动 3
+Sports 4	运动 4
+Sports 5	运动 5
+Sports 6	运动 6
+Star 5	星形 5
+Star 6	星形 6
 Stars	星形
 Stickman	注意行人
 Stripe	条纹
@@ -9292,28 +9292,28 @@ Tape Stripe	胶带条纹
 Tape X	胶带 X
 Thin Stripe	细条纹
 Tiger	老虎
-Tiger Stripes 1	虎纹
-Tiger Stripes 2	虎纹
-Tiger Stripes 3	虎纹
-Tiger Stripes 4	虎纹
+Tiger Stripes 1	虎纹 1
+Tiger Stripes 2	虎纹 2
+Tiger Stripes 3	虎纹 3
+Tiger Stripes 4	虎纹 4
 Tree	树
 Tri Stripe	三条纹
 Triangle60	三角形
 Triangle90	三角形
 Triangles	三角形
-Tribal 1	部落
-Tribal 2	部落
-Tribal 3	部落
-Tribal 4	部落
+Tribal 1	部落 1
+Tribal 2	部落 2
+Tribal 3	部落 3
+Tribal 4	部落 4
 Urban	都市
-Vine 1	藤蔓
-Vine 2	藤蔓
-Water 1	水纹
-Water 2	水纹
-Water 3	水纹
-Water 4	水纹
-Water 5	水纹
-Water 6	水纹
+Vine 1	藤蔓 1
+Vine 2	藤蔓 2
+Water 1	水纹 1
+Water 2	水纹 2
+Water 3	水纹 3
+Water 4	水纹 4
+Water 5	水纹 5
+Water 6	水纹 6
 Wave	波浪
 Window Round	圆形舷窗
 Window Round Spaced	圆形舷窗（加宽）
@@ -9381,8 +9381,8 @@ Large Heli Rotor\nA main rotor assembly for a helicopter.  It produces a lot of 
 Small Heli Rotor\nA small main rotor assembly for a helicopter.  It produces torque when it generates lift, so make sure to slap a tail rotor on as well.	小型直升机旋翼\n小型直升机主旋翼总成，产生升力时会产生扭矩，务必再装一个尾桨。
 Tail Rotor\nAttempts to counteract torque from a helicopter rotor assembly, and provides yaw control	尾桨\n用于抵消直升机旋翼总成的扭矩，并提供偏航控制。
 VTOL Engine\nThis engine produces thrust which is channelled to VTOL Nozzles for vertical take-off and landing maneuvers.	垂直起降发动机\n该发动机产生的推力被输送至垂直起降喷管，用于垂直起降机动。
-VTOL Nozzle\nPowered by VTOL Engines. Power is evenly spread across all VTOL Nozzles. Carefully place these so that the Center of Thrust is near your airplane's Center of Mass, or you will have a lot of trouble hovering and transitioning to forward flight.	垂直起降喷管\n由垂直起降发动机驱动，动力均匀分配到所有垂直起降喷管；请谨慎布置，使推力中心靠近飞机重心，否则悬停和向平飞转换时会非常麻烦。
-VTOL RCN\nReaction Control Nozzles (RCN) are used to control the aircraft in a hover. The larger VTOL Nozzles provide the main thrust to get off the ground, and these little nozzles help to make sure you don't crash n' burn.	垂直起降反作用喷嘴\n反作用控制喷嘴用于在悬停时控制飞机；较大的垂直起降喷管提供离地的主要推力，这些小喷嘴则帮助您避免坠毁。
+VTOL Nozzle\nPowered by VTOL Engines. Power is evenly spread across all VTOL Nozzles. Carefully place these so that the Center of Thrust is near your airplane's Center of Mass, or you will have a lot of trouble hovering and transitioning to forward flight.	垂直起降喷管\n由垂直起降发动机驱动，动力均匀分配到所有垂直起降喷管；请谨慎布置，使推力中心靠近飞机质心，否则悬停和向平飞转换时会非常麻烦。
+VTOL RCN\nReaction Control Nozzles (RCN) are used to control the aircraft in a hover. The larger VTOL Nozzles provide the main thrust to get off the ground, and these little nozzles help to make sure you don't crash n' burn.	垂直起降反作用控制喷口\n反作用控制喷口用于在悬停时控制飞机；较大的垂直起降喷管提供离地的主要推力，这些小喷口则帮助您避免坠毁。
 VTOL Inlet\nLarge inlet that can suck in enough air for any jet engine. It works better when placed near the front where the air is less turbulent.	垂直起降进气口\n大型进气口，能为任何喷气发动机吸入足够空气，放在气流较平稳的前部效果更好。
 VTOL Slim Inlet\nInlets help suck air in so jet engines can breathe. Most engines will need at least two of these slim inlets.	垂直起降窄进气口\n进气口帮助吸入空气，让喷气发动机呼吸，多数发动机至少需要两个这种纤细进气口。
 Fuel Tank\nGimme fuel, gimme fire, gimme that which I desire.	油箱\n给我燃油，给我火焰，给我所求之物。
@@ -9573,7 +9573,7 @@ Teleport Down	向下传送
 Enter/Exit Craft	进入/离开载具
 Screenshot Mode	截图模式
 Delete Selected Part	删除选中部件
-Toggle CoM/CoL/CoT	切换重心/升力中心/推力中心
+Toggle CoM/CoL/CoT	切换质心/升力中心/推力中心
 Quicksave Craft	快速保存载具
 Single / Connected Part Modifier Key\n  (Select / Clone / Transform / Symmetry)	单个/相连部件修饰键\n  （选择/克隆/变换/对称）
 Reattach Selected Part	重新连接选中部件
@@ -9630,24 +9630,24 @@ Nudge Part Z-	部件 Z- 微移
 Part Symmetry	部件对称
 Toggle Symmetry Panel	切换对称面板
 Test Pitch	测试俯仰
-Test Pitch Forward	测试俯仰前
-Test Pitch Back	测试俯仰后
+Test Pitch Forward	测试俯仰前推
+Test Pitch Back	测试俯仰后拉
 Test Roll	测试滚转
 Test Roll Right	测试右滚
 Test Roll Left	测试左滚
 Test Yaw	测试偏航
 Test Yaw Right	测试右偏航
 Test Yaw Left	测试左偏航
-Pitch Forward	俯仰前
-Pitch Back	俯仰后
+Pitch Forward	俯仰前推
+Pitch Back	俯仰后拉
 Roll Right	右滚
 Roll Left	左滚
 Yaw Right	右偏航
 Yaw Left	左偏航
 Throttle Up	加大油门
 Throttle Down	减小油门
-VTOL Up	VTOL 上
-VTOL Down	VTOL 下
+VTOL Up	垂直起降向上
+VTOL Down	垂直起降向下
 Trim Up	向上配平
 Trim Down	向下配平
 Brake Increase	增加刹车
@@ -9668,10 +9668,10 @@ Custom Camera 3	自定义视角 3
 Custom Camera 4	自定义视角 4
 Activate Camera Look	启用视角控制
 Launch Countermeasures	投放干扰弹
-Slew Right	瞄准右转
-Slew Left	瞄准左转
-Slew Up	瞄准上转
-Slew Down	瞄准下转
+Slew Right	瞄准吊舱右转
+Slew Left	瞄准吊舱左转
+Slew Up	瞄准吊舱上转
+Slew Down	瞄准吊舱下转
 Zoom Targeting Pod	缩放瞄准吊舱
 Activation Groups	激活组
 Toggle Panel	切换面板
@@ -9687,13 +9687,13 @@ Self Destruct	自毁
 Search Actions	搜索动作
 Multiple Parts	多个部件
 Mirroring disabled for part {*}	已为部件 {*} 关闭镜像
-Look at your hands to see the controls for flying. If you ever want to see them again, you can find the controls button in the pop-up menu under settings.	看你的双手可以看到飞行操作。如果你想再看一次，可以在设置里的弹出菜单中找到操作按钮。
+Look at your hands to see the controls for flying. If you ever want to see them again, you can find the controls button in the pop-up menu under settings.	低头看自己的双手即可看到飞行操作提示。如果想再次查看，可以在设置里的弹出菜单中找到操作提示按钮。
 You can rotate the view around by clicking and dragging. Go ahead and try, just try not to click on any parts.	按住鼠标拖动可以旋转视角。来试试吧，只是尽量别点到部件上。
 {0}d ago	{0} 天前
 {0}m ago	{0} 分钟前
 {0}h ago	{0} 小时前
-Wind Speed: {0}mph	风速：{0}mph
-Wind Speed: {0}km/h	风速：{0}km/h
+Wind Speed: {0}mph	风速：{0} 英里/小时
+Wind Speed: {0}km/h	风速：{0} 公里/小时
 Wind Speed: {0}m/s	风速：{0} 米/秒
 Capybara\nBy: Thecatbaron\n\nAG1: Left Side Door\nAG2: Right Side Door\nAG3: Cargo Door\nAG4: Nav Lights\nAG5: Strobe Lights\nAG6: Beacon Light\nAG7: Reverse Thrust\nAG8: Engine (defaut on) on/off\n\nVTOL: Constant speed prop RPM control\nTRIM: <----\nFLAPS: <----\n\nNotes:\nThe perfect aircraft for transporting illicit xml modded parts across state lines at the backbending speed of 150kts over the ground! Rotation speed should be around 70kts with 10 degrees of flaps. Good luck with the rest ya scamps!\n\nXML Modifications:\n\n-Wings inset in the front of the cowling with modified drag and lift for performance reasons.\n-physical flaps (control surface) scaled down to make room for more realisic flap mechanism.\n-3 scaled down airbrakes for further flight performance reasons, two in the wing roots for flap drag, and one in the spinner for prop stuff. \n-Engine given slighly more rpm for flight performance reasons.	Capybara\nBy: Thecatbaron\n\nAG1: 左侧门\nAG2: 右侧门\nAG3: 货舱门\nAG4: 航行灯\nAG5: 频闪灯\nAG6: 信标灯\nAG7: 反推\nAG8: 发动机开/关（默认开）\n\nVTOL: 恒速桨转速控制\nTRIM: <----\nFLAPS: <----\n\n说明：\n想在州际之间运送来路不明的 XML 改造部件？就是它了，150 节地速能把你的腰都折弯！襟翼放 10 度时抬轮速度约 70 节。剩下的就靠你们这些小鬼自己啦！\n\nXML 修改：\n\n- 机翼嵌入整流罩前部，并调整阻力与升力以提升性能。\n- 实体襟翼（操纵面）缩小，为更真实的襟翼机构腾出空间。\n- 为飞行性能又加了 3 个缩小的减速板：两个在翼根模拟襟翼阻力，一个在桨毂用于螺旋桨相关效果。 \n- 为飞行性能略微提高了发动机转速。
 Chungus\nBy: BaconAircraft\n\nAG1: Speedbrake\nAG2: Open cargo door\nAG3: Drop cargo door ramp\nAG5: Open cabin door\nAG7: Disable autotrim\n\nNotes:\nShe's a bit on the heavy side, some may even say it costs 400 thousand dollars to fly this airplane for 12 seconds... Anyways, plan your maneuvers 2-3 business days in advance and remember that high lift devices exist, otherwise you may experience an impromptu lesson in lithobraking.\n\nXML notes:\n- MassScale>1 applied to physics items and attachments (i.e. landing gear components, cargo door)\n- Reduced friction on main gear\n- Various scaled parts on physics items (i.e. landing gear, cabin door, cargo door) and cockpit details. 	Chungus\nBy: BaconAircraft\n\nAG1: 减速板\nAG2: 打开货舱门\nAG3: 放下货舱门坡道\nAG5: 打开客舱门\nAG7: 禁用自动配平\n\n说明：\n她确实有点重，甚至有人说让这飞机飞 12 秒要花 40 万美元……总之，机动请提前 2 到 3 个工作日规划，并且记住高升力装置是存在的，否则你可能会上一堂意料之外的「岩石刹车」课。\n\nXML 备注：\n- 物理部件与挂载件（如起落架组件、货舱门）应用了 MassScale>1\n- 降低主起落架摩擦\n- 物理部件（如起落架、客舱门、货舱门）与驾驶舱细节做了多项缩放。 
@@ -9716,7 +9716,7 @@ Peregrine\nBy: Shizzle Styx\n\nAG1: Opens Canopy\nAG2: Emergency Jettison\nAG3: 
 Babushka\nBy: HuskyDynamics\n\nAG1: Arm Rear Gun\nAG2: Rear Compartment\nAG3: Nose Compartment\nAG8: Engine (Default On)\n\nYaw: Toe Brakes (use for taxiing since there is no tailwheel)\n\nNotes: Although the bombs push the limits of what it can carry, the Babushka becomes surprisingly nimble in the air once its payload is expended.  Its small size offers the perfect cover for sneaky raids over enemy targets, if you can make it there undetected.  Be careful in the wind, especially on takeoff, because a gust in the wrong direction can send you spinning like a leaf in the breeze.	Babushka\nBy: HuskyDynamics\n\nAG1: 为尾部机枪解除保险\nAG2: 后舱\nAG3: 前舱\nAG8: 发动机（默认开启）\n\nYaw: 脚尖刹车（没有尾轮，滑行时用）\n\n说明：虽然挂载的炸弹已逼近它的承载极限，但投完弹之后，Babushka 在空中会变得异常灵活。它身躯小巧，是对敌方目标偷袭的绝佳掩护——前提是你能不被发现地飞过去。小心大风，尤其起飞时，一股方向不对的阵风就能让你像片树叶似的打转。
 Barracuda\nBy: BaconEggs\n\nAg1: Canopy\nAg2: Spin protection (on by default)\nAg3: Tail hook\nAg4: Wing fold\nAg5: Speedbrake\nAg8: Engine (on by default)\n\nNotes: Another jet that comes from a boat. The main armament is the guns, as the missiles are some of the earliest variants of the type and have a low chance of hitting.\n\nXML Changes: Disabled collisions on the landing gear, canopy and stabilator, some mass scaling in the gear, a scaled seat with a control base to animate Chad to lean forward so that the canopy doesn't donk his head when it slides back, and a custom tailhook.	Barracuda\nBy: BaconEggs\n\nAg1: 座舱盖\nAg2: 防尾旋（默认开启）\nAg3: 尾钩\nAg4: 机翼折叠\nAg5: 减速板\nAg8: 发动机（默认开启）\n\n说明：又一位从船上起飞的喷气机。主要武器是机炮——它的导弹属于最早期的型号，命中概率不高。\n\nXML 修改：关闭起落架、座舱盖与全动平尾的碰撞；起落架做了部分质量缩放；缩放座椅并加控制底座，让 Chad 能前倾，免得座舱盖后滑时敲到他的头；另加了自定义尾钩。
 Quetzal\nBy: Shizzle Styx\n\nAG1: Engines On/Off\nAG2: Deploys Tail Hook\nAG3: Opens Storage Compartments\nAG4: Deploys Sentient Cheese\nAG8: Canopy\nVTOL: Deploys Airbrakes\nTrim: Trims aircraft pitch controls\n\nNotes: Quetzal is many things... Mainly a glider. The storage compartments are perfectly normal. The centre bay is not. It contains Vetusta's Finest Cheese. Upon deployment, please allow approximately 15 seconds for the cheese to realise it is free. There is also an arrestor hook... Gravy. \n\nXML Modifications: \nScaled Sentient Cheese gyro\nEngine Diameters scaled below minimums	Quetzal\nBy: Shizzle Styx\n\nAG1: 发动机开/关\nAG2: 放下尾钩\nAG3: 打开储物舱\nAG4: 投放有自我意识的奶酪\nAG8: 座舱盖\nVTOL: 展开减速板\nTrim: 配平飞机俯仰\n\n说明：Quetzal 身兼多职……主要是滑翔机。储物舱完全正常。中央舱则不然，里面装着 Vetusta 顶级奶酪。投放后请留约 15 秒，让奶酪意识到自己已经自由了。另外还有着舰钩……真是锦上添花。 \n\nXML 修改： \n有自我意识的奶酪陀螺已缩放\n发动机直径已缩放至下限以下
-Mink\nBy: DeezDucks\n\nAG1: "Untie" Canoe (Will also detach from high speed)\nAG2: Lights\nAG3-4: Doors\nAG8: Engine Power\n\nVTOL: Prop Pitch\n\nNotes:\nMade as a love letter to a legendary bush aircraft, this aircraft's designed to take you in and out of pretty much anywhere, depending on the configuration. To take off, apply 50% flaps, VTOL 50% and get "on step" and the aircraft should rotate gently once required speed is reached. Avoid rough waters for takeoff/landings, as the aircraft can begin to roll violently. There is also a slightly violent pitch down tendency, so be careful. Have Fun!	Mink\nBy: DeezDucks\n\nAG1: 「解开」独木舟（高速时也会自行脱离）\nAG2: 灯光\nAG3-4: 车门\nAG8: 发动机功率\n\nVTOL: 桨距\n\n说明：\n这架飞机是写给一架传奇丛林飞机的情书，按配置不同，几乎能把你送进、带出任何地方。起飞时襟翼放 50%、VTOL 设 50%，进入滑行状态，达到速度后它会轻柔抬头。起降时避开汹涌水面，否则可能剧烈横滚。它还有一股略微凶猛的低头的倾向，注意点。玩得开心！
+Mink\nBy: DeezDucks\n\nAG1: "Untie" Canoe (Will also detach from high speed)\nAG2: Lights\nAG3-4: Doors\nAG8: Engine Power\n\nVTOL: Prop Pitch\n\nNotes:\nMade as a love letter to a legendary bush aircraft, this aircraft's designed to take you in and out of pretty much anywhere, depending on the configuration. To take off, apply 50% flaps, VTOL 50% and get "on step" and the aircraft should rotate gently once required speed is reached. Avoid rough waters for takeoff/landings, as the aircraft can begin to roll violently. There is also a slightly violent pitch down tendency, so be careful. Have Fun!	Mink\nBy: DeezDucks\n\nAG1: 「解开」独木舟（高速时也会自行脱离）\nAG2: 灯光\nAG3-4: 车门\nAG8: 发动机功率\n\nVTOL: 桨距\n\n说明：\n这架飞机是写给一架传奇丛林飞机的情书，按配置不同，几乎能把你送进、带出任何地方。起飞时襟翼放 50%、VTOL 设 50%，进入滑行状态，达到速度后它会轻柔抬头。起降时避开汹涌水面，否则可能剧烈滚转。它还有一股略微凶猛的低头的倾向，注意点。玩得开心！
 Bumblebee\nBy: FairFireFlight\n\nAG1: Cockpit Doors\nAG2: Rear Doors\nAG3: Nav Lights\nAG8: Rotor Brake\n\nNotes: \nThe Bumblebee is a small and nimble utility helicopter often used for search and resuce, med evac, and even some military applications. This light helicopter is also incredibely acrobatic, allowing you to pull off the sketchiest of stunts.\n\nWARNING: WARRANTY VOID IF ENGINE IS TURNED ON\n\nThis craft was created very early on in closed beta, before new parts and/or features like the bay/window parts and decal part targeting, so it is very rudementry and uses ancient SP1 building techniques.	Bumblebee\nBy: FairFireFlight\n\nAG1: 驾驶舱门\nAG2: 后门\nAG3: 航行灯\nAG8: 旋翼刹车\n\n说明： \nBumblebee 是一架小巧灵活的多用途直升机，常用于搜救、医疗后送，甚至部分军事用途。这架轻型直升机还极其擅长特技，能做出最惊险的动作。\n\n警告：启动发动机即视为放弃保修\n\n这架载具制作于封闭测试很早期，当时还没有舱口/窗户部件和贴花部件定向这类功能，所以它相当粗糙，用的是古老的 SP1 建造手法。
 Jerboa\nBy: BaconEggs\n\nAg1: Left doors\nAg2: Right doors\nAg7: Rotor brake\nAg8: Engine (on by default)\n\nNotes: My main goal with this helicopter was to make the most 'gooberous' little guy possible. Making the Jerby was my first time using the new fuselage. I had great fun finding new methods of building that would've taken so much more time and effort with the old parts. Fair warning, engaging the rotor brake in the air will pull you back to earth before you have the chance to say "oh great heavens"\n\nXML Changes: disabled collisions on the doors, and some numbers tuning to the rotors to get the handling nice	Jerboa\nBy: BaconEggs\n\nAg1: 左门\nAg2: 右门\nAg7: 旋翼刹车\nAg8: 发动机（默认开启）\n\n说明：做这架直升机时，我的首要目标就是造出最「呆萌」的小家伙。Jerby 是我第一次用新机身部件。探索新的建造方式非常有意思——用旧部件的话，那得多花好几倍功夫。奉劝一句：在空中拉旋翼刹车，你连「我的天」都来不及说完就会被拽回地面。\n\nXML 修改：关闭车门的碰撞；调整旋翼参数以改善操控。
 P-51B\nBy: DeezDucks\n\nAG2: Nav Lights\nAG3-5: Indentification Lights\nAG6: Jettison Weapons\nAG7: Canopy\nAG8: Master Power\n\nReturn of the P-51B! I made this version of the venerable stock P-51 with a field upgrade bubble canopy for better first person visibility. Flight dynamics wise, it turns a bit worse/more realistic than the other P-51's. Being rough with the controls can lead to a momentary stall, especially in the vertical. Comes with an empty aft fuel tank, fill it full and the wings to 25% for a realistic maximum range (maneuvering will be much more unstable). Have fun!\n\nXML Modifications: Flap deflection angles	P-51B\nBy: DeezDucks\n\nAG2: 航行灯\nAG3-5: 识别灯\nAG6: 抛弃武器\nAG7: 座舱盖\nAG8: 主电源\n\nP-51B 回来了！我在经典原厂 P-51 的基础上做了这架，装了战地改装的水泡座舱盖，第一人称视野更好。飞行特性上，它转弯比其它 P-51 稍差、也更真实。粗暴操纵可能导致瞬时失速，垂直机动时尤其明显。它后油箱初始是空的——加满油、机翼油箱加到 25%，就是真实的转场最大航程状态（此时机动会更不稳定）。玩得开心！\n\nXML 修改：襟翼偏转角
@@ -9799,8 +9799,8 @@ Manipulate Part Previous Mode	上一个部件操作模式
 Select and Focus Part	选中并聚焦部件
 Toggle Search Parts Panel	切换搜索部件面板
 WeldParts	焊接部件
-Slew Targeting Pod Left / Right	瞄准吊舱左/右转
-Slew Targeting Pod Up / Down	瞄准吊舱上/下转
+Slew Targeting Pod Left / Right	瞄准吊舱左转/右转
+Slew Targeting Pod Up / Down	瞄准吊舱上转/下转
 Zoom In / Out	放大 / 缩小
 Move Forward / Backward	前进 / 后退
 Toggle New Part Initial Symmetry	切换新部件初始对称
@@ -9917,9 +9917,9 @@ Wing Gear\nLanding gear specially made to attach to a wing. They are capable of 
 Bare Wing Gear\nLanding gear specially made to attach to a wing with a custom cover. They are capable of retracting and snuggling up right under the wing.	裸翼式起落架\n专门安装在机翼上的起落架，带自定义整流罩，可收起并紧贴机翼下方。
 Fixed Gear\nUseful for taking off, and landing without destroying your airplane.	固定起落架\n便于起飞与着陆，而且不会让你的飞机散架。
 Short Gear\nFancy landing gear that can hide on command. This is great because it's one of the few animations in the game, and it reduces drag.	短起落架\n可按指令收起的讲究起落架。它是游戏里少数带动画的部件，还能降低阻力。
-Boom 50\n500-pound dumb bomb. It makes a bigger boom.	轰-50\n500 磅无制导炸弹，爆炸动静更大。
-Boom 25\nIt's a 250-pound dumb bomb. It goes boom when it hits something.	轰-25\n250 磅无制导炸弹，撞到东西就炸。
-Lazy 50\nThis is a laser-guided bomb with 500lbs of love.	懒-50\n500 磅的激光制导炸弹，满满都是心意。
+Boom 50\n500-pound dumb bomb. It makes a bigger boom.	Boom 50\n500 磅无制导炸弹，爆炸动静更大。
+Boom 25\nIt's a 250-pound dumb bomb. It goes boom when it hits something.	Boom 25\n250 磅无制导炸弹，撞到东西就炸。
+Lazy 50\nThis is a laser-guided bomb with 500lbs of love.	Lazy 50\n500 磅的激光制导炸弹，满满都是心意。
 Window\nIt's realer	舷窗\n更真实了
 Bay\nIt's real	舱\n是真的
 Click the indicated button to open the tool list.	点击指示的按钮打开工具列表。
@@ -9998,19 +9998,19 @@ Change the value of the 'Turning Angle' property to '20'.	把「转向角」属�
 \nAt values higher than 1, the game will be rendered at a higher resolution than the game screen and then downscaled. This is a trade-off of increased graphical quality (particularly a reduction in aliasing) at the cost of performance.	\n大于 1 时，游戏会以高于屏幕的分辨率渲染再降采样。这是以性能换取更高画质（尤其是减少锯齿）的取舍。
 Toggles the waves along the shorelines. This has minimal impact on performance but some players may prefer less turbulent shorelines, either for physics-related or perhaps just visual reasons.	切换岸线处的波浪。对性能影响极小，但有些玩家可能更喜欢平静的岸线，无论是出于物理考虑还是纯粹为了好看。
 Miscellaneous	杂项
-Slew RIght	瞄准右转
+Slew RIght	瞄准吊舱右转
 Date	日期
 Path	路径
-Countermeasures\nShortcut: <b>V</b>	投放干扰弹\n快捷键：V
-Reloads your craft at your current position.\nShortcut: <b>Ctrl + R</b>	在当前位置重新载入你的载具。\n快捷键：Ctrl + R
-Reloads your craft at your starting position.\nShortcut: <b>Ctrl + Shift + R</b>	在起飞位置重新载入你的载具。\n快捷键：Ctrl + Shift + R
-Enter / Exit Aircraft\nShortcut: <b>N</b>	进入 / 离开载具\n快捷键：N
-Repositions and uprights your craft at your current position.\nShortcut: <b>Ctrl + F</b>	在当前位置重置并扶正你的载具。\n快捷键：Ctrl + F
-Change view\nShortcut: <b>C</b>	切换视角\n快捷键：C
-Select Next Target\nShortcut: <b>Tab, ]</b>	选择下一个目标\n快捷键：Tab、]
-Show Activation Panel\nShortcut: <b>T, Right Shift</b>	显示激活面板\n快捷键：T、右 Shift
-Show Instrument Panel\nShortcut: <b>T, Right Shift</b>	显示仪表面板\n快捷键：T、右 Shift
-Current throttle\nShortcut: <b>Left Shift, Left Control</b>	当前油门\n快捷键：左 Shift、左 Control
+Countermeasures\nShortcut: <b>V</b>	投放干扰弹\n快捷键：<b>V</b>
+Reloads your craft at your current position.\nShortcut: <b>Ctrl + R</b>	在当前位置重新载入你的载具。\n快捷键：<b>Ctrl + R</b>
+Reloads your craft at your starting position.\nShortcut: <b>Ctrl + Shift + R</b>	在起飞位置重新载入你的载具。\n快捷键：<b>Ctrl + Shift + R</b>
+Enter / Exit Aircraft\nShortcut: <b>N</b>	进入 / 离开载具\n快捷键：<b>N</b>
+Repositions and uprights your craft at your current position.\nShortcut: <b>Ctrl + F</b>	在当前位置重置并扶正你的载具。\n快捷键：<b>Ctrl + F</b>
+Change view\nShortcut: <b>C</b>	切换视角\n快捷键：<b>C</b>
+Select Next Target\nShortcut: <b>Tab, ]</b>	选择下一个目标\n快捷键：<b>Tab、]</b>
+Show Activation Panel\nShortcut: <b>T, Right Shift</b>	显示激活面板\n快捷键：<b>T、右 Shift</b>
+Show Instrument Panel\nShortcut: <b>T, Right Shift</b>	显示仪表面板\n快捷键：<b>T、右 Shift</b>
+Current throttle\nShortcut: <b>Left Shift, Left Control</b>	当前油门\n快捷键：<b>左 Shift、左 Control</b>
 Add Parts	添加部件
 Bare Wing Gear	裸翼式起落架
 Fixed Gear	固定起落架
@@ -10029,15 +10029,15 @@ Could not generate part XML. Do you have duplicate part properties?\nCheck log f
 .\nDeleted {0} symmetric parts.	。\n已删除 {0} 个对称部件。
 .\nDeleted symmetric part 	。\n已删除对称部件
 A symmetric target part could not be found.\nSymmetry has been disabled for part '{0} (ID: {1})'	未找到对称的目标部件。\n已为部件“{0}（ID：{1}）”关闭对称功能
-The root part of the craft has been moved.\nThe mirror plane for all symmetric parts has been updated.	机体根部件已移动。\n所有对称部件的镜像平面已更新。
-You are moving the root part of the craft.\nThis will change the position of the mirror plane for all symmetric parts.	你正在移动机体的根部件。\n这会改变所有对称部件的镜像平面位置。
+The root part of the craft has been moved.\nThe mirror plane for all symmetric parts has been updated.	载具根部件已移动。\n所有对称部件的镜像平面已更新。
+You are moving the root part of the craft.\nThis will change the position of the mirror plane for all symmetric parts.	你正在移动载具的根部件。\n这会改变所有对称部件的镜像平面位置。
 The target part does not have a mirrored symmetric part.\nUnable to mirror and attach the selected parts.	目标部件没有对应的镜像对称部件。\n无法镜像并连接所选部件。
 The target part does not lie on the mirror plane. Unable to mirror the selected parts.\nThe target fuselage has a non-zero amount of 'Run', shifting its position off the mirror plane\nand making it asymmetrical.	目标部件不在镜像平面上，无法镜像所选部件。\n目标机身的“Run”值不为零，使其位置偏离镜像平面\n并导致不对称。
 The target fuselage lies on the mirror plane but,\nthe fuselage has a non-zero amount of 'Run', making it asymmetrical.	目标机身位于镜像平面上，但\n该机身的“Run”值不为零，导致其不对称。
-The airplane uses one or more 'mods'.\nContact the airplane designer to find out more.	该机体使用了一个或多个“模组”。\n请联系机体设计者了解详情。
-There are two possible reasons for this:\n1) You need to update to the newest version of SimplePlanes (check your app store)\n2) The airplane uses a 'mod' and you'll need to contact the airplane designer to find out more.	可能有两个原因：\n1）你需要把 SimplePlanes 更新到最新版本（请查看你的应用商店）\n2）该机体使用了“模组”，需要联系机体设计者了解详情。
-This airplane requires missing part(s):\n	该机体缺少以下部件：\n
-This is the airplane designer and this is where you will build your masterpiece.\n\nClick 'Start' and let's build an airplane together!	这就是机体设计器，你将在此打造自己的杰作。\n\n点击“开始”，让我们一起造一架飞机吧！
+The airplane uses one or more 'mods'.\nContact the airplane designer to find out more.	该载具使用了一个或多个“模组”。\n请联系载具设计者了解详情。
+There are two possible reasons for this:\n1) You need to update to the newest version of SimplePlanes (check your app store)\n2) The airplane uses a 'mod' and you'll need to contact the airplane designer to find out more.	可能有两个原因：\n1）你需要把 SimplePlanes 更新到最新版本（请查看你的应用商店）\n2）该载具使用了“模组”，需要联系载具设计者了解详情。
+This airplane requires missing part(s):\n	该载具缺少以下部件：\n
+This is the airplane designer and this is where you will build your masterpiece.\n\nClick 'Start' and let's build an airplane together!	这就是载具设计器，你将在此打造自己的杰作。\n\n点击“开始”，让我们一起造一架飞机吧！
 This will convert the selected fuselage to the new fuselage part.\n\nThe conversion is experimental! Please inspect the result and use Undo if needed.\n\nDo you want to continue?	这会把所选机身转换为新的机身部件。\n\n该转换仍处于实验阶段！请检查结果，如有需要请使用“撤销”。\n\n是否继续？
 The fuselage could not be upgraded:\n\n	机身无法升级：\n\n
 Upgrade complete with warnings:\n\n	升级完成，但有警告：\n\n
@@ -10074,9 +10074,9 @@ Move your hands while holding down the \ngrip buttons to adjust your camera offs
 Press the grip button on both controllers \nwhile keeping your hands close together.	双手靠拢，\n同时按下两个手柄上的扳机按钮。
 Well done. \nNow let go of the grip buttons to complete the adjustment.	做得好。\n现在松开扳机按钮以完成调整。
 Your hands were not close enough together when gripped. \nRelease your grips, move your hands closer together and try again.	按下扳机时，你的双手靠得不够近。\n松开扳机，把双手移得更近一些再试。
-The full game will let you build planes, cars, and just about anything you can imagine, all from the ground up.\n\nIn this Open Playtest, the designer is locked down, but you can still load and paint crafts to make them your own.	完整版中，你可以从零开始打造飞机、汽车，以及几乎任何你能想象的东西。\n\n在本次公开测试中，设计器功能受限，但你仍然可以载入并涂装机体，使其成为你的专属机体。
+The full game will let you build planes, cars, and just about anything you can imagine, all from the ground up.\n\nIn this Open Playtest, the designer is locked down, but you can still load and paint crafts to make them your own.	完整版中，你可以从零开始打造飞机、汽车，以及几乎任何你能想象的东西。\n\n在本次公开测试中，设计器功能受限，但你仍然可以载入并涂装载具，使其成为你的专属载具。
 New Personal Best!\n	新的个人最佳纪录！\n
-You unlocked the {0}!\n{1}/{2} Hidden Crafts	你解锁了{0}！\n隐藏机体 {1}/{2}
+You unlocked the {0}!\n{1}/{2} Hidden Crafts	你解锁了{0}！\n隐藏载具 {1}/{2}
 Gas	小心毒气
 Manage Bans	管理封禁
 BANS	封禁
@@ -10103,7 +10103,7 @@ Hide Mode	隐藏模式
 Steam ID	Steam ID
 River & Waves	河流与波浪
 Ambient Occlusion Strength	环境光遮蔽强度
-Max Missiles Per Second	每秒最大子弹数
+Max Missiles Per Second	每秒最大导弹数
 Peace Mode	和平模式
 Teleport To Player	传送到玩家
 Update Frequency	更新频率
@@ -10121,11 +10121,38 @@ Canopy front slice	座舱前切片
 Canopy rear slice	座舱后切片
 Canopy open handle	座舱开启把手
 Main wheel suspension	主轮悬挂
-Vertical speed indicator	升降速度表
+Vertical speed indicator	垂直速度表
 Cockpit canopy cutout	座舱开孔
 Cockpit canopy	座舱盖
 Canopy front	座舱前部
 Canopy rear	座舱后部
+{*} is currently bound to {*}\n\nWould you like to remove or replace this binding?	{*} 当前绑定到 {*}\n\n你要移除还是替换此绑定？
+Press a key to assign it to\n{*}\n\nModifier keys may also be used. To assign a modifier key alone, hold it down for 1 second.	请按一个键，将其绑定到\n{*}\n\n也可以使用修饰键。要单独分配修饰键，请按住它 1 秒。
+Now press a button or move an axis to assign it to\n{*}	现在按一个按钮或移动一个轴，将其分配给\n{*}
+{*} is already in use by:\n{*}\n\nDo you want to replace it? You may also choose to add the assignment to this action as well.	{*} 已被以下对象占用：\n{*}\n\n要替换它吗？您也可以选择将该分配添加到此操作。
+Expand the '{*}' section to show the property we are looking for.	展开“{*}”部分以显示我们要找的属性。
+Animal Pattern	动物图案
+Animal Stripe	动物条纹
+Animals	动物
+Arrows	箭头
+Big Camo	大型迷彩
+Blob Camo	斑点迷彩
+Camo	迷彩
+Digi Camo	数码迷彩
+Elements	元素
+Examples	示例
+Geometric	几何
+Gradients	渐变
+Grid Pattern	网格图案
+Grunge	做旧
+Liveries	涂装
+Materials	材质
+Nature Camo	自然迷彩
+Patterns	图案
+Shapes	形状
+Signs	标志
+Stripes	条纹
+Vegetation	植被
 ACCOUNT	账号
 AUTO	自动
 CANCEL	取消
@@ -10179,7 +10206,7 @@ Tip: Several parts have properties that can be set by clicking the button with t
 Tip: You can clone parts by clicking and dragging them with the right mouse button.	提示：按住鼠标右键点击并拖动部件，即可克隆部件。
 Tooltip Text	提示文本
 Tooltip Text Goes Here	此处显示提示文本
-Craft instructions	机体说明
+Craft instructions	载具说明
 Tutorial Name	教程名称
 Tutorial Message	教程内容
 Show on Start	启动时显示
@@ -10191,7 +10218,7 @@ Programmer	程序设计
 Community Manager	社区管理
 Lead 3D Artist	3D 美术主管
 Tech Artist	技术美术
-Stock Craft Liaison	自带机体顾问
+Stock Craft Liaison	自带载具顾问
 Character Artist	角色美术
 Environment Artist	场景美术
 Soundtrack	音乐
@@ -10266,7 +10293,7 @@ PropellerAssembly	螺旋桨总成
 ResizableWheel	可调轮组
 Suspension	悬挂
 Turboshaft	涡轮轴发动机
-Wing	机翼式
+Wing	机翼
 Altitude	高度
 Ammo	弹药量
 Current Angle	当前角度
@@ -10312,8 +10339,8 @@ JointMotor	关节马达
 Thrust Port	推力喷口
 ThrustPort	推力喷口
 Advanced Performance Scalars	高级性能参数
-Activator	激活组
-Overload	过载编辑器
+Activator	激活器
+Overload	Overload
 Overload XML Editor	Overload XML 编辑器
 Overload XML Modification	Overload XML 修改
 Enables Overload, an advanced part property XML Editor, in the designer.	在设计器中启用 Overload（高级部件属性 XML 编辑器）。
@@ -10344,13 +10371,13 @@ symmetryDisabled	禁用对称
 hideInside	隐藏内部
 symmetryId	对称组
 legacyThickness	旧版厚度
-numColliders	碰撞体采样
+numColliders	碰撞体数量
 activationGroup	激活组
 invert	反转
 input	输入
 min	最小值
 max	最大值
-disableAircraftCollisions	禁用机体碰撞
+disableAircraftCollisions	禁用载具碰撞
 size	尺寸
 scale	缩放
 height	高度
@@ -10365,8 +10392,8 @@ targetMode	目标模式
 fuelPercentage	燃油百分比
 speed	速度
 penetration	穿透力
-centerOfMass	重心
-decalRotation	贴标旋转
+centerOfMass	质心
+decalRotation	贴花旋转
 color	颜色
 frontScale	前端缩放
 rearScale	后端缩放
@@ -10391,7 +10418,7 @@ function	用途
 guidanceActivationDelay	制导启动延迟
 ignitionDelay	点火延迟
 killCam	击杀镜头
-loft	抛射弧
+loft	高抛弹道
 lookAtCockpit	注视座舱
 maxForwardThrustForce	最大前向推力
 maxFuelTime	最长燃油时间
@@ -10418,11 +10445,11 @@ MissileState	导弹状态
 - Memory: {0}MB RAM detected. 8GB RAM is required.\n	- 内存：检测到 {0}MB 内存，需要 8GB 内存。\n
 It looks like the game crashed during your last session, and outdated graphics drivers might be the cause.\nYour detected graphics card:\n	看起来游戏在上次运行时崩溃了，过期的显卡驱动可能是原因。\n检测到的显卡：\n
 Your computer appears to be below the minimum system requirements for this game:\n	你的电脑似乎未达到本游戏的最低系统需求：\n
-Your craft file has been backed up here:\n	你的机体文件已备份到此处：\n
-Error obtaining or loading plane file from Steam:{0}\n{1}	从 Steam 获取或载入机体文件时出错：{0}\n{1}
-Error reading/validating downloaded plane file: {0}\n{1}	读取/校验已下载的机体文件时出错：{0}\n{1}
+Your craft file has been backed up here:\n	你的载具文件已备份到此处：\n
+Error obtaining or loading plane file from Steam:{0}\n{1}	从 Steam 获取或载入载具文件时出错：{0}\n{1}
+Error reading/validating downloaded plane file: {0}\n{1}	读取/校验已下载的载具文件时出错：{0}\n{1}
 Server returned invalid response:\n{0}\n\nException:\n{1}	服务器返回了无效响应：\n{0}\n\n异常：\n{1}
-Request failed for craft details: \n	获取机体详情失败：\n
+Request failed for craft details: \n	获取载具详情失败：\n
 Could not initialize Steam Lobby Manager.\n\nEnsure you are logged into Steam and try restarting the game.	无法初始化 Steam 大厅管理器。\n\n请确认已登录 Steam，然后尝试重启游戏。
 Could not initialize Steam Multiplayer.\nEnsure you are logged into Steam and try restarting the game.	无法初始化 Steam 多人功能。\n请确认已登录 Steam，然后尝试重启游戏。
  from XML. \nIf unexpected input issues occur, the loaded XML data may be outdated or invalid. Delete the ControlInputData.xml file in your game's app data folder.	来自 XML。\n如果出现异常的输入问题，已加载的 XML 数据可能已过期或无效。请删除游戏应用数据文件夹中的 ControlInputData.xml 文件。
@@ -10439,3 +10466,4 @@ Variables Error:\n	变量错误：\n
 Total Road Length: {0:n1}km. Average Length: {1:n2}km. Median Length: {2:n2}km\n	道路总长：{0:n1}km。平均长度：{1:n2}km。中位长度：{2:n2}km
 '{0}' Road Length: {1:n1}km\n	“{0}”的道路长度：{1:n1}km\n
 Total Drag Comparison\n	总阻力对比
+{*} stole an orb from {*}!	{*} 从 {*} 处偷走了一颗灵球！

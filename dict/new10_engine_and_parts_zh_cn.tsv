@@ -7,8 +7,8 @@ compressionRatio	压气比
 afterburner	加力燃烧室
 reverseThrust	反推
 turbinePressureRatio	涡轮压比
-maxGimbalAngle	最大万向节角
-gimbalSpeed	万向节转速
+maxGimbalAngle	最大矢量偏转角
+gimbalSpeed	矢量偏转速率
 fanStyle	风扇样式
 inletConeStyle	进气锥样式
 nozzleStyle	喷管样式
@@ -61,7 +61,7 @@ twistAngleRoot	根部扭角
 chordScale	弦长缩放
 chordRadiusRatio	弦径比
 axialStages	轴流级数
-legacyCotPos	旧版重心位置
+legacyCotPos	旧版推力中心位置
 maxPitch	最大桨距
 maxRpm	最大转速
 thickness	厚度
@@ -75,7 +75,7 @@ reversed	已反向
 disableBaseMesh	禁用基础网格
 hideBase	隐藏基部
 hideFace	隐藏面
-hideTrim	隐藏配平
+hideTrim	隐藏饰边
 maxDeflection	最大偏角
 deflectionDegrees	偏转角度
 startPos	起始位置
@@ -161,7 +161,7 @@ tooltip	提示
 group	分组
 inputId	输入编号
 engineId	发动机编号
-decalId	贴标编号
+decalId	贴花编号
 tiling	平铺
 customPartIds	自定义部件编号
 ammoCount	弹药数
@@ -174,7 +174,7 @@ launchForce	发射力
 detachForce	分离力
 detacherUiMaxForce	分离器界面最大力
 preventBreaking	防止断裂
-ignoreAircraftCollisions	忽略机体碰撞
+ignoreAircraftCollisions	忽略载具碰撞
 animationDuration	动画时长
 doorStyle	舱门样式
 startOpen	初始开启
@@ -182,7 +182,7 @@ haptics	触感反馈
 designerBlinkProgram	设计器闪烁程序
 blinkProgram	闪烁程序
 enabled	已启用
-inletTrimSize	进气口配平尺寸
+inletTrimSize	进气口饰边尺寸
 inletThicknessFront	进气口前厚度
 inletThicknessRear	进气口后厚度
 positionSpring	位置弹簧
@@ -191,7 +191,7 @@ positionMaximumForce	位置最大力
 powerCurve	功率曲线
 partIds	部件编号
 face	面
-trimType	配平类型
+trimType	饰边类型
 rotationType	旋转类型
 faceInput	面输入
 faceZero	面零位

@@ -52,7 +52,7 @@ Tip: Several parts have properties that can be set by clicking the button with t
 Tip: You can clone parts by clicking and dragging them with the right mouse button.	提示：按住鼠标右键点击并拖动部件，即可克隆部件。
 Tooltip Text	提示文本
 Tooltip Text Goes Here	此处显示提示文本
-Craft instructions	机体说明
+Craft instructions	载具说明
 Tutorial Name	教程名称
 Tutorial Message	教程内容
 Show on Start	启动时显示
@@ -64,7 +64,7 @@ Programmer	程序设计
 Community Manager	社区管理
 Lead 3D Artist	3D 美术主管
 Tech Artist	技术美术
-Stock Craft Liaison	自带机体顾问
+Stock Craft Liaison	自带载具顾问
 Character Artist	角色美术
 Environment Artist	场景美术
 Soundtrack	音乐

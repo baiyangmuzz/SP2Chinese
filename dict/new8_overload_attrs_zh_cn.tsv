@@ -25,13 +25,13 @@ symmetryDisabled	禁用对称
 hideInside	隐藏内部
 symmetryId	对称组
 legacyThickness	旧版厚度
-numColliders	碰撞体采样
+numColliders	碰撞体数量
 activationGroup	激活组
 invert	反转
 input	输入
 min	最小值
 max	最大值
-disableAircraftCollisions	禁用机体碰撞
+disableAircraftCollisions	禁用载具碰撞
 size	尺寸
 scale	缩放
 height	高度
@@ -46,9 +46,9 @@ targetMode	目标模式
 fuelPercentage	燃油百分比
 speed	速度
 penetration	穿透力
-centerOfMass	重心
+centerOfMass	质心
 fontSize	字号
-decalRotation	贴标旋转
+decalRotation	贴花旋转
 color	颜色
 frontScale	前端缩放
 rearScale	后端缩放

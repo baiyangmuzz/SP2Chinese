@@ -26,7 +26,7 @@ Teleport Down	向下传送
 Enter/Exit Craft	进入/离开载具
 Screenshot Mode	截图模式
 Delete Selected Part	删除选中部件
-Toggle CoM/CoL/CoT	切换重心/升力中心/推力中心
+Toggle CoM/CoL/CoT	切换质心/升力中心/推力中心
 Quicksave Craft	快速保存载具
 Single / Connected Part Modifier Key\n  (Select / Clone / Transform / Symmetry)	单个/相连部件修饰键\n  （选择/克隆/变换/对称）
 Reattach Selected Part	重新连接选中部件
@@ -83,24 +83,24 @@ Nudge Part Z-	部件 Z- 微移
 Part Symmetry	部件对称
 Toggle Symmetry Panel	切换对称面板
 Test Pitch	测试俯仰
-Test Pitch Forward	测试俯仰前
-Test Pitch Back	测试俯仰后
+Test Pitch Forward	测试俯仰前推
+Test Pitch Back	测试俯仰后拉
 Test Roll	测试滚转
 Test Roll Right	测试右滚
 Test Roll Left	测试左滚
 Test Yaw	测试偏航
 Test Yaw Right	测试右偏航
 Test Yaw Left	测试左偏航
-Pitch Forward	俯仰前
-Pitch Back	俯仰后
+Pitch Forward	俯仰前推
+Pitch Back	俯仰后拉
 Roll Right	右滚
 Roll Left	左滚
 Yaw Right	右偏航
 Yaw Left	左偏航
 Throttle Up	加大油门
 Throttle Down	减小油门
-VTOL Up	VTOL 上
-VTOL Down	VTOL 下
+VTOL Up	垂直起降向上
+VTOL Down	垂直起降向下
 Trim Up	向上配平
 Trim Down	向下配平
 Brake Increase	增加刹车
@@ -121,10 +121,10 @@ Custom Camera 3	自定义视角 3
 Custom Camera 4	自定义视角 4
 Activate Camera Look	启用视角控制
 Launch Countermeasures	投放干扰弹
-Slew Right	瞄准右转
-Slew Left	瞄准左转
-Slew Up	瞄准上转
-Slew Down	瞄准下转
+Slew Right	瞄准吊舱右转
+Slew Left	瞄准吊舱左转
+Slew Up	瞄准吊舱上转
+Slew Down	瞄准吊舱下转
 Zoom Targeting Pod	缩放瞄准吊舱
 Activation Groups	激活组
 Toggle Panel	切换面板
@@ -141,14 +141,14 @@ Search Actions	搜索动作
 Multiple Parts	多个部件
 Toggle Gunner's HMD	切换炮手头盔显示器
 Mirroring disabled for part {*}	已为部件 {*} 关闭镜像
-Look at your hands to see the controls for flying. If you ever want to see them again, you can find the controls button in the pop-up menu under settings.	看你的双手可以看到飞行操作。如果你想再看一次，可以在设置里的弹出菜单中找到操作按钮。
+Look at your hands to see the controls for flying. If you ever want to see them again, you can find the controls button in the pop-up menu under settings.	低头看自己的双手即可看到飞行操作提示。如果想再次查看，可以在设置里的弹出菜单中找到操作提示按钮。
 You can rotate the view around by clicking and dragging. Go ahead and try, just try not to click on any parts.	按住鼠标拖动可以旋转视角。来试试吧，只是尽量别点到部件上。
 {0}d ago	{0} 天前
 {0}m ago	{0} 分钟前
 {0}h ago	{0} 小时前
-Wind Speed: {0}mph	风速：{0}mph
-Wind Speed: {0}km/h	风速：{0}km/h
+Wind Speed: {0}mph	风速：{0} 英里/小时
+Wind Speed: {0}km/h	风速：{0} 公里/小时
 Wind Speed: {0}m/s	风速：{0} 米/秒
-Wind Speed: {0}mph	风速：{0}mph
-Wind Speed: {0}km/h	风速：{0}km/h
+Wind Speed: {0}mph	风速：{0} 英里/小时
+Wind Speed: {0}km/h	风速：{0} 公里/小时
 Wind Speed: {0}m/s	风速：{0} 米/秒

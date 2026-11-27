@@ -1,0 +1,5 @@
+{*} is currently bound to {*}\n\nWould you like to remove or replace this binding?	{*} 当前绑定到 {*}\n\n你要移除还是替换此绑定？
+Press a key to assign it to\n{*}\n\nModifier keys may also be used. To assign a modifier key alone, hold it down for 1 second.	请按一个键，将其绑定到\n{*}\n\n也可以使用修饰键。要单独分配修饰键，请按住它 1 秒。
+Now press a button or move an axis to assign it to\n{*}	现在按一个按钮或移动一个轴，将其分配给\n{*}
+{*} is already in use by:\n{*}\n\nDo you want to replace it? You may also choose to add the assignment to this action as well.	{*} 已被以下对象占用：\n{*}\n\n要替换它吗？您也可以选择将该分配添加到此操作。
+Expand the '{*}' section to show the property we are looking for.	展开“{*}”部分以显示我们要找的属性。

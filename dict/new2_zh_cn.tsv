@@ -6,15 +6,15 @@ Could not generate part XML. Do you have duplicate part properties?\nCheck log f
 .\nDeleted {0} symmetric parts.	。\n已删除 {0} 个对称部件。
 .\nDeleted symmetric part 	。\n已删除对称部件
 A symmetric target part could not be found.\nSymmetry has been disabled for part '{0} (ID: {1})'	未找到对称的目标部件。\n已为部件“{0}（ID：{1}）”关闭对称功能
-The root part of the craft has been moved.\nThe mirror plane for all symmetric parts has been updated.	机体根部件已移动。\n所有对称部件的镜像平面已更新。
-You are moving the root part of the craft.\nThis will change the position of the mirror plane for all symmetric parts.	你正在移动机体的根部件。\n这会改变所有对称部件的镜像平面位置。
+The root part of the craft has been moved.\nThe mirror plane for all symmetric parts has been updated.	载具根部件已移动。\n所有对称部件的镜像平面已更新。
+You are moving the root part of the craft.\nThis will change the position of the mirror plane for all symmetric parts.	你正在移动载具的根部件。\n这会改变所有对称部件的镜像平面位置。
 The target part does not have a mirrored symmetric part.\nUnable to mirror and attach the selected parts.	目标部件没有对应的镜像对称部件。\n无法镜像并连接所选部件。
 The target part does not lie on the mirror plane. Unable to mirror the selected parts.\nThe target fuselage has a non-zero amount of 'Run', shifting its position off the mirror plane\nand making it asymmetrical.	目标部件不在镜像平面上，无法镜像所选部件。\n目标机身的“Run”值不为零，使其位置偏离镜像平面\n并导致不对称。
 The target fuselage lies on the mirror plane but,\nthe fuselage has a non-zero amount of 'Run', making it asymmetrical.	目标机身位于镜像平面上，但\n该机身的“Run”值不为零，导致其不对称。
-The airplane uses one or more 'mods'.\nContact the airplane designer to find out more.	该机体使用了一个或多个“模组”。\n请联系机体设计者了解详情。
-There are two possible reasons for this:\n1) You need to update to the newest version of SimplePlanes (check your app store)\n2) The airplane uses a 'mod' and you'll need to contact the airplane designer to find out more.	可能有两个原因：\n1）你需要把 SimplePlanes 更新到最新版本（请查看你的应用商店）\n2）该机体使用了“模组”，需要联系机体设计者了解详情。
-This airplane requires missing part(s):\n	该机体缺少以下部件：\n
-This is the airplane designer and this is where you will build your masterpiece.\n\nClick 'Start' and let's build an airplane together!	这就是机体设计器，你将在此打造自己的杰作。\n\n点击“开始”，让我们一起造一架飞机吧！
+The airplane uses one or more 'mods'.\nContact the airplane designer to find out more.	该载具使用了一个或多个“模组”。\n请联系载具设计者了解详情。
+There are two possible reasons for this:\n1) You need to update to the newest version of SimplePlanes (check your app store)\n2) The airplane uses a 'mod' and you'll need to contact the airplane designer to find out more.	可能有两个原因：\n1）你需要把 SimplePlanes 更新到最新版本（请查看你的应用商店）\n2）该载具使用了“模组”，需要联系载具设计者了解详情。
+This airplane requires missing part(s):\n	该载具缺少以下部件：\n
+This is the airplane designer and this is where you will build your masterpiece.\n\nClick 'Start' and let's build an airplane together!	这就是载具设计器，你将在此打造自己的杰作。\n\n点击“开始”，让我们一起造一架飞机吧！
 This will convert the selected fuselage to the new fuselage part.\n\nThe conversion is experimental! Please inspect the result and use Undo if needed.\n\nDo you want to continue?	这会把所选机身转换为新的机身部件。\n\n该转换仍处于实验阶段！请检查结果，如有需要请使用“撤销”。\n\n是否继续？
 The fuselage could not be upgraded:\n\n	机身无法升级：\n\n
 Upgrade complete with warnings:\n\n	升级完成，但有警告：\n\n
@@ -51,6 +51,6 @@ Move your hands while holding down the \ngrip buttons to adjust your camera offs
 Press the grip button on both controllers \nwhile keeping your hands close together.	双手靠拢，\n同时按下两个手柄上的扳机按钮。
 Well done. \nNow let go of the grip buttons to complete the adjustment.	做得好。\n现在松开扳机按钮以完成调整。
 Your hands were not close enough together when gripped. \nRelease your grips, move your hands closer together and try again.	按下扳机时，你的双手靠得不够近。\n松开扳机，把双手移得更近一些再试。
-The full game will let you build planes, cars, and just about anything you can imagine, all from the ground up.\n\nIn this Open Playtest, the designer is locked down, but you can still load and paint crafts to make them your own.	完整版中，你可以从零开始打造飞机、汽车，以及几乎任何你能想象的东西。\n\n在本次公开测试中，设计器功能受限，但你仍然可以载入并涂装机体，使其成为你的专属机体。
+The full game will let you build planes, cars, and just about anything you can imagine, all from the ground up.\n\nIn this Open Playtest, the designer is locked down, but you can still load and paint crafts to make them your own.	完整版中，你可以从零开始打造飞机、汽车，以及几乎任何你能想象的东西。\n\n在本次公开测试中，设计器功能受限，但你仍然可以载入并涂装载具，使其成为你的专属载具。
 New Personal Best!\n	新的个人最佳纪录！\n
-You unlocked the {0}!\n{1}/{2} Hidden Crafts	你解锁了{0}！\n隐藏机体 {1}/{2}
+You unlocked the {0}!\n{1}/{2} Hidden Crafts	你解锁了{0}！\n隐藏载具 {1}/{2}

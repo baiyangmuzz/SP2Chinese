@@ -14,7 +14,7 @@ function	用途
 guidanceActivationDelay	制导启动延迟
 ignitionDelay	点火延迟
 killCam	击杀镜头
-loft	抛射弧
+loft	高抛弹道
 lookAtCockpit	注视座舱
 maxForwardThrustForce	最大前向推力
 maxFuelTime	最长燃油时间
