@@ -162,7 +162,7 @@ footer .cp{grid-column:1/-1;border-top:1px solid var(--line);padding-top:20px;fo
   <h1>SimplePlanes 2 简体中文汉化</h1>
   <p class="lead">为 SimplePlanes 2 提供完整的简体中文界面。游戏运行时替换界面、聊天和载具说明文本，词库共 10,469 条。免费、开源，一个安装器即可完成。</p>
   <div class="cta">
-    <a class="btn" href="https://gitee.com/baiyangmuzz/sp2-chinese/releases/download/v1.7.4/SP2Chinese-Setup-v1.7.4.exe" download="SP2Chinese-Setup-v1.7.4.exe">下载安装器 v1.7.4</a>
+    <a class="btn" href="https://gitee.com/baiyangmuzz/sp2-chinese/releases/download/v1.7.5/SP2Chinese-Setup-v1.7.5.exe" download="SP2Chinese-Setup-v1.7.5.exe">下载安装器 v1.7.5</a>
     <a class="btn o" href="https://github.com/baiyangmuzz/SP2Chinese/releases/latest" target="_blank" rel="noopener">从 GitHub 下载</a>
   </div>
   <p class="meta">Windows 10 / 11 · 1.21 MB · 更新于 2026-11-28</p>
@@ -201,7 +201,7 @@ footer .cp{grid-column:1/-1;border-top:1px solid var(--line);padding-top:20px;fo
     <p class="sub">安装前请先退出游戏。</p>
     <div class="cols">
       <ol class="steps">
-        <li><b>下载安装器。</b>在下方下载 <code>SP2Chinese-Setup-v1.7.4.exe</code>。Release 页面里不要选 Source code，那是源码包。</li>
+        <li><b>下载安装器。</b>在下方下载 <code>SP2Chinese-Setup-v1.7.5.exe</code>。Release 页面里不要选 Source code，那是源码包。</li>
         <li><b>运行并授权。</b>双击运行，在管理员授权提示中选「是」。</li>
         <li><b>开始安装。</b>点「开始安装」，显示「安装完成」后即可进入游戏。</li>
         <li><b>需要卸载时</b>再次运行安装器，点「卸载汉化」。</li>
@@ -223,12 +223,12 @@ footer .cp{grid-column:1/-1;border-top:1px solid var(--line);padding-top:20px;fo
       <table>
         <thead><tr><th>渠道</th><th>文件</th><th>大小</th><th></th></tr></thead>
         <tbody>
-          <tr><td>Gitee（国内直连）</td><td><code>SP2Chinese-Setup-v1.7.4.exe</code></td><td>1.21 MB</td><td><a class="btn s" href="https://gitee.com/baiyangmuzz/sp2-chinese/releases/download/v1.7.4/SP2Chinese-Setup-v1.7.4.exe" download="SP2Chinese-Setup-v1.7.4.exe">下载</a></td></tr>
+          <tr><td>Gitee（国内直连）</td><td><code>SP2Chinese-Setup-v1.7.5.exe</code></td><td>1.21 MB</td><td><a class="btn s" href="https://gitee.com/baiyangmuzz/sp2-chinese/releases/download/v1.7.5/SP2Chinese-Setup-v1.7.5.exe" download="SP2Chinese-Setup-v1.7.5.exe">下载</a></td></tr>
           <tr><td>GitHub</td><td>Releases 页面</td><td>1.21 MB</td><td><a class="btn o s" href="https://github.com/baiyangmuzz/SP2Chinese/releases/latest" target="_blank" rel="noopener">前往</a></td></tr>
         </tbody>
       </table>
     </div>
-    <p class="fine">SHA256：<code>8e7b2cac17afb486…</code>（完整值见 GitHub Release）。脚本或 CI 部署请使用 Release 中的 zip 包。</p>
+    <p class="fine">SHA256：<code>2d512875acdb740e…</code>（完整值见 GitHub / Gitee Release）。脚本或 CI 部署请使用 Release 中的 zip 包。</p>
   </div>
 </section>
 
@@ -236,6 +236,12 @@ footer .cp{grid-column:1/-1;border-top:1px solid var(--line);padding-top:20px;fo
   <div class="w">
     <h2>更新日志</h2>
     <div class="rel">
+      <h3>v1.7.5<small>2026-11-28</small></h3>
+      <ul>
+        <li>安装器自更新优先走 Gitee：检查更新和下载都先取 Gitee，GitHub 只做兜底。</li>
+        <li>国内更新不再先连 api.github.com；旧版 1.7.4 需手动安装一次 1.7.5 才会走新通道。</li>
+        <li>词库与 1.7.4 相同：10,469 条（8,757 译文，1,712 保留英文），本次没有翻译改动。</li>
+      </ul>
       <h3>v1.7.4<small>2026-11-28</small></h3>
       <ul>
         <li>修复已有按键无法「移除 / 替换」的问题。</li>
@@ -276,7 +282,7 @@ footer .cp{grid-column:1/-1;border-top:1px solid var(--line);padding-top:20px;fo
       <details><summary>会影响联机吗？</summary>
         <p>汉化只替换界面文本，不改动游戏逻辑。联机时请遵守服务器规则；与其它模组同时使用时，出问题的概率会更高。</p></details>
       <details><summary>自动更新失败了怎么办？</summary>
-        <p>自动更新需要访问 GitHub，网络不通时会失败。这时回到本页下载新版覆盖安装即可，词库和备份都会保留。</p></details>
+        <p>更新检查与下载优先走 Gitee，失败时才回落 GitHub。两个源都不通时会提示网络不可用，这时回到本页下载新版覆盖安装即可，词库和备份都会保留。</p></details>
       <details><summary>需要付费吗？</summary>
         <p>不需要。本项目开源免费，官方渠道只有 GitHub 和 Gitee。如果有人向你收费，那不是我们，请直接举报。</p></details>
     </div>
